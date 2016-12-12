@@ -2,8 +2,6 @@
 	<div class="title">
 		Contact Us
 	</div>
-
-
 	<div class="box">
 		<div class="row">
 			<div class="label">
@@ -32,8 +30,4 @@
 			</div>
 		</div>
 	</div>
-	
-
-
-
 </div>
