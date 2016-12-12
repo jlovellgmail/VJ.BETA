@@ -17,7 +17,6 @@
                 <li><a class="footerLink" href='terms.php'>Terms</a></li>
                 <li><button class="footerLink" onclick="showModal('/preorder/incs/modals/common/modalNewsletter.php');">Newsletter</button></li>
                 <li><button class="footerLink" onclick="showModal('/preorder/incs/modals/common/modalContact.php');">Contact</button></li>
-                <li><div class="footerLink");"> -->New test item that is a div not a button<-- </div></li>
             </ul>
         </div>
         <div class ="rightFooterColumn">
