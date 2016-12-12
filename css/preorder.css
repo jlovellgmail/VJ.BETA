@@ -247,6 +247,8 @@ body {
   width: calc(100% - 95px - 95px);
   height: 100%;
   margin: 0 auto;
+  text-align: left;
+  position: relative;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: .5px;
@@ -272,8 +274,7 @@ body {
 }
 .footerContainer .footerWidthWrapper .leftFooterColumn {
   width: auto;
-  position: absolute;
-  left: 95px;
+  position: relative;
 }
 .footerContainer .footerWidthWrapper .leftFooterColumn .socialIcons img {
   bottom: 1px;
@@ -289,6 +290,10 @@ body {
   right: initial;
   width: 100%;
   padding-right: 20px;
+  position: absolute;
+  right: 0;
+  width: auto;
+  padding-right: initial;
 }
 .footerContainer .footerWidthWrapper .footerLink:hover {
   color: rgba(0, 0, 0, 0.7);

@@ -65,11 +65,11 @@ $seo_variable = "home";
                     </div>
                 </div>
             </div>
-            <?php include '/incs/footer.php'; ?>
-            <?php include '/incs/footer-links.php'; ?>
         </div>
 
 
+        <?php include '/incs/footer.php'; ?>
+        <?php include '/incs/footer-links.php'; ?>
 
 
 		<?php include('json-ld.php'); ?>
