@@ -15,20 +15,20 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
     <div class="navWidthWrapper">
         <div class="headerHeightWrapper">
             <div class="logoWrapper">
-                <a class="logoLink" href="preorder/index.php">
+                <a class="logoLink" href="index.php">
                     <img class="navLogo" src="img/VJ_logo.svg" alt="Virgil James" />
                 </a>
             </div>
             <div class="rightItemsContainer">
                 <div class="desktopLinksContainer">
                     <div class="textLinksContainer">
-                        <a href="preorder/index.php">Shop</a>
-                        <a href="preorder/about.php">About</a>
+                        <a href="index.php">Shop</a>
+                        <a href="about.php">About</a>
                     </div>
                     <a class="iconWrapper" href="javascript:goToCheckout();">
                         <i class="icon-basket"></i>
                     </a>           
-                    <a class="iconWrapper" href="preorder/login.php">
+                    <a class="iconWrapper" href="login.php">
                         <i class="icon-torso"></i>
                     </a>
                 </div>
@@ -41,8 +41,8 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
         <div class="dropdown">
             <div class="dropdownLinksContainer">
                 <div class="textLinksContainer">
-                    <a href="preorder/index.php">Shop</a>
-                    <a href="preorder/about.php">About</a>
+                    <a href="index.php">Shop</a>
+                    <a href="about.php">About</a>
 
                     
                     <!--
@@ -52,7 +52,7 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                     <a class="iconWrapper" href="javascript:goToCheckout();">
                         <i class="icon-basket"></i>
                     </a>           
-                    <a class="iconWrapper" href="preorder/login.php">
+                    <a class="iconWrapper" href="login.php">
                         <i class="icon-torso"></i>
                     </a>
 
