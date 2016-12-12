@@ -1,5 +1,5 @@
 <div class='modal-wrapper-400'>
-	<h6 class="modalTitle caps fw-700 size6">Newsletter</h6>
+	<h6 class="title">Newsletter</h6>
 	<div id="responseGroup">
 	<p>Sign up today to receive the latest Virgil James News &amp; Events, Ambassador Travel Tips &amp; Journal Highlights, as well as upcoming Sales and Promotions &mdash; all from the comfort of your email inbox.</p>
 	<form class="generalForm" id="maillingListFrm" name="maillingListFrm" method="post" onsubmit="return false;">
