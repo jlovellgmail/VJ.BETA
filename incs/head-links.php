@@ -1,12 +1,4 @@
 <meta name="robots" content="noindex" />
-
-
-<!-- JL -->
-<!-- switch to Jay's account -->
-<!--
-<script src="//use.typekit.net/fcs3ojc.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
--->
 <script src="https://use.typekit.net/zeq6fsn.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
