@@ -100,13 +100,6 @@ $CollID = $CollObj->getVar("CID");
                 var colType = '<?php echo $type; ?>';
             </script>
 
-            <script src="/js/imagesloaded.pkgd.min.js"></script>
-            <script>
-                $(document).ready(function() {
-                    $('map').imageMapResize();
-                });
-            </script>
-
 
         </div>
     </body>
