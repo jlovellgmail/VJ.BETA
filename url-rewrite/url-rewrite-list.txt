@@ -1,0 +1,60 @@
+The following is a list of URLs affected by the url rewrite module applied on the site. Any URLs appearing on the site which are not included in the following list can be found by simply adding the .php extension to the address already shown.
+
+http://www.virgiljames.net/ambassador/journal/posts/reorder/79/ --> /ambassador/posts/reorder-post-blocks.php
+
+http://www.virgiljames.net/ambassador/journal-posts/reorder/ --> /ambassador/posts/reorder-posts.php
+
+http://www.virgiljames.net/collection/classic/canvas/ --> /collection/index.php
+
+http://www.virgiljames.net/collection/details/classic/canvas/ --> /collection/details.php
+
+http://www.virgiljames.net/product/Canvas-Document-Holder/10005/ ---> /product.php
+
+http://www.virgiljames.net/registration-confirmation/ --> /regConf.php
+
+http://www.virgiljames.net/ambassador/Virgil-James/Why-We-Use-Raccagni-Zippers/433/ --> /Post-view.php
+
+http://www.virgiljames.net/lifestyle/Virgil-James/Why-We-Use-Raccagni-Zippers/433/ --> /Post-view.php
+
+http://www.virgiljames.net/ambassadors/ --> /ambassadors.php
+
+http://www.virgiljames.net/ambassador/info/ --> /info.php
+
+http://www.virgiljames.net/ambassador/events/  --> /ambassador/events.php
+
+http://www.virgiljames.net/ambassador/events/create/ --> /ambassador/ambEventsCreate.php
+
+http://www.virgiljames.net/ambassador/events/edit/1023/1011/  --> /ambassador/ambEventsCreate.php
+
+http://www.virgiljames.net/ambassador/news/  --> /ambassador/news.php
+
+http://www.virgiljames.net/ambassador/news/create/ --> /ambassador/ambNewsCreate.php
+
+http://www.virgiljames.net/ambassador/news/edit/1015/1011/  --> /ambassador/ambNewsCreate.php
+
+http://www.virgiljames.net/ambassador/favorites/ --> /ambassador/favorites.php
+
+http://www.virgiljames.net/ambassador/favorites/create/favorite/1011/  --> /ambassador/ambFavCreate.php
+
+http://www.virgiljames.net/ambassador/favorites/edit/favorite/1011/1075/  --> /ambassador/ambFavCreate.php
+
+http://www.virgiljames.net/ambassador/favorites/order/  --> /ambassador/ambFavoritesOrder.php
+
+http://www.virgiljames.net/ambassador/journal-posts/  --> /ambassador/posts/journal-posts.php
+
+http://www.virgiljames.net/ambassador/journal-post/create/ --> /ambassador/posts/add_post.php
+
+http://www.virgiljames.net/ambassador/journal/post/edit/411/ --> /ambassador/posts/add_post.php
+
+http://www.virgiljames.net/ambassador/Lucia-Contreras/profile/ --> /ambassador.php
+
+http://www.virgiljames.net/user/info/  --> /user/info.php
+
+http://www.virgiljames.net/user/orders/ --> /user/orders.php
+
+http://www.virgiljames.net/user/order/70181/ --> /user/order_detail.php
+
+http://www.virgiljames.net/shop/  --> /shop.php
+
+http://www.virgiljames.net/shop/men/ --> /shop.php
+

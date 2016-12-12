@@ -1,0 +1,118 @@
+body#tinymce, .amb-template{
+ text-align:left;
+ padding: 2px;
+ font-size:16px !important;
+}
+
+.amb-template .lg-one,
+.amb-template .lg-two,
+.amb-template .lg-three,
+.amb-template .lg-four,
+.amb-template .lg-five,
+.amb-template .lg-six,
+.amb-template .lg-seven,
+.amb-template .lg-eight,
+.amb-template .lg-nine,
+.amb-template .lg-ten,
+.amb-template .lg-eleven,
+.amb-template .lg-twelve,
+.amb-template .md-one,
+.amb-template .md-two,
+.amb-template .md-three,
+.amb-template .md-four,
+.amb-template .md-five,
+.amb-template .md-six,
+.amb-template .md-seven,
+.amb-template .md-eight,
+.amb-template .md-nine,
+.amb-template .md-ten,
+.amb-template .md-eleven,
+.amb-template .md-twelve{
+ display:inline-block;
+ margin-left:-4px;
+}
+
+.amb-template .flexImage .image-caption{
+ display:block;
+ color:#ccc;
+ font-weight:200;
+ font-style:italic;
+ text-align:center;
+ padding-top:4px;
+}
+
+.amb-template .template-img-float-left .flexImage{
+ float:left;
+ width:50%; 
+ margin-right:25px;
+ margin-bottom:15px;
+}
+
+.amb-template .template-img-float-right .flexImage{
+ float:right;
+ width:50%; 
+ margin-left:25px;
+ margin-bottom:15px;
+}
+
+.amb-template .template-img-float-left p,
+.amb-template .template-img-float-right p{
+ text-align:left;
+}
+
+.amb-template .template-img-float-left p ,
+.amb-template .template-img-float-right p {
+ margin-top:-6px;
+}
+
+.amb-template .flexImage .caption{
+ display:block;
+ color:#ccc;
+ font-size:13px;
+ font-weight:500;
+ text-align:center;
+ padding:0 15px;
+ margin-top:15px;
+ margin-bottom:15px;
+}
+
+.amb-template:before,
+.ambTemplate:after{  display: table;
+  content: " ";
+}
+.amb-template:after{
+  clear: both;
+}
+
+/*.mce-edit-area{
+ border:1px dotted #666666 !important;
+}*/
+
+.mceTmpl{
+ margin-bottom:30px;
+}
+
+.mceTmpl p:last-child{
+ margin-bottom:0;
+}
+
+.mceTmpl h2{
+ margin-bottom:8px;
+ margin-top: -4px;
+}
+
+.mce-content-body  .mceTmpl{
+ border:1px dotted red !important;
+}
+
+.mce-content-body  .mceTmpl p:last-child{
+ margin-bottom:0;
+}
+
+.mce-content-body  .mceTmpl .amb-template-element{
+ border:1px dotted #ccc !important;
+}
+
+.amb-template p.amb-template-element.caption{
+ margin-bottom:0 !important;
+}

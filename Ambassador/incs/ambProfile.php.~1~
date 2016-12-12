@@ -1,0 +1,261 @@
+<script type="text/javascript" src="/js/jquery.uploadfile.js"></script>
+<script type="text/javascript" src="/js/croppic.js"></script>
+<script src="/ambassador/js/ambProfile.js"></script> 
+<link rel="stylesheet" href="/css/uploadFile.css">
+<link href="/css/croppic.css" rel="stylesheet">	
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(-1);
+$rootpath = $_SERVER['DOCUMENT_ROOT'];
+include_once($rootpath . '/incs/conn.php');
+include_once($rootpath . '/classes/Ambassador.class.php');
+
+if ($adminEdit) {
+     $AID=$_SESSION["AmbEditID"];
+}
+else {
+    $query = "{call F_GetAmbassadorID (@UsrID=:UsrID)}";
+    $param = array(":UsrID" => $UsrID);
+    $dbo->doQueryParam($query, $param);
+    $AmbID = $dbo->loadObjectList();
+    $AID = $AmbID[0]['AID'];
+}/*
+if (isset($_GET['AID']) && $_GET['AID'] != '') {
+    $AID = $_GET['AID'];
+} else {
+    $query = "{call F_GetAmbassadorID (@UsrID=:UsrID)}";
+    $param = array(":UsrID" => $UsrID);
+    $dbo->doQueryParam($query, $param);
+    $AmbID = $dbo->loadObjectList();
+    $AID = $AmbID[0]['AID'];
+}*/
+
+$ALocID = '';
+$ProfileIntro = '';
+$ProfileImg = '';
+$ProfilePrevImg = '';
+$Ambassador = new Ambassador();
+$Ambassador->initialize($AID);
+$ALocID = $Ambassador->getVar("LocID");
+$ProfileIntro = $Ambassador->getVar("ProfileIntro");
+$ProfileImg = $Ambassador->getProfileImgUrl();
+$ProfilePrevImg = $Ambassador->getProfilePrevImgUrl();
+$ProfileHeroImg = $Ambassador->getProfileHeroImgUrl();
+$AlignHero = $Ambassador->getVar("AlignHeroImg");
+
+$query = "{call F_GetAllLocations}";
+$dbo->doQuery($query);
+$locations = $dbo->loadObjectList();
+?>
+
+<form id="ambProfileFrm" class="generalForm generalFormBlock" method="post" action="/ambassador/ambProfile_action.php?AID=<?php echo $AID; ?>">
+    <h2 class="caps black">Ambassador Profile</h2>
+    <br />
+    <!--<div class="row">
+        <div class="sm-twelve lg-six leftCol">
+            <label>First Name</label>
+            <input type="text">
+        </div><div class="sm-twelve lg-six rightCol"><label>Last Name</label><input type="text"></div>
+            </div>-->
+    <label>Location</label>
+    <select id="Location" name="Location">
+        <option value="0">Select Location</option>
+        <?php
+        if ($dbo->getRows() > 0) {
+            $count = 0;
+            foreach ($locations as $location) {
+                $LocID = $location["LocID"];
+                $location = $location["Location"];
+                ?>   
+                <option <?php if ($ALocID == $LocID) { ?> selected <?php } ?>  value="<?php echo $LocID; ?>"><?php echo $location; ?></option>
+                <?php
+                $count++;
+            }
+            if ($count == 0) {
+                echo "<tr><td colspan='6' class='text-center pad-20 font-16'>There are no Locations.</td></tr>";
+            }
+        }
+        ?>
+    </select>
+    <br /><br />
+    <label>Profile Introduction</label>
+    <textarea id="ProfileIntro" name="ProfileIntro"><?php echo $ProfileIntro; ?></textarea>
+    <div class="generalFormSubmit textRight"><a class="fillBtn submitForm" href="javascript:validateAmbProfile('<?php echo $AID; ?>');">Save</a></div>
+    <div class="row">
+        <div class="sm-twelve md-six">
+            <label>Profile Image</label>
+            <div class="cropHeaderWrapper">
+                <div id="croppicProfile" ></div>
+            </div>
+            <?php if (isset($ProfileImg) && $ProfileImg != "") { ?>
+                <a class="textBtn" href="javascript:delAmbassadorImage('<?php echo $AID; ?>', 'P');"><small>Remove</small></a>
+            <?php } ?>
+        </div><div class="sm-twelve md-six">
+            <label>Profile Preview Image</label>
+            <div class="cropHeaderWrapper">
+                <div id="croppicProfilePrev" ></div>
+            </div>
+            <?php if (isset($ProfilePrevImg) && $ProfilePrevImg != "") { ?>
+                <a class="textBtn" href="javascript:delAmbassadorImage('<?php echo $AID; ?>', 'PP');"><small>Remove</small></a>
+            <?php } ?>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="row">
+        	<div class="sm-twelve md-eight lg-six">
+            	<label>Profile Hero Image</label>
+        	</div><!--
+        	--><div class="sm-twelve md-four lg-six textRight">
+        		<label class="inline" style="padding-right:15px;"><input name="AlignHero" id="AlignHero" onClick="setHeroAlign('top', '<?php echo $AID; ?>');" <?php if ($AlignHero == "top") { echo "checked"; } ?> type="radio" value="top"> Align to top</label>
+        		<label class="inline" style="padding-right:15px;"><input name="AlignHero" id="AlignHero" onClick="setHeroAlign('center', '<?php echo $AID; ?>');" <?php if ($AlignHero == "center" || $AlignHero == "") { echo "checked"; } ?> type="radio" value="center"> Align in center</label>
+        		<label class="inline" ><input name="AlignHero" id="AlignHero" onClick="setHeroAlign('bottom', '<?php echo $AID; ?>');" <?php if ($AlignHero == "bottom") { echo "checked"; } ?> type="radio" value="bottom"> Align to bottom</label>
+        	   </div>
+        </div>
+        <div id="profileHeroUploader"><i class="fa fa-upload"></i> Upload File</div>
+                    <!--<div class="lg-seven"><input type="file"></div>--><div class="lg-twelve"><div class="flexImage" style="max-width:600px;"><div><?php if (isset($ProfileHeroImg) && $ProfileHeroImg != "") { ?><img id="img_imagePH" class="formImgPreview circle" src="<?php echo $ProfileHeroImg; ?>"><?php } else { ?><img id="img_imagePH" class="formImgPreview circle" src="http://placehold.it/1440x900"><?php } ?></div><?php if (isset($ProfileHeroImg) && $ProfileHeroImg != "") { ?><br /><a class="textBtn" href="javascript:delAmbassadorImage('<?php echo $AID; ?>', 'PH');"><small>Remove</small></a><?php } ?></div></div>
+    </div>
+    <br><br>
+    <div class="row">
+        <label>Profile Slideshow Images</label>
+        <div id="ProfileSlideshowUploader"><i class="fa fa-upload"></i> Upload File</div>
+<!--<input type="file">-->
+    </div>
+    <div id="ambSlideshowDiv">
+        <?php include "/Ambassador/incs/ambSlideshow.php"; ?>
+    </div>   
+</form>
+<style>
+    #croppicProfile{
+        width: 315px;  /* MANDATORY */
+        height: 350px; /* MANDATORY */
+        position: relative;  /* MANDATORY */
+        /*margin: 20px auto 20px; JC JUNE 28 2015*/ margin:0 0 1em 0;
+        border: 1px  solid rgba(0,0,0,0.1);
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        border-radius: 2px;
+        <?php if (isset($ProfileImg) && $ProfileImg != "") { ?>
+            background-image: url('<?php echo $ProfileImg; ?>');
+        <?php } else { ?>
+            background-image: url('../img/imgplaceholder.jpg');
+        <?php } ?>
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #croppicProfilePrev{
+        width: 300px;  /* MANDATORY */
+        height: 300px; /* MANDATORY */
+        position: relative;  /* MANDATORY */
+        /*margin: 20px auto 20px; JC JUNE 28 2015*/ margin:0 0 1em 0;
+        border: 1px  solid rgba(0,0,0,0.1);
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        border-radius: 2px;
+        <?php if (isset($ProfilePrevImg) && $ProfilePrevImg != "") { ?>
+            background-image: url('<?php echo $ProfilePrevImg; ?>');
+        <?php } else { ?>
+            background-image: url('../img/imgplaceholder.jpg');
+        <?php } ?>
+        background-repeat: no-repeat;
+        background-position: center;
+		background-size:cover;
+    }
+</style>
+<script>
+    // Upload File script
+    $(document).ready(function ()
+    {
+
+        var profileHero = {
+            url: "/Ambassador/amb_image_upload.php?AID=<?php echo $AID; ?>&Type=PH",
+            method: "POST",
+            allowedTypes: "jpg,png,gif,jpeg,bmp",
+            fileName: "ProfileHeroImage",
+            multiple: false,
+            onSuccess: function (files, data, xhr)
+            {
+                $('#img_imagePH').attr("src", data);
+            },
+            onError: function (files, status, errMsg)
+            {
+                alert(files);
+                alert(status);
+                alert(errMsg);
+            }
+        }
+
+        var ProfileSlideshow = {
+            url: "/Ambassador/amb_image_upload.php?AID=<?php echo $AID; ?>&Type=PS",
+            method: "POST",
+            allowedTypes: "jpg,png,gif,jpeg,bmp",
+            fileName: "ProfileSlideshowImage",
+            multiple: true,
+            onSuccess: function (files, data, xhr)
+            {
+                $('#ambSlideshowDiv').load("/Ambassador/incs/ambSlideshow.php?AID=<?php echo $AID; ?>");
+            },
+            onError: function (files, status, errMsg)
+            {
+                alert(files);
+                alert(status);
+                alert(errMsg);
+            }
+        }
+
+        $("#profileHeroUploader").uploadFile(profileHero);
+        $("#ProfileSlideshowUploader").uploadFile(ProfileSlideshow);
+    });
+
+    // croppic script
+    window.onbeforeunload = function () {
+        if (cropContainerProfile.loadedBeforeCrop)
+        {
+            cropContainerProfile.reset();
+        }
+        if (cropContainerProfilePrev.loadedBeforeCrop)
+        {
+            cropContainerProfilePrev.reset();
+        }
+    };
+
+    var croppicContainerProfile = {
+        uploadUrl: '/uploadAmbImg.php',
+        cropUrl: '/cropAmbImg.php',
+        cropData: {
+            "AID":<?php echo $AID; ?>,
+            "Type": "P"
+        },
+        resetUrl: 'delImage.php',
+        imgEyecandyOpacity: 0.4,
+        loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+        onBeforeImgUpload: function () {
+            $('#cropOverlay').show();
+        },
+        onAfterImgUpload: function () {
+            profileloaded = true;
+        }
+    }
+    var cropContainerProfilePrev = {
+        uploadUrl: '/uploadAmbImg.php',
+        cropUrl: '/cropAmbImg.php',
+        cropData: {
+            "AID":<?php echo $AID; ?>,
+            "Type": "PP"
+        },
+        resetUrl: 'delImage.php',
+        imgEyecandyOpacity: 0.4,
+        loaderHtml: '<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+        onBeforeImgUpload: function () {
+            $('#cropOverlay').show();
+        },
+        onAfterImgUpload: function () {
+            profilePrevloaded = true;
+        },
+		onAfterImgCrop: function() { $('.croppicProfilePrev_croppedImg').attr("style", "width:300px"); },
+    }
+    var cropContainerProfile = new Croppic('croppicProfile', croppicContainerProfile);
+    var cropContainerProfilePrev = new Croppic('croppicProfilePrev', cropContainerProfilePrev);
+</script>

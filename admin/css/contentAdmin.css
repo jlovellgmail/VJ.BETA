@@ -1,0 +1,423 @@
+/*BOOSTRAP OVERRIDES*/
+
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.row.dynamicCol {
+	margin-left: -8px !important;
+	margin-right: -8px !important;
+}
+
+.generalForm textarea,
+.generalForm select,
+.generalForm input {
+	position: relative;
+	padding: 0 8px;
+	width: 100%;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #797B7D;
+	border: 1px solid #bbbdbf;
+	margin-bottom: 15px;
+	border-radius: 0;
+}
+
+.generalForm input {
+	position: relative;
+	padding: 0 8px;
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #797B7D;
+	border: 1px solid #bbbdbf;
+	margin-bottom: 15px;
+	border-radius: 0;
+}
+
+.generalForm .form-control,
+.generalForm .form-control,
+.generalForm .form-control {
+	border-radius: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+
+.h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+	font-weight: bold;
+}
+
+.fillBtn,
+a.fillBtn {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	line-height: 42px;
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	padding: 0 32px;
+	text-decoration: none;
+	border: none;
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	line-height: 42px;
+	font-family: "proxima-nova", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0 32px;
+	text-decoration: none;
+	border: none;
+	border-radius: 0;
+}
+
+.btn.btn-primary {
+	background-color: #000;
+	color: #fff;
+}
+
+.btn.btn-link {
+	padding: 0 0 0 0;
+	text-decoration: none;
+	border: none;
+	border-radius: 0;
+	background-color: none;
+	color: #000;
+}
+
+.modal {
+	text-align: left;
+}
+
+.modal-title {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin: 0;
+	font-weight: bold;
+}
+
+.list-inline.loose li {
+	padding-right: 24px;
+}
+
+.button-group button:focus,
+.button-group button:active,
+.button-group button:active:focus {
+	outline: none;
+}
+
+.button-group.button-group-multi-select {
+	position: relative;
+}
+
+.button-group.button-group-multi-select button {
+	position: relative;
+	line-height: 32px;
+}
+
+.button-group.button-group-inline {
+	display: inline-block;
+	position: relative;
+}
+
+.button-group.button-group-inline {
+	padding-right: 30px;
+}
+
+.button-group.button-group-multi-select .dropdown-menu {
+	border-radius: 0;
+	position: absolute;
+	top: 75%;
+	left: 0;
+	max-width: 300px;
+	overflow: hidden;
+}
+
+.button-group.button-group-multi-select .dropdown-menu li a {
+	position: relative;
+	padding-left: 30px;
+	margin-left: 0;
+}
+
+.button-group.button-group-multi-select .dropdown-menu li input[type="checkbox"] {
+	position: absolute;
+	left: 12px;
+	bottom: 8px;
+}
+
+
+/*BOOSTRAP OVERRIDES*/
+
+
+/*MULTIPLE SELECT OVERRIDES --- THIS CAN BE REMOVED --- REPLACED WITH BOOTSTRAP APPROPRIATE MULTI-SELECT*/
+
+.generalForm .ms-parent.form-control {
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #797B7D;
+	border: 1px solid #bbbdbf;
+	margin-bottom: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin-bottom: 15px;
+	padding: 0 8px;
+}
+
+.generalForm .ms-choice {
+	border: 1px solid transparent;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+
+.generalForm .ms-choice > span {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	right: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	padding-left: 8px;
+}
+
+.generalForm .ms-drop {
+	width: 100%;
+	width: calc(100% + 2px);
+	overflow: hidden;
+	display: none;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	left: -1px;
+	margin: 0;
+	z-index: 1000;
+	background: #fff;
+	color: #797B7D;
+	border: 1px solid #bbbdbf;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border-top: 1px solid transparent;
+}
+
+.generalForm .ms-drop ul > li.multiple {
+	display: block;
+	float: none;
+}
+
+.generalForm .ms-drop label {
+	margin-bottom: 0 !important;
+}
+
+.generalForm button.ms-choice:focus {
+	outline: none;
+}
+
+
+/*MULTIPLE SELECT OVERRIDES*/
+
+
+/*CONTENT ADMIN STYLES*/
+
+.twoColCss,
+.two-col-css {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-ms-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 15px;
+	-moz-column-gap: 15px;
+	-ms-column-gap: 15px;
+	-o-column-gap: 15px;
+	column-gap: 15px;
+	columns: 2;
+}
+
+.three-col-css,
+.threeColCss {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	-ms-column-count: 3;
+	-o-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 15px;
+	-moz-column-gap: 15px;
+	-ms-column-gap: 15px;
+	-o-column-gap: 15px;
+	column-gap: 15px;
+	columns: 3;
+}
+
+.contentAdminTitleRow {
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+
+.contentAdminTitleRow .sm-twelve.md-eight.lg-eight h1 {
+	margin: 0;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.contentAdminTitleRow .sm-twelve.md-eight.lg-eight,
+.contentAdminTitleRow .sm-twelve.md-four.lg-four {
+	vertical-align: bottom;
+}
+
+.contentAdminTitleRow .sm-twelve.md-four.lg-four {
+	text-align: right;
+}
+
+.contentAdminTitleRow .sm-twelve.md-four.lg-four a {
+	height: auto;
+	line-height: 42px;
+}
+
+
+/*CONTENT ADMIN STYLES*/
+
+.lh-32 {
+	line-height: 32px;
+}
+
+.modal-header .close {
+	position: relative;
+	z-index: 1;
+	display: block;
+	font-size: 32px;
+}
+
+.form-group.bs-multi-select-group {
+	margin-bottom: 0
+}
+
+div.mce-edit-area,
+.mce-tinymce.mce-container.mce-panel.mce-fullscreen div.mce-edit-area {
+	background: #FFF;
+	filter: none;
+	height: 100%;
+	max-width: 990px !important;
+	margin: 0 auto;
+	padding: 15px;
+	border: 1px solid #9e9e9e;
+	border-width: 1px 1px 1px 1px !important;
+}
+
+.mce-tinymce.mce-container.mce-panel.mce-fullscreen,
+.mce-tinymce.mce-container.mce-panel {
+	border: 1px solid #9e9e9e;
+	background-color: #ffffff;
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+}
+
+div.mce-edit-area .mceTmpl,
+.mce-tinymce.mce-container.mce-panel.mce-fullscreen div.mce-edit-area .mceTmpl {
+	border: 1px dotted red;
+}
+
+
+/*WYSIWYG UPDATES - MAR 25 2016-  jcoughlin */
+
+.admin-content-block {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 2px solid #7d7b79;
+	position: relative;
+}
+
+.admin-content-block .admin-content-block-title {
+	text-transform: uppercase;
+	margin-top: -26px;
+	padding-bottom: 26px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.admin-content-block .admin-content-block-title span {
+	background-color: #7d7b79;
+	padding: 5px;
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.mce-edit-area.mce-container {
+	min-height: 300px;
+}
+
+.mce-content-body a{
+	text-decoration:underline;
+}
+
+
+
+/*COLLECTION TEMPLAT UPDATES - may162016 -  jcoughlin */
+.radioToggleArea{
+ text-align: left !important;
+ vertical-align:middle;
+ display:table;
+}
+
+.radioToggleArea > div{
+ text-align: left !important;
+ display:table-row;
+}
+
+.radioToggleArea > div > label{
+ text-align: left !important;
+ display:table-cell; 
+ margin-bottom:20px;  
+ width:50%; 
+ padding-left:30px; 
+ position:relative;
+}
+
+.radioToggleArea > div > label > input[type="radio"]{
+ text-align: left !important;
+ position:absolute; 
+ left:0; 
+ top:6px; 
+ vertical-align:top;
+}

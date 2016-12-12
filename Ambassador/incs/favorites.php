@@ -1,0 +1,286 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(-1);
+$rootpath = $_SERVER['DOCUMENT_ROOT'];
+include '../incs/userAccountNav.php';
+include $rootpath . '/classes/ProductList.class.php';
+include $rootpath . '/classes/ambassadorFavorite.class.php';
+
+$ProductList = new ProductList();
+
+$products = $ProductList->getAllProducts();
+$favorites = $Ambassador->getFavorites("P");
+$AID = $Ambassador->getVar("AID");
+$customFavorites = $Ambassador->getFavorites("C");
+?>
+
+<div class="widthWrapper">
+
+    <div class="sm-tweleve row textLeft marTop30">
+        <div class="sm-tweleve md-eight lg-eight"><h1 class="caps">Inspiration</h1></div><!--
+     --><div class="sm-twelve md-four lg-four textRight marTop15 padTop6">
+            <a class="textBtn size6" href="Ambassador/amb-grid-create.php">Add Item</a>
+        </div>
+    </div>  
+    <hr class="gray marBottom30" />
+
+    <div class='rel block' style='margin: 30px auto; width: 100%; margin-bottom: 30px;'>
+        <div class='grid' style='margin: -4px;'>
+            <div class='grid-item packery-post-landscape-wrapper'>
+                <div class='packery-post-landscape-sizing'></div>
+                <div class='grid-item-content packery-post-landscape-content'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class='grid-item packery-post-portrait-wrapper'>
+                <div class='packery-post-portrait-sizing'></div>
+                <div class='grid-item-content packery-post-portrait-content'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class='grid-item packery-gallery-wrapper'>
+                <div class='packery-gallery-sizing'></div>
+                <div class='grid-item-content packery-gallery-content'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class='grid-item packery-post-portrait-wrapper'>
+                <div class='packery-post-portrait-sizing'></div>
+                <div class='grid-item-content packery-post-portrait-content' style='background: url(/uploadedImages/Posts/Slideshow/1010_SS1462316748.jpg) no-repeat center; background-size:cover;'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class='grid-item packery-post-portrait-wrapper'>
+                <div class='packery-post-portrait-sizing'></div>
+                <div class='grid-item-content packery-post-portrait-content'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class='grid-item packery-gallery-wrapper'>
+                <div class='packery-gallery-sizing'></div>
+                <div class='grid-item-content packery-gallery-content'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div class='grid-item packery-post-landscape-wrapper'>
+                <div class='packery-post-landscape-sizing'></div>
+                <div class='grid-item-content packery-post-landscape-content'>
+                    <div class='grid-item-overlay'>
+                        <div class="title-wrapper tableWrapper">
+                            <div class="cellWrapper">
+                                <span class="gallery-img-title size5" title="hello">Image Title</span>
+                            </div>
+                        </div>
+                        <div class="gallery-img-button-wrapper">
+                            <a class="gallery-img-view size7" href="javascript:void(0);" onclick="showModal('/incs/modals/modal-grid-item.php');">View</a><!-- 
+                         --><a class="gallery-img-edit size7" href="Ambassador/amb-grid-create.php">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="tableWrapper">
+        <div class="cellWrapper">
+            <div class="row textLeft">
+                <div class="sm-tweleve md-eight lg-eight"><h1 class="caps">Favorites</h1></div><!--
+                --><div class="sm-twelve md-four lg-four textRight marTop15 padTop6">
+                    <a class="textBtn size6" href="ambassador/ambFavoritesOrder.php">Re-Order Favorites Slideshow</a>
+                </div>
+            </div>    
+            <hr class="gray marBottom30" />
+            <div class="row">
+                <div class="sm-twelve lg-nine textLeft">
+                    <h2 class="black caps">Your Favorite Things</h2>
+                </div><!--
+                --><div class="sm-twelve lg-three textRight">
+					<a href="/ambassador/ambFavCreate.php?AID=<?php echo $AID; ?>">+ ADD FAVORITE</a>
+                    <!--<button class="caps textBtn" href="javascript:void(0)" onclick="showFavModal('', '<?php //echo $AID; ?>');">+ ADD FAVORITE</button>-->
+                </div>                
+            </div>
+            <div class="row textLeft subtitledImageGrid">
+                <?php
+                $count = 0;
+                foreach ($customFavorites as $favorite) {
+                    $FID = $favorite->getVar("FID");
+                    $ItemName = $favorite->getVar("ItemName");
+                    $ImgUrl = $favorite->getImgUrl();
+                    ?><div class="sm-twelve md-six lg-three">
+                        <a class="footerLink" href="/ambassador/ambFavCreate.php?AID=<?php echo $AID; ?>&FID=<?php echo $FID; ?>">
+                            <div class="leafCorners2">
+                                <img src="<?php echo $ImgUrl; ?>" alt="" width="150" height="150"/>
+                                <h4 class="marTop15 eqHeightJs"><?php echo $ItemName; ?></h4>
+                            </div>
+                        </a>
+                    </div><?php
+                    $count++;
+                }
+                if ($count == 0) {
+                    echo "<tr><td colspan='6' class='text-center pad-20 font-16'>There are no Favorites.</td></tr>";
+                }
+                ?>
+            </div>
+        </div>
+    </div>    
+    <div class="tableWrapper">
+        <div class="cellWrapper">
+            <h2 class="black caps textLeft">Favorite Products</h2>
+            <br />
+            <table id="productTbl" class="generalTable generalTableRespond">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th><a href="#">Gender</a></th>
+                        <th><a href="#">Style</a></th>
+                        <th><a href="#">Collection</a></th>
+                        <th><a href="#">Line</a></th>
+                        <th><a href="#">Price</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $count = 0;
+                    foreach ($products as $product) {
+                        $PID = $product->getVar("PID");
+                        $ImgUrl = $product->getThumbnailUrl();
+
+                        $SName = $product->getStyleName();
+                        $LName = $product->getLineName();
+                        $CName = $product->getCollectionName();
+                        $Gender = $product->getVar("Gender");
+                        $Price = $product->getVar("Price");
+                        $Price = number_format($Price, 2, '.', '');
+
+                        $checked = '';
+                        $comment = '';
+                        $showComment = '';
+                        foreach ($favorites as $favorite) {
+                            if ($PID == $favorite->getVar("PID")) {
+                                $checked = 'checked=checked';
+                                $comment = $favorite->getVar("Comments");
+                                if ($comment != '') {
+                                    $showComment = 'display: none;';
+                                }
+                            }
+                        }
+                        ?>
+                        <tr>
+                            <td data-label="Favorite">
+                                <div class="checkLabelDisplay col">
+                                    <div class="col" style="vertical-align:middle;">
+                                        <input type="checkbox" class="collapseCheck" <?php echo $checked; ?> onclick="addFavorite('<?php echo $PID; ?>', '<?php echo $AID; ?>')" id="check_<?php echo $PID; ?>_label" value="check_<?php echo $PID; ?>" />
+                                        <label for="check_<?php echo $PID; ?>_label">&nbsp;</label>
+                                    </div><div class="col textCenter" style="vertical-align:middle;">
+                                        <img src="<?php echo $ImgUrl; ?>" width="68" />
+                                        <br />
+                                        <a href="/product.php?pid=<?php echo $PID; ?>"><small>view</small></a>
+                                    </div>
+                                </div>
+                                <div class="col" id="check_<?php echo $PID; ?>" style="vertical-align:middle;">
+                                    <div id="favoriteComment_<?php echo $PID; ?>" style="cursor:pointer; <?php echo $showComment; ?>">
+                                        <div class="generalFormMask hideDivMask" data-id="favoriteComment_<?php echo $PID; ?>">
+                                            Click here to add your comments.
+                                        </div>
+                                    </div>                                    
+                                    <form class="generalForm sm inlineTextArea">
+                                        <label>Favorite Commentary</label>
+                                        <textarea maxlength="125" id="text_<?php echo $PID; ?>"><?php echo $comment; ?></textarea><a class="fillBtn" href="javascript:addComment('<?php echo $PID; ?>', '<?php echo $AID; ?>')">Save</a>
+                                        <div style="margin-top:-6px;"><small><a class="showDivMask" href="javascript:void(0)" data-id="favoriteComment_<?php echo $PID; ?>">HIDE COMMENTARY</a></small></div>
+                                    </form>
+                                </div>                                
+                            </td>
+                            <td data-label="Gender"><?php echo $Gender; ?></td>
+                            <td data-label="Product"><?php echo $SName; ?></td>
+                            <td data-label="Collection"><?php echo $CName; ?></td>
+                            <td data-label="Line"><?php echo $LName; ?></td>
+                            <td data-label="Price">$<?php echo $Price; ?></td>
+                        </tr>
+                        <?php
+                        $count++;
+                    }
+                    if ($count == 0) {
+                        echo "<tr><td colspan='6' class='text-center pad-20 font-16'>There are no Products.</td></tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Grid JS -->
+        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+        <script src="https://npmcdn.com/packery@2.0/dist/packery.pkgd.js"></script>
+        <script>
+
+            var $grid = $('.grid').imagesLoaded( function() {
+                $grid.packery({
+                  // options
+                  columnWidth: '.packery-gallery-wrapper',
+                  itemSelector: '.grid-item',
+                  percentPosition: true
+                });
+            });
+        </script>
+
