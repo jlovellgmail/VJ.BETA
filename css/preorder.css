@@ -1189,6 +1189,7 @@ body {
 }
 .collectionPage .item img {
   width: 100%;
+  padding: 20px;
 }
 .collectionPage .item .caption {
   text-align: left;

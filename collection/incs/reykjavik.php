@@ -7,20 +7,24 @@
     </div>
 </div>
 
+<!--
 <div id="lineProducts" class="">
     <div class="bgWrapper">
         <div class="widthWrapper">
+-->
 
             <!-- Collection grid probably goes here -->
             <?php 
                $collection="reykjavik";
                include $_SERVER['DOCUMENT_ROOT'] . '/collection/incs/products-by-collection.php';
             ?>
-        </div>
+
+        <!-- </div> -->
 
         <!-- <div class="collectionLineStageWrapper">
             <img class="collectionLineStage" src="/img/collection/rekjavik-set.jpg" alt="" />
         </div> -->
-
+<!--
     </div>
 </div>
+-->
