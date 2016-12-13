@@ -1374,6 +1374,15 @@ body {
 	.productImageContainer {
 		display: inline-block;
 		vertical-align:top;
+		width: 459px;
+
+		// temp fix because product image from thumbnail has too much margin
+		height: 469px;
+		background-size: 140%;
+		background-repeat: no-repeat;
+		background-position-x: 70%;
+		background-position-y: 112%;
+
 	}
 	.productDescriptionContainer {
 		display: inline-block;
@@ -1386,12 +1395,12 @@ body {
 	.collection {
 		font-size: 18px;
 		text-transform: uppercase;
-		font-weight: 300;
+		font-weight: 600;
 	}
 	.collection2 {
 		font-size: 18px;
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: 300;
 	}
 	.productTitle {
 		.vjHeadline1;
@@ -1415,6 +1424,12 @@ body {
 		text-transform: uppercase;
 		margin-top: 20px;
 		display: inline-block;
+		a {
+			color: white;
+		}
+		a:hover {
+			color: white;
+		}
 	}
 	.breadcrumb {
 		display: none;

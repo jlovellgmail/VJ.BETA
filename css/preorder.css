@@ -1262,6 +1262,12 @@ body {
 .productPage .productImageContainer {
   display: inline-block;
   vertical-align: top;
+  width: 459px;
+  height: 469px;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 112%;
 }
 .productPage .productDescriptionContainer {
   display: inline-block;
@@ -1274,12 +1280,12 @@ body {
 .productPage .collection {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
 }
 .productPage .collection2 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
 }
 .productPage .productTitle {
   font-size: 36px;
@@ -1312,6 +1318,12 @@ body {
   text-transform: uppercase;
   margin-top: 20px;
   display: inline-block;
+}
+.productPage .addToCartButton a {
+  color: white;
+}
+.productPage .addToCartButton a:hover {
+  color: white;
 }
 .productPage .breadcrumb {
   display: none;

@@ -32,7 +32,7 @@ if (!isset($_SESSION)) {
     <head>
 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title><?php echo $_GET["style"]; ?> | Virgil James</title>
 		<meta name="description" content="<?php echo $Product->getVar("ShortDescription"); ?>"/>
 
@@ -66,21 +66,51 @@ if (!isset($_SESSION)) {
         }
 
         ?>
+
+        <!--
         <div class="sdWrapper">
             <div class="sdContent">
+        -->
+
+
+
+
                 <?php include '/incs/nav.php';?>
+
+
+                <div class="productPage">
+                    <div class="widthWrapper">
+
+
                 <?php include '/incs/product.php'; ?>
                 <?php
                 if ($showProduct) {
                     include '/incs/related-products.php';
                 }
                 ?>
+
+
+                    </div>
+                </div>
+
+
+        <!--
             </div>
-            <?php include '/incs/footer.php'; ?>
-            <!-- Common .js Includes -->
-            <?php include '/incs/footer-links.php'; ?>
         </div>
+        -->
+
+
+
+
+        <?php include '/incs/footer.php'; ?>
+        <!-- Common .js Includes -->
+        <?php include '/incs/footer-links.php'; ?>        
 		<?php include('json-ld.php'); ?>
 		<script type="application/ld+json"><?php echo json_encode($payload); ?></script>
     </body>
 </html>
+
+
+
+
+

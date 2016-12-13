@@ -25,81 +25,54 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 <!-- Product Hero -->
 <?php if ($showProduct) { ?>
-    <div class="landing-hero-wrapper index-slide productLeafWrapper leafShadow">
-        <div class="aspect-dummy-hero product-dummy-hero"></div>
-        <div class="aspect-img aspect-img-hero product-aspect-hero">
-            <div class="widthWrapper h100p">
-                <!-- Back Button -->
-                <div class="backBtnWrapper">
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/shop.php" || $_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/shop/") {
-                        echo '<a href="/shop/" class="aWhite caps f-12px" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;All Products</a>';
-                    }
-                    ?>
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/shop/men/") {
-                        echo '<a href="/shop/men/" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;All Mens</a>';
-                    }
-                    ?>
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/shop/women/") {
-                        echo '<a href="/shop/women/" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;All Womens</a>';
-                    }
-                    ?>
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/shop/accessories/") {
-                        echo '<a href="/shop/accessories/" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;All Accessories</a>';
-                    }
-                    ?>
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/collection/classic/canvas/") {
-                        echo '<a href="/collection/classic/canvas/" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;Canvas Collection</a>';
-                    }
-                    ?>
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/collection/city/reykjavik/") {
-                        echo '<a href="/collection/city/reykjavik/" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;Reykjavik Collection</a>';
-                    }
-                    ?>
-                    <?php
-                    if ($_SERVER['HTTP_REFERER'] == "http://www.virgiljames.net/collection/city/santa-fe/") {
-                        echo '<a href="/collection/city/santa-fe/" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;Santa Fe Collection</a>';
-                    }
-                    ?>
-                </div>
-                <div class="tableWrapper h100p">
-                    <div class="cellWrapper">
-                        <div class="col xs-twelve md-six xl-seven product-image-block">
-                            <!-- <img src="/img/product/spinner_sprite_32-1-min.png" alt="" class="reel productImg"
-                                 data-image="/img/product/spinner_sprite_32-min.png"
-                                 data-frames="32"
-                                 data-footage="8"
-                                 data-responsive="true"
-                                 data-cursor="hand"
-                                 data-revolution="300"
-                                 data-brake="0.05"
-                                 data-opening="1" />
-                            <span class="rotate360"><i class="icon-arrows-cw"></i>&nbsp;Rotate 360&deg;</span> -->
-                            <?php
-                            $ImgUrl = $Product->getVar("ImgUrl");
-                            $ImgUrl = str_replace('\\', '/', $ImgUrl);
-                            $pinterest = "http://pinterest.com/pin/create/button/?url=" . urlencode("http://www.virgiljames.net/product.php?style=" . $_GET["style"] . "&pid=" . $_GET["pid"]) . "&media=" . urlencode("http://www.virgiljames.net$ImgUrl");
-                            ?>
-                            <img class="tempProductImg xs-nine sm-eight lg-six xl-five" src="<?php echo $ImgUrl; ?>" alt="<?php echo $Product->getName(); ?>" />
-                        </div><div class="heroDetails col xs-twelve md-six xl-five">
-                            <span class="lineTitle1"><?php echo $Product->getLineName(); ?></span><div class="lineTitleSpace"></div><?php if ($Product->getType() != "Accessory") { ?><span class="lineTitle2">Line</span><?php } ?>
-                            <span class="collectionTitle">&nbsp;&#124;&nbsp;<?php echo $Product->getCollectionName(); ?> <?php if ($Product->getType() != "Accessory") { ?>Collection<?php } ?></span><br />
-                            <h1 class="productTitle"><?php echo $Product->getName(); ?></h1>
-                            <div class="productMSRP">$<?php echo number_format((float) $Product->getVar("Price"), 0, '.', ','); ?></div>
-                            <div class="productOverview rel block"><?php echo $Product->getVar("ShortDescription"); ?><a href="#product-details" class="productDetailsA caps fw-600" style="display: block; padding-top: 12px;">Product Details<i class="icon-down-dir white"></i></a></div>
-                            <div class="purchaseVarsRow lg-twelve">
-                                <div class="qtyWrapper2">
-                                    <div class="qtyLabel">Qty:</div><input class="qtyInput" type="number" name="itemQty" id="itemQty" onfocus="this.value = ''" value="1"/>
-                                </div><div class="purchaseRow2">
-                                    <a class="buyButtonA" href="javascript:addToCart(<?php echo $PID; ?>)"><div class="buyButton">Add to Cart</div></a>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+    <?php
+    $ImgUrl = $Product->getVar("ImgUrl");
+    $ImgUrl = str_replace('\\', '/', $ImgUrl);
+    $pinterest = "http://pinterest.com/pin/create/button/?url=" . urlencode("http://www.virgiljames.net/product.php?style=" . $_GET["style"] . "&pid=" . $_GET["pid"]) . "&media=" . urlencode("http://www.virgiljames.net$ImgUrl");
+    ?>
+
+
+
+    <div class="rowTop">
+        <div class="productImageContainer">
+
+
+            <!-- <img src="<?php echo $ImgUrl; ?>" alt="<?php echo $Product->getName(); ?>" /> -->
+            <!-- temp: use background image on productImageContainer -->
+            <script>
+                $(".productImageContainer").css("background-image", "url(<?php echo $ImgUrl; ?>)");
+            </script>
+
+
+        </div>
+        <div class="productDescriptionContainer">
+            <div class="collection">
+                <?php echo $Product->getCollectionName(); ?> 
+                <?php if ($Product->getType() != "Accessory") { ?><span class="collection2">Collection</span><?php } ?>
+            </div>
+            <div class="productTitle">
+                <?php echo $Product->getName(); ?>
+            </div>
+            <div class="productPrice">
+                $<?php echo number_format((float) $Product->getVar("Price"), 0, '.', ','); ?>
+            </div>
+            <div class="productDescription">
+                <?php echo $Product->getVar("ShortDescription"); ?>
+            </div>
+            <div class="addToCartButton">
+                <a href="javascript:addToCart(<?php echo $PID; ?>)">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
                         <div class="socialRow lg-twelve">
                             <div class="xs-zero md-six lg-seven textLeft"></div><div class="productSocialWrapper md-six lg-five">
                                 <ul class="shareIcons">
@@ -109,11 +82,10 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+
 
     <div class="bgWrapper productDetailsBgWrapper">
         <div class="widthWrapper">
