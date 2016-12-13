@@ -26,18 +26,15 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 <!-- Product Hero -->
 <?php if ($showProduct) { ?>
 
-
-
     <?php
     $ImgUrl = $Product->getVar("ImgUrl");
     $ImgUrl = str_replace('\\', '/', $ImgUrl);
     $pinterest = "http://pinterest.com/pin/create/button/?url=" . urlencode("http://www.virgiljames.net/product.php?style=" . $_GET["style"] . "&pid=" . $_GET["pid"]) . "&media=" . urlencode("http://www.virgiljames.net$ImgUrl");
     ?>
 
-
-
     <div class="rowTop">
         <div class="productImageContainer">
+
 
 
             <!-- <img src="<?php echo $ImgUrl; ?>" alt="<?php echo $Product->getName(); ?>" /> -->
@@ -45,6 +42,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             <script>
                 $(".productImageContainer").css("background-image", "url(<?php echo $ImgUrl; ?>)");
             </script>
+
 
 
         </div>
@@ -73,15 +71,15 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 
 
-                        <div class="socialRow lg-twelve">
-                            <div class="xs-zero md-six lg-seven textLeft"></div><div class="productSocialWrapper md-six lg-five">
-                                <ul class="shareIcons">
-                                    <li><a href="<?php echo $facebookUrl; ?>" target="_blank"><i class="icon-facebook-squared"></i>Share</a></li><!--
-                                 --><li><a href="<?php echo $twitterShortUrl; ?>" target="_blank"><i class="icon-twitter-squared"></i>Tweet</a></li><!--
-                                 --><li><a href="<?php echo $pinterest; ?>" target="_blank"><i class="icon-pinterest-squared"></i>Pin</a></li>
-                                </ul>
-                            </div>
-                        </div>
+    <div class="socialRow lg-twelve">
+        <div class="xs-zero md-six lg-seven textLeft"></div><div class="productSocialWrapper md-six lg-five">
+            <ul class="shareIcons">
+                <li><a href="<?php echo $facebookUrl; ?>" target="_blank"><i class="icon-facebook-squared"></i>Share</a></li><!--
+             --><li><a href="<?php echo $twitterShortUrl; ?>" target="_blank"><i class="icon-twitter-squared"></i>Tweet</a></li><!--
+             --><li><a href="<?php echo $pinterest; ?>" target="_blank"><i class="icon-pinterest-squared"></i>Pin</a></li>
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -207,6 +205,8 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             $("#staticModal").removeClass("hide");
         }
     </script>
+
+    
 <?php } else { ?>
 
     <div class="row">
