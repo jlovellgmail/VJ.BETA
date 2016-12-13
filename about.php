@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+    <div class='scroll-down-to'></div>
     <div class=belowLandingFrame>
         <div class="container">
             <!-- --------------------------------------------------- -->
@@ -166,7 +167,7 @@
         $('#scrollDownArrow').click(function () {
             $('html, body').animate({
                 scrollTop: ($('.scroll-down-to').offset().top)
-            },750);
+            },500);
         })
     </script>
 
