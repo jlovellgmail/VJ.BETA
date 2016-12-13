@@ -17,8 +17,8 @@ $seo_variable = "home";
     </head> 
     <body class='body'>
 
-        <?php include '/incs/nav.php'; ?>
 
+        <?php include '/incs/nav.php'; ?>
 
 
         <div class="preorderPage bg-whiter">
@@ -40,12 +40,7 @@ $seo_variable = "home";
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
                             </div>
                             <div class="boxes">
-
-                                
-                                <!-- <a class="box" href="preorder/collection_reykjavik.php"> -->
                                 <a class="box" href="/collection/city/reykjavik/">
-
-
                                     <div class="title">
                                         Reykjavik
                                     </div>
@@ -55,12 +50,7 @@ $seo_variable = "home";
                                 </a>
                                 <div class="vline">
                                 </div>
-
-
-                                <!-- <a class="box" href="preorder/collection_santafe.php"> -->
                                 <a class="box" href="/collection/city/santa-fe/">
-
-
                                     <div class="title">
                                         Santa Fe
                                     </div>
@@ -87,5 +77,3 @@ $seo_variable = "home";
 
     </body>
 </html>
-
-
