@@ -58,7 +58,7 @@ $seo_variable = "home";
 
 
                                 <!-- <a class="box" href="preorder/collection_santafe.php"> -->
-                                <a class="box" href="/collection/city/santafe/">
+                                <a class="box" href="/collection/city/santa-fe/">
 
 
                                     <div class="title">

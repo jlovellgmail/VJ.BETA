@@ -7,7 +7,6 @@
     </div>
 </div>
 
-<!-- Collection grid probably goes here -->
 <?php 
    $collection="reykjavik";
    include $_SERVER['DOCUMENT_ROOT'] . '/collection/incs/products-by-collection.php';
