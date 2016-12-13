@@ -487,33 +487,33 @@ body {
   height: 0;
 }
 .aboutPage .image#designPrinciples {
-  background-image: url("../images/techpacks_q6.jpg");
+  background-image: url("/img/techpacks_q6.jpg");
 }
 .aboutPage .image#whatMakesUsUnique {
-  background-image: url("../images/IMG_5383_RT.jpg");
+  background-image: url("/img/IMG_5383_RT.jpg");
 }
 .aboutPage .image#productCollections {
-  background-image: url("../images/2016-12-08 13.04.20_rt2_50_q9.jpg");
+  background-image: url("/img/2016-12-08 13.04.20_rt2_50_q9.jpg");
 }
 .aboutPage .image#makingTheBest {
-  background-image: url("../images/label_with_edition_number_IMG_5437_RT.jpg");
+  background-image: url("/img/label_with_edition_number_IMG_5437_RT.jpg");
 }
 .aboutPage .image#qualityMaterials {
-  background-image: url("../images/drawstring top edge_q7.jpg");
+  background-image: url("/img/drawstring top edge_q7.jpg");
   background-position-y: 25%;
   background-position-x: 30%;
 }
 .aboutPage .image#theTeam {
-  background-image: url("../images/2016-12-08 12.42.44_rt2_50_q9.jpg");
+  background-image: url("/img/2016-12-08 12.42.44_rt2_50_q9.jpg");
   background-size: 130%;
   background-position-y: calc(50% + 30px);
   background-position-x: -40px;
 }
 .aboutPage .image#buyingFromVirgilJames {
-  background-image: url("../images/2016-12-08 12.27.10_rt1_50_q9.jpg");
+  background-image: url("/img/2016-12-08 12.27.10_rt1_50_q9.jpg");
 }
 .aboutPage .image#extraImage1 {
-  background-image: url("../images/2016-12-08 11.59.52_rt1_50_q9.jpg");
+  background-image: url("/img/2016-12-08 11.59.52_rt1_50_q9.jpg");
   background-size: 140%;
   background-position-x: 39%;
   background-position-y: 49%;
