@@ -84,56 +84,56 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 
 
+    <?php if (isset($pgallery) && $pgallery->count() > 0) { ?>
+        <div class="carouselContainer">
+            <div id="owlThumb_new" class="owl-carousel">
+                <?php
+                    $i = 0;
+                    foreach ($pgallery as $img) {
+                        $ImgUrl = $img->getVar("ThumbnailUrl");
+                        $ImgUrl = str_replace('\\', '/', $ImgUrl);
+                        ?>        
+                        <div class="productGalleryImgWrapper">
+                            <div class="aspectDummy43"></div>
+                            <a class="productGalleryImg" href="javascript:openModalStatic(<?php echo $i; ?>);" style="background-image: url(<?php echo $ImgUrl; ?>);"></a>
+                        </div>
+                        <?php
+                        $i++;
+                    }
+                ?>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#owlThumb_new").owlCarousel({
+                    startPosition: 2,
+                    loop: true,
+                    margin: 5,
+                    autoplay: false,
+                    // autoplayTimeout: 2500,
+                    // autoplaySpeed: 750,
+                    // autoplayHoverPause: true,
+                    dots: true,
+                    nav: true,
+                    dotsEach: 1,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        640: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                });
+            });
+        </script>
+    <?php } ?>
 
     <div class="bgWrapper productDetailsBgWrapper">
         <div class="widthWrapper">
-            <?php if (isset($pgallery) && $pgallery->count() > 0) { ?>
-                <div class="carouselContainer">
-                    <div id="owlThumb_new" class="owl-carousel">
-                        <?php
-                            $i = 0;
-                            foreach ($pgallery as $img) {
-                                $ImgUrl = $img->getVar("ThumbnailUrl");
-                                $ImgUrl = str_replace('\\', '/', $ImgUrl);
-                                ?>        
-                                <div class="productGalleryImgWrapper">
-                                    <div class="aspectDummy43"></div>
-                                    <a class="productGalleryImg" href="javascript:openModalStatic(<?php echo $i; ?>);" style="background-image: url(<?php echo $ImgUrl; ?>);"></a>
-                                </div>
-                                <?php
-                                $i++;
-                            }
-                        ?>
-                    </div>
-                </div>
-                <script>
-                    $(document).ready(function () {
-                        $("#owlThumb_new").owlCarousel({
-                            startPosition: 2,
-                            loop: true,
-                            margin: 5,
-                            autoplay: false,
-                            // autoplayTimeout: 2500,
-                            // autoplaySpeed: 750,
-                            // autoplayHoverPause: true,
-                            dots: true,
-                            nav: true,
-                            dotsEach: 1,
-                            responsive: {
-                                0: {
-                                    items: 1
-                                },
-                                640: {
-                                    items: 3
-                                },
-                                1000: {
-                                    items: 4
-                                }
-                            }
-                        });
-                    });
-                </script>
-            <?php } ?>
             <div id='product-details' class="detailsPanel">
                 <h3>Product Details</h3>
                 <div class="detailsP col lg-six leftCol">
