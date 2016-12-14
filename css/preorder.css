@@ -1381,6 +1381,32 @@ body {
 .productPage .slider img.slide {
   width: 140px;
 }
+.productPage .carouselContainer {
+  width: 100%;
+  padding: 0 40px;
+  position: relative;
+}
+.productPage .carouselContainer .owl-carousel {
+  position: initial;
+}
+.productPage .carouselContainer .owl-prev,
+.productPage .carouselContainer .owl-next {
+  position: absolute;
+  top: 50%;
+}
+.productPage .carouselContainer .icon-right-dir::before,
+.productPage .carouselContainer .icon-left-dir::before {
+  content: url("/img/arrow_down.svg");
+  width: 30px;
+}
+.productPage .carouselContainer .owl-prev {
+  left: 0;
+  transform: translateY(-50%) rotate(90deg);
+}
+.productPage .carouselContainer .owl-next {
+  right: 0;
+  transform: translateY(-50%) rotate(-90deg);
+}
 .productPage .rowDetails {
   font-family: proxima-nova, sans-serif;
   margin-top: 10px;

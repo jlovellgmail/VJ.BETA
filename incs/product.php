@@ -87,34 +87,28 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
     <div class="bgWrapper productDetailsBgWrapper">
         <div class="widthWrapper">
-            <?php if (isset($pgallery) && $pgallery->count() > 0) { ?>     
-
-                <div class="bgWrapperLeaf marBottomR3 prodGallerySlider">
-                    <div class="absBgWrapper h100p zI2">
-                        <!--<div class="cornerFixUL"></div>
-                        <div class="cornerFixLR"></div>-->
-                    </div>
-                    <div id="owlThumb" class="owl-carousel">
+            <?php if (isset($pgallery) && $pgallery->count() > 0) { ?>
+                <div class="carouselContainer">
+                    <div id="owlThumb_new" class="owl-carousel">
                         <?php
-                        $i = 0;
-                        foreach ($pgallery as $img) {
-                            $ImgUrl = $img->getVar("ThumbnailUrl");
-                            $ImgUrl = str_replace('\\', '/', $ImgUrl);
-                            ?>        
-                            <div class="productGalleryImgWrapper">
-                                <div class="aspectDummy43"></div>
-                                <a class="productGalleryImg" href="javascript:openModalStatic(<?php echo $i; ?>);" style="background-image: url(<?php echo $ImgUrl; ?>);"></a>
-                            </div>
-                            <?php
-                            $i++;
-                        }
+                            $i = 0;
+                            foreach ($pgallery as $img) {
+                                $ImgUrl = $img->getVar("ThumbnailUrl");
+                                $ImgUrl = str_replace('\\', '/', $ImgUrl);
+                                ?>        
+                                <div class="productGalleryImgWrapper">
+                                    <div class="aspectDummy43"></div>
+                                    <a class="productGalleryImg" href="javascript:openModalStatic(<?php echo $i; ?>);" style="background-image: url(<?php echo $ImgUrl; ?>);"></a>
+                                </div>
+                                <?php
+                                $i++;
+                            }
                         ?>
                     </div>
                 </div>
-
                 <script>
                     $(document).ready(function () {
-                        $("#owlThumb").owlCarousel({
+                        $("#owlThumb_new").owlCarousel({
                             startPosition: 2,
                             loop: true,
                             margin: 5,
@@ -139,9 +133,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
                         });
                     });
                 </script>
-
-            <?php } ?>         
-
+            <?php } ?>
             <div id='product-details' class="detailsPanel">
                 <h3>Product Details</h3>
                 <div class="detailsP col lg-six leftCol">
@@ -206,7 +198,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
         }
     </script>
 
-    
+
 <?php } else { ?>
 
     <div class="row">
