@@ -177,6 +177,50 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 
 
+    <!-- features -->
+    
+    <div> START - JL features </div>
+
+    <?php
+    $ProductDetTempl = $Product->getTemplates();
+    if (sizeof($ProductDetTempl) > 0) {
+        ?>
+        <div class="featuresSection">
+            <div class="featuresContainer">
+
+
+                <?php
+                foreach ($ProductDetTempl as $Det) {
+                    $PtemplImgUrl = $Det->getImageUrl();
+                    //$PtemplImgUrl = str_replace('\\', '/', $PtemplImgUrl);
+                    ?>
+                    <div class="feature">
+                        <div class="iconFrame">
+                            <img src="<?php echo $PtemplImgUrl; ?>" alt="" />
+                            <div class="heading"><?php echo $Det->getVar('Name'); ?></div>
+                        </div>
+                        <div class="bodyCopy">
+                            <?php echo $Det->getVar('Description'); ?>
+                        </div>
+                    </div>
+                    <div class="hline"></div>
+                <?php } ?>
+
+
+            </div>
+        </div>
+    <?php } ?>
+
+    <div> END - JL features </div>
+
+
+
+
+
+
+
+
+
 
 
 
