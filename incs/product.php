@@ -25,13 +25,11 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 <!-- Product Hero -->
 <?php if ($showProduct) { ?>
-
     <?php
     $ImgUrl = $Product->getVar("ImgUrl");
     $ImgUrl = str_replace('\\', '/', $ImgUrl);
     $pinterest = "http://pinterest.com/pin/create/button/?url=" . urlencode("http://www.virgiljames.net/product.php?style=" . $_GET["style"] . "&pid=" . $_GET["pid"]) . "&media=" . urlencode("http://www.virgiljames.net$ImgUrl");
     ?>
-
     <div class="rowTop">
         <div class="productImageContainer">
 
@@ -65,12 +63,6 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <div class="socialRow lg-twelve">
         <div class="xs-zero md-six lg-seven textLeft"></div><div class="productSocialWrapper md-six lg-five">
             <ul class="shareIcons">
@@ -80,9 +72,6 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             </ul>
         </div>
     </div>
-
-
-
     <!-- carousel -->
     <?php if (isset($pgallery) && $pgallery->count() > 0) { ?>
         <div class="carouselContainer">
@@ -131,26 +120,16 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             });
         </script>
     <?php } ?>
-
-
-
-
-
-    <!-- switch to adapt from the original -->
-    <!-- changed to this afer the below -->
+    <!-- details -->
     <div class="rowDetails">
-        
         <div class="blurb">
             <div class="heading">Details</div>
             <div class="bodyCopy">
                 <?php echo $Product->getVar('Description'); ?>
             </div>
         </div>
-
         <div class="specs">
             <?php if (isset($Type) && $Type=="Bag"){ ?>
-
-
                 <?php if ($Product->getSize() != "" || $Product->getSizeCM() != "") { ?>
                     <div class="section">
                         <div class="heading">Dimensions:</div>
@@ -164,21 +143,13 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
                         </div>
                     </div>
                 <?php } ?>
-
-
-
                 <?php if ($Product->getWeight() != "") { ?>
                     <div class="section">
                         <div class="heading">Weight</div>
                         <div class="bodyCopy"><?php echo $Product->getWeight(); ?></div>
                     </div>
                 <?php } ?>
-
-
             <?php } else { ?>
-
-
-
                 <?php if ($Product->getVar("AccessorySize")!="") { ?>
                     <div class="section">
                         <div class="heading">Size</div>
@@ -187,20 +158,14 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
                         </div>
                     </div>
                 <?php } ?>
-
-
             <?php } ?>
-
             <div class="section">
                 <div class="heading">Primary Materials</div>
                 <div class="bodyCopy">
                     <?php echo $Product->getVar('PrimaryMaterial'); ?>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 
 
