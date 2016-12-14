@@ -230,37 +230,9 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
             <!-- details section -->
             <!-- original from .net site -->
-            <div id='product-details' class="detailsPanel">
-                <h3>Details</h3>
-                <div class="detailsP col lg-six leftCol">
-                    <p><?php echo $Product->getVar('Description'); ?></p>
-                </div><div class="detailsSpecs col lg-six rightCol">
-                <?php if (isset($Type) && $Type=="Bag"){ ?>    
-                    <?php if ($Product->getSize() != "" || $Product->getSizeCM() != "") { ?>
-                        <span class="detailsSpecsTitle">Dimensions:</span><br />
-                        <span class="detailsSpec">Height / Width <?php if ($Product->getVar("Depth") > 0) { ?>/ Depth<?php } ?>:<?php if ($Product->getSize() != "") { ?><br /><?php
-                                echo $Product->getSize();
-                            }
-                            ?><?php if ($Product->getSizeCM() != "") { ?><br/><?php
-                                echo $Product->getSizeCM();
-                            }
-                            ?></span><br />
-                    <?php } ?>
-                    <?php if ($Product->getWeight() != "") { ?>
-                        <span class="detailsSpecsTitle">Weight:</span><br />
-                        <span class="detailsSpec"><?php echo $Product->getWeight(); ?></span><br />
-                    <?php } ?>
-                <?php } else { ?>
-                      <?php if ($Product->getVar("AccessorySize")!="") { ?>
-                        <span class="detailsSpecsTitle">Size:</span><br />
-                        <span class="detailsSpec">
-                            <?php echo $Product->getVar("AccessorySize"); ?>
-                        </span><br>
-                      <?php } ?>   
-                <?php } ?>        
-                    <span class="detailsSpecsTitle">Primary Material(s):</span><br />
-                    <span class="detailsSpec"><?php echo $Product->getVar('PrimaryMaterial'); ?></span>
-                </div>
+
+            <!-- details was removed here -->
+            
                 <?php
                 $ProductDetTempl = $Product->getTemplates();
                 if (sizeof($ProductDetTempl) > 0) {
@@ -282,6 +254,9 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
                         <?php } ?>
                     </div>
                 <?php } ?>
+
+
+
             </div>
 
 
