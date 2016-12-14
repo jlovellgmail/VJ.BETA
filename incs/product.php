@@ -167,20 +167,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
     <!-- features -->
-    
-    <div> START - JL features </div>
-
     <?php
     $ProductDetTempl = $Product->getTemplates();
     if (sizeof($ProductDetTempl) > 0) {
@@ -210,80 +197,6 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             </div>
         </div>
     <?php } ?>
-
-    <div> END - JL features </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="bgWrapper productDetailsBgWrapper">
-        <div class="widthWrapper">
-
-
-            <!-- details section -->
-            <!-- original from .net site -->
-
-            <!-- details was removed here -->
-            
-                <?php
-                $ProductDetTempl = $Product->getTemplates();
-                if (sizeof($ProductDetTempl) > 0) {
-                    ?>
-                    <div class="featurePaneWrapper">
-                        <?php
-                        foreach ($ProductDetTempl as $Det) {
-                            $PtemplImgUrl = $Det->getImageUrl();
-                            //$PtemplImgUrl = str_replace('\\', '/', $PtemplImgUrl);
-                            ?>
-                            <div class="featurePane col sm-twelve">
-                                <div class="featureTitle lg-four">
-                                    <img src="<?php echo $PtemplImgUrl; ?>" alt="" height="68" /><br /><br />
-                                    <span class="featurePaneTitle"><?php echo $Det->getVar('Name'); ?></span>
-                                </div><div class="lg-eight">
-                                    <p class="featureCopy featurePaneP"><?php echo $Det->getVar('Description'); ?></p>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-
-
-
-            </div>
-
-
-
-
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
 
 
     <script>
