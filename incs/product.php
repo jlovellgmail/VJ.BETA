@@ -83,7 +83,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 
 
-
+    <!-- carousel -->
     <?php if (isset($pgallery) && $pgallery->count() > 0) { ?>
         <div class="carouselContainer">
             <div id="owlThumb_new" class="owl-carousel">
@@ -132,10 +132,106 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
         </script>
     <?php } ?>
 
+
+
+
+
+    <!-- switch to adapt from the original -->
+    <!-- changed to this afer the below -->
+    <div class="rowDetails">
+        
+        <div class="blurb">
+            <div class="heading">Details</div>
+            <div class="bodyCopy">
+                <?php echo $Product->getVar('Description'); ?>
+            </div>
+        </div>
+
+        <div class="specs">
+            <?php if (isset($Type) && $Type=="Bag"){ ?>
+
+
+                <?php if ($Product->getSize() != "" || $Product->getSizeCM() != "") { ?>
+                    <div class="section">
+                        <div class="heading">Dimensions:</div>
+                        <div class="bodyCopy">Height / Width <?php if ($Product->getVar("Depth") > 0) { ?>/ Depth<?php } ?>:
+                            <?php if ($Product->getSize() != "") { ?>
+                                <br /><?php echo $Product->getSize(); ?>
+                            <?php } ?>
+                            <?php if ($Product->getSizeCM() != "") { ?>
+                                <br/><?php echo $Product->getSizeCM(); ?>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?>
+
+
+
+                <?php if ($Product->getWeight() != "") { ?>
+                    <div class="section">
+                        <div class="heading">Weight</div>
+                        <div class="bodyCopy"><?php echo $Product->getWeight(); ?></div>
+                    </div>
+                <?php } ?>
+
+
+            <?php } else { ?>
+
+
+
+                <?php if ($Product->getVar("AccessorySize")!="") { ?>
+                    <div class="section">
+                        <div class="heading">Size</div>
+                        <div class="bodyCopy">
+                            <?php echo $Product->getVar("AccessorySize"); ?>
+                        </div>
+                    </div>
+                <?php } ?>
+
+
+            <?php } ?>
+
+            <div class="section">
+                <div class="heading">Primary Materials</div>
+                <div class="bodyCopy">
+                    <?php echo $Product->getVar('PrimaryMaterial'); ?>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="bgWrapper productDetailsBgWrapper">
         <div class="widthWrapper">
+
+
+            <!-- details section -->
+            <!-- original from .net site -->
             <div id='product-details' class="detailsPanel">
-                <h3>Product Details</h3>
+                <h3>Details</h3>
                 <div class="detailsP col lg-six leftCol">
                     <p><?php echo $Product->getVar('Description'); ?></p>
                 </div><div class="detailsSpecs col lg-six rightCol">
@@ -187,8 +283,23 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
                     </div>
                 <?php } ?>
             </div>
+
+
+
+
+
+
         </div>
     </div>
+
+
+
+
+
+
+
+
+
 
 
     <script>
