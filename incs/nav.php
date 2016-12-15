@@ -29,16 +29,8 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                         <i class="icon-basket"></i>
                     </a>           
                     <a class="iconWrapper" href="login.php">
-                        <i class="icon-torso"></i>
-                    </a>
-
-
-                    new: 
-                    <a class="iconWrapper" href="login.php">
                         <?php include $rootpath.'/incs/navUser.php'; ?>
                     </a>
-
-
                 </div>
                 <div class='burgerContainer'>
                     <i class="icon-menu visible"></i>
