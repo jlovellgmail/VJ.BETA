@@ -114,58 +114,51 @@
         </div>
     </div>
     <?php include "/incs/footer.php"; ?>
-
-
-    <!-- <script type="text/javascript" src="http://virgiljames.net/preorder/js/jquery.sticky.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js"></script> -->
     <script src="/js/jquery.sticky.js" type="text/javascript"></script>
-
-
-
     <script>
-    $(window).load(function(){
-        $("#sticky-terms").sticky({ topSpacing: 141 });
-    });
-    $('.guarantee-link').on('click', function(){
-        $('.guarantee-link').addClass('active-term-link');
-        $('.shipping-link').removeClass('active-term-link');
-        $('.privacy-link').removeClass('active-term-link');
-        $('.legal-link').removeClass('active-term-link');
-        $('.terms-guarantee').removeClass('hide');
-        $('.terms-shipping').addClass('hide');
-        $('.terms-privacy').addClass('hide');
-        $('.terms-legal').addClass('hide');
-    });
-    $('.shipping-link').on('click', function(){
-        $('.guarantee-link').removeClass('active-term-link');
-        $('.shipping-link').addClass('active-term-link');
-        $('.privacy-link').removeClass('active-term-link');
-        $('.legal-link').removeClass('active-term-link');
-        $('.terms-guarantee').addClass('hide');
-        $('.terms-shipping').removeClass('hide');
-        $('.terms-privacy').addClass('hide');
-        $('.terms-legal').addClass('hide');
-    });
-    $('.privacy-link').on('click', function(){
-        $('.guarantee-link').removeClass('active-term-link');
-        $('.shipping-link').removeClass('active-term-link');
-        $('.privacy-link').addClass('active-term-link');
-        $('.legal-link').removeClass('active-term-link');
-        $('.terms-guarantee').addClass('hide');
-        $('.terms-shipping').addClass('hide');
-        $('.terms-privacy').removeClass('hide');
-        $('.terms-legal').addClass('hide');
-    });
-    $('.legal-link').on('click', function(){
-        $('.guarantee-link').removeClass('active-term-link');
-        $('.shipping-link').removeClass('active-term-link');
-        $('.privacy-link').removeClass('active-term-link');
-        $('.legal-link').addClass('active-term-link');
-        $('.terms-guarantee').addClass('hide');
-        $('.terms-shipping').addClass('hide');
-        $('.terms-privacy').addClass('hide');
-        $('.terms-legal').removeClass('hide');
-    });
+        $(window).load(function(){
+            $("#sticky-terms").sticky({ topSpacing: 141 });
+        });
+        $('.guarantee-link').on('click', function(){
+            $('.guarantee-link').addClass('active-term-link');
+            $('.shipping-link').removeClass('active-term-link');
+            $('.privacy-link').removeClass('active-term-link');
+            $('.legal-link').removeClass('active-term-link');
+            $('.terms-guarantee').removeClass('hide');
+            $('.terms-shipping').addClass('hide');
+            $('.terms-privacy').addClass('hide');
+            $('.terms-legal').addClass('hide');
+        });
+        $('.shipping-link').on('click', function(){
+            $('.guarantee-link').removeClass('active-term-link');
+            $('.shipping-link').addClass('active-term-link');
+            $('.privacy-link').removeClass('active-term-link');
+            $('.legal-link').removeClass('active-term-link');
+            $('.terms-guarantee').addClass('hide');
+            $('.terms-shipping').removeClass('hide');
+            $('.terms-privacy').addClass('hide');
+            $('.terms-legal').addClass('hide');
+        });
+        $('.privacy-link').on('click', function(){
+            $('.guarantee-link').removeClass('active-term-link');
+            $('.shipping-link').removeClass('active-term-link');
+            $('.privacy-link').addClass('active-term-link');
+            $('.legal-link').removeClass('active-term-link');
+            $('.terms-guarantee').addClass('hide');
+            $('.terms-shipping').addClass('hide');
+            $('.terms-privacy').removeClass('hide');
+            $('.terms-legal').addClass('hide');
+        });
+        $('.legal-link').on('click', function(){
+            $('.guarantee-link').removeClass('active-term-link');
+            $('.shipping-link').removeClass('active-term-link');
+            $('.privacy-link').removeClass('active-term-link');
+            $('.legal-link').addClass('active-term-link');
+            $('.terms-guarantee').addClass('hide');
+            $('.terms-shipping').addClass('hide');
+            $('.terms-privacy').addClass('hide');
+            $('.terms-legal').removeClass('hide');
+        });
     </script>
 </body>
 </html>
