@@ -109,8 +109,6 @@ body {
   right: 0;
   top: 29px;
   margin-right: 15px;
-}
-.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .desktopLinksContainer {
   color: rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   font-size: 14px;
@@ -118,14 +116,17 @@ body {
   text-rendering: geometricPrecision;
   font-weight: 600;
 }
-.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .desktopLinksContainer .textLinksContainer {
+.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .textLinksContainer {
   display: inline-block;
   margin-right: 4px;
 }
-.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .desktopLinksContainer .textLinksContainer a {
+.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .textLinksContainer a {
   margin-right: 16px;
 }
-.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .desktopLinksContainer .iconWrapper {
+.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .iconsContainer {
+  display: inline-block;
+}
+.headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .iconsContainer .iconWrapper {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -225,8 +226,12 @@ body {
   .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer {
     top: 23px;
   }
-  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .desktopLinksContainer {
+  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .textLinksContainer {
     display: none;
+  }
+  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .iconsContainer {
+    margin-right: 50px;
+    margin-top: 4px;
   }
   .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .burgerContainer {
     display: initial;
