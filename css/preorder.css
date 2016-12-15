@@ -193,6 +193,7 @@ body {
 }
 .headerContainer .navWidthWrapper .dropdown .dropdownLinksContainer .iconWrapper {
   display: block;
+  text-align: right;
 }
 .headerContainer .navWidthWrapper .bottomBorder {
   height: 1px;
