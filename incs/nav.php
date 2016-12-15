@@ -20,16 +20,10 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                 </a>
             </div>
             <div class="rightItemsContainer">
-
-
-
-
                 <div class="textLinksContainer">
                     <a href="index.php">Shop</a>
                     <a href="about.php">About</a>
                 </div>
-
-
                 <div class="iconsContainer">
                     <a class="iconWrapper" href="javascript:goToCheckout();">
                         <i class="icon-basket"></i>
@@ -38,74 +32,26 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                         <?php include $rootpath.'/incs/navUser.php'; ?>
                     </a>
                 </div>
-
-                
                 <div class='burgerContainer'>
                     <i class="icon-menu visible"></i>
                     <i class="icon-cancel"></i>
                 </div>
-
-
-
-
-                <!--
-                <div class="responsiveLinksContainer">
-                    <a class="iconWrapper" href="javascript:goToCheckout();">
-                        <i class="icon-basket"></i>
-                    </a>
-                    <a class="iconWrapper" href="login.php">
-                        <?php 
-                            //include $rootpath.'/incs/navUser.php'; 
-                        ?>
-                    </a>
-                </div>
-                -->
-
-
-
-
-
             </div>
-
-
-
-
         </div>
         <div class="dropdown">
             <div class="dropdownLinksContainer">
                 <div class="textLinksContainer">
                     <a href="index.php">Shop</a>
                     <a href="about.php">About</a>
-
-                    
-                    <!--
-                    <a href="javascript:goToCheckout();">Cart</a>
-                    <a href="preorder/login.php">Account</a>
-                    -->
-                    <!--
-                    <a class="iconWrapper" href="javascript:goToCheckout();">
-                        <i class="icon-basket"></i>
-                    </a>
-                    <a class="iconWrapper" href="login.php">
-                        <i class="icon-torso"></i>
-                    </a>
-                    -->
-
-
-
                 </div>
             </div>
         </div>
         <script>
             jQuery(function($){
-
-                //$( '.icon-menu' ).click(function(){
                 $(".burgerContainer").click(function(){
-
                     $('.dropdown').toggleClass('visible');
                     $('.burgerContainer .icon-menu').toggleClass("visible");
                     $(".burgerContainer .icon-cancel").toggleClass("visible");
-
                 });
             });
         </script>
@@ -146,13 +92,6 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                     // show header
                     if(st + $(window).height() < $(document).height()) { 
                         $(".headerContainer").removeClass("headerUp");
-
-                        // these shouldn't be necessary
-                        /*
-                        $('.burgerContainer .icon-menu').addClass("visible");
-                        $(".burgerContainer .icon-cancel").removeClass("visible");
-                        */
-
                     }
                 }
                 lastScrollTop = st;
