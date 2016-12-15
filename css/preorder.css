@@ -231,6 +231,9 @@ body {
     display: initial;
   }
 }
+.navDropdownOutside {
+  border: 1px solid black;
+}
 .footerText {
   text-transform: uppercase;
   font-size: 14px;
