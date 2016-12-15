@@ -1259,72 +1259,6 @@ body {
 .productPage .widthWrapper {
   max-width: 1170px;
 }
-.productPage .productImageContainer {
-  display: inline-block;
-  vertical-align: top;
-  width: 459px;
-  height: 469px;
-  background-size: 140%;
-  background-repeat: no-repeat;
-  background-position-x: 70%;
-  background-position-y: 112%;
-}
-.productPage .productDescriptionContainer {
-  display: inline-block;
-  margin-left: 50px;
-  margin-top: 9px;
-  width: 410px;
-  text-align: left;
-  padding-right: 20px;
-}
-.productPage .collection {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.productPage .collection2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-.productPage .productTitle {
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-top: 10px;
-}
-.productPage .productPrice {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-.productPage .productDescription {
-  color: rgba(0, 0, 0, 0.9);
-  max-width: 530px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  display: inline-block;
-  margin-top: 12px;
-}
-.productPage .addToCartButton {
-  background-color: black;
-  padding: 12px;
-  color: white;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 20px;
-  display: inline-block;
-}
-.productPage .addToCartButton a {
-  color: white;
-}
-.productPage .addToCartButton a:hover {
-  color: white;
-}
 .productPage .breadcrumb {
   display: none;
   width: 100%;
@@ -1350,36 +1284,83 @@ body {
   margin-bottom: 0;
 }
 .productPage .rowTop {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 29px;
 }
-.productPage .rowSlides {
-  margin-top: 30px;
-}
-.productPage .slider {
-  width: 950px;
-  position: relative;
+.productPage .rowTop .productImageContainer {
   display: inline-block;
+  vertical-align: top;
+  width: 490px;
+  height: 469px;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 112%;
 }
-.productPage .slider img {
+.productPage .rowTop .productDescriptionContainer {
   display: inline-block;
+  margin-top: 9px;
+  text-align: left;
+  padding-right: 20px;
+  width: auto;
+  padding-left: 40px;
 }
-.productPage .slider img.arrow {
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  margin: 0;
+.productPage .rowTop .productDescriptionContainer .collection {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.productPage .slider img.arrow.left {
-  left: 0;
-  transform: translateY(-50%);
+.productPage .rowTop .productDescriptionContainer .collection2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
-.productPage .slider img.arrow.right {
-  right: 0;
-  transform: translateY(-50%) scaleX(-1);
+.productPage .rowTop .productDescriptionContainer .productTitle {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 10px;
 }
-.productPage .slider img.slide {
-  width: 140px;
+.productPage .rowTop .productDescriptionContainer .productPrice {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.productPage .rowTop .productDescriptionContainer .productDescription {
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 530px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  display: inline-block;
+  margin-top: 12px;
+}
+.productPage .rowTop .productDescriptionContainer .addToCartButton {
+  background-color: black;
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: table;
+}
+.productPage .rowTop .productDescriptionContainer .addToCartButton a {
+  color: white;
+}
+.productPage .rowTop .productDescriptionContainer .addToCartButton a:hover {
+  color: white;
+}
+.productPage .rowTop .productDescriptionContainer .socialContainer {
+  margin-top: 33px;
+}
+.productPage .rowTop .productDescriptionContainer .socialContainer .shareIcons li {
+  padding-right: 0;
+}
+.productPage .rowTop .productDescriptionContainer .socialContainer .shareIcons li a {
+  color: rgba(0, 0, 0, 0.7);
 }
 .productPage .carouselContainer {
   width: 100%;
@@ -1409,7 +1390,7 @@ body {
 }
 .productPage .rowDetails {
   font-family: proxima-nova, sans-serif;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .productPage .rowDetails .blurb {
   display: inline-block;

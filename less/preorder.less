@@ -1371,66 +1371,6 @@ body {
 	.widthWrapper {
 		max-width: 1170px;
 	}
-	.productImageContainer {
-		display: inline-block;
-		vertical-align:top;
-		width: 459px;
-
-		// temp fix because product image from thumbnail has too much margin
-		height: 469px;
-		background-size: 140%;
-		background-repeat: no-repeat;
-		background-position-x: 70%;
-		background-position-y: 112%;
-
-	}
-	.productDescriptionContainer {
-		display: inline-block;
-	    margin-left: 50px;
-	    margin-top: 9px;
-	    width: 410px;
-	    text-align: left;
-	    padding-right: 20px;
-	}
-	.collection {
-		font-size: 18px;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
-	.collection2 {
-		font-size: 18px;
-		text-transform: uppercase;
-		font-weight: 300;
-	}
-	.productTitle {
-		.vjHeadline1;
-		margin-top: 10px;
-	}
-	.productPrice {
-		font-size: 22px;
-		text-transform: uppercase;
-		font-weight: 100;
-	}
-	.productDescription {
-		.bodyCopy;
-		margin-top: 12px;
-	}
-	.addToCartButton {
-		background-color: black;
-		padding: 12px;
-		color: white;
-		font-size: 17px;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin-top: 20px;
-		display: inline-block;
-		a {
-			color: white;
-		}
-		a:hover {
-			color: white;
-		}
-	}
 	.breadcrumb {
 		display: none;
 	    width: 100%;
@@ -1458,40 +1398,79 @@ body {
 		}
 	}
 	.rowTop {
-	    padding-top: 80px;
+	    padding-top: 30px;
 	    padding-bottom: 29px;
-	}
-	.rowSlides {
-		margin-top: 30px;
-	}
+	    .productImageContainer {
+	    	display: inline-block;
+	    	vertical-align:top;
+	    	width: 490px;
 
-	// this is the old slider from static site
-	.slider {
-		width: 950px;
-		position: relative;
-		display: inline-block;
-		img {
-			display: inline-block;
-			&.arrow {
-				height: 40px;
-			    position: absolute;
-			    top: 50%;
-			    margin: 0;
-			    &.left {
-			    	left: 0;
-			    	transform: translateY(-50%);
-			    }
-			    &.right {
-			    	right: 0;
-			    	transform: translateY(-50%) scaleX(-1);
-			    }
-			}
-			&.slide {
-				width: 140px;
-			}
-		}
+	    	// temp fix because product image from thumbnail has too much margin
+	    	height: 469px;
+	    	background-size: 140%;
+	    	background-repeat: no-repeat;
+	        background-position-x: 50%;
+	    	background-position-y: 112%;
+	    }
+	    .productDescriptionContainer {
+	    	display: inline-block;
+	        margin-top: 9px;
+	        text-align: left;
+	        padding-right: 20px;
+	        width: auto;
+	        padding-left: 40px;
+	        .collection {
+	        	font-size: 18px;
+	        	text-transform: uppercase;
+	        	font-weight: 600;
+	        }
+	        .collection2 {
+	        	font-size: 18px;
+	        	text-transform: uppercase;
+	        	font-weight: 300;
+	        }
+	        .productTitle {
+	        	.vjHeadline1;
+	        	margin-top: 10px;
+	        }
+	        .productPrice {
+	        	font-size: 22px;
+	        	text-transform: uppercase;
+	        	font-weight: 100;
+	        }
+	        .productDescription {
+	        	.bodyCopy;
+	        	margin-top: 12px;
+	        }
+	        .addToCartButton {
+	        	background-color: black;
+	        	padding: 12px;
+	        	color: white;
+	        	font-size: 17px;
+	        	font-weight: 700;
+	        	text-transform: uppercase;
+	        	margin-top: 20px;
+	        	display: table;
+	        	a {
+	        		color: white;
+	        	}
+	        	a:hover {
+	        		color: white;
+	        	}
+	        }
+	        .socialContainer {
+	        	margin-top: 33px;
+	        	.shareIcons {
+	        		li {
+	        			padding-right: 0;
+	        			a {
+	        				color: rgba(0,0,0, .7);
+	        			}
+	        		}
+	        	}
+	        }
+	    }
 	}
-	// new slider created for beta site
 	.carouselContainer {
 		width: 100%;
 		padding: 0 40px;
@@ -1522,11 +1501,9 @@ body {
 
 		}
 	}
-
-
 	.rowDetails {
 		font-family: proxima-nova, sans-serif;
-	    margin-top: 10px;
+	    margin-top: 30px;
 		.blurb {
 			display: inline-block;
 			width: 459px;

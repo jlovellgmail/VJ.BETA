@@ -61,15 +61,14 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             <div class="addToCartButton">
                 <a href="javascript:addToCart(<?php echo $PID; ?>)">Add to Cart</a>
             </div>
-        </div>
-    </div>
-    <div class="socialRow lg-twelve">
-        <div class="xs-zero md-six lg-seven textLeft"></div><div class="productSocialWrapper md-six lg-five">
-            <ul class="shareIcons">
-                <li><a href="<?php echo $facebookUrl; ?>" target="_blank"><i class="icon-facebook-squared"></i>Share</a></li><!--
-             --><li><a href="<?php echo $twitterShortUrl; ?>" target="_blank"><i class="icon-twitter-squared"></i>Tweet</a></li><!--
-             --><li><a href="<?php echo $pinterest; ?>" target="_blank"><i class="icon-pinterest-squared"></i>Pin</a></li>
-            </ul>
+            <!-- social icons -->
+            <div class="socialContainer">
+                <ul class="shareIcons">
+                    <li><a href="<?php echo $facebookUrl; ?>" target="_blank"><i class="icon-facebook-squared"></i></a></li>
+                    <li><a href="<?php echo $twitterShortUrl; ?>" target="_blank"><i class="icon-twitter-squared"></i></a></li>
+                    <li><a href="<?php echo $pinterest; ?>" target="_blank"><i class="icon-pinterest-squared"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- carousel -->
