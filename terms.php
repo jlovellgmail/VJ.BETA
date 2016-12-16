@@ -114,6 +114,7 @@
         </div>
     </div>
     <?php include "/incs/footer.php"; ?>
+    <?php include '/incs/footer-links.php'; ?>        
     <script src="/js/jquery.sticky.js" type="text/javascript"></script>
     <script>
         $(window).load(function(){
