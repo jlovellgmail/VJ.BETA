@@ -7,7 +7,9 @@ var win = $(window),
 
         // JL
         // this and below is temp fix while scrollWaypoint is removed
-        //sw = $('.scrollWaypoint'),
+        /*
+        sw = $('.scrollWaypoint'),
+        */
 
 
         mi = $('.menu-item'),
@@ -16,7 +18,9 @@ var win = $(window),
         
 
         // JL
-        //pos = sw.offset().top,
+        /*
+        pos = sw.offset().top,
+        */
         sw = $(window);
         pos = $(window).scrollTop();
 
@@ -28,9 +32,10 @@ var win = $(window),
 var sticky = function () {
 
 
-    //JL
-    // temp fix
-    //if ($(window).scrollTop() > sw.offset().top) {                                // If page is scrolled past .scrollWaypoint,
+    // JL
+    /*
+    if ($(window).scrollTop() > sw.offset().top) {                                // If page is scrolled past .scrollWaypoint,
+    */
     if (true) {
 
 
