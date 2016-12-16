@@ -464,6 +464,13 @@ body {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
   }
 }
+.cartPage {
+  padding-top: 76px;
+  min-height: calc(100vh - 86px);
+}
+.cartPage .widthWrapper {
+  max-width: 1200px;
+}
 .aboutPage {
   display: block;
   text-align: left;
