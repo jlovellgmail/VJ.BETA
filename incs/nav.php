@@ -56,6 +56,29 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
             });
         </script>
         <script type="text/javascript">
+
+
+
+            // Make header visible when page is not taller than window.
+            // This is necessary on the Terms page where header disappears after scroll on "legal" tab, 
+            // then you switch tabs and you can't scroll to make header reappear, so it's stuck in hidden
+            MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+            var observer = new MutationObserver(function(mutations, observer) {
+                var bodyHeight = $("body").height();
+                var winHeight = $(window).height();
+                if (bodyHeight <= winHeight ) {
+                    // show the header if content is not taller than window
+                    $(".headerContainer").removeClass("headerUp");
+                }
+            });
+            observer.observe(document, {
+              subtree: true,
+              attributes: true
+            });
+
+
+
+
             var lastScrollTop = 0;
             var delta = 5;
             var headerHeight = $(".headerContainer").outerHeight();
@@ -96,6 +119,13 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                 }
                 lastScrollTop = st;
             }
+
+
+
+
+
+
+
         </script>
         <div class="bottomBorder">
         </div>
