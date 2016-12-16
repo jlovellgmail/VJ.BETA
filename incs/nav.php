@@ -25,9 +25,9 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                     <a href="about.php">About</a>
                 </div>
                 <div class="iconsContainer">
-                    <a class="iconWrapper" href="javascript:goToCheckout();">
-                        <i class="icon-basket"></i>
-                    </a>
+                    <div id="CartNavContainer" class="iconWrapper cartIconWrapper cartDropdownWrapper">
+                        <?php include $rootpath.'/incs/navCart.php'; ?>
+                    </div>
                     <a class="iconWrapper" href="login.php">
                         <?php include $rootpath.'/incs/navUser.php'; ?>
                     </a>
