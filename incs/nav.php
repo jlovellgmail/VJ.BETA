@@ -15,20 +15,20 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
     <div class="navWidthWrapper">
         <div class="headerHeightWrapper">
             <div class="logoWrapper">
-                <a class="logoLink" href="index.php">
+                <a class="logoLink" href="/index.php">
                     <img class="navLogo" src="/img/VJ_logo.svg" alt="Virgil James" />
                 </a>
             </div>
             <div class="rightItemsContainer">
                 <div class="textLinksContainer">
-                    <a href="index.php">Shop</a>
-                    <a href="about.php">About</a>
+                    <a href="/index.php">Shop</a>
+                    <a href="/about.php">About</a>
                 </div>
                 <div class="iconsContainer">
                     <div id="CartNavContainer" class="iconWrapper cartIconWrapper cartDropdownWrapper">
                         <?php include $rootpath.'/incs/navCart.php'; ?>
                     </div>
-                    <a class="iconWrapper" href="login.php">
+                    <a class="iconWrapper" href="/login.php">
                         <?php include $rootpath.'/incs/navUser.php'; ?>
                     </a>
                 </div>
@@ -41,8 +41,8 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
         <div class="dropdown">
             <div class="dropdownLinksContainer">
                 <div class="textLinksContainer">
-                    <a href="index.php">Shop</a>
-                    <a href="about.php">About</a>
+                    <a href="/index.php">Shop</a>
+                    <a href="/about.php">About</a>
                 </div>
             </div>
         </div>
