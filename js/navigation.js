@@ -26,7 +26,15 @@ var win = $(window),
 
 //	navigation changes on scroll
 var sticky = function () {
-    if ($(window).scrollTop() > sw.offset().top) {								// If page is scrolled past .scrollWaypoint,
+
+
+    //JL
+    // temp fix
+    //if ($(window).scrollTop() > sw.offset().top) {                                // If page is scrolled past .scrollWaypoint,
+    if (true) {
+
+
+
         scrollNavEligible = true;												// then change scrollNavEligible variable to 'true'
         // console.log('scrollNavEligible is now ' + scrollNavEligible);
         if (mobileMenu == false) {												// If the menu isn't open,
