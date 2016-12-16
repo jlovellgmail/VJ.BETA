@@ -193,6 +193,7 @@ $(function () {
 	
 
 
+        // JL
         /*
 		if ($(this).next('.navDropdown').is(':hidden')) {
             $(this).next('.navDropdown').siblings(".navDropdownToggle").children(".icon-angle-down").css("display","block");
@@ -204,8 +205,6 @@ $(function () {
 		$(this).next('.navDropdown').slideToggle();	
 		$('.navDropdownToggle').not(this).next('.navDropdown').hide().siblings(".navDropdownToggle").children(".icon-angle-down").css("display","none");		
         */
-
-        // JL
         if ($(this).next('.navDropdown').is(':hidden')) {
             $(this).next(".navDropdown").css("display", "initial");
         }
