@@ -58,9 +58,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
             <div class="productDescription">
                 <?php echo $Product->getVar("ShortDescription"); ?>
             </div>
-            <div class="addToCartButton">
-                <a href="javascript:addToCart(<?php echo $PID; ?>)">Add to Cart</a>
-            </div>
+            <a class="addToCartButton" href="javascript:addToCart(<?php echo $PID; ?>)">Add to Cart</a>
             <!-- social icons -->
             <div class="socialContainer">
                 <ul class="shareIcons">

@@ -1368,10 +1368,10 @@ body {
   margin-top: 20px;
   display: table;
 }
-.productPage .rowTop .productDescriptionContainer .addToCartButton a {
+.productPage .rowTop .productDescriptionContainer .addToCartButtona {
   color: white;
 }
-.productPage .rowTop .productDescriptionContainer .addToCartButton a:hover {
+.productPage .rowTop .productDescriptionContainer .addToCartButtona:hover {
   color: white;
 }
 .productPage .rowTop .productDescriptionContainer .socialContainer {
