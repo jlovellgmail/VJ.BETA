@@ -81,6 +81,7 @@ $seo_variable = "home";
                                 singleItem : true
                                 ,loop: true
                                 ,autoPlay : 3000
+                                ,animateOut: 'fadeOut'
 
                                 // "singleItem:true" is a shortcut for:
                                 // items : 1, 
