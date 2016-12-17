@@ -630,11 +630,12 @@ body {
 }
 @media all and (max-width: 1200px) {
   body .aboutPage .landingFrame .mainFrame {
-    margin: 0;
-    height: calc(100vh - 76px);
+    margin: 0 30px;
+    height: calc(100vh - 76px - 56px);
   }
   body .aboutPage .landingFrame .downArrow {
-    filter: invert(100%);
+    transform: translate(-50%, 0) scale(0.7);
+    transform-origin: bottom;
   }
   body .aboutPage .belowLandingFrame .sectionHeading {
     margin-top: 40px;

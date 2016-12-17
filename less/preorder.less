@@ -670,11 +670,13 @@ body {
 		.aboutPage {
 			.landingFrame {
 				.mainFrame {
-					margin: 0;
-					height: calc(~"100vh - 76px");
+					margin: 0 30px;
+					height: calc(~"100vh - 76px - 56px");
 				}
 				.downArrow {
-					filter: invert(100%);
+					//filter: invert(100%);
+				    transform: translate(-50%, 0) scale(.7);
+				    transform-origin: bottom;
 				}
 			}
 			.belowLandingFrame {
