@@ -756,6 +756,44 @@ body {
   width: 7px;
   height: 7px;
 }
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .owl-wrapper-outer {
+  padding-left: 20px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .item {
+  width: auto;
+  /* display: inline-block; */
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .item img {
+  height: 100%;
+  max-height: 650px;
+  width: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  margin: auto;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .owl-controls {
+  text-align: center;
+  padding-right: 30px;
+  position: relative;
+  top: -48px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .owl-controls .owl-dots .owl-dot {
+  display: inline-block;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .owl-controls .owl-dots .owl-dot span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: 5px 7px;
+  opacity: 0.3;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demoNew .owl-controls .owl-dots .owl-dot.active span {
+  opacity: .9;
+}
 .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 {
   background-repeat: no-repeat;
   background-image: url("/img/IMG_6948_tote_hero_whiter_bg_q7.jpg");
@@ -807,6 +845,44 @@ body {
 .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demo .owl-controls .owl-pagination .owl-page span {
   width: 7px;
   height: 7px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .owl-wrapper-outer {
+  padding-left: 20px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .item {
+  width: auto;
+  /* display: inline-block; */
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .item img {
+  height: 100%;
+  max-height: 650px;
+  width: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  margin: auto;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .owl-controls {
+  text-align: center;
+  padding-right: 30px;
+  position: relative;
+  top: -48px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .owl-controls .owl-dots .owl-dot {
+  display: inline-block;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .owl-controls .owl-dots .owl-dot span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: 5px 7px;
+  opacity: 0.3;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demoNew .owl-controls .owl-dots .owl-dot.active span {
+  opacity: .9;
 }
 .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer {
   position: absolute;
