@@ -729,6 +729,9 @@ body {
   margin-left: auto;
   width: 100%;
 }
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demo .owl-wrapper-outer {
+  padding-left: 20px;
+}
 .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demo .item {
   width: auto;
   /* display: inline-block; */
@@ -739,7 +742,19 @@ body {
   width: auto;
   margin-left: auto;
   padding-top: 20px;
-  margin-left: 0;
+  margin: auto;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demo .owl-controls {
+  position: relative;
+  bottom: 39px;
+  margin-top: 0;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demo .owl-controls .owl-pagination .owl-page {
+  opacity: .6;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer .carouselContainer #owl-demo .owl-controls .owl-pagination .owl-page span {
+  width: 7px;
+  height: 7px;
 }
 .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 {
   background-repeat: no-repeat;
@@ -766,6 +781,9 @@ body {
   margin-left: auto;
   width: 100%;
 }
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demo .owl-wrapper-outer {
+  padding-left: 20px;
+}
 .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demo .item {
   width: auto;
   /* display: inline-block; */
@@ -776,7 +794,19 @@ body {
   width: auto;
   margin-left: auto;
   padding-top: 20px;
-  margin-left: 0;
+  margin: auto;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demo .owl-controls {
+  position: relative;
+  bottom: 39px;
+  margin-top: 0;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demo .owl-controls .owl-pagination .owl-page {
+  opacity: .6;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer2 .carouselContainer #owl-demo .owl-controls .owl-pagination .owl-page span {
+  width: 7px;
+  height: 7px;
 }
 .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer {
   position: absolute;

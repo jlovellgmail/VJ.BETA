@@ -782,6 +782,9 @@ body {
 						margin-left: auto;
 						width: 100%;
 						#owl-demo {
+							.owl-wrapper-outer {
+								padding-left: 20px;
+							}
 							.item {
 								width: auto;
 							    /* display: inline-block; */
@@ -791,7 +794,21 @@ body {
 									width: auto;
 									margin-left: auto;
 									padding-top: 20px;
-									margin-left: 0;
+									margin: auto;
+								}
+							}
+							.owl-controls {
+								position: relative;
+								bottom: 39px;
+								margin-top: 0;
+								.owl-pagination {
+									.owl-page {
+										opacity: .6;
+										span {
+											width: 7px;
+											height: 7px;
+										}
+									}
 								}
 							}
 						}
