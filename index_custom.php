@@ -27,6 +27,8 @@ $seo_variable = "home";
                     
 
                     <div class="backgroundContainer-custom">
+                        <div class="image">
+                        </div>
                         <div class="controls">
                             <div class="dot active"></div>
                             <div class="dot"></div>
@@ -49,18 +51,17 @@ $seo_variable = "home";
                         ];
                         var i=0;
                         function change(){
+                            var div = $(".backgroundContainer-custom .image");
                             i = ++i % images.length;
-                            
                             console.log("i: " + i + "   ...images[i]: " + images[i]);
-
                             function animate(){
                                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                                $(".backgroundContainer-custom").addClass('animated fadeOut').one(animationEnd, function() {
+                                div.addClass('animated fadeOut').one(animationEnd, function() {
                                     $(this).removeClass('animated fadeOut');
                                     $(".dot").removeClass("active");
                                     $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    $(".backgroundContainer-custom").css("background-image", "url(" + images[i] + ")" );
-                                    $(".backgroundContainer-custom").addClass('animated fadeIn').one(animationEnd, function() {
+                                    div.css("background-image", "url(" + images[i] + ")" );
+                                    div.addClass('animated fadeIn').one(animationEnd, function() {
                                         $(this).removeClass('animated fadeIn');
                                     });
                                 });
