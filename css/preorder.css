@@ -1207,6 +1207,17 @@ body {
   }
 }
 @media all and (max-width: 768px) {
+  .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer-custom {
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer-custom .image {
+    background-position-x: center;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer-custom .controls {
+    display: none;
+  }
   .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer {
     background-position-y: top;
     background-position-x: center;
