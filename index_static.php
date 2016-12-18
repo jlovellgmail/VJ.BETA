@@ -24,57 +24,8 @@ $seo_variable = "home";
         <div class="preorderPage bg-whiter">
             <div class="landingFrame">
                 <div class="mainFrame">
-                    
-
-                    <div class="backgroundContainer-custom">
-                        <div class="image">
-                        </div>
-                        <div class="controls">
-                            <div class="dot active"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
+                    <div class="backgroundContainer">
                     </div>
-                    <!-- preload images -->
-                    <div style="position:fixed; left:4000px; top:4000px;">
-                        <img src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg">
-                        <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg">
-                        <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg">
-
-                    </div>
-                    <!-- change images -->
-                    <script>
-                        var images = [
-                            "/img/IMG_6948_tote_hero_whiter_bg_q7.jpg"
-                            ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
-                            ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
-                        ];
-                        var i=0;
-                        function change(){
-                            var div = $(".backgroundContainer-custom .image");
-                            i = ++i % images.length;
-                            console.log("i: " + i + "   ...images[i]: " + images[i]);
-                            function animate(){
-                                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                                div.addClass('animated fadeOut').one(animationEnd, function() {
-                                    $(this).removeClass('animated fadeOut');
-                                    $(".dot").removeClass("active");
-                                    $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    div.css("background-image", "url(" + images[i] + ")" );
-                                    div.addClass('animated fadeIn').one(animationEnd, function() {
-                                        $(this).removeClass('animated fadeIn');
-                                    });
-                                });
-                            }
-                            animate();
-                            setTimeout(change, 4000);
-                        }
-                        $(window).load(function(){
-                            setTimeout(change, 2000);
-                        });
-                    </script>
-
-
                     <div class="contentContainer">
                         <div class="preorderText">
                             <div class="headline">
