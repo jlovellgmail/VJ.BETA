@@ -35,10 +35,10 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 
 
 
-            <!-- <img src="<?php echo $ImgUrl; ?>" alt="<?php echo $Product->getName(); ?>" /> -->
+            <img src="<?php echo $ImgUrl; ?>" alt="<?php echo $Product->getName(); ?>" />
             <!-- temp: use background image on productImageContainer -->
             <script>
-                $(".productImageContainer").css("background-image", "url(<?php echo $ImgUrl; ?>)");
+               // $(".productImageContainer").css("background-image", "url(<?php echo $ImgUrl; ?>)");
             </script>
 
 

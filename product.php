@@ -21,7 +21,8 @@ if (isset($_GET["from"]) && $_GET["from"] == "admin") {
     $showProduct = TRUE;
 }
 
-$TImgUrl = $Product->getVar("ThumbnailUrl");
+//$TImgUrl = $Product->getVar("ThumbnailUrl");
+$TImgUrl = $Product->getVar("ImgUrl");
 $TImgUrl = str_replace('\\', '/', $TImgUrl);
 if (!isset($_SESSION)) {
     session_start();
@@ -64,6 +65,15 @@ if (!isset($_SESSION)) {
             }
         }
         ?>
+
+
+        <!-- test -->
+        <?php
+        include '/incs/productHighResGallery.php';
+        ?>
+
+
+
         <?php include '/incs/nav.php';?>
         <div class="productPage">
             <div class="widthWrapper">
@@ -75,6 +85,8 @@ if (!isset($_SESSION)) {
                 ?>
             </div>
         </div>
+
+
         <?php include '/incs/footer.php'; ?>
         <!-- Common .js Includes -->
         <?php include '/incs/footer-links.php'; ?>        
@@ -82,6 +94,7 @@ if (!isset($_SESSION)) {
 		<script type="application/ld+json"><?php echo json_encode($payload); ?></script>
     </body>
 </html>
+
 
 
 

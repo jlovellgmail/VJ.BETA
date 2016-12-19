@@ -42,7 +42,7 @@ $seo_variable = "home";
                         <script>
                             $(document).ready(function() {
                                 console.log("yes");
-                                $("#owl-demo").owlCarousel({`
+                                $("#owl-demo").owlCarousel({
 
 
                                     /*
