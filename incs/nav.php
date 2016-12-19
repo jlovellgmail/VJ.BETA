@@ -14,7 +14,7 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
 <div class="headerContainer">
     <div class="navWidthWrapper">
         <div class="headerHeightWrapper">
-            <div class="logoWrapper">
+            <div class="logoContainer">
                 <a class="logoLink" href="/index.php">
                     <img class="navLogo" src="/img/VJ_logo.svg" alt="Virgil James" />
                 </a>

@@ -93,37 +93,90 @@ body {
 	.navWidthWrapper {
 		position: relative;
 		display: block;
-		width: calc(~"100% - 15px - 15px");
 		height: 100%;
 		margin: 0 auto;
 		text-align: left;
 		max-width: 100%;
+
+
+		// about page margins
+		/*
+		width: calc(~"100% - 15px - 15px");
+		*/
+		width: calc(~"100% - 60px");
+
+
 		.headerHeightWrapper {
-			height: @headerHeight;
 			padding-top: 9px;
-			.logoWrapper {
+
+
+			// about page margins
+			/*
+			height: @headerHeight;
+			*/
+			height: 96px;
+			display: table;
+
+
+			.logoContainer {
 				margin-left: auto;
 				margin-right: auto;
 				position: relative;
-				display: inline-block;
 				margin-left: 15px;
+
+
+				// about page margins
+				/*
+				display: inline-block;
+				*/
+				display: table-cell;
+				vertical-align: middle;
+				padding-bottom: 4px;
+				padding-left: 3px;
+
+
 				.logoLink {
 					position: relative;
 					display: block;
 					text-align: left;
+
+
+					// about page margins
+					/*
 					height: 100%;
+					*/
+					height: initial;
+
+
 					.navLogo {
 						position: relative;
-						padding-top: 17px;
 						width: 209px;
+
+
+						// about page margins
+						/*
+						padding-top: 17px;
+						*/
+						padding-top: 0;
+						padding-bottom: 0;
+
+
 					}
 				}
 			}
 			.rightItemsContainer {
 				position: absolute;
 			    right: 0;
-				top: 29px;
 				margin-right: 15px;
+
+
+				// about page margins
+				/*
+				top: 29px;
+				*/
+				top: 39px;
+
+
 				.headerText;
 				.textLinksContainer {
 				    display: inline-block;
@@ -217,8 +270,16 @@ body {
 @media all and (min-width: 1200px) {
 	.headerContainer {
 		.navWidthWrapper {
+
+
+			// about page margins
+			/*
 			width: calc(~"100% - 95px - 95px");
-			.logoWrapper {
+			*/
+			width: calc(~"100% - 35px - 35px");
+
+
+			.logoContainer {
 				margin-left: auto;
 			}
 			.rightItemsContainer {
@@ -232,7 +293,7 @@ body {
 		.navWidthWrapper {
 			.headerHeightWrapper {
 				height: @headerHeightSmall;
-				.logoWrapper {
+				.logoContainer {
 					.logoLink {
 						.navLogo {
 							width: 195px;
@@ -605,9 +666,6 @@ body {
 	    text-align: center;
     	height: 100vh;
     	.mainFrame {
-			margin: 0 96px;
-    		height: calc(~"100vh - 76px - 86px");
-    		top: 76px;
     		position: relative;
     		background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
     		background-position-x: center;
@@ -615,6 +673,19 @@ body {
     		background-size: cover;
     	    text-align: left;
     	    overflow: hidden;
+
+
+    	    // about page margins
+    	    /*
+    	    top: 76px;
+    	    height: calc(~"100vh - 76px - 86px");
+    	    margin: 0 96px;
+    	    */
+    	    top: 96px;
+    	    height: calc(~"100vh - 96px - 86px");
+    	    margin: 0 36px;
+
+
     		.textBlockMain {
     			color: white;
     			max-width: 680px;
@@ -652,12 +723,14 @@ body {
     	.downArrow {
     		width: 37px;
     		position: absolute;
-    		bottom: 25px;
     		left: 50%;
     		transform: translate(-50%, 0);
     		opacity: .8;
     		filter: none;
     		cursor: pointer;
+    		bottom: 25px;
+
+
     	}
     }
     .belowLandingFrame {
@@ -671,12 +744,27 @@ body {
 			.landingFrame {
 				.mainFrame {
 					margin: 0 30px;
+
+					
+					// about page margins
+					/*
 					height: calc(~"100vh - 76px - 56px");
+					*/
+					height: calc(~"100vh - 76px - 73px");
+					.textBlockMain {
+						max-width: 450px;
+					}
+
+
 				}
 				.downArrow {
 					//filter: invert(100%);
 				    transform: translate(-50%, 0) scale(.7);
 				    transform-origin: bottom;
+
+				    // about page margins
+				    bottom: 15px;
+
 				}
 			}
 			.belowLandingFrame {
@@ -1491,7 +1579,7 @@ body {
 
 			// single image
 			left: 124px;
-			
+
 			.title {
 				text-transform: uppercase;
 				font-weight: 700;

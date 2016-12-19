@@ -67,10 +67,10 @@ $seo_variable = "home";
                                 });
                             }
                             animate();
-                            setTimeout(change, 4000);
+                            setTimeout(change, 6000);
                         }
                         $(window).load(function(){
-                            setTimeout(change, 2000);
+                            setTimeout(change, 6000);
                         });
                     </script>
 
