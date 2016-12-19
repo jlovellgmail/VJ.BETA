@@ -1416,6 +1416,7 @@ body {
 // Collection page
 
 .collectionPage {
+	font-family: proxima-nova, sans-serif;
 	min-height: 100%;
 	top: 76px;
 	position: relative;
@@ -1424,12 +1425,20 @@ body {
 		text-align: left;
 		margin-left: auto;
 		margin-right: auto;
+
+		// single image
+		width: 1000px;
+
 	}
 	.topRow {
 		min-height: 40px;
 		text-align: left;
 		padding-left: 92px;
 		padding-top: 60px;
+
+		// single image
+		padding-left: 133px;
+
 		.headline {
 			color: black;
 		    font-size: 36px;
@@ -1458,9 +1467,20 @@ body {
 		width: 33%;
 		display: inline-block;
 		position: relative;
+
+		// single image
+		width: 50%;
+		padding: 0 50px;
+		padding-bottom: 20px;
+		padding-top: 70px;
+
 		img {
 			width: 100%;
 			padding: 20px;
+
+			// single image
+			padding: 0;
+
 		}
 		.caption {
 			text-align: left;
@@ -1468,6 +1488,10 @@ body {
 			bottom: 0;
 			left: 98px;
 			font-size: 16px;
+
+			// single image
+			left: 124px;
+			
 			.title {
 				text-transform: uppercase;
 				font-weight: 700;
@@ -1587,12 +1611,19 @@ body {
 	    	vertical-align:top;
 	    	width: 490px;
 
+
+	    	/*
 	    	// temp fix because product image from thumbnail has too much margin
 	    	height: 469px;
 	    	background-size: 140%;
 	    	background-repeat: no-repeat;
 	        background-position-x: 50%;
 	    	background-position-y: 112%;
+	    	*/
+	    	img {
+	    		width: 100%;
+	    	}
+
 	    }
 	    .productDescriptionContainer {
 	    	display: inline-block;
