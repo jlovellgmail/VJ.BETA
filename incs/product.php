@@ -26,8 +26,10 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
 <!-- Product Hero -->
 <?php if ($showProduct) { ?>
     <?php
-    $ImgUrl = $Product->getVar("ImgUrl");
-    $ImgUrl = str_replace('\\', '/', $ImgUrl);
+    //$ImgUrl = $Product->getVar("ImgUrl");
+    //$ImgUrl = str_replace('\\', '/', $ImgUrl);
+    $ImgUrl = "/uploadedImages/ProductImgSt/".$PID.".png";
+    
     $pinterest = "http://pinterest.com/pin/create/button/?url=" . urlencode("http://www.virgiljames.net/product.php?style=" . $_GET["style"] . "&pid=" . $_GET["pid"]) . "&media=" . urlencode("http://www.virgiljames.net$ImgUrl");
     ?>
     <div class="rowTop">
