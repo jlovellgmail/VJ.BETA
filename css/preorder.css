@@ -72,7 +72,10 @@ body {
   transition: top 0.17s ease-in-out;
 }
 .headerContainer.headerUp {
-  top: calc(-78px);
+  /*
+		top: calc( -1 * (@headerHeight + 2) );
+		*/
+  top: calc(-97px);
 }
 .headerContainer .navWidthWrapper {
   position: relative;
@@ -105,7 +108,7 @@ body {
   display: table-cell;
   vertical-align: middle;
   padding-bottom: 4px;
-  padding-left: 3px;
+  padding-left: 11px;
 }
 .headerContainer .navWidthWrapper .headerHeightWrapper .logoContainer .logoLink {
   position: relative;
@@ -658,6 +661,15 @@ body {
 .aboutPage .belowLandingFrame {
   margin-top: 40px;
   margin-bottom: 100px;
+}
+.aboutPage .belowLandingFrame .container .row {
+  margin-top: 130px;
+}
+.aboutPage .belowLandingFrame .container .row .textContainer {
+  padding-left: 60px;
+}
+.aboutPage .belowLandingFrame .container .row:nth-of-type(1) {
+  margin-top: 40px;
 }
 @media all and (max-width: 1200px) {
   body .aboutPage .landingFrame .mainFrame {

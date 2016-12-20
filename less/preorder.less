@@ -88,7 +88,13 @@ body {
 	z-index: 18;
 	transition: top 0.17s ease-in-out;
 	&.headerUp {
+		
+		// about page margins
+		/*
 		top: calc( -1 * (@headerHeight + 2) );
+		*/
+		top: calc(-97px);
+
 	}
 	.navWidthWrapper {
 		position: relative;
@@ -132,7 +138,7 @@ body {
 				display: table-cell;
 				vertical-align: middle;
 				padding-bottom: 4px;
-				padding-left: 3px;
+			    padding-left: 11px;
 
 
 				.logoLink {
@@ -736,6 +742,17 @@ body {
     .belowLandingFrame {
     	margin-top: 40px;
     	margin-bottom: 100px;
+    	.container {
+    		.row {
+    			margin-top: 130px;
+    			.textContainer {
+    				padding-left: 60px;
+    			}
+    		}
+    		.row:nth-of-type(1) {
+    			margin-top: 40px;
+    		}
+    	}
     }
 }
 @media all and (max-width: 1200px){
