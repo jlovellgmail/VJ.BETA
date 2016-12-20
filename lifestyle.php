@@ -21,24 +21,17 @@ $seo_variable = "lifestyle";
 
     </head>
     <body>
+
         <?php include '/incs/nav.php'; ?>
-
-
-
 
         <div class="journalPage">
             <div class="widthWrapper">
-
                 <?php include '/incs/lifestyle.php'; ?>
-
             </div>
         </div>
+
         <?php include '/incs/footer.php'; ?>
         <?php include '/incs/footer-links.php'; ?>
-
-
-
-
 
 
         <!-- <script src="/js/instafeed.min.js"></script> -->

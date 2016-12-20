@@ -42,52 +42,19 @@ if (is_array($postList)) {
         ?>
 
         <div class="lifestyle-post-block textLeft" id="divID_<?php echo $PID; ?>">
-            
-            <!-- <div class="xs-four md-two" > -->
             <div class="imageContainer">
-
-
-                <!--
-                <div class='square-aspect-dummy'></div>
-                <a class='aspect-img'
-                   href="/post-view.php?from=lifestyle&PermLink=Virgil-James&Title=<?php echo $urlTitle; ?>&PID=<?php echo $PID; ?>"
-                   style='background-image: url(<?php echo $image; ?>);'></a>
-                -->
                 <a class='image'
                    href="/post-view.php?from=lifestyle&PermLink=Virgil-James&Title=<?php echo $urlTitle; ?>&PID=<?php echo $PID; ?>"
                    style='background-image: url(<?php echo $image; ?>);'></a>
-
-
-
             </div>
-
-            <!-- <div class="xs-eight md-ten textLeft" style='padding-left: 15px;'> -->
             <div class="textContainer">
-
-
                 <a href="/post-view.php?from=lifestyle&PermLink=Virgil-James&Title=<?php echo $urlTitle; ?>&PID=<?php echo $PID; ?>">
-                    
-                    <!-- <h4 class="fw-600 size5"><?php 
-                        //echo $Title; 
-                    ?></h4>
-                    -->
                     <h4 class="title"><?php echo $Title; ?></h4>
-
                 </a>
                 <p><?php echo $subTitle; ?></p>
-
-
-                <!--                
-                <a href="/post-view.php?from=lifestyle&PermLink=Virgil-James&Title=<?php echo $urlTitle; ?>&PID=<?php echo $PID; ?>"
-                   class="fw-600 size7">Read More +</a>
-                -->
                 <a href="/post-view.php?from=lifestyle&PermLink=Virgil-James&Title=<?php echo $urlTitle; ?>&PID=<?php echo $PID; ?>"
                    class="readMoreLink">Read More</a>
-
-
             </div>
-
-
         </div>
         <?php
     }

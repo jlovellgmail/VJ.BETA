@@ -32,59 +32,19 @@ $dbo->doQuery($query);
 $gallery = $dbo->loadObjectList();
 ?>
 
-
-<!-- <div class='lifestyle-content-wrapper widthWrapper'> -->
 <div>
-
     <?php if ($postCount > 0) { ?>
-        
-        <!-- <div class='rel sm-twelve xl-eight marBottom45'> -->
-        <div>
-
-            <!-- <div class='sm-twelve'> -->
-            <div>
-                
-                <!-- <div class='title-block-pad'> -->
-                <div>
-
-                    <div class="lifestyle-section-title-block">
-
-
-                        <!--
-                        <h3 class="ital fw-300">Virgil James Lifestyle</h3>
-                        <h2 class="caps size45">Journal</h2>
-                        -->
-                        <div class="part1">Lifestyle</div>
-                        <div class="part2">Journal</div>
-
-
-                    </div>
-                </div>
-
-
-                <!-- <div class="journal-rows-wrapper" id="lifestylePosts" data-ui="jscroll-default"> -->
-                <div id="lifestylePosts" data-ui="jscroll-default">
-
-                    <?php include "/getLifestylePosts.php"; ?>
-
-                </div>
-                
-                <div class="next jscroll-next-parent" style="display: none;">
-                </div>
-
-
-            </div>
+        <div class="lifestyle-section-title-block">
+            <div class="part1">Lifestyle</div>
+            <div class="part2">Journal</div>
+        </div>
+        <div id="lifestylePosts" data-ui="jscroll-default">
+            <?php include "/getLifestylePosts.php"; ?>
+        </div>
+        <div class="next jscroll-next-parent" style="display: none;">
         </div>
     <?php } ?>
 </div>
-
-
-
-
-
-
-
-
 <script>
     $('.events-list-btn, .event-list-close').on('click', function () {
         $('.event-view-all-holster').toggleClass('truncate').toggleClass('expand');
@@ -92,28 +52,20 @@ $gallery = $dbo->loadObjectList();
         $('.events-list-bg').toggleClass('hide');
         // $('.lifestyle-content-wrapper').toggleClass('landing-margin');
     });
-
     $('#lifestylePosts').jscroll({nextSelector: 'a.scroll:last'});
 </script>
-
-
-
 <script>
     $('.flippy-01').click(function () {
         $('.index-slide').toggleClass('flippyshow');
     })
-
     $(document).on('click', '.flip-card-blur-bg-lifestyle', function () {
         $('.index-slide').removeClass('flippyshow');
     });
-
     $(document).on('click', '.index-slide', function (e) {
         e.stopPropagation();
     });
 </script>
-
 <script>
-
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -134,13 +86,11 @@ $gallery = $dbo->loadObjectList();
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-
     if( isMobile.any() ) {
         $(".index-slide, .flip-card-blur-bg, .flip-card-blur-bg-lifestyle").css("background-attachment","scroll");
     } else {
         $(".index-slide, .flip-card-blur-bg, .flip-card-blur-bg-lifestyle").css("background-attachment","fixed");
     };
-
 </script>
 
 <!--
@@ -160,9 +110,5 @@ $gallery = $dbo->loadObjectList();
             $('html,body').animate({scrollTop: scrollTo.offset().top - ($(window).height() / 2) + (scrollTo.height() / 2)});
         });
     </script>
-
-
-
     <?php
-}
-?>
+} ?>
