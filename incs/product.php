@@ -28,7 +28,7 @@ $websiteHandle = urlencode("http://www.virgiljames.net/product.php?style=" . $_G
     <?php
     //$ImgUrl = $Product->getVar("ImgUrl");
     //$ImgUrl = str_replace('\\', '/', $ImgUrl);
-    $ImgUrl = "/uploadedImages/ProductImgSt/".$PID.".png";
+    $ImgUrl = "/uploadedImages/ProductImgSt/".$PID.".jpg";
     
     $pinterest = "http://pinterest.com/pin/create/button/?url=" . urlencode("http://www.virgiljames.net/product.php?style=" . $_GET["style"] . "&pid=" . $_GET["pid"]) . "&media=" . urlencode("http://www.virgiljames.net$ImgUrl");
     ?>
