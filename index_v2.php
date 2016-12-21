@@ -28,33 +28,87 @@ $seo_variable = "home";
 
 
 
-                <div class="container">
-                    <div class="imageContainer">
-                        <div class="image">
+                    <div class="contentContainer">
+
+
+
+                        <!-- carousel -->
+                        <div class="imageContainer">
+                            <div class="image">
+
+                                <img id="carouselImage" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
+
+                            </div>
+                            <div class="controls">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
                         </div>
-                        <div class="controls">
-                            <div class="dot active"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+
+
+                        <div class="textContainer">
+                            <div class="preorderText">
+                                <div class="headline">
+                                    Preview
+                                </div>
+                                <div class="titleContainer">
+                                    <div class="title">
+                                        <div class="part1">Cityline</div><div class="part2">Collections</div>
+                                    </div>
+                                </div>
+                                <div class="copy">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                </div>
+                                <div class="boxes">
+                                    <a class="box" href="/collection/city/reykjavik/">
+                                        <div class="title">
+                                            Reykjavik
+                                        </div>
+                                        <div class="subtitle">
+                                            Collection
+                                        </div>
+                                    </a>
+                                    <div class="vline">
+                                    </div>
+                                    <a class="box" href="/collection/city/santa-fe/">
+                                        <div class="title">
+                                            Santa Fe
+                                        </div>
+                                        <div class="subtitle">
+                                            Collection
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
+
+
+
                     </div>
-                    <!-- preload images -->
+                    <!-- for carousel: preload images -->
                     <div style="position:fixed; left:4000px; top:4000px;">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg">
 
                     </div>
-                    <!-- change images -->
+                    <!-- for carousel: change images -->
                     <script>
                         var images = [
                             "/img/IMG_6948_tote_hero_whiter_bg_q7.jpg"
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
                         ];
-                        var i=0;
+                        var i=1;
                         function change(){
-                            var div = $(".imageContainer .image");
+                            
+                            
+                            //var div = $(".imageContainer .image");
+                            var div = $("#carouselImage");
+
+
                             i = ++i % images.length;
                             console.log("i: " + i + "   ...images[i]: " + images[i]);
                             function animate(){
@@ -63,10 +117,17 @@ $seo_variable = "home";
                                     $(this).removeClass('animated fadeOut');
                                     $(".dot").removeClass("active");
                                     $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    div.css("background-image", "url(" + images[i] + ")" );
+                                    
+                                    
+                                    // div.css("background-image", "url(" + images[i] + ")" );
+                                    div.attr("src", images[i]);
+
+
                                     div.addClass('animated fadeIn').one(animationEnd, function() {
                                         $(this).removeClass('animated fadeIn');
                                     });
+
+
                                 });
                             }
                             animate();
@@ -76,48 +137,20 @@ $seo_variable = "home";
                             setTimeout(change, 6000);
                         });
                     </script>
-                </div>
 
 
 
 
-                    <div class="textContainer">
-                        <div class="preorderText">
-                            <div class="headline">
-                                Early Access
-                            </div>
-                            <div class="titleContainer">
-                                <div class="title">
-                                    <div class="part1">Cityline</div><div class="part2">Collections</div>
-                                </div>
-                            </div>
-                            <div class="copy">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
-                            </div>
-                            <div class="boxes">
-                                <a class="box" href="/collection/city/reykjavik/">
-                                    <div class="title">
-                                        Reykjavik
-                                    </div>
-                                    <div class="subtitle">
-                                        Collection
-                                    </div>
-                                </a>
-                                <div class="vline">
-                                </div>
-                                <a class="box" href="/collection/city/santa-fe/">
-                                    <div class="title">
-                                        Santa Fe
-                                    </div>
-                                    <div class="subtitle">
-                                        Collection
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                        
+
+
                     <div class="imageWrapper">
                     </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
