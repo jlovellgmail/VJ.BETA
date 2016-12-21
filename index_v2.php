@@ -26,18 +26,11 @@ $seo_variable = "home";
                 <div class="mainFrame">
                     
 
-
-
                     <div class="contentContainer">
-
-
-
                         <!-- carousel -->
                         <div class="imageContainer">
                             <div class="image">
-
                                 <img id="carouselImage" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
-
                             </div>
                             <div class="controls">
                                 <div class="dot active"></div>
@@ -45,8 +38,6 @@ $seo_variable = "home";
                                 <div class="dot"></div>
                             </div>
                         </div>
-
-
                         <div class="textContainer">
                             <div class="preorderText">
                                 <div class="headline">
@@ -82,11 +73,9 @@ $seo_variable = "home";
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
+
+
                     <!-- for carousel: preload images -->
                     <div style="position:fixed; left:4000px; top:4000px; opacity: 0; ">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg">
@@ -139,16 +128,8 @@ $seo_variable = "home";
                     </script>
 
 
-
-
-                        
-
-
                     <div class="imageWrapper">
                     </div>
-
-
-
 
 
                 </div>

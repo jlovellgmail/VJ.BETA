@@ -1458,12 +1458,6 @@ body {
   margin: 0;
   min-height: 100px;
   max-height: 650px;
-  /*
-						position: absolute;
-						top: 50%;
-						transform: translate(0,-50%);
-						height: 100%;
-						*/
   position: relative;
   max-width: 600px;
   top: initial;
@@ -1479,11 +1473,6 @@ body {
   height: 100%;
 }
 .preorderPage-v2.bg-whiter .landingFrame .mainFrame .contentContainer .imageContainer .controls {
-  /*
-							position: absolute;
-							bottom: 14px;
-							right: 284px;
-							*/
   right: initial;
   margin-left: auto;
   margin-right: auto;
@@ -1504,14 +1493,6 @@ body {
   opacity: .7;
 }
 .preorderPage-v2.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  max-height: 550px;
-  padding-top: 20px;
   position: relative;
   width: auto;
   right: initial;
@@ -1524,7 +1505,6 @@ body {
 }
 .preorderPage-v2.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText {
   color: black;
-  position: absolute;
   text-align: center;
   top: 41%;
   width: 510px;
