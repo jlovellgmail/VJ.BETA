@@ -78,7 +78,7 @@ $seo_variable = "home";
                     <div class="contentContainer">
                         <div class="preorderText">
                             <div class="headline">
-                                Early Access
+                                Preview
                             </div>
                             <div class="titleContainer">
                                 <div class="title">
