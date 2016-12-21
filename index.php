@@ -35,8 +35,10 @@ $seo_variable = "home";
                             <div class="dot"></div>
                         </div>
                     </div>
+
+
                     <!-- preload images -->
-                    <div style="position:fixed; left:4000px; top:4000px;">
+                    <div style="position:fixed; left:4000px; top:4000px; opacity:0; ">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg">
