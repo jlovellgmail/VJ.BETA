@@ -17,7 +17,7 @@
 
 <?php include '/incs/nav.php'; ?>
 
-<div class="aboutPage-new">
+<div class="aboutPage">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 noPadding">
