@@ -30,7 +30,10 @@ $seo_variable = "home";
                         <!-- carousel -->
                         <div class="imageContainer">
                             <div class="image">
-                                <img id="carouselImage" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
+                                
+                                <img id="carouselImage" class="active" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
+                                <img id="carouselImage2" style="opacity: 0;" src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg" />
+
                             </div>
                             <div class="controls">
                                 <div class="dot active"></div>
@@ -75,28 +78,63 @@ $seo_variable = "home";
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
                         ];
-                        var i=1;
+                        var i=0;
+                        var timeout = 8000;
                         function change(){
-                            var div = $("#carouselImage");
+                            
+                            //var div = $("#carouselImage");
+                            if($("#carouselImage").hasClass("active")){
+                                div = $("#carouselImage");
+                                next = $("#carouselImage2");
+                            }
+                            else {
+                                div = $("#carouselImage2");
+                                next = $("#carouselImage");
+                            }
+
+
+
                             i = ++i % images.length;
-                            console.log("i: " + i + "   ...images[i]: " + images[i]);
+                            // console.log("i: " + i + "   ...images[i]: " + images[i]);
                             function animate(){
                                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+                                /*
                                 div.addClass('animated fadeOut').one(animationEnd, function() {
-                                    $(this).removeClass('animated fadeOut');
+                                    div.removeClass('animated fadeOut');
+
                                     $(".dot").removeClass("active");
                                     $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
+                                    
                                     div.attr("src", images[i]);
                                     div.addClass('animated fadeIn').one(animationEnd, function() {
-                                        $(this).removeClass('animated fadeIn');
+                                        div.removeClass('animated fadeIn');
                                     });
+
                                 });
+                                */
+                                div.addClass('animated fadeOut').one(animationEnd, function() {
+                                    $(this).removeClass('animated fadeOut');
+                                    $(this).css("opacity", 0);
+                                });
+                                setTimeout(showNext, 800);
+                                function showNext(){
+                                    div.removeClass("active");
+                                    next.addClass("active");
+                                    next.attr("src", images[i]);
+                                    next.addClass('animated fadeIn').one(animationEnd, function() {
+                                        $(this).removeClass('animated fadeIn');
+                                        $(this).css("opacity", 1);
+                                    });
+                                    $(".dot").removeClass("active");
+                                    $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
+                                }
                             }
                             animate();
-                            setTimeout(change, 6000);
+                            setTimeout(change, timeout);
                         }
                         $(window).load(function(){
-                            setTimeout(change, 6000);
+                            setTimeout(change, timeout);
                         });
                     </script>
 

@@ -743,13 +743,18 @@ body {
   transform: initial;
   vertical-align: bottom;
   height: auto;
+  height: 650px;
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .image img {
-  -vendor-animation-duration: 1s;
+  animation-duration: 2s;
+  -vendor-animation-duration: 2s;
   -vendor-animation-delay: 0s;
   -vendor-animation-iteration-count: infinite;
-  width: 100%;
   height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls {
   right: initial;
@@ -758,6 +763,11 @@ body {
   display: inline-block;
   position: relative;
   bottom: 44px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: .5;
+  bottom: 32px;
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls .dot {
   display: inline-block;
@@ -842,7 +852,7 @@ body {
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer {
   text-align: center;
-  margin: 9px 0 9px 0;
+  margin: 9px 0 17px 0;
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
   color: black;
@@ -890,7 +900,7 @@ body {
   color: black;
   display: inline-block;
   transition: .3s;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 800;
   letter-spacing: .7px;
   text-rendering: geometricPrecision;
