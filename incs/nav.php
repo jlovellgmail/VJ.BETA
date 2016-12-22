@@ -87,7 +87,11 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
             var didScroll;
             // on scroll, let the interval function know the user has scrolled
             $(window).scroll(function(event){
-                didScroll = true;
+
+                // temp disable the header hiding
+                //didScroll = true;
+
+
             });
             // run hasScrolled() and reset didScroll status
             setInterval(function() {
