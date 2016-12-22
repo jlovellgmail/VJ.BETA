@@ -798,31 +798,72 @@ body {
   display: table;
   vertical-align: middle;
   position: relative;
+  /*
+    			    	.boxes {
+    			    		text-align: center;
+    			    		display: inline-block;
+    			    		border: 1px solid black;
+    			    		margin-top: 50px;
+    			    		.vline {
+    			    			width: 1px;
+    			    			height: 100px;
+    			    			border-left: 1px solid rgba(0,0,0, .2);
+    			    			display: inline-block;
+    			    			vertical-align: middle;
+    			    		}
+    			    		.box {
+    			    			cursor: pointer;
+    						    padding: 50px 0;
+    						    vertical-align: middle;
+    						    width: 212px;
+    						    text-transform: uppercase;
+    			    			color: black;
+    			    			display: inline-block;
+    						    transition: .3s;
+    						    font-size: 22px;
+    						    font-weight: 800;
+    						    letter-spacing: .7px;
+    						    text-rendering: geometricPrecision;
+    						    text-decoration: none;
+    						    .title {
+    						    	display: inline-block;
+    						    }
+    						    .subtitle {
+    						    	font-size: 12px;
+    						    	text-transform: uppercase;
+    						    	font-weight: 500;
+    						    	letter-spacing: .8px;
+    						    	margin-top: 2px;
+    						    }
+    						    &:hover {
+    					    	    background-color: rgba(255, 255, 255, 0.2);
+    						    }
+    			    		}
+    			    	}
+    			    	*/
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headline {
-  font-size: 32px;
-  text-transform: capitalize;
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.6);
-}
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer {
   text-align: center;
   margin: 9px 0 9px 0;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
   color: black;
-  font-size: 43px;
+  font-size: 40px;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title .part1 {
-  font-weight: 600;
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer .headline .part1 {
   display: inline-block;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title .part2 {
-  font-weight: 100;
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer .headline .part2 {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 3px;
+}
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer .headline .light {
+  font-weight: 100;
+}
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headlineContainer .headline .heavy {
+  font-weight: 600;
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .copy {
   max-width: 540px;
@@ -840,24 +881,13 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .box {
+  margin-top: 60px;
   text-align: center;
-  display: inline-block;
   border: 1px solid black;
-  margin-top: 50px;
-}
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .vline {
-  width: 1px;
-  height: 100px;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  vertical-align: middle;
-}
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box {
   cursor: pointer;
-  padding: 50px 0;
+  padding: 32px 40px;
   vertical-align: middle;
-  width: 212px;
   text-transform: uppercase;
   color: black;
   display: inline-block;
@@ -868,17 +898,10 @@ body {
   text-rendering: geometricPrecision;
   text-decoration: none;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box .title {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .box .title {
   display: inline-block;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box .subtitle {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: .8px;
-  margin-top: 2px;
-}
-.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box:hover {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 @media all and (max-width: 1150px) {
