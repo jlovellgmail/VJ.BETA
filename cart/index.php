@@ -80,7 +80,13 @@ if (isset($_SESSION["Cart"])) {
                             </div>
                         </div>
                     </div>
-                    <?php include '/incs/cartFooter.php'; ?>
+
+
+                    <?php 
+                        //include '/incs/cartFooter.php'; 
+                    ?>
+
+
                 </div>
             </div>
             <?php include $_SERVER['DOCUMENT_ROOT'] .'/incs/modalFrame.php'; ?>

@@ -47,53 +47,77 @@ $Countries = new Countries();
         <?php include '../incs/head-links.php'; ?>
         <link rel="stylesheet" href="/css/cartv2.css">
         <link rel="stylesheet" href="/css/forms.css">
+        <link rel="stylesheet" href="/css/preorder.css">
         <script src="/cart/js/cart.js" type="text/javascript"></script>
     </head>
-    <body class="blackBg">
-        <div class="bgWrapper">
-            <div class="widthWrapper marBottom60">
-                <div class="row">
-                    <div class="sm-twelve marTop30 marBottom30 textLeft"> <img src="/img/vj-logo-white.png" alt="" width="280"> </div>
-                </div>
-                <div class="row">
-                    <div class="sm-twelve mTextCenterDLeft fw-300">
-                        <div class="leafCorners1 whiteBg pad30">
-                            <?php include '/incs/cartNav.php'; ?>
+    <body>
 
-                            <div class="row">
-                                <div class="lg-eight leftCol cartLeft">
-                                    <?php
-                                    if ($showSaved) {
-                                        include 'incs/AddressBook.php';
-                                    } else {
-                                        include 'incs/AddressForm.php';
-                                    }
-                                    ?></div><!--
-                                --><div class="lg-four rightCol">                            
-                                    <?php include '/incs/cartSidebar.php'; ?>
+
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/incs/nav.php'; ?>
+        <div class="cartPage">
+
+
+            <div class="bgWrapper">
+                <div class="widthWrapper marBottom60">
+
+                    <!--                    
+                    <div class="row">
+                        <div class="sm-twelve marTop30 marBottom30 textLeft"> <img src="/img/vj-logo-white.png" alt="" width="280"> </div>
+                    </div>
+                    -->
+                    
+                    <div class="row">
+                        <div class="sm-twelve mTextCenterDLeft fw-300">
+                            <div class="leafCorners1 whiteBg pad30">
+                                <?php include '/incs/cartNav.php'; ?>
+
+                                <div class="row">
+                                    <div class="lg-eight leftCol cartLeft">
+                                        <?php
+                                        if ($showSaved) {
+                                            include 'incs/AddressBook.php';
+                                        } else {
+                                            include 'incs/AddressForm.php';
+                                        }
+                                        ?></div><!--
+                                    --><div class="lg-four rightCol">                            
+                                        <?php include '/incs/cartSidebar.php'; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+    		        <?php 
+                        //include '/incs/cartFooter.php';
+                    ?>
+
+
                 </div>
-		        <?php include '/incs/cartFooter.php'; ?>
             </div>
+    		<?php include $_SERVER['DOCUMENT_ROOT'] .'/incs/modalFrame.php'; ?>
+            <script>
+                $(document).ready(function () {
+                    $('.toggleDivGroupButton').click(function () {
+                        var toggleId = $(this).data('id');
+                        $(".toggleDivGroupItem").hide();
+                        $("#" + toggleId + ".toggleDivGroupItem").slideToggle();
+                    });
+
+                    $('.toggleDivGroupItemClose').click(function () {
+                        $(".toggleDivGroupItem").hide();
+                        $(".toggleDivGroupItem.toggleDivGroupDefault").show();
+                    });
+
+                });
+            </script>
+
+
+
         </div>
-		<?php include $_SERVER['DOCUMENT_ROOT'] .'/incs/modalFrame.php'; ?>
-        <script>
-            $(document).ready(function () {
-                $('.toggleDivGroupButton').click(function () {
-                    var toggleId = $(this).data('id');
-                    $(".toggleDivGroupItem").hide();
-                    $("#" + toggleId + ".toggleDivGroupItem").slideToggle();
-                });
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
 
-                $('.toggleDivGroupItemClose').click(function () {
-                    $(".toggleDivGroupItem").hide();
-                    $(".toggleDivGroupItem.toggleDivGroupDefault").show();
-                });
 
-            });
-        </script>
     </body>
 </html>
