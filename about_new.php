@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<?php include '/incs/nav_new.php'; ?>
+<?php include '/incs/nav.php'; ?>
 
 <div class="aboutPage-new">
     <div class="container-fluid">

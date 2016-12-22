@@ -2,27 +2,27 @@
 <?php $page = "about"; ?>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>About Virgil James | Bags, Luxury Handbags & Authentic Handbags</title>
-	<meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags, Virgil James"/>
-	<meta name="description" content="With headquarters in Los Angeles, California, Virgil James is the place to shop for luxury bags and accessories."/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Virgil James | Bags, Luxury Handbags & Authentic Handbags</title>
+    <meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags, Virgil James"/>
+    <meta name="description" content="With headquarters in Los Angeles, California, Virgil James is the place to shop for luxury bags and accessories."/>
 
     <link rel="stylesheet" href="/css/bootstrap-grid.css" />
-	<?php include '/incs/head-links.php'; ?>
-	<link rel="stylesheet" href="/css/index.css">
-	<link rel="stylesheet" href="/css/about.css">
+    <?php include '/incs/head-links.php'; ?>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/about.css">
 </head>
 <body>
 
 <?php include '/incs/nav.php'; ?>
 
-<div class="aboutPage bg1">
+<div class="aboutPage-new">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 noPadding">
                 <div class="landingFrame">
-                    <div class="mainFrame">
+                    <div class="imageContainer">
                         <div class="textBlockMain">
                             <div class="blackGlow">
                                 <img src="/preorder/images/black_blur.png" />
@@ -176,7 +176,6 @@
 
 <?php include '/incs/footer.php'; ?>
 <?php include '/incs/footer-links.php'; ?>
-
     <script>
         $('#scrollDownArrow').click(function () {
             $('html, body').animate({
@@ -184,18 +183,16 @@
             },500);
         })
     </script>
-
     <script>
         var target = $('#scrollDownArrow');
         var targetHeight = $(window).height();
-
+        var baseOpacity = target.css("opacity");
         $(document).scroll(function(e){
             var scrollPercent = (targetHeight - (2 * (window.scrollY))) / targetHeight;
             if(scrollPercent >= 0){
-                target.css('opacity', scrollPercent);
+                target.css('opacity', scrollPercent * baseOpacity);
             }
         });
     </script>
-
 </body>
 </html>
