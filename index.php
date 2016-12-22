@@ -7,9 +7,9 @@ $seo_variable = "home";
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Virgil James | Hand Bags, Luxury Handbags & Authentic Handbags</title>
-		<meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags"/>
-		<meta name="description" content="Virgil James is a luxury bags and accessories company, focused on creating authentic, functional and high quality leather goods."/>
+        <title>Virgil James | Hand Bags, Luxury Handbags & Authentic Handbags</title>
+        <meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags"/>
+        <meta name="description" content="Virgil James is a luxury bags and accessories company, focused on creating authentic, functional and high quality leather goods."/>
         <?php include '/incs/head-links.php'; ?>
         <link rel="stylesheet" href="/css/index.css" />
         <link rel="stylesheet" href="/css/animate.css" />
@@ -26,34 +26,78 @@ $seo_variable = "home";
                 <div class="mainFrame">
                     
 
-                    <div class="backgroundContainer-custom">
-                        <div class="image">
+                    <div class="contentContainer">
+                        <!-- carousel -->
+                        <div class="imageContainer">
+                            <div class="image">
+                                <img id="carouselImage" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
+                            </div>
+                            <div class="controls">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
                         </div>
-                        <div class="controls">
-                            <div class="dot active"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+                        <div class="textContainer">
+                            <div class="preorderText">
+                                <div class="headline">
+                                    Preview
+                                </div>
+                                <div class="titleContainer">
+                                    <div class="title">
+                                        <div class="part1">Cityline</div><div class="part2">Collections</div>
+                                    </div>
+                                </div>
+                                <div class="copy">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                </div>
+                                <div class="boxes">
+                                    <a class="box" href="/collection/city/reykjavik/">
+                                        <div class="title">
+                                            Reykjavik
+                                        </div>
+                                        <div class="subtitle">
+                                            Collection
+                                        </div>
+                                    </a>
+                                    <div class="vline">
+                                    </div>
+                                    <a class="box" href="/collection/city/santa-fe/">
+                                        <div class="title">
+                                            Santa Fe
+                                        </div>
+                                        <div class="subtitle">
+                                            Collection
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-                    <!-- preload images -->
-                    <div style="position:fixed; left:4000px; top:4000px; opacity:0; ">
+                    <!-- for carousel: preload images -->
+                    <div style="position:fixed; left:4000px; top:4000px; opacity: 0; ">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg">
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg">
 
                     </div>
-                    <!-- change images -->
+                    <!-- for carousel: change images -->
                     <script>
                         var images = [
                             "/img/IMG_6948_tote_hero_whiter_bg_q7.jpg"
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
                         ];
-                        var i=0;
+                        var i=1;
                         function change(){
-                            var div = $(".backgroundContainer-custom .image");
+                            
+                            
+                            //var div = $(".imageContainer .image");
+                            var div = $("#carouselImage");
+
+
                             i = ++i % images.length;
                             console.log("i: " + i + "   ...images[i]: " + images[i]);
                             function animate(){
@@ -62,10 +106,17 @@ $seo_variable = "home";
                                     $(this).removeClass('animated fadeOut');
                                     $(".dot").removeClass("active");
                                     $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    div.css("background-image", "url(" + images[i] + ")" );
+                                    
+                                    
+                                    // div.css("background-image", "url(" + images[i] + ")" );
+                                    div.attr("src", images[i]);
+
+
                                     div.addClass('animated fadeIn').one(animationEnd, function() {
                                         $(this).removeClass('animated fadeIn');
                                     });
+
+
                                 });
                             }
                             animate();
@@ -77,43 +128,10 @@ $seo_variable = "home";
                     </script>
 
 
-                    <div class="contentContainer">
-                        <div class="preorderText">
-                            <div class="headline">
-                                Preview
-                            </div>
-                            <div class="titleContainer">
-                                <div class="title">
-                                    <div class="part1">Cityline</div><div class="part2">Collections</div>
-                                </div>
-                            </div>
-                            <div class="copy">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
-                            </div>
-                            <div class="boxes">
-                                <a class="box" href="/collection/city/reykjavik/">
-                                    <div class="title">
-                                        Reykjavik
-                                    </div>
-                                    <div class="subtitle">
-                                        Collection
-                                    </div>
-                                </a>
-                                <div class="vline">
-                                </div>
-                                <a class="box" href="/collection/city/santa-fe/">
-                                    <div class="title">
-                                        Santa Fe
-                                    </div>
-                                    <div class="subtitle">
-                                        Collection
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="imageWrapper">
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -123,8 +141,8 @@ $seo_variable = "home";
         <?php include '/incs/footer-links.php'; ?>
 
 
-		<?php include('json-ld.php'); ?>
-		<script type="application/ld+json"><?php echo json_encode($payload); ?></script>
+        <?php include('json-ld.php'); ?>
+        <script type="application/ld+json"><?php echo json_encode($payload); ?></script>
 
     </body>
 </html>
