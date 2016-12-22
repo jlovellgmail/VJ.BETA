@@ -205,20 +205,14 @@
             }
         });
     </script>
-
-
-    <!-- temp get aspect ratio -->
+    <!-- set aspect ratio on main image: -->
     <script>
         $(document).ready(setAspect);
         function setAspect(){
             var image = $(".imageContainer");
             var newHeight = image.width() * 0.5680272108843537;
-            
-            //image.css("height", newHeight+"px");
             $(".landingFrame").css("max-height", (newHeight + 96)+"px");
-
         }
     </script>
-
 </body>
 </html>

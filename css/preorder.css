@@ -212,9 +212,6 @@ body {
 }
 @media all and (min-width: 1200px) {
   .headerContainer .navWidthWrapper {
-    /*
-			width: calc(~"100% - 95px - 95px");
-			*/
     width: calc(100% - 35px - 35px);
   }
   .headerContainer .navWidthWrapper .logoContainer {
@@ -557,6 +554,7 @@ body {
 .aboutPage .landingFrame {
   text-align: center;
   height: calc(100vh - 45px);
+  padding-top: 96px;
 }
 .aboutPage .landingFrame .imageContainer {
   position: relative;
@@ -570,10 +568,6 @@ body {
   margin: auto;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  /*
-    	    height: calc(~"100vh - 96px - 50px");
-    	    top: 96px;
-    	    */
   height: 100%;
   top: initial;
 }
