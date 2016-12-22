@@ -51,21 +51,10 @@ $Countries = new Countries();
         <script src="/cart/js/cart.js" type="text/javascript"></script>
     </head>
     <body>
-
-
         <?php include $_SERVER['DOCUMENT_ROOT'].'/incs/nav.php'; ?>
         <div class="cartPage">
-
-
             <div class="bgWrapper">
                 <div class="widthWrapper marBottom60">
-
-                    <!--                    
-                    <div class="row">
-                        <div class="sm-twelve marTop30 marBottom30 textLeft"> <img src="/img/vj-logo-white.png" alt="" width="280"> </div>
-                    </div>
-                    -->
-                    
                     <div class="row">
                         <div class="sm-twelve mTextCenterDLeft fw-300">
                             <div class="leafCorners1 whiteBg pad30">
@@ -87,13 +76,6 @@ $Countries = new Countries();
                             </div>
                         </div>
                     </div>
-
-
-    		        <?php 
-                        //include '/incs/cartFooter.php';
-                    ?>
-
-
                 </div>
             </div>
     		<?php include $_SERVER['DOCUMENT_ROOT'] .'/incs/modalFrame.php'; ?>
@@ -112,12 +94,7 @@ $Countries = new Countries();
 
                 });
             </script>
-
-
-
         </div>
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
-
-
     </body>
 </html>
