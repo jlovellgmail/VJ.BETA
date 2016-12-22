@@ -205,5 +205,22 @@
             }
         });
     </script>
+
+
+    <!-- temp get aspect ratio -->
+    <script>
+        $(document).ready(setAspect);
+        function setAspect(){
+            e = $(".imageContainer");
+            
+            //newHeight = e.width() * (3/4);
+            //newHeight = e.width() * 0.6360544217687074;
+            newHeight = e.width() * 0.5680272108843537;
+            
+            e.css("height", newHeight+"px");
+            $(".landingFrame").css("height", (newHeight + 96)+"px");
+        }
+    </script>
+
 </body>
 </html>
