@@ -21,7 +21,7 @@ $seo_variable = "home";
         <?php include '/incs/nav.php'; ?>
 
 
-        <div class="preorderPage bg-whiter">
+        <div class="preorderPage">
             <div class="landingFrame">
                 <div class="mainFrame">
                     
@@ -45,7 +45,8 @@ $seo_variable = "home";
                                 </div>
                                 <div class="titleContainer">
                                     <div class="title">
-                                        <div class="part1">Cityline</div><div class="part2">Collections</div>
+                                        <div class="part1">Engineered</div>
+                                        <div class="part2">Luxury</div>
                                     </div>
                                 </div>
                                 <div class="copy">

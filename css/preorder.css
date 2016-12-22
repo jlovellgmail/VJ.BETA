@@ -711,24 +711,29 @@ body {
     margin-right: 15px;
   }
 }
-.preorderPage.bg-whiter .landingFrame {
+.preorderPage .landingFrame {
+  text-align: center;
+  min-height: calc(100vh - 86px);
   padding-top: 96px;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame {
+.preorderPage .landingFrame .mainFrame {
+  text-align: left;
+  min-height: calc(100vh - 76px - 86px);
+  position: relative;
   background-image: none;
   top: 0;
   display: table;
   width: 100%;
   margin: 0;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer {
+.preorderPage .landingFrame .mainFrame .contentContainer {
   position: relative;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 100%;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .imageContainer {
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer {
   display: inline-block;
   width: 100%;
   margin: 0;
@@ -741,14 +746,14 @@ body {
   vertical-align: bottom;
   height: auto;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .imageContainer .image img {
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .image img {
   -vendor-animation-duration: 1s;
   -vendor-animation-delay: 0s;
   -vendor-animation-iteration-count: infinite;
   width: 100%;
   height: 100%;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .imageContainer .controls {
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls {
   right: initial;
   margin-left: auto;
   margin-right: auto;
@@ -756,7 +761,7 @@ body {
   position: relative;
   bottom: 44px;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .imageContainer .controls .dot {
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls .dot {
   display: inline-block;
   width: 7px;
   height: 7px;
@@ -765,10 +770,10 @@ body {
   border-radius: 20px;
   background: black;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .imageContainer .controls .dot.active {
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls .dot.active {
   opacity: .7;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer {
   position: relative;
   width: auto;
   right: initial;
@@ -779,7 +784,7 @@ body {
   height: auto;
   padding-top: 110px;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText {
   color: black;
   text-align: center;
   top: 41%;
@@ -794,39 +799,39 @@ body {
   vertical-align: middle;
   position: relative;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headline {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .headline {
   font-size: 32px;
   text-transform: capitalize;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.6);
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer {
   text-align: center;
   margin: 9px 0 9px 0;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title {
   color: black;
   font-size: 43px;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title .part1 {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title .part1 {
   font-weight: 600;
   display: inline-block;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title .part2 {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .titleContainer .title .part2 {
   font-weight: 100;
   display: inline-block;
   margin-left: 5px;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .copy {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .copy {
   max-width: 540px;
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
   display: inline-block;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .hline {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 1px;
   max-width: 550px;
@@ -835,128 +840,20 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes {
   text-align: center;
   display: inline-block;
   border: 1px solid black;
   margin-top: 50px;
 }
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .vline {
-  width: 1px;
-  height: 100px;
-  border-left: 1px solid rgba(0, 0, 0, 0.16);
-  display: inline-block;
-  vertical-align: middle;
-}
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box {
-  cursor: pointer;
-  padding: 50px 0;
-  vertical-align: middle;
-  width: 212px;
-  text-transform: uppercase;
-  color: black;
-  display: inline-block;
-  transition: .3s;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: .7px;
-  text-rendering: geometricPrecision;
-  text-decoration: none;
-}
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box .title {
-  display: inline-block;
-}
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box .subtitle {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: .8px;
-  margin-top: -4px;
-}
-.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.preorderPage .landingFrame {
-  text-align: center;
-  min-height: calc(100vh - 86px);
-}
-.preorderPage .landingFrame .mainFrame {
-  text-align: left;
-  margin: 0 96px;
-  min-height: calc(100vh - 76px - 86px);
-  top: 76px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-image: url("/preorder/images/tote_hero_whitebg_q7.jpg");
-  background-position-x: -360px;
-  background-position-y: calc(50% + 88px);
-  background-size: 100%;
-}
-.preorderPage .landingFrame .mainFrame .preorderText {
-  color: black;
-  width: 680px;
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  top: 41%;
-  right: 31%;
-  transform: translate(50%, -50%);
-}
-.preorderPage .landingFrame .mainFrame .preorderText .headline {
-  font-size: 32px;
-  text-transform: capitalize;
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.6);
-}
-.preorderPage .landingFrame .mainFrame .preorderText .titleContainer {
-  text-align: center;
-  margin: 9px 0 9px 0;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title {
-  color: black;
-  font-size: 43px;
-  text-transform: uppercase;
-  text-rendering: geometricPrecision;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title .part1 {
-  font-weight: 600;
-  display: inline-block;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title .part2 {
-  font-weight: 100;
-  display: inline-block;
-  margin-left: 5px;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .copy {
-  max-width: 540px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 27px;
-  display: inline-block;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .hline {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  height: 1px;
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .boxes {
-  text-align: center;
-  display: inline-block;
-  border: 1px solid black;
-  margin-top: 50px;
-}
-.preorderPage .landingFrame .mainFrame .preorderText .boxes .vline {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .vline {
   width: 1px;
   height: 100px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   display: inline-block;
   vertical-align: middle;
 }
-.preorderPage .landingFrame .mainFrame .preorderText .boxes .box {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box {
   cursor: pointer;
   padding: 50px 0;
   vertical-align: middle;
@@ -971,17 +868,17 @@ body {
   text-rendering: geometricPrecision;
   text-decoration: none;
 }
-.preorderPage .landingFrame .mainFrame .preorderText .boxes .box .title {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box .title {
   display: inline-block;
 }
-.preorderPage .landingFrame .mainFrame .preorderText .boxes .box .subtitle {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box .subtitle {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: .8px;
   margin-top: 2px;
 }
-.preorderPage .landingFrame .mainFrame .preorderText .boxes .box:hover {
+.preorderPage .landingFrame .mainFrame .contentContainer .textContainer .preorderText .boxes .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 @media all and (max-width: 1150px) {
