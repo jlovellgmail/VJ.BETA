@@ -204,7 +204,7 @@ body {
 .headerContainer .navWidthWrapper .bottomBorder {
   height: 1px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.17);
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
