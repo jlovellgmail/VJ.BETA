@@ -77,12 +77,7 @@ $seo_variable = "home";
                         ];
                         var i=1;
                         function change(){
-                            
-                            
-                            //var div = $(".imageContainer .image");
                             var div = $("#carouselImage");
-
-
                             i = ++i % images.length;
                             console.log("i: " + i + "   ...images[i]: " + images[i]);
                             function animate(){
@@ -91,17 +86,10 @@ $seo_variable = "home";
                                     $(this).removeClass('animated fadeOut');
                                     $(".dot").removeClass("active");
                                     $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    
-                                    
-                                    // div.css("background-image", "url(" + images[i] + ")" );
                                     div.attr("src", images[i]);
-
-
                                     div.addClass('animated fadeIn').one(animationEnd, function() {
                                         $(this).removeClass('animated fadeIn');
                                     });
-
-
                                 });
                             }
                             animate();
