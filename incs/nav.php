@@ -131,5 +131,16 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
         </script>
         <div class="bottomBorder">
         </div>
+        <script>
+            var border = $('.bottomBorder');
+            var windowHeight = $(window).height();
+            border.css("opacity", 0);
+            $(document).scroll(function(e){
+                var scrollPercent = window.scrollY / windowHeight;
+                if(scrollPercent >= .1){
+                    border.css('opacity', scrollPercent * 2);
+                }
+            });
+        </script>
     </div>
 </div>
