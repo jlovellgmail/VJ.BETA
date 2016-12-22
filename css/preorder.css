@@ -601,6 +601,8 @@ body {
   font-weight: 200;
   font-size: 20px;
   max-width: 520px;
+  font-weight: 300;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 .aboutPage .landingFrame .imageContainer .blackGlow {
   position: absolute;
