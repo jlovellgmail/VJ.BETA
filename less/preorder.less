@@ -66,7 +66,7 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// header / nav
+// header / nav old
 
 .headerText {
 	color: black;
@@ -330,6 +330,217 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
+// header / nav new
+
+.headerText {
+	color: black;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .5px;
+	text-rendering: geometricPrecision;
+	font-weight: 600;
+}
+.headerContainer-new {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 18;
+	transition: top 0.17s ease-in-out;
+	&.headerUp {
+		top: calc(-97px);
+	}
+	.navWidthWrapper {
+		position: relative;
+		display: block;
+		height: 100%;
+		margin: 0 auto;
+		text-align: left;
+		width: calc(~"100% - 60px");
+		max-width: 1340px;
+		.headerHeightWrapper {
+			padding-top: 9px;
+			height: 96px;
+			display: table;
+			.logoContainer {
+				margin-right: auto;
+				position: relative;
+				margin-left: 15px;
+				display: table-cell;
+				vertical-align: middle;
+				padding-bottom: 4px;
+			    padding-left: 11px;
+				.logoLink {
+					position: relative;
+					display: block;
+					text-align: left;
+					height: initial;
+					.navLogo {
+						position: relative;
+						width: 209px;
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+				}
+			}
+			.rightItemsContainer {
+				position: absolute;
+			    right: 0;
+				margin-right: 15px;
+				top: 39px;
+				.headerText;
+				.textLinksContainer {
+				    display: inline-block;
+					margin-right: 4px;
+					a {
+						margin-right: 16px;
+					}
+				}
+				.iconsContainer {
+				    display: inline-block;
+					.iconWrapper {
+						position: relative;
+						display: inline-block;
+						text-align: center;
+						height: 100%;
+						margin-left: 5px;
+					}
+					.navDropdownToggle {
+					}
+				}
+				.burgerContainer {
+					right: 0;
+					display: none;
+					.icon-menu {
+						opacity: 0;
+						transition: opacity .25s ease-in-out;
+						&.visible {
+							opacity: 1;
+						}
+						font-size: 24px;
+					    position: absolute;
+					    right: 0;
+					    top: -1px;
+					}
+					.icon-cancel {
+						opacity: 0;
+						transition: opacity .25s ease-in-out;
+						&.visible {
+							opacity: 1;
+						}
+						font-size: 30px;
+					    top: -4px;
+					    position: absolute;
+					    right: -4.5px;
+					}
+				}
+			}
+		}
+		.dropdown {
+			display: block;
+			position: relative;
+			max-height: 0;
+			transition: max-height 0.5s;
+			overflow: hidden;
+			width: 100%;
+			left: 0;
+			background-color: white;
+			&.visible {
+				max-height: 300px;
+			}
+			.dropdownLinksContainer {
+				.headerText;
+				font-size: 17px;
+				padding: 15px;
+				padding-top: 0;
+				padding-bottom: 10px;
+				text-align: right;
+				.textLinksContainer {
+					display: block;
+					a {
+						display: block;
+						padding-bottom: 20px;
+					}
+				}
+				.iconWrapper {
+					display: block;
+					text-align: right;
+				}
+			}
+		}
+		.bottomBorder {
+			height: 1px;
+			border-bottom: 1px solid rgba(0,0,0, .17);
+			position: relative;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: none;
+		}
+	}
+}
+@media all and (min-width: 1200px) {
+	.headerContainer {
+		.navWidthWrapper {
+
+
+			// about page margins
+			/*
+			width: calc(~"100% - 95px - 95px");
+			*/
+			width: calc(~"100% - 35px - 35px");
+
+
+			.logoContainer {
+				margin-left: auto;
+			}
+			.rightItemsContainer {
+				margin-right: auto;
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.headerContainer {
+		.navWidthWrapper {
+			.headerHeightWrapper {
+				height: @headerHeightSmall;
+				.logoContainer {
+					.logoLink {
+						.navLogo {
+							width: 195px;
+							padding-top: 19px;
+						}
+					}
+				}
+				.rightItemsContainer {
+				    top: 23px;
+				    .textLinksContainer {
+				    	display: none;
+				    }
+				    .iconsContainer {
+				    	margin-right: 50px;
+				    	margin-top: 4px;
+				    }
+					.burgerContainer {
+						display: initial;
+					}
+				}
+			}
+		}
+	}
+}
+.navDropdownOutside {
+	border: 1px solid black;
+}
+
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
 // footer
 
 @footerHeight: 86px;
@@ -572,7 +783,7 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// About page
+// About page old
 
 .aboutPage {
 	&.bg1 {
@@ -736,6 +947,250 @@ body {
     		bottom: 25px;
 
 
+    	}
+    }
+    .belowLandingFrame {
+    	margin-top: 40px;
+    	margin-bottom: 100px;
+    	.container {
+    		.row {
+    			margin-top: 130px;
+    			.textContainer {
+    				padding-left: 60px;
+    			}
+    		}
+    		.row:nth-of-type(1) {
+    			margin-top: 40px;
+    		}
+    	}
+    }
+}
+@media all and (max-width: 1200px){
+	body {
+		.aboutPage {
+			.landingFrame {
+				.mainFrame {
+					margin: 0 30px;
+
+					
+					// about page margins
+					/*
+					height: calc(~"100vh - 76px - 56px");
+					*/
+					height: calc(~"100vh - 76px - 73px");
+					.textBlockMain {
+						max-width: 450px;
+					}
+
+
+				}
+				.downArrow {
+					//filter: invert(100%);
+				    transform: translate(-50%, 0) scale(.7);
+				    transform-origin: bottom;
+
+				    // about page margins
+				    bottom: 15px;
+
+				}
+			}
+			.belowLandingFrame {
+				.sectionHeading {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	body {
+		.aboutPage {
+			&.bg1{
+				.landingFrame {
+					height: auto;
+					margin-top: @headerHeightSmall;
+					.mainFrame {
+						height: auto;
+						background-image: none;
+						top: 0;
+						.textBlockMain {
+							color: black;
+							top: initial;
+							transform: none;
+							margin: 0 30px;
+							max-width: initial;
+							margin-top: 5px;
+							margin-bottom: 30px;
+							.headline {
+								.vjSectionHeading;
+								font-size: 31px;
+								line-height: initial;
+								margin-bottom: 13px;
+							}
+							.copy {
+								color: black;
+								line-height: 28px;
+								font-weight: 300;
+								font-size: 16px;
+								max-width: initial;
+							}
+						}
+					}
+					.downArrow {
+						display: none;
+					}
+			    	.blackGlow {
+			    		display: none;
+			    	}
+				}
+			}
+			.belowLandingFrame {
+				margin-top: 0;
+				.sectionHeading {
+					margin-top: 40px;
+					font-size: 31px;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				.copy {
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// About page new
+
+.aboutPage-new {
+	display: block;
+	text-align: left;
+	.aspectRatio {
+		padding-bottom: 61%;;
+		height: 0;
+	}
+	.image {
+		background-color: rgba(0, 0, 0, 0.1);
+		height: 400px;
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		background-size: cover;
+		background-position-y: center;
+		.aspectRatio;
+		&#designPrinciples {
+			background-image: url("/img/techpacks_q6.jpg");
+		}
+		&#whatMakesUsUnique {
+			background-image: url("/img/IMG_5383_RT.jpg");
+		}
+		&#productCollections {
+			background-image: url("/img/2016-12-08 13.04.20_rt2_50_q9.jpg");
+		}
+		&#makingTheBest {
+			background-image: url("/img/label_with_edition_number_IMG_5437_RT.jpg");
+		}
+		&#qualityMaterials {
+			background-image: url("/img/drawstring top edge_q7.jpg");
+			background-position-y: 25%;
+			background-position-x: 30%;
+		}
+		&#theTeam {
+			//background-image: url("../images/2016-12-08 12.42.44_rt1_50_q9.jpg");
+			background-image: url("/img/2016-12-08 12.42.44_rt2_50_q9.jpg");
+			background-size: 130%;
+			background-position-y: calc(~"50% + 30px");
+			background-position-x: -40px;
+		}
+		&#buyingFromVirgilJames {
+			background-image: url("/img/2016-12-08 12.27.10_rt1_50_q9.jpg");
+		}
+		&#extraImage1 {
+			background-image: url("/img/2016-12-08 11.59.52_rt1_50_q9.jpg");
+			background-size: 140%;
+			background-position-x: 39%;
+			background-position-y: 49%;
+		}
+	}
+	.sectionHeading {
+		.vjSectionHeading;
+		margin-bottom: 18px;
+	}
+    .headline {
+    	text-transform: uppercase;
+    	font-size: 80px;
+    	font-weight: 100;
+	    line-height: 73px;
+	    margin-bottom: 10px;
+    }
+    .copy {
+    	font-size: 20px;
+    	font-weight: 300;
+    	line-height: 31px;
+    }
+    .landingFrame {
+	    text-align: center;
+    	height: calc(~"100vh - 45px");
+    	.imageContainer {
+    		position: relative;
+    		background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
+    		background-position-x: center;
+    		background-position-y: 70%;
+    		background-size: cover;
+    	    text-align: left;
+    	    overflow: hidden;
+    	    top: 96px;
+    	    height: calc(~"100vh - 96px - 50px");
+    	    width: 1470px;
+    	    margin: auto;
+    	    border-top-left-radius: 30px;
+    	    border-bottom-right-radius: 30px;
+    		.textBlockMain {
+    			color: white;
+    			max-width: 680px;
+    		    display: inline-block;
+    		    position: relative;
+    		    top: 50%;
+    		    transform: translateY(-50%);
+    		    margin: auto 18%;
+    		    .headline {
+	    	        position: relative;
+	    	        font-size: 40px;
+	    	        line-height: 49px;
+	    	        margin-bottom: 11px;
+    		    }
+    		    .copy {
+    		    	.bodyCopy;
+    		    	color: white;
+    		    	position: relative;
+    		    	display: inline-block;
+    		    	line-height: 29px;
+    		    	font-weight: 200;
+    		    	font-size: 20px;
+    		    	max-width: 520px;
+    		    }
+    		}
+	    	.blackGlow {
+    			position: absolute;
+    			transform: translate(-50%, -50%);
+    			left: 34%;
+    			top: 51%;
+    			opacity: .3;
+	    	}
+    	}
+    	.downArrow {
+    		position: absolute;
+    		left: 50%;
+    		transform: translate(-50%, 0);
+    		cursor: pointer;
+    		bottom: 25px;
+    		width: 25px;
+    		opacity: .45;
+    		filter: invert(1);
     	}
     }
     .belowLandingFrame {
@@ -1517,7 +1972,7 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// Landing page / Preorder page
+// Landing page / Preorder page v2
 
 .preorderPage-v2 {
 
