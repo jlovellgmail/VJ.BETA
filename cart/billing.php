@@ -52,56 +52,79 @@ $Countries = new Countries();
         <link rel="stylesheet" href="/css/cartv2.css">
         <link rel="stylesheet" href="/css/forms.css">
         <link rel="stylesheet" href="/css/forms.css" />
+        <link rel="stylesheet" href="/css/preorder.css">
         <script src="/cart/js/cart.js" type="text/javascript"></script>
         <script src="/js/jquery.creditCardValidator.js"></script>
     </head>
-    <body class="blackBg">
-        <div class="bgWrapper">
-            <div class="widthWrapper marBottom60">
-                <div class="row">
-                    <div class="sm-twelve marTop30 marBottom30 textLeft"><img src="/img/vj-logo-white.png" alt="" width="280"></div>
-                </div>
-                <div class="row">
-                    <div class="sm-twelve mTextCenterDLeft fw-300">
-                        <div class="leafCorners1 whiteBg pad30">
-                            <?php include 'incs/cartNav.php'; ?>
+    <body>
 
-                            <div class="row">
-                                <div class="lg-eight leftCol cartLeft">
-                                    <?php include 'incs/billing.php'; ?>
-                                </div><!--
-                                --><div class="lg-four rightCol">                            
-                                    <?php include 'incs/cartSidebar.php'; ?>
+
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/incs/nav.php'; ?>
+        <div class="cartPage">
+
+
+            <div class="bgWrapper">
+                <div class="widthWrapper marBottom60">
+                    
+
+                    <!--
+                    <div class="row">
+                        <div class="sm-twelve marTop30 marBottom30 textLeft"><img src="/img/vj-logo-white.png" alt="" width="280"></div>
+                    </div>
+                    -->
+
+                    <div class="row">
+                        <div class="sm-twelve mTextCenterDLeft fw-300">
+                            <div class="leafCorners1 whiteBg pad30">
+                                <?php include 'incs/cartNav.php'; ?>
+
+                                <div class="row">
+                                    <div class="lg-eight leftCol cartLeft">
+                                        <?php include 'incs/billing.php'; ?>
+                                    </div><!--
+                                    --><div class="lg-four rightCol">                            
+                                        <?php include 'incs/cartSidebar.php'; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-		        <?php include '/incs/cartFooter.php'; ?>
-            </div>
-        </div>
-		<?php include $_SERVER['DOCUMENT_ROOT'] .'/incs/modalFrame.php'; ?>
-        <script>
-            var showSaved = '<?php echo $showSaved; ?>';
-            $(document).ready(function () {
-                $('.toggleDivGroupButton').click(function () {
-                    var toggleId = $(this).data('id');
-                    $(".toggleDivGroupItem").hide();
-                    $("#" + toggleId + ".toggleDivGroupItem").slideToggle();
-                });
 
-                $('.toggleDivGroupItemClose').click(function () {
-                    $(".toggleDivGroupItem").hide();
-                    $(".toggleDivGroupItem.toggleDivGroupDefault").show();
+
+    		        <?php 
+                        //include '/incs/cartFooter.php'; 
+                    ?>
+
+
+                </div>
+            </div>
+    		<?php include $_SERVER['DOCUMENT_ROOT'] .'/incs/modalFrame.php'; ?>
+            <script>
+                var showSaved = '<?php echo $showSaved; ?>';
+                $(document).ready(function () {
+                    $('.toggleDivGroupButton').click(function () {
+                        var toggleId = $(this).data('id');
+                        $(".toggleDivGroupItem").hide();
+                        $("#" + toggleId + ".toggleDivGroupItem").slideToggle();
+                    });
+
+                    $('.toggleDivGroupItemClose').click(function () {
+                        $(".toggleDivGroupItem").hide();
+                        $(".toggleDivGroupItem.toggleDivGroupDefault").show();
+                    });
+                    <?php if (isset($paymMeth) && $paymMeth == "cc") { ?>
+                    $('#ccPaymentSelect').trigger('click');
+                    <?php } ?>
+                    <?php if (isset($paymMeth) && $paymMeth == "paypal") { ?>
+                    $('#paypalPaymentSelect').trigger('click');
+                    <?php } ?>
                 });
-                <?php if (isset($paymMeth) && $paymMeth == "cc") { ?>
-                $('#ccPaymentSelect').trigger('click');
-                <?php } ?>
-                <?php if (isset($paymMeth) && $paymMeth == "paypal") { ?>
-                $('#paypalPaymentSelect').trigger('click');
-                <?php } ?>
-            });
-            
-        </script>      
+            </script>
+
+
+        </div>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
+
+
     </body>
 </html>
