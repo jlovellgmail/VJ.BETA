@@ -840,6 +840,27 @@ body {
     						width: auto;
 
 
+    						&.fadeout {
+    							animation-name: fadeout;
+    							animation-duration: 1s;
+    							animation-timing-function: ease; 
+    							animation-delay: 0;
+    							animation-iteration-count: 1;
+    							animation-fill-mode: none;
+    							animation-play-state: running;     								
+    						}
+    						&.fadein {
+    							animation-name: fadein;
+    							animation-duration: 1.5s; 
+    							animation-timing-function: ease; 
+    							animation-delay: 0;
+    							animation-iteration-count: 1;
+    							animation-fill-mode: none;
+    							animation-play-state: running; 
+    						}
+
+
+
     						&.carousel-transition-v2 {
     							&.fadeout {
     								animation-name: fadeout;

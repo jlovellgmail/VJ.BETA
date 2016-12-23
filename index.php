@@ -79,51 +79,32 @@ $seo_variable = "home";
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
                         ];
                         var i=0;
+                        var initialTimeout = 8000;
                         var timeout = 8000;
+                        var delay = 600;
                         function change(){
-                            
-                            //var div = $("#carouselImage");
                             if($("#carouselImage").hasClass("active")){
-                                div = $("#carouselImage");
+                                current = $("#carouselImage");
                                 next = $("#carouselImage2");
                             }
                             else {
-                                div = $("#carouselImage2");
+                                current = $("#carouselImage2");
                                 next = $("#carouselImage");
                             }
-
-
-
                             i = ++i % images.length;
-                            // console.log("i: " + i + "   ...images[i]: " + images[i]);
                             function animate(){
                                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-                                /*
-                                div.addClass('animated fadeOut').one(animationEnd, function() {
-                                    div.removeClass('animated fadeOut');
-
-                                    $(".dot").removeClass("active");
-                                    $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    
-                                    div.attr("src", images[i]);
-                                    div.addClass('animated fadeIn').one(animationEnd, function() {
-                                        div.removeClass('animated fadeIn');
-                                    });
-
-                                });
-                                */
-                                div.addClass('animated fadeOut').one(animationEnd, function() {
-                                    $(this).removeClass('animated fadeOut');
+                                current.addClass("fadeout").one(animationEnd, function() {
+                                    $(this).removeClass("fadeout");
                                     $(this).css("opacity", 0);
                                 });
-                                setTimeout(showNext, 800);
+                                setTimeout(showNext, delay);
                                 function showNext(){
-                                    div.removeClass("active");
+                                    current.removeClass("active");
                                     next.addClass("active");
                                     next.attr("src", images[i]);
-                                    next.addClass('animated fadeIn').one(animationEnd, function() {
-                                        $(this).removeClass('animated fadeIn');
+                                    next.addClass("fadein").one(animationEnd, function() {
+                                        $(this).removeClass("fadein");
                                         $(this).css("opacity", 1);
                                     });
                                     $(".dot").removeClass("active");
@@ -134,7 +115,7 @@ $seo_variable = "home";
                             setTimeout(change, timeout);
                         }
                         $(window).load(function(){
-                            setTimeout(change, timeout);
+                            setTimeout(change, initialTimeout);
                         });
                     </script>
 
