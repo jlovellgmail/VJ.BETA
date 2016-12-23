@@ -71,6 +71,12 @@ $seo_variable = "home";
                         <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg">
 
                     </div>
+
+
+
+
+
+
                     <!-- for carousel: change images -->
                     <script>
                         var images = [
@@ -81,8 +87,6 @@ $seo_variable = "home";
                         var i=0;
                         var timeout = 8000;
                         function change(){
-                            
-                            //var div = $("#carouselImage");
                             if($("#carouselImage").hasClass("active")){
                                 div = $("#carouselImage");
                                 next = $("#carouselImage2");
@@ -91,28 +95,9 @@ $seo_variable = "home";
                                 div = $("#carouselImage2");
                                 next = $("#carouselImage");
                             }
-
-
-
                             i = ++i % images.length;
-                            // console.log("i: " + i + "   ...images[i]: " + images[i]);
                             function animate(){
                                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-                                /*
-                                div.addClass('animated fadeOut').one(animationEnd, function() {
-                                    div.removeClass('animated fadeOut');
-
-                                    $(".dot").removeClass("active");
-                                    $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
-                                    
-                                    div.attr("src", images[i]);
-                                    div.addClass('animated fadeIn').one(animationEnd, function() {
-                                        div.removeClass('animated fadeIn');
-                                    });
-
-                                });
-                                */
                                 div.addClass('animated fadeOut').one(animationEnd, function() {
                                     $(this).removeClass('animated fadeOut');
                                     $(this).css("opacity", 0);
@@ -137,6 +122,10 @@ $seo_variable = "home";
                             setTimeout(change, timeout);
                         });
                     </script>
+
+
+
+
 
 
                     <div class="imageWrapper">
