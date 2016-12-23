@@ -199,6 +199,9 @@
         });
     </script>
     <!-- set aspect ratio on main image: -->
+    
+
+    <!--
     <script>
         $(document).ready(setAspect);
         function setAspect(){
@@ -207,5 +210,9 @@
             $(".landingFrame").css("max-height", (newHeight + 96)+"px");
         }
     </script>
+    -->
+    <script src="/aspectRatio.js"></script>
+
+
 </body>
 </html>
