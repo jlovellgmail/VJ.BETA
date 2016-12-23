@@ -482,6 +482,21 @@ body {
   display: block;
   text-align: left;
 }
+.aboutPage.shopPage .landingFrame {
+  height: 100vh;
+  padding-bottom: 116px;
+}
+.aboutPage.shopPage .landingFrame .imageContainer {
+  background-image: url("/img/grays_q9.jpg");
+  border-radius: initial;
+}
+.aboutPage.shopPage .landingFrame .imageContainer .textBlockMain {
+  color: black;
+}
+.aboutPage.shopPage .landingFrame .imageContainer .textBlockMain .copy {
+  color: black;
+  text-shadow: initial;
+}
 .aboutPage .aspectRatio {
   padding-bottom: 61%;
   height: 0;

@@ -508,9 +508,37 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// About page new
+// here About page
+// here Shop page
 
 .aboutPage {
+
+
+
+	// Shop page - modifies About page
+	&.shopPage {
+		.landingFrame {
+			height: 100vh;
+			padding-bottom: 116px;
+			.imageContainer {
+				// background-image: url("/img/shop/shop-all.jpg");
+				background-image: url("/img/grays_q9.jpg");
+				border-radius: initial;
+				.textBlockMain {
+					color: black;
+					.copy {
+						color: black;
+						text-shadow: initial;
+					}
+				}
+				.downArrow {
+				}
+			}
+		}
+	}
+
+
+
 	display: block;
 	text-align: left;
 	.aspectRatio {

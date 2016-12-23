@@ -92,128 +92,70 @@ switch ($type) {
         <script src="/js/imagesloaded.pkgd.min.js"></script>
     </head>
     <body>
+    
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/nav.php'; ?>
+
+
+
+
+
+        <div class="aboutPage shopPage">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 noPadding">
+                        <div class="landingFrame">
+                            <div class="imageContainer">
+                                <div class="textBlockMain">
+                                    <div class="headline">
+                                        Collections
+                                    </div>
+                                    <div class="copy">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                    </div>
+
+
+                                    <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
+                                        if ($type == "all") {
+                                            echo "itemBtnActive";
+                                        } else {
+                                            echo "itemBtnInactive";
+                                        }
+                                        ?>" href="<?php echo $AllUrlStr; ?>" href="/shop/men/">All<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                    <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-1 <?php
+                                        if ($type == "men") {
+                                            echo "itemBtnActive";
+                                        } else {
+                                            echo "itemBtnInactive";
+                                        }
+                                        ?>" href="<?php echo $MenUrlStr; ?>" href="/shop/men/">Men<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                    <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-2 <?php
+                                        if ($type == "women") {
+                                            echo "itemBtnActive";
+                                        } else {
+                                            echo "itemBtnInactive";
+                                        }
+                                        ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
+
+
+                                </div>
+                                <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
+                            </div>
+
+                            <div class='scroll-down-to'></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
         <div class="sdWrapper">
             <div class="sdContent">
-
-                <!-- Navgivation -->
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/nav.php'; ?>
                     
-                <!-- Landing -->
-                <div class="landing-hero-wrapper bg-fixer h100vh <?php echo $bgClass; ?> index-slide shopLeafWrapper">
-
-                        <div class='flip-card-blur-bg flip-card-blur-bg-<?php echo $type ?>'>
-                        </div>
-                            <div class="tableWrapper h100p" style='max-width: 1200px; margin: 0 auto;'>
-                                <div class="cellWrapper">
-
-                                    <!-- <div class='rel iB' style='background-color: rgba(0,0,0,0.5); padding: 20px 30px;'> -->
-                                        <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
-                                            if ($type == "all") {
-                                                echo "itemBtnActive";
-                                            } else {
-                                                echo "itemBtnInactive";
-                                            }
-                                            ?>" href="<?php echo $AllUrlStr; ?>" href="/shop/men/">All<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                        <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-1 <?php
-                                            if ($type == "men") {
-                                                echo "itemBtnActive";
-                                            } else {
-                                                echo "itemBtnInactive";
-                                            }
-                                            ?>" href="<?php echo $MenUrlStr; ?>" href="/shop/men/">Men<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                        <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-2 <?php
-                                            if ($type == "women") {
-                                                echo "itemBtnActive";
-                                            } else {
-                                                echo "itemBtnInactive";
-                                            }
-                                            ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                        <!-- <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-3 <?php
-                                            if ($type == "accessories") {
-                                                echo "itemBtnActive";
-                                            } else {
-                                                echo "itemBtnInactive";
-                                            }
-                                            ?>" href="<?php echo $AccUrlStr; ?>" href="/shop/accessories/">Accessories<i class="icon-down-dir shop-active-arrow"></i></a></div> -->
-                                    <!-- </div> -->
-
-                                    <!-- Back Button -->
-                                    <!--
-                                    <div class="shopBackBtnWrapper <?php
-                                    if ($type == "") {
-                                        echo "opacityHide";
-                                    }
-                                    ?>">
-                                        <a href="/shop.php">
-                                            <div class="arrowWrapper">
-                                                <div class="arrow-left"></div>
-                                            </div>
-                                            <span class="backBtnTitle caps">Back to Overview</span>
-                                        </a>
-                                    </div>
-                                    -->
-                                    <?php if (isset($type) && $type != "") { ?>
-                                        <!-- Back Button -->
-                                        <!-- <div class="backBtnWrapper">
-                                            <a href="/shop.php" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;All Products</a>
-                                        </div> -->
-                                    <?php } ?>
-                                </div>
-                            </div>
-                        <div class='flipcard-01 flipcard'>
-                            <div class='aspect-dummy-two-thirds'></div>
-                            <div class='aspect-img'>
-                                <img class='postcard-stamp' src='/img/index/postcardstamps-santafe.png' alt='' />
-                                <div class='card-divider'></div>
-                                <div class='xs-twelve lg-six h100p'>
-                                    <div class='card-left'>
-                                        <?php if ($type == "men") {
-                                                echo
-                                                "<p>Hey Virgil,</p>
-                                                <p>It’s so, so nice to see a well thought out collection of carry bags for men.  I can think of a dozen friends who would trip over themselves to buy one of your bags.  They’ll go crazy over the details.  Soft construction, matched leather panels, bronze hardware, hidden reinforcing (for a lifetime of use), water resistant lining, ridiculous carabiners …where does it end?   Please keep it up.</p>
-                                                <p>Your biggest fan!</p>";
-                                            } elseif ($type == "women") {
-                                                echo
-                                                "<p>Dear Virgil,</p>
-                                                <p>Clearly, you know at least one way to a woman’s heart.  These bags are fantastic! With limited-edition availability, I feel special already. The Cross Body and Clutch are so elegant in a fun way.  I’ll admit, the Overnight may be my favorite for work and travel, but the Drawstring is made for me.  And do tell, what is all this noise about cashmere felt?!</p>
-                                                <p>XOXO</p>";
-                                            } elseif ($type == "accessories") {
-                                                echo
-                                                "<p>Hi Virgil,</p>
-                                                <p>Ok, this only makes sense.  You make these incredible bags so why not apply your good taste and impeccable quality to related accessories.  Obviously, you’ve made no compromises on these everyday goodies.  They’re perfect gifts for that someone who seems to have everything.  I love the way you use zippers, and the carabiners are so elegant!  How did you ever get them made?</p>
-                                                <p>Your best customer!</p>";
-                                            } else {
-                                                echo
-                                                "<p>Hey Virgil,</p>
-                                                <p>You’re making it way too easy to spend money!  I love all of the VJ styles.  The quality is over-the-top and selling online-only or direct through Ambassadors is sure to save me lots of $$.  But, honestly, it’s your return support and lifetime guarantee that make shopping with you so easy.  If it’s not right, I know you’ll handle everything!</p>
-                                                <p>Your customer for life!</p>";
-                                            }?>
-                                    </div>
-                                </div><div class='card-right xs-six h100p'>
-                                    <div class='rel block h100p'>
-                                        <div class='return-address'>
-                                            <span class='postcard-address-01'>Virgil James</span>
-                                            <span class='postcard-address-02'>214 N. Cedros Avenue</span>
-                                            <span class='postcard-address-02'>Solana Beach, CA</span>
-                                            <span class='postcard-address-03'>USA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='gps-lockup'>
-                            <div class='lockup-topline'>
-                                <img class='flippy-01 stampy-mc-stampface' src='/img/index/postcard-icon.png' alt='' />
-                            </div>
-                            <div class='lockup-bottomline'>
-                                <span class="heroText caps size3 fw-300 spaceLetters">Luxury </span>
-                                <span class="heroText caps size3 fw-600 spaceLetters">Awaits</span>
-                            </div>
-                        </div>
-                        <div class='scroll-arrow-indicator index-scroll-1'><i class='icon-angle-down'></i></div>
-                    </div>
-
-                <div class='scroll-down-to'></div>
 
                 <div id="prodListDiv" >
                     <?php
@@ -232,7 +174,7 @@ switch ($type) {
         </div>
 
         <script>
-            $('.scroll-arrow-indicator').click(function () {
+            $('#scrollDownArrow').click(function () {
                 $('html, body').animate({
                     scrollTop: ($('.scroll-down-to').offset().top)
                 },750);
@@ -274,35 +216,36 @@ switch ($type) {
         </script>
 
         <script>
+            var isMobile = {
+                Android: function() {
+                    return navigator.userAgent.match(/Android/i);
+                },
+                BlackBerry: function() {
+                    return navigator.userAgent.match(/BlackBerry/i);
+                },
+                iOS: function() {
+                    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                },
+                Opera: function() {
+                    return navigator.userAgent.match(/Opera Mini/i);
+                },
+                Windows: function() {
+                    return navigator.userAgent.match(/IEMobile/i);
+                },
+                any: function() {
+                    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                }
+            };
+            if( isMobile.any() ) {
+                $(".bg-fixer, .flip-card-blur-bg").css("background-attachment","scroll");
+            } else {
+                $(".bg-fixer, .flip-card-blur-bg").css("background-attachment","fixed");
+            };
+        </script>
 
-                var isMobile = {
-                    Android: function() {
-                        return navigator.userAgent.match(/Android/i);
-                    },
-                    BlackBerry: function() {
-                        return navigator.userAgent.match(/BlackBerry/i);
-                    },
-                    iOS: function() {
-                        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-                    },
-                    Opera: function() {
-                        return navigator.userAgent.match(/Opera Mini/i);
-                    },
-                    Windows: function() {
-                        return navigator.userAgent.match(/IEMobile/i);
-                    },
-                    any: function() {
-                        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-                    }
-                };
 
-                if( isMobile.any() ) {
-                    $(".bg-fixer, .flip-card-blur-bg").css("background-attachment","scroll");
-                } else {
-                    $(".bg-fixer, .flip-card-blur-bg").css("background-attachment","fixed");
-                };
+        <!-- <script src="/aspectRatio.js"></script> -->
 
-            </script>
 
     </body>
 </html>
