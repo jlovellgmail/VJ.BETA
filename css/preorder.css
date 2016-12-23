@@ -799,24 +799,6 @@ body {
   animation-fill-mode: none;
   animation-play-state: running;
 }
-.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .image img.carousel-transition-v2.fadeout {
-  animation-name: fadeout;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .image img.carousel-transition-v2.fadein {
-  animation-name: fadein;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
 .preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls {
   right: initial;
   margin-left: auto;
