@@ -12,7 +12,7 @@ $seo_variable = "home";
         <meta name="description" content="Virgil James is a luxury bags and accessories company, focused on creating authentic, functional and high quality leather goods."/>
         <?php include '/incs/head-links.php'; ?>
         <link rel="stylesheet" href="/css/index.css" />
-        <link rel="stylesheet" href="/css/animate.css" />
+        <!-- <link rel="stylesheet" href="/css/animate.css" /> -->
         <link rel="stylesheet" href="/css/preorder.css" />
     </head> 
     <body class='body'>
@@ -31,8 +31,8 @@ $seo_variable = "home";
                         <div class="imageContainer">
                             <div class="image">
                                 
-                                <img id="carouselImage" class="active" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
-                                <img id="carouselImage2" style="opacity: 0;" src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg" />
+                                <img id="carouselImage" class="active carousel-transition-v2" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
+                                <img id="carouselImage2" class="carousel-transition-v2" style="opacity: 0;" src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg" />
 
                             </div>
                             <div class="controls">
@@ -85,30 +85,32 @@ $seo_variable = "home";
                             ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
                         ];
                         var i=0;
+                        var initialTimeout = 8000;
                         var timeout = 8000;
+                        var delay = 600;
                         function change(){
                             if($("#carouselImage").hasClass("active")){
-                                div = $("#carouselImage");
+                                current = $("#carouselImage");
                                 next = $("#carouselImage2");
                             }
                             else {
-                                div = $("#carouselImage2");
+                                current = $("#carouselImage2");
                                 next = $("#carouselImage");
                             }
                             i = ++i % images.length;
                             function animate(){
                                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                                div.addClass('animated fadeOut').one(animationEnd, function() {
-                                    $(this).removeClass('animated fadeOut');
+                                current.addClass("fadeout").one(animationEnd, function() {
+                                    $(this).removeClass("fadeout");
                                     $(this).css("opacity", 0);
                                 });
-                                setTimeout(showNext, 800);
+                                setTimeout(showNext, delay);
                                 function showNext(){
-                                    div.removeClass("active");
+                                    current.removeClass("active");
                                     next.addClass("active");
                                     next.attr("src", images[i]);
-                                    next.addClass('animated fadeIn').one(animationEnd, function() {
-                                        $(this).removeClass('animated fadeIn');
+                                    next.addClass("fadein").one(animationEnd, function() {
+                                        $(this).removeClass("fadein");
                                         $(this).css("opacity", 1);
                                     });
                                     $(".dot").removeClass("active");
@@ -119,7 +121,7 @@ $seo_variable = "home";
                             setTimeout(change, timeout);
                         }
                         $(window).load(function(){
-                            setTimeout(change, timeout);
+                            setTimeout(change, initialTimeout);
                         });
                     </script>
 

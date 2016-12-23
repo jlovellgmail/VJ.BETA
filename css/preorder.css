@@ -718,6 +718,22 @@ body {
     margin-right: 15px;
   }
 }
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .preorderPage .landingFrame {
   text-align: center;
   min-height: calc(100vh - 86px);
@@ -764,6 +780,24 @@ body {
   right: 0;
   top: 0;
   width: auto;
+}
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .image img.carousel-transition-v2.fadeout {
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .image img.carousel-transition-v2.fadein {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 .preorderPage .landingFrame .mainFrame .contentContainer .imageContainer .controls {
   right: initial;
