@@ -38,8 +38,8 @@ $seo_variable = "home";
                                     <div class="carouselContainer">
                                         <div class="carouselImageContainer">
                                             
-                                            <img id="carouselImage" class="active" src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg" />
-                                            <img id="carouselImage2" style="opacity: 0;" src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg" />
+                                            <img id="carouselImage" class="active" src="/img/IMG_6948 - tote hero - transparent for postcard bg.png" />
+                                            <img id="carouselImage2" style="opacity: 0;" src="/img/carousel image - Drawstring - transparent.png" />
 
                                         </div>
                                         <div class="controls">
@@ -73,17 +73,29 @@ $seo_variable = "home";
 
                                 <!-- for carousel: preload images -->
                                 <div style="position:fixed; left:4000px; top:4000px; opacity: 0; ">
-                                    <img src="/img/IMG_6948_tote_hero_whiter_bg_q7.jpg">
-                                    <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg">
-                                    <img src="/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg">
+                                    <img src="/img/IMG_6948 - tote hero - transparent for postcard bg.png">
+                                    <img src="/img/carousel image - Drawstring - transparent.png">
+                                    <img src="/img/carousel image - Clutch - transparent.png">
 
                                 </div>
                                 <!-- for carousel: change images -->
                                 <script>
                                     var images = [
-                                        "/img/IMG_6948_tote_hero_whiter_bg_q7.jpg"
-                                        ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
-                                        ,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
+
+
+                                        //"/img/IMG_6948_tote_hero_whiter_bg_q7.jpg"
+                                        "/img/IMG_6948 - tote hero - transparent for postcard bg.png"
+
+
+                                        //,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
+                                        ,"/img/carousel image - Drawstring - transparent.png"
+
+
+
+                                        //,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
+                                        ,"/img/carousel image - Clutch - transparent.png"
+                                        
+
                                     ];
                                     var i=0;
                                     var initialTimeout = 8000;
