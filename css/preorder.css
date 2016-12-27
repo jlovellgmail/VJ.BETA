@@ -478,6 +478,195 @@ body {
 .cartPage .widthWrapper {
   max-width: 1200px;
 }
+.landingPage-fullbleed .landingFrame {
+  text-align: center;
+  height: 100vh;
+  padding-top: 96px;
+}
+.landingPage-fullbleed .belowHeader {
+  background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+  position: relative;
+  background-position-x: center;
+  background-position-y: 70%;
+  background-size: cover;
+  text-align: left;
+  overflow: hidden;
+  width: 1470px;
+  margin: auto;
+  height: 100%;
+  top: initial;
+  display: table;
+  overflow: visible;
+  text-align: center;
+  max-width: initial;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  min-height: 100px;
+  max-height: 650px;
+  position: relative;
+  max-width: 600px;
+  top: initial;
+  transform: initial;
+  vertical-align: bottom;
+  height: auto;
+  height: 650px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer img {
+  animation-duration: 2s;
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 0s;
+  -vendor-animation-iteration-count: infinite;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer img.fadeout {
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer img.fadein {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .controls {
+  right: initial;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: .5;
+  bottom: 32px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .controls .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 5px 5px;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: black;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .controls .dot.active {
+  opacity: .7;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer {
+  position: relative;
+  width: auto;
+  right: initial;
+  top: initial;
+  transform: initial;
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  padding-top: 110px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText {
+  color: black;
+  text-align: center;
+  top: 41%;
+  width: 510px;
+  display: inline-block;
+  left: 0;
+  right: initial;
+  transform: translate(0, -50%);
+  top: initial;
+  transform: none;
+  display: table;
+  vertical-align: middle;
+  position: relative;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .headlineContainer {
+  text-align: center;
+  margin: 9px 0 17px 0;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .headlineContainer .headline {
+  font-weight: 100;
+  line-height: 73px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .headlineContainer .headline .part1 {
+  display: inline-block;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .headlineContainer .headline .part2 {
+  display: inline-block;
+  margin-left: 3px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .headlineContainer .headline .light {
+  font-weight: 100;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .headlineContainer .headline .heavy {
+  font-weight: 600;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .copy {
+  max-width: 540px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  display: inline-block;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .hline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 1px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .box {
+  margin-top: 60px;
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 32px 40px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-rendering: geometricPrecision;
+  text-decoration: none;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .box .title {
+  display: inline-block;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .postcardLandingScreen .landingFrame {
   text-align: center;
   height: 100vh;

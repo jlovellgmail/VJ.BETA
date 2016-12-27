@@ -23,22 +23,15 @@ $seo_variable = "home";
 
 
 
-        <div class="landingPage-framed-aspect postcardLandingScreen">
+        <div class="landingPage-fullbleed">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
                         <div class="landingFrame">
-                            <div class="postcardFrame">
-
-
-
-
-                                <img class="sizeHelper" src="/img/landing_page_postcard_bg_q9.jpg" height="100%">
-                    
-
-
+                            <div class="belowHeader">
 
                                 
+
                                 <div class="contentContainer">
                                     <div class="carouselContainer">
                                         <div class="carouselImageContainer">
@@ -74,7 +67,7 @@ $seo_variable = "home";
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 
 
 
@@ -133,12 +126,7 @@ $seo_variable = "home";
                                     });
                                 </script>
 
-                                <!--
-                                <div class="imageWrapper">
-                                </div>
-                                -->
-
-
+                                
 
 
                             </div>
