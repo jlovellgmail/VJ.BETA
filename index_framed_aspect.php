@@ -23,7 +23,7 @@ $seo_variable = "home";
 
 
 
-        <div class="aboutPage landingPageFramed">
+        <div class="landingPage-framed-aspect">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
