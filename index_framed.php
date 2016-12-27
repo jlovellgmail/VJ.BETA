@@ -81,21 +81,9 @@ $seo_variable = "home";
                                 <!-- for carousel: change images -->
                                 <script>
                                     var images = [
-
-
-                                        //"/img/IMG_6948_tote_hero_whiter_bg_q7.jpg"
                                         "/img/IMG_6948 - tote hero - transparent for postcard bg.png"
-
-
-                                        //,"/img/IMG_6948_tote_hero_whiter_bg_q7_test.jpg"
                                         ,"/img/carousel image - Drawstring - transparent.png"
-
-
-
-                                        //,"/img/IMG_6948_tote_hero_whiter_bg_q7_test2.jpg"
                                         ,"/img/carousel image - Clutch - transparent.png"
-                                        
-
                                     ];
                                     var i=0;
                                     var initialTimeout = 8000;
