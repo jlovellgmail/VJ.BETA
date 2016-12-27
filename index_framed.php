@@ -15,7 +15,7 @@ $seo_variable = "home";
         <link rel="stylesheet" href="/css/animate.css" />
         <link rel="stylesheet" href="/css/preorder.css" />
     </head> 
-    <body class="hideHeaderBorder">
+    <body>
 
 
         <?php include '/incs/nav.php'; ?>
@@ -150,6 +150,21 @@ $seo_variable = "home";
 
         <?php include('json-ld.php'); ?>
         <script type="application/ld+json"><?php echo json_encode($payload); ?></script>
+
+
+        <!-- hide header bottom border until scroll -->
+        <script>
+            var border = $('.bottomBorder');
+            var windowHeight = $(window).height();
+            border.css("opacity", 0);
+            $(document).scroll(function(e){
+                var scrollPercent = window.scrollY / windowHeight;
+                if(scrollPercent >= .1){
+                    border.css('opacity', scrollPercent * 2);
+                }
+            });
+        </script>
+
 
     </body>
 </html>

@@ -105,6 +105,9 @@ switch ($type) {
                     <div class="col-xs-12 noPadding">
                         <div class="landingFrame">
                             <div class="imageContainer">
+
+
+                            
                                 <div class="textBlockMain">
                                     <div class="headline">
                                         Collections
@@ -245,6 +248,20 @@ switch ($type) {
 
 
         <!-- <script src="/aspectRatio.js"></script> -->
+
+
+        <!-- hide header bottom border until scroll -->
+        <script>
+            var border = $('.bottomBorder');
+            var windowHeight = $(window).height();
+            border.css("opacity", 0);
+            $(document).scroll(function(e){
+                var scrollPercent = window.scrollY / windowHeight;
+                if(scrollPercent >= .1){
+                    border.css('opacity', scrollPercent * 2);
+                }
+            });
+        </script>
 
 
     </body>

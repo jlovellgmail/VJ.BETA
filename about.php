@@ -187,6 +187,8 @@
             }
         });
     </script>
+
+    <!-- hide header bottom border until scroll -->
     <script>
         var border = $('.bottomBorder');
         var windowHeight = $(window).height();
