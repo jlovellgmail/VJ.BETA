@@ -38,7 +38,7 @@ $seo_variable = "home";
 
 
 
-                                <!--
+                                
                                 <div class="contentContainer">
                                     <div class="carouselContainer">
                                         <div class="carouselImageContainer">
@@ -74,7 +74,7 @@ $seo_variable = "home";
                                         </div>
                                     </div>
                                 </div>
-                                -->
+                                
                                 
 
 
