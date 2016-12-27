@@ -15,7 +15,7 @@ $seo_variable = "home";
         <link rel="stylesheet" href="/css/animate.css" />
         <link rel="stylesheet" href="/css/preorder.css" />
     </head> 
-    <body class='body'>
+    <body class="hideHeaderBorder">
 
 
         <?php include '/incs/nav.php'; ?>
