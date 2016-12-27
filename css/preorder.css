@@ -478,9 +478,6 @@ body {
 .cartPage .widthWrapper {
   max-width: 1200px;
 }
-.hideHeaderBorder .headerContainer .navWidthWrapper .bottomBorder {
-  display: none;
-}
 .aboutPage {
   display: block;
   text-align: left;
