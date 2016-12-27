@@ -29,11 +29,16 @@ $seo_variable = "home";
                     <div class="col-xs-12 noPadding">
                         <div class="landingFrame">
                             <div class="postcardFrame">
+
+
+
+
+                                <img class="sizeHelper" src="/img/landing_page_postcard_bg_q9.jpg" height="100%">
                     
 
 
 
-                                
+                                <!--
                                 <div class="contentContainer">
                                     <div class="carouselContainer">
                                         <div class="carouselImageContainer">
@@ -69,6 +74,7 @@ $seo_variable = "home";
                                         </div>
                                     </div>
                                 </div>
+                                -->
                                 
 
 
