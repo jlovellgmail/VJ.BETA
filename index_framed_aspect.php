@@ -23,18 +23,18 @@ $seo_variable = "home";
 
 
 
-        <div class="landingPage-framed-aspect">
+        <div class="landingPage-framed-aspect postcardLandingScreen">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
                         <div class="landingFrame">
-                            <div class="imageContainer">
+                            <div class="postcardFrame">
                     
 
 
 
+                                
                                 <div class="contentContainer">
-                                    <!-- carousel -->
                                     <div class="carouselContainer">
                                         <div class="carouselImageContainer">
                                             
@@ -69,6 +69,7 @@ $seo_variable = "home";
                                         </div>
                                     </div>
                                 </div>
+                                
 
 
                                 <!-- for carousel: preload images -->

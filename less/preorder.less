@@ -515,7 +515,32 @@ body {
 
 //-----------------------------------------------
 // create generic class for framed fixed aspect for application to all pages
-.postcardAspect {
+.postcardLandingScreen {
+	.landingFrame {
+	    text-align: center;
+    	height: 100vh;
+    	padding-top: 96px;
+    	padding-bottom: 116px;
+
+    	// rename this class on move here to generic
+    	//.imageContainer {
+    	.postcardFrame {
+
+			position: relative;
+			background-position-x: center;
+			background-position-y: 70%;
+			background-size: cover;
+		    text-align: left;
+		    overflow: hidden;
+		    width: 1470px;
+		    margin: auto;
+		    height: 100%;
+		    top: initial;
+		    background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+		    display: table;
+    	}
+	}
+
 }
 
 //-----------------------------------------------
@@ -525,12 +550,22 @@ body {
 
 
 .landingPage-framed-aspect {
+	
+
+	// removing
+	/*
 	display: block;
 	text-align: left;
+	*/
+
+	// currently unused, start using this
 	.aspectRatio {
 		padding-bottom: 61%;;
 		height: 0;
 	}
+
+
+	// need to check if these are being used
 	.image {
 		background-color: rgba(0, 0, 0, 0.1);
 		height: 400px;
@@ -583,12 +618,29 @@ body {
     	font-weight: 300;
     	line-height: 31px;
     }
+
+
+
+
+
     .landingFrame {
+
+
+    	// move to generic
+    	/*
 	    text-align: center;
     	height: 100vh;
     	padding-top: 96px;
     	padding-bottom: 116px;
+    	*/
+
+
+    	// in generic this is being renamed
     	.imageContainer {
+
+	    	
+	    	// move to generic
+	    	/*
     		position: relative;
     		background-position-x: center;
     		background-position-y: 70%;
@@ -601,6 +653,11 @@ body {
     	    top: initial;
     	    background-image: url("/img/landing_page_postcard_bg_q9.jpg");
     	    display: table;
+    	    */
+
+
+    	    // move this outside the above embedded classes
+    	    /*
     		.contentContainer {
     			position: relative;
     			display: table-cell;
@@ -769,8 +826,182 @@ body {
     	    		}
     			}
     		}
+    		*/
     	}
     }
+
+
+    // moved here so it's not embedded in classes
+	.contentContainer {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		width: 100%;
+		.carouselContainer {
+			display: inline-block;
+			width: 100%;
+			margin: 0;
+			min-height: 100px;
+			max-height: 650px;
+			position: relative;
+			max-width: 600px;
+			top: initial;
+			transform: initial;
+			vertical-align: bottom;
+			height: auto;
+			height: 650px;
+			.carouselImageContainer {
+				img {
+					animation-duration: 2s;
+					-vendor-animation-duration: 2s;
+					-vendor-animation-delay: 0s;
+					-vendor-animation-iteration-count: infinite;
+					height: 100%;
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: auto;
+					&.fadeout {
+						animation-name: fadeout;
+						animation-duration: 1s;
+						animation-timing-function: ease; 
+						animation-delay: 0;
+						animation-iteration-count: 1;
+						animation-fill-mode: none;
+						animation-play-state: running;     								
+					}
+					&.fadein {
+						animation-name: fadein;
+						animation-duration: 1.5s; 
+						animation-timing-function: ease; 
+						animation-delay: 0;
+						animation-iteration-count: 1;
+						animation-fill-mode: none;
+						animation-play-state: running; 
+					}
+				}
+			}
+			.controls {
+				right: initial;
+				margin-left: auto;
+				margin-right: auto;
+				display: inline-block;
+				position: relative;
+				bottom: 44px;
+
+				// with transition overlap:
+				position: absolute;
+				width: 100%;
+				left: 0;
+				opacity: .5;
+				bottom: 32px;
+
+				.dot {
+					display: inline-block;
+					width: 7px;
+					height: 7px;
+				    margin: 5px 5px;
+					opacity: 0.3;
+					border-radius: 20px;
+					background: black;
+					&.active {
+						opacity: .7;
+					}
+				}
+			}
+		}
+		.textContainer {
+		    position: relative;
+		    width: auto;
+		    right: initial;
+		    top: initial;
+		    transform: initial;
+		    display: inline-block;
+		    vertical-align: top;
+		    height: auto;
+		    padding-top: 110px;
+    		.preorderText {
+    			color: black;
+    		    text-align: center;
+    		    top: 41%;
+    		    width: 510px;
+    		    display: inline-block;
+    		    left: 0;
+    		    right: initial;
+    		    transform: translate(0, -50%);
+    		    top: initial;
+		        transform: none;
+		        display: table;
+		        vertical-align: middle;
+		        position: relative;
+				.headlineContainer {
+					text-align: center;
+					margin: 9px 0 17px 0;
+			    	.headline {
+			    		color: black;
+	    		        font-size: 40px;
+			    		text-transform: uppercase;
+			    		text-rendering: geometricPrecision;
+			    		.part1 {
+			    			display: inline-block;
+			    		}
+			    		.part2 {
+			    			display: inline-block;
+			    			margin-left: 3px;
+			    		}
+			    		.light {
+				    		font-weight: 100;
+			    		}
+			    		.heavy {
+			    			font-weight: 600;
+			    		}
+			    	}
+			    }
+    		    .copy {
+    		    	max-width: 540px;
+    		    	font-size: 18px;
+    		    	font-weight: 300;
+    		    	line-height: 27px;
+    		    	display: inline-block;
+    		    }
+	    		.hline {
+	    			border-bottom: 1px solid rgba(0,0,0, .2);
+	    			height: 1px;
+	    			max-width: 550px;
+	    			margin-left: auto;
+	    			margin-right: auto;
+	    			margin-top: 30px;
+	    			margin-bottom: 30px;
+	    		}
+	    		.box {
+	    			margin-top: 60px;
+	    			text-align: center;
+	    			border: 1px solid black;
+	    			cursor: pointer;
+	    			padding: 32px 40px;
+				    vertical-align: middle;
+				    text-transform: uppercase;
+	    			color: black;
+	    			display: inline-block;
+				    transition: .3s;
+				    font-size: 21px;
+				    font-weight: 800;
+				    letter-spacing: .7px;
+				    text-rendering: geometricPrecision;
+				    text-decoration: none;
+				    .title {
+				    	display: inline-block;
+				    }
+				    &:hover {
+			    	    background-color: rgba(255, 255, 255, 0.2);
+				    }
+	    		}
+    		}
+		}
+	}
+
+
 }
 
 
