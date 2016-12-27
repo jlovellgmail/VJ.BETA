@@ -514,18 +514,14 @@ body {
 
 
 //-----------------------------------------------
-// create generic class for framed fixed aspect for application to all pages
+// create generic class for fixed aspect postcard landing screen
 .postcardLandingScreen {
 	.landingFrame {
 	    text-align: center;
     	height: 100vh;
     	padding-top: 96px;
     	padding-bottom: 116px;
-
-    	// rename this class on move here to generic
-    	//.imageContainer {
     	.postcardFrame {
-
 			position: relative;
 			background-position-x: center;
 			background-position-y: 70%;
@@ -540,15 +536,12 @@ body {
 		    display: table;
     	}
 	}
-
 }
 
 //-----------------------------------------------
 // Landing page / Index page - new 161227
-// rebuild based on the one build into About page below
-// this is the prototype for fixed aspect ratio classes that will be applied to ever page
-
-
+// rebuild from the one built into About page below
+// this is the prototype for fixed aspect ratio classes that will be applied to all pages
 .landingPage-framed-aspect {
 	
 
@@ -829,9 +822,6 @@ body {
     		*/
     	}
     }
-
-
-    // moved here so it's not embedded in classes
 	.contentContainer {
 		position: relative;
 		display: table-cell;
@@ -887,16 +877,11 @@ body {
 				margin-left: auto;
 				margin-right: auto;
 				display: inline-block;
-				position: relative;
-				bottom: 44px;
-
-				// with transition overlap:
 				position: absolute;
 				width: 100%;
 				left: 0;
 				opacity: .5;
 				bottom: 32px;
-
 				.dot {
 					display: inline-block;
 					width: 7px;
@@ -1000,8 +985,6 @@ body {
     		}
 		}
 	}
-
-
 }
 
 
