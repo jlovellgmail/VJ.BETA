@@ -681,10 +681,6 @@ body {
   display: block;
   text-align: left;
 }
-.aboutPage-fill-screen-with-margins .aspectRatio {
-  padding-bottom: 61%;
-  height: 0;
-}
 .aboutPage-fill-screen-with-margins .image {
   background-color: rgba(0, 0, 0, 0.1);
   height: 400px;
@@ -693,8 +689,6 @@ body {
   vertical-align: top;
   background-size: cover;
   background-position-y: center;
-  padding-bottom: 61%;
-  height: 0;
 }
 .aboutPage-fill-screen-with-margins .image#designPrinciples {
   background-image: url("/img/techpacks_q6.jpg");
@@ -828,9 +822,6 @@ body {
 @media all and (max-width: 1200px) {
   body .aboutPage-fill-screen-with-margins .landingFrame .mainFrame {
     margin: 0 30px;
-    /*
-					height: calc(~"100vh - 76px - 56px");
-					*/
     height: calc(100vh - 76px - 73px);
   }
   body .aboutPage-fill-screen-with-margins .landingFrame .mainFrame .textBlockMain {

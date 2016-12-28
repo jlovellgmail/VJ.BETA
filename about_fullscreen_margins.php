@@ -187,9 +187,8 @@
             }
         });
     </script>
-
-    <!-- hide header bottom border until scroll -->
     <script>
+        // hide header bottom border until scroll
         var border = $('.bottomBorder');
         var windowHeight = $(window).height();
         border.css("opacity", 0);
@@ -200,21 +199,5 @@
             }
         });
     </script>
-    <!-- set aspect ratio on main image: -->
-    
-
-    <!--
-    <script>
-        $(document).ready(setAspect);
-        function setAspect(){
-            var image = $(".imageContainer");
-            var newHeight = image.width() * 0.5680272108843537;
-            $(".landingFrame").css("max-height", (newHeight + 96)+"px");
-        }
-    </script>
-    -->
-    <!-- <script src="/aspectRatio.js"></script> -->
-
-
 </body>
 </html>
