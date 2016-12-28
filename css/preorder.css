@@ -546,7 +546,6 @@ body {
   top: 0;
   width: 100%;
   height: auto;
-  background-color: red;
 }
 .landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer img.fadeout {
   animation-name: fadeout;
