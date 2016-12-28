@@ -728,6 +728,8 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 // About page - 161228a
+// with landing screen extracted into generic
+// - adding version of shopping page that uses generic
 
 //-----------------------------------------------
 // these will be generic for all pages with full-screen landing image
@@ -767,12 +769,30 @@ body {
     	    		    padding-left: 10%;
     	    		    padding-bottom: 2%;
     	    		    .headline {
+
+
+    	    		    	// moved from Aboutpage-specific
+    		    	    	text-transform: uppercase;
+    		    	    	// font-size: 80px;
+    		    	    	font-weight: 100;
+    		    		    // line-height: 73px;
+    		    		    // margin-bottom: 10px;
+
+
     		    	        position: relative;
     		    	        font-size: 40px;
     		    	        line-height: 49px;
     		    	        margin-bottom: 11px;
     	    		    }
     	    		    .copy {
+
+
+    	    		    	// moved from Aboutpage-specific
+    	    		    	// font-size: 20px;
+    	    		    	// font-weight: 300;
+    	    		    	// line-height: 31px;
+
+
     	    		    	.bodyCopy;
     	    		    	color: white;
     	    		    	position: relative;
@@ -866,6 +886,10 @@ body {
 		.vjSectionHeading;
 		margin-bottom: 18px;
 	}
+
+	
+	// move this to generic
+	/*
     .headline {
     	text-transform: uppercase;
     	font-size: 80px;
@@ -878,7 +902,53 @@ body {
     	font-weight: 300;
     	line-height: 31px;
     }
+    */
+
+
+
 }
+
+//-----------------------------------------------
+// Shop page that uses generic classes
+.shopPage-using-generic-classes {
+	&.landingScreenMargins {
+		.landingFrame {
+
+
+
+			// temp override the generic
+			// to stop content below landing screen showing right below image, make it go below the fold
+			height: 100vh;
+			padding-bottom: 70px;
+			.downArrow {
+				bottom: 94px;
+			}
+
+
+
+			.imageContainer {
+				background-image: url("/img/grays_q9.jpg");
+				.contentContainer {
+					.textBlockMain {
+						color: black;
+						.copy {
+							color: black;
+							text-shadow: initial;
+						}
+					}
+				}
+			}
+		}
+		.belowLandingFrame {
+
+			// temp override generic
+			margin-top: 60px;
+
+		}
+	}
+}
+
+
 
 //-----------------------------------------------
 //-----------------------------------------------

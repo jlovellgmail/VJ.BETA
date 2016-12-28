@@ -717,6 +717,8 @@ body {
   padding-bottom: 2%;
 }
 .landingScreenMargins .landingFrame .imageContainer .contentContainer .textBlockMain .textContainer .headline {
+  text-transform: uppercase;
+  font-weight: 100;
   position: relative;
   font-size: 40px;
   line-height: 49px;
@@ -768,6 +770,22 @@ body {
 .landingScreenMargins .belowLandingFrame .container .row:nth-of-type(1) {
   margin-top: 70px;
 }
+.aboutPage-fill-screen-with-margins {
+  /*
+    .headline {
+    	text-transform: uppercase;
+    	font-size: 80px;
+    	font-weight: 100;
+	    line-height: 73px;
+	    margin-bottom: 10px;
+    }
+    .copy {
+    	font-size: 20px;
+    	font-weight: 300;
+    	line-height: 31px;
+    }
+    */
+}
 .aboutPage-fill-screen-with-margins .image {
   background-color: rgba(0, 0, 0, 0.1);
   height: 400px;
@@ -813,17 +831,25 @@ body {
   margin-top: 20px;
   margin-bottom: 18px;
 }
-.aboutPage-fill-screen-with-margins .headline {
-  text-transform: uppercase;
-  font-size: 80px;
-  font-weight: 100;
-  line-height: 73px;
-  margin-bottom: 10px;
+.shopPage-using-generic-classes.landingScreenMargins .landingFrame {
+  height: 100vh;
+  padding-bottom: 70px;
 }
-.aboutPage-fill-screen-with-margins .copy {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 31px;
+.shopPage-using-generic-classes.landingScreenMargins .landingFrame .downArrow {
+  bottom: 94px;
+}
+.shopPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer {
+  background-image: url("/img/grays_q9.jpg");
+}
+.shopPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .textBlockMain {
+  color: black;
+}
+.shopPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .textBlockMain .copy {
+  color: black;
+  text-shadow: initial;
+}
+.shopPage-using-generic-classes.landingScreenMargins .belowLandingFrame {
+  margin-top: 60px;
 }
 .aboutPage {
   display: block;
