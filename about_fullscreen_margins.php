@@ -213,7 +213,7 @@
         }
     </script>
     -->
-    <script src="/aspectRatio.js"></script>
+    <!-- <script src="/aspectRatio.js"></script> -->
 
 
 </body>
