@@ -122,10 +122,10 @@ $seo_variable = "home";
                                             }
                                         }
                                         animate();
-                                        setTimeout(change, timeout);
+                                        //setTimeout(change, timeout);
                                     }
                                     $(window).load(function(){
-                                        setTimeout(change, initialTimeout);
+                                        //setTimeout(change, initialTimeout);
                                     });
                                 </script>
 

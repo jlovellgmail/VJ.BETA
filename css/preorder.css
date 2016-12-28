@@ -520,28 +520,33 @@ body {
 }
 .landingPage-fullbleed .belowHeader .contentContainer .carouselContainer {
   display: inline-block;
-  width: 100%;
   margin: 0;
   min-height: 100px;
-  max-height: 650px;
   position: relative;
-  max-width: 600px;
   top: initial;
   transform: initial;
   vertical-align: bottom;
+  max-width: initial;
+  max-height: initial;
   height: auto;
-  height: 650px;
+  width: 610px;
+}
+.landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer {
+  height: 0;
+  padding-bottom: 110%;
+  position: relative;
 }
 .landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer img {
   animation-duration: 2s;
   -vendor-animation-duration: 2s;
   -vendor-animation-delay: 0s;
   -vendor-animation-iteration-count: infinite;
-  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  width: auto;
+  width: 100%;
+  height: auto;
+  background-color: red;
 }
 .landingPage-fullbleed .belowHeader .contentContainer .carouselContainer .carouselImageContainer img.fadeout {
   animation-name: fadeout;
@@ -674,6 +679,12 @@ body {
 }
 .landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+@media all and (max-width: 1200px) {
+  .belowHeader .contentContainer .textContainer .preorderText .headlineContainer .headline {
+    font-size: 54px;
+    line-height: 51px;
+  }
 }
 .postcardLandingScreen .landingFrame {
   text-align: center;
