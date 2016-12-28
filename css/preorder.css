@@ -740,8 +740,8 @@ body {
 }
 .aboutPage-fill-screen-with-margins .landingFrame {
   text-align: center;
-  height: calc(100vh - 45px);
   padding-top: 96px;
+  height: calc(100vh - 58px);
 }
 .aboutPage-fill-screen-with-margins .landingFrame .imageContainer {
   position: relative;
@@ -756,7 +756,7 @@ body {
   height: 100%;
   top: initial;
   width: auto;
-  margin: auto 50px;
+  margin: auto 60px;
 }
 .aboutPage-fill-screen-with-margins .landingFrame .imageContainer .textBlockMain {
   color: white;
