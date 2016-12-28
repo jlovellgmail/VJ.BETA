@@ -770,22 +770,6 @@ body {
 .landingScreenMargins .belowLandingFrame .container .row:nth-of-type(1) {
   margin-top: 70px;
 }
-.aboutPage-fill-screen-with-margins {
-  /*
-    .headline {
-    	text-transform: uppercase;
-    	font-size: 80px;
-    	font-weight: 100;
-	    line-height: 73px;
-	    margin-bottom: 10px;
-    }
-    .copy {
-    	font-size: 20px;
-    	font-weight: 300;
-    	line-height: 31px;
-    }
-    */
-}
 .aboutPage-fill-screen-with-margins .image {
   background-color: rgba(0, 0, 0, 0.1);
   height: 400px;
