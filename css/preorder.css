@@ -600,6 +600,7 @@ body {
   vertical-align: top;
   height: auto;
   padding-top: 90px;
+  margin-right: 30px;
 }
 .landingPage-fullbleed .belowHeader .contentContainer .textContainer .preorderText {
   color: black;
