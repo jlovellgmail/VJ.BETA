@@ -17,10 +17,14 @@
 
     <?php include '/incs/nav.php'; ?>
 
-    <div class="aboutPage-fill-screen-with-margins">
+    <div class="aboutPage-fill-screen-with-margins landingScreenMargins">
+
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 noPadding">
+
+
                     <div class="landingFrame">
                         <div class="imageContainer">
                             <div class="contentContainer">
@@ -41,10 +45,16 @@
                         </div>
                         <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
                     </div>
+
+
                 </div>
             </div>
         </div>
+
+
         <div class='scroll-down-to'></div>
+
+
         <div class=belowLandingFrame>
             <div class="container">
                 <!-- --------------------------------------------------- -->
