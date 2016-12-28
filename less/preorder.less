@@ -727,6 +727,256 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
+// About page - 161228a
+
+.landingFullScreenMargins {
+}
+
+.aboutPage-fill-screen-with-margins {
+	display: block;
+	text-align: left;
+	.aspectRatio {
+		padding-bottom: 61%;;
+		height: 0;
+	}
+	.image {
+		background-color: rgba(0, 0, 0, 0.1);
+		height: 400px;
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		background-size: cover;
+		background-position-y: center;
+		.aspectRatio;
+		&#designPrinciples {
+			background-image: url("/img/techpacks_q6.jpg");
+		}
+		&#whatMakesUsUnique {
+			background-image: url("/img/IMG_5383_RT.jpg");
+		}
+		&#productCollections {
+			background-image: url("/img/2016-12-08 13.04.20_rt2_50_q9.jpg");
+		}
+		&#makingTheBest {
+			background-image: url("/img/label_with_edition_number_IMG_5437_RT.jpg");
+		}
+		&#qualityMaterials {
+			background-image: url("/img/drawstring top edge_q7.jpg");
+			background-position-y: 25%;
+			background-position-x: 30%;
+		}
+		&#theTeam {
+			background-image: url("/img/2016-12-08 11.59.52_rt1_50_q9.jpg");
+			background-size: 140%;
+			background-position-x: 39%;
+			background-position-y: 49%;
+		}
+		&#buyingFromVirgilJames {
+			background-image: url("/img/2016-12-08 12.27.10_rt1_50_q9.jpg");
+		}
+	}
+	.sectionHeading {
+		.vjSectionHeading;
+		margin-bottom: 18px;
+	}
+    .headline {
+    	text-transform: uppercase;
+    	font-size: 80px;
+    	font-weight: 100;
+	    line-height: 73px;
+	    margin-bottom: 10px;
+    }
+    .copy {
+    	font-size: 20px;
+    	font-weight: 300;
+    	line-height: 31px;
+    }
+    .landingFrame {
+	    text-align: center;
+    	height: calc(~"100vh - 45px");
+    	padding-top: 96px;
+    	.imageContainer {
+    		position: relative;
+    		background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
+    		background-position-x: center;
+    		background-position-y: 70%;
+    		background-size: cover;
+    	    text-align: left;
+    	    overflow: hidden;
+    	    width: 1470px;
+    	    margin: auto;
+
+    	    /*
+    	    border-top-left-radius: 30px;
+    	    border-bottom-right-radius: 30px;
+    	    */
+
+    	    height: 100%;
+    	    top: initial;
+    		.textBlockMain {
+    			color: white;
+    			max-width: 680px;
+    		    display: inline-block;
+    		    position: relative;
+    		    top: 50%;
+    		    transform: translateY(-50%);
+    		    margin: auto 18%;
+    		    .headline {
+	    	        position: relative;
+	    	        font-size: 40px;
+	    	        line-height: 49px;
+	    	        margin-bottom: 11px;
+    		    }
+    		    .copy {
+    		    	.bodyCopy;
+    		    	color: white;
+    		    	position: relative;
+    		    	display: inline-block;
+    		    	line-height: 29px;
+    		    	font-weight: 200;
+    		    	font-size: 20px;
+    		    	max-width: 520px;
+
+    		    	// stronger text option:
+    		    	font-weight: 300;
+    		    	text-shadow: 0 0 2px rgba(0,0,0, .5);
+
+    		    }
+    		}
+	    	.blackGlow {
+    			position: absolute;
+    			transform: translate(-50%, -50%);
+    			left: 34%;
+    			top: 51%;
+    			opacity: .3;
+	    	}
+    	}
+    	.downArrow {
+    		position: absolute;
+    		left: 50%;
+    		transform: translate(-50%, 0);
+    		cursor: pointer;
+    		bottom: 25px;
+    		width: 25px;
+    		opacity: .45;
+    		filter: invert(1);
+    	}
+    }
+    .belowLandingFrame {
+    	margin-top: 40px;
+    	margin-bottom: 100px;
+    	.container {
+    		.row {
+    			margin-top: 130px;
+    			.textContainer {
+    				padding-left: 60px;
+    			}
+    		}
+    		.row:nth-of-type(1) {
+    			margin-top: 70px;
+    		}
+    	}
+    }
+}
+@media all and (max-width: 1200px){
+	body {
+		.aboutPage-fill-screen-with-margins {
+			.landingFrame {
+				.mainFrame {
+					margin: 0 30px;
+
+					
+					// about page margins
+					/*
+					height: calc(~"100vh - 76px - 56px");
+					*/
+					height: calc(~"100vh - 76px - 73px");
+					.textBlockMain {
+						max-width: 450px;
+					}
+
+
+				}
+				.downArrow {
+					//filter: invert(100%);
+				    transform: translate(-50%, 0) scale(.7);
+				    transform-origin: bottom;
+
+				    // about page margins
+				    bottom: 15px;
+
+				}
+			}
+			.belowLandingFrame {
+				.sectionHeading {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	body {
+		.aboutPage-fill-screen-with-margins {
+			&.bg1{
+				.landingFrame {
+					height: auto;
+					margin-top: @headerHeightSmall;
+					.mainFrame {
+						height: auto;
+						background-image: none;
+						top: 0;
+						.textBlockMain {
+							color: black;
+							top: initial;
+							transform: none;
+							margin: 0 30px;
+							max-width: initial;
+							margin-top: 5px;
+							margin-bottom: 30px;
+							.headline {
+								.vjSectionHeading;
+								font-size: 31px;
+								line-height: initial;
+								margin-bottom: 13px;
+							}
+							.copy {
+								color: black;
+								line-height: 28px;
+								font-weight: 300;
+								font-size: 16px;
+								max-width: initial;
+							}
+						}
+					}
+					.downArrow {
+						display: none;
+					}
+			    	.blackGlow {
+			    		display: none;
+			    	}
+				}
+			}
+			.belowLandingFrame {
+				margin-top: 0;
+				.sectionHeading {
+					margin-top: 40px;
+					font-size: 31px;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				.copy {
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
 // About page
 // embedded Shop page
 // embedded landing page
