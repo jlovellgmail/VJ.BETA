@@ -805,23 +805,18 @@ body {
     	    width: auto;
     	    margin: auto 60px;
     	    .contentContainer {
-
     	    	height: 100%;
     	    	display: table;
     	    	max-width: 1340px;
     	    	margin: 0 auto;
     	    	width: 100%;
     	    	padding: 20px;
-	    		
 	    		.textBlockMain {
 	    			color: white;
 	    			max-width: 680px;
-	    		    // display: inline-block;
 	    		    position: relative;
-
 	    		    display: table-cell;
 	    		    vertical-align: middle;
-
 	    		    .headline {
 		    	        position: relative;
 		    	        font-size: 40px;
@@ -879,89 +874,6 @@ body {
     		}
     	}
     }
-}
-@media all and (max-width: 1200px){
-	body {
-		.aboutPage-fill-screen-with-margins {
-			.landingFrame {
-				.mainFrame {
-					margin: 0 30px;
-					height: calc(~"100vh - 76px - 73px");
-					.textBlockMain {
-						max-width: 450px;
-					}
-				}
-				.downArrow {
-				    transform: translate(-50%, 0) scale(.7);
-				    transform-origin: bottom;
-				    bottom: 15px;
-				}
-			}
-			.belowLandingFrame {
-				.sectionHeading {
-					margin-top: 40px;
-				}
-			}
-		}
-	}
-}
-@media all and (max-width: 768px){
-	body {
-		.aboutPage-fill-screen-with-margins {
-			&.bg1{
-				.landingFrame {
-					height: auto;
-					margin-top: @headerHeightSmall;
-					.mainFrame {
-						height: auto;
-						background-image: none;
-						top: 0;
-						.textBlockMain {
-							color: black;
-							top: initial;
-							transform: none;
-							margin: 0 30px;
-							max-width: initial;
-							margin-top: 5px;
-							margin-bottom: 30px;
-							.headline {
-								.vjSectionHeading;
-								font-size: 31px;
-								line-height: initial;
-								margin-bottom: 13px;
-							}
-							.copy {
-								color: black;
-								line-height: 28px;
-								font-weight: 300;
-								font-size: 16px;
-								max-width: initial;
-							}
-						}
-					}
-					.downArrow {
-						display: none;
-					}
-			    	.blackGlow {
-			    		display: none;
-			    	}
-				}
-			}
-			.belowLandingFrame {
-				margin-top: 0;
-				.sectionHeading {
-					margin-top: 40px;
-					font-size: 31px;
-					margin-left: 15px;
-					margin-right: 15px;
-				}
-				.copy {
-					margin-left: 15px;
-					margin-right: 15px;
-				}
-			}
-		}
-	}
 }
 
 //-----------------------------------------------
