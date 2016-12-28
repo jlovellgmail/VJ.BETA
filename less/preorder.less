@@ -535,6 +535,8 @@ body {
 	    width: 100%;
 	    padding-left: 20px;
 	    padding-right: 20px;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
 	    .backgroundContainer {
 	    	background-image: url("/img/landing_page_postcard_bg_q9.jpg");
 	    	position: absolute;
@@ -629,7 +631,7 @@ body {
     		    display: inline-block;
     		    vertical-align: top;
     		    height: auto;
-    		    padding-top: 110px;
+		        padding-top: 90px;
         		.preorderText {
         			color: black;
         		    text-align: center;
@@ -650,17 +652,19 @@ body {
     			    	.headline {
     	    		    	font-weight: 100;
     	    			    line-height: 73px;
-    	    			    margin-bottom: 10px;
+	    			        margin-bottom: 20px;
     			    		color: black;
     	    		        font-size: 40px;
     			    		text-transform: uppercase;
     			    		text-rendering: geometricPrecision;
     			    		.part1 {
     			    			display: inline-block;
+    			    			transition: 0.2s ease-out;
     			    		}
     			    		.part2 {
     			    			display: inline-block;
     			    			margin-left: 3px;
+    			    			transition: 0.2s ease-out;
     			    		}
     			    		.light {
     				    		font-weight: 100;
@@ -714,15 +718,31 @@ body {
     	}
 	}
 }
-@media all and (max-width: 1200px){
-	.belowHeader {
-		.contentContainer {
-			.textContainer {
-				.preorderText {
-					.headlineContainer {
-						.headline {
-							font-size: 54px;
-							line-height: 51px;
+@media all and (min-width: 1900px){
+	.landingPage-fullbleed {
+		.belowHeader {
+			.contentContainer {
+				.carouselContainer {
+					width: 750px;
+				}
+				.textContainer {
+					.preorderText {
+						.headlineContainer {
+							.headline {
+								font-size: 70px;
+								.part2 {
+									display: block;
+									margin-left: 0;
+								}
+								.part1 {
+									display: block;
+								}
+							}
+						}
+						.copy {
+							font-size: 20px;
+						    line-height: 30px;
+						    max-width: 400px;
 						}
 					}
 				}
