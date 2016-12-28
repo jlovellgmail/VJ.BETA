@@ -29,15 +29,20 @@
 
 
                                 <div class="textBlockMain">
+                                
                                     <div class="blackGlow">
                                         <img src="/preorder/images/black_blur.png" />
                                     </div>
-                                    <div class="headline">
-                                        Getting Started
+
+                                    <div class="textContainer">
+                                        <div class="headline">
+                                            Getting Started
+                                        </div>
+                                        <div class="copy">
+                                            Our original goal was to build exactly what we wanted to use and own, without compromise, with the belief that others would value this accomplishment and want the same. Sure, it took much longer than planned (OK, three years longer) and cost more (yes, a lot more!) but we now make the exceptional products we originally envisioned.
+                                        </div>
                                     </div>
-                                    <div class="copy">
-                                        Our original goal was to build exactly what we wanted to use and own, without compromise, with the belief that others would value this accomplishment and want the same. Sure, it took much longer than planned (OK, three years longer) and cost more (yes, a lot more!) but we now make the exceptional products we originally envisioned.
-                                    </div>
+
                                 </div>
 
 
