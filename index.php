@@ -23,18 +23,19 @@ $seo_variable = "home";
 
 
 
-        <div class="aboutPage landingPageFramed">
+        <div class="landingPage">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
                         <div class="landingFrame">
-                            <div class="imageContainer">
-                    
+                            <div class="belowHeader">
 
 
+                                <div class="backgroundContainer">
+                                </div>
+                                
 
                                 <div class="contentContainer">
-                                    <!-- carousel -->
                                     <div class="carouselContainer">
                                         <div class="carouselImageContainer">
                                             
@@ -69,6 +70,8 @@ $seo_variable = "home";
                                         </div>
                                     </div>
                                 </div>
+
+                                
 
 
                                 <!-- for carousel: preload images -->
@@ -125,11 +128,6 @@ $seo_variable = "home";
                                         setTimeout(change, initialTimeout);
                                     });
                                 </script>
-
-                                <!--
-                                <div class="imageWrapper">
-                                </div>
-                                -->
 
 
 
