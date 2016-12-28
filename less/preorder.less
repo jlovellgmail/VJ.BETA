@@ -513,12 +513,11 @@ body {
 
 .landingPage-fullbleed {
 	.landingFrame {
-	    text-align: center;
+	    text-align: center;,
     	height: 100vh;
     	padding-top: 96px;
 	}
 	.belowHeader {
-		background-image: url("/img/landing_page_postcard_bg_q9.jpg");
 		position: relative;
 		background-position-x: center;
 		background-position-y: 70%;
@@ -536,6 +535,15 @@ body {
 	    width: 100%;
 	    padding-left: 20px;
 	    padding-right: 20px;
+	    .backgroundContainer {
+	    	background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+	    	position: absolute;
+	    	left: 0;
+	    	right: 0;
+	    	top: 0;
+	    	bottom: 0;
+	    	opacity: .8;
+	    }
     	.contentContainer {
     		position: relative;
     		display: table-cell;
@@ -704,6 +712,23 @@ body {
     	}
 	}
 }
+@media all and (max-width: 1200px){
+	.belowHeader {
+		.contentContainer {
+			.textContainer {
+				.preorderText {
+					.headlineContainer {
+						.headline {
+							font-size: 54px;
+							line-height: 51px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 
 //-----------------------------------------------
 //-----------------------------------------------

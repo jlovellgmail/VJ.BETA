@@ -30,6 +30,9 @@ $seo_variable = "home";
                         <div class="landingFrame">
                             <div class="belowHeader">
 
+
+                                <div class="backgroundContainer">
+                                </div>
                                 
 
                                 <div class="contentContainer">
@@ -126,7 +129,7 @@ $seo_variable = "home";
                                     });
                                 </script>
 
-                                
+
 
 
                             </div>

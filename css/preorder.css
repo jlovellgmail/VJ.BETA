@@ -484,7 +484,6 @@ body {
   padding-top: 96px;
 }
 .landingPage-fullbleed .belowHeader {
-  background-image: url("/img/landing_page_postcard_bg_q9.jpg");
   position: relative;
   background-position-x: center;
   background-position-y: 70%;
@@ -502,6 +501,15 @@ body {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+}
+.landingPage-fullbleed .belowHeader .backgroundContainer {
+  background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: .8;
 }
 .landingPage-fullbleed .belowHeader .contentContainer {
   position: relative;
