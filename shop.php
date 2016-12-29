@@ -99,82 +99,120 @@ switch ($type) {
 
 
 
-        <div class="aboutPage shopPage">
+        <!-- <div class="aboutPage shopPage"> -->
+        <div class="shopPage-using-generic-classes landingScreenMargins">
+        
+
+
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
+
+
+                        
                         <div class="landingFrame">
                             <div class="imageContainer">
+                                <div class="contentContainer">
 
 
-                            
-                                <div class="textBlockMain">
-                                    <div class="headline">
-                                        Collections
+                                    
+                                    <div class="textBlockMain">
+
+                                        <div class="textContainer">
+                                            <div class="headline">
+                                                Collections
+                                            </div>
+                                            <div class="copy">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                            </div>
+                                            <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
+                                                if ($type == "all") {
+                                                    echo "itemBtnActive";
+                                                } else {
+                                                    echo "itemBtnInactive";
+                                                }
+                                                ?>" href="<?php echo $AllUrlStr; ?>" href="/shop/men/">All<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                            <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-1 <?php
+                                                if ($type == "men") {
+                                                    echo "itemBtnActive";
+                                                } else {
+                                                    echo "itemBtnInactive";
+                                                }
+                                                ?>" href="<?php echo $MenUrlStr; ?>" href="/shop/men/">Men<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                            <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-2 <?php
+                                                if ($type == "women") {
+                                                    echo "itemBtnActive";
+                                                } else {
+                                                    echo "itemBtnInactive";
+                                                }
+                                                ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                        </div>
+
                                     </div>
-                                    <div class="copy">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
-                                    </div>
 
 
-                                    <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
-                                        if ($type == "all") {
-                                            echo "itemBtnActive";
-                                        } else {
-                                            echo "itemBtnInactive";
-                                        }
-                                        ?>" href="<?php echo $AllUrlStr; ?>" href="/shop/men/">All<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                    <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-1 <?php
-                                        if ($type == "men") {
-                                            echo "itemBtnActive";
-                                        } else {
-                                            echo "itemBtnInactive";
-                                        }
-                                        ?>" href="<?php echo $MenUrlStr; ?>" href="/shop/men/">Men<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                    <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-2 <?php
-                                        if ($type == "women") {
-                                            echo "itemBtnActive";
-                                        } else {
-                                            echo "itemBtnInactive";
-                                        }
-                                        ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
 
 
                                 </div>
-                                <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
+                            </div>
+                            <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
+                            <div class='scroll-down-to'></div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="belowLandingFrame">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+
+
+                            <div class="sdWrapper">
+                                <div class="sdContent">
+                                        
+
+                                    <div id="prodListDiv" >
+                                        <?php
+                                        if ($type == "") {
+                                            include '/incs/feature-products.php';
+                                        } else {
+                                            include '/incs/shop.php';
+                                        }
+                                        ?>
+
+                                    </div>
+                                </div>
+                                <!-- Footer -->
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer-links.php'; ?>
                             </div>
 
-                            <div class='scroll-down-to'></div>
-                            
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
 
 
 
 
 
-        <div class="sdWrapper">
-            <div class="sdContent">
-                    
 
-                <div id="prodListDiv" >
-                    <?php
-                    if ($type == "") {
-                        include '/incs/feature-products.php';
-                    } else {
-                        include '/incs/shop.php';
-                    }
-                    ?>
 
-                </div>
-            </div>
-            <!-- Footer -->
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer-links.php'; ?>
-        </div>
+
+
 
         <script>
             $('#scrollDownArrow').click(function () {
@@ -183,14 +221,13 @@ switch ($type) {
                 },750);
             })
         </script>
-
         <script type="application/ld+json">
-        <?php 
-        foreach ($List as $Product) {
-            include('json-ld.php'); 
-            echo json_encode($payload);
-        }
-        ?>
+            <?php 
+            foreach ($List as $Product) {
+                include('json-ld.php'); 
+                echo json_encode($payload);
+            }
+            ?>
         </script>
         <script>
             $('.flippy-01').click(function () {
@@ -205,7 +242,6 @@ switch ($type) {
                 e.stopPropagation();
             });
         </script>
-
         <script>
             var target = $('.scroll-arrow-indicator');
             var targetHeight = $(window).height();
@@ -217,7 +253,6 @@ switch ($type) {
                 }
             });
         </script>
-
         <script>
             var isMobile = {
                 Android: function() {
@@ -245,13 +280,8 @@ switch ($type) {
                 $(".bg-fixer, .flip-card-blur-bg").css("background-attachment","fixed");
             };
         </script>
-
-
-        <!-- <script src="/aspectRatio.js"></script> -->
-
-
-        <!-- hide header bottom border until scroll -->
         <script>
+            // hide header bottom border until scroll
             var border = $('.bottomBorder');
             var windowHeight = $(window).height();
             border.css("opacity", 0);
