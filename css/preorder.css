@@ -1155,10 +1155,6 @@ body {
   overflow: hidden;
   width: 1470px;
   margin: auto;
-  /*
-    	    border-top-left-radius: 30px;
-    	    border-bottom-right-radius: 30px;
-    	    */
   height: 100%;
   top: initial;
 }
