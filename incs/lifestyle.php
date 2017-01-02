@@ -34,10 +34,6 @@ $gallery = $dbo->loadObjectList();
 
 <div>
     <?php if ($postCount > 0) { ?>
-        <div class="lifestyle-section-title-block">
-            <div class="part1">Lifestyle</div>
-            <div class="part2">Journal</div>
-        </div>
         <div id="lifestylePosts" data-ui="jscroll-default">
             <?php include "/getLifestylePosts.php"; ?>
         </div>

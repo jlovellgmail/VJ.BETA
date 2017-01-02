@@ -843,6 +843,77 @@ body {
 .shopPage-using-generic-classes.landingScreenMargins .belowLandingFrame {
   margin-top: 60px;
 }
+.journalPage-using-generic-classes.landingScreenMargins .landingFrame {
+  height: 100vh;
+  padding-bottom: 70px;
+}
+.journalPage-using-generic-classes.landingScreenMargins .landingFrame .downArrow {
+  bottom: 94px;
+}
+.journalPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer {
+  background-image: url("/uploadedImages/Posts/1010_POH1465860457.jpg");
+}
+.journalPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .textBlockMain {
+  color: black;
+}
+.journalPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .textBlockMain .copy {
+  color: black;
+  text-shadow: initial;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame {
+  margin-top: 60px;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .widthWrapper {
+  width: 1170px;
+  text-align: left;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block {
+  width: 49%;
+  display: inline-block;
+  padding: 0 40px;
+  padding-bottom: 60px;
+  vertical-align: top;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block .imageContainer {
+  width: 100%;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block .imageContainer .image {
+  height: 330px;
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  background-position-y: center;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block .textContainer {
+  display: inline-block;
+  padding-top: 10px;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block .textContainer .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: initial;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block .textContainer p {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .lifestyle-post-block .textContainer .readMoreLink {
+  color: #000000;
+  text-decoration: underline;
+  margin-top: 6px;
+  display: inline-block;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .jscroll-added {
+  display: inline-block;
+  width: 49%;
+}
+.journalPage-using-generic-classes.landingScreenMargins .belowLandingFrame .jscroll-added .lifestyle-post-block {
+  width: 100%;
+}
 .aboutPage {
   display: block;
   text-align: left;

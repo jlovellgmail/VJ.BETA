@@ -835,7 +835,8 @@ body {
 }
 
 //-----------------------------------------------
-// About page using generic class
+// About page 
+// using generic class
 .aboutPage-fill-screen-with-margins {
 	.image {
 		background-color: rgba(0, 0, 0, 0.1);
@@ -887,7 +888,8 @@ body {
 }
 
 //-----------------------------------------------
-// Shop page using generic class
+// Shop page 
+// using generic class
 .shopPage-using-generic-classes {
 	&.landingScreenMargins {
 		.landingFrame {
@@ -921,6 +923,101 @@ body {
 
 			// temp override generic
 			margin-top: 60px;
+
+		}
+	}
+}
+
+//-----------------------------------------------
+// Journal / Lifestyle 
+// page using generic class
+.journalPage-using-generic-classes {
+	&.landingScreenMargins {
+		.landingFrame {
+
+
+
+			// temp override the generic
+			// to stop content below landing screen showing right below image, make it go below the fold
+			height: 100vh;
+			padding-bottom: 70px;
+			.downArrow {
+				bottom: 94px;
+			}
+
+
+
+			.imageContainer {
+				background-image: url("/uploadedImages/Posts/1010_POH1465860457.jpg");
+				.contentContainer {
+					.textBlockMain {
+						color: black;
+						.copy {
+							color: black;
+							text-shadow: initial;
+						}
+					}
+				}
+			}
+		}
+		.belowLandingFrame {
+
+			// temp override generic
+			margin-top: 60px;
+
+
+			.widthWrapper {
+				width: 1170px;
+				text-align: left;
+			}
+			.lifestyle-post-block {
+				width: 49%;
+				display: inline-block;
+				padding: 0 40px;
+				padding-bottom: 60px;
+				vertical-align: top;
+				.imageContainer {
+					width: 100%;
+					.image {
+						height: 330px;
+						width: 100%;
+						display: inline-block;
+						background-size: cover;
+						background-position-y: center;
+					}
+				}
+				.textContainer {
+					display: inline-block;
+					padding-top: 10px;
+					.title {
+						font-size: 24px;
+						font-weight: 700;
+						line-height: initial;
+						margin-top: 14px;
+						margin-bottom: 6px;
+					}
+					p {
+						margin-bottom: 5px;
+						font-size: 20px;
+						font-size: 18px;
+					    line-height: 25px;
+					}
+					.readMoreLink {
+						color: rgba(0, 0, 0, 1);
+						text-decoration: underline;
+						margin-top: 6px;
+						display: inline-block;
+					}
+				}
+			}
+			.jscroll-added {
+				display: inline-block;
+			    width: 49%;
+			    .lifestyle-post-block {
+			    	width: 100%;
+			    }
+			}
+
 
 		}
 	}
