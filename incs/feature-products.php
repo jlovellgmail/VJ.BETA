@@ -29,7 +29,7 @@ $FeatProduct = $ProductList->getFeaturedProducts();
                 $ProdTitle = $product->getProductName();
 				$Style = str_replace(" ", "-", $ProdTitle);
 				$Title = $product->getName();
-                ?><a class="shopItem lg-four" href="/product.php?style=<?php echo $Style; ?>&pid=<?php echo $product->getVar("PID"); ?>">
+                ?><a class="shopItem lg-six" href="/product.php?style=<?php echo $Style; ?>&pid=<?php echo $product->getVar("PID"); ?>">
                     <img src="<?php echo $ProdImgUrl; ?>" alt="<?php echo $Title; ?>" />
                     <span class="shopItemPrice">$<?php echo $ProdPrice; ?></span>
                     <span class="shopItemTitle"><?php echo $ProdTitle; ?></span>

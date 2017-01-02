@@ -843,6 +843,12 @@ body {
 .shopPage-using-generic-classes.landingScreenMargins .belowLandingFrame {
   margin-top: 60px;
 }
+.shopPage-using-generic-classes.landingScreenMargins .belowLandingFrame .widthWrapper {
+  width: 1000px;
+}
+.shopPage-using-generic-classes.landingScreenMargins .belowLandingFrame .shopItem img {
+  max-width: 450px;
+}
 .journalPage-using-generic-classes.landingScreenMargins .landingFrame {
   height: 100vh;
   padding-bottom: 70px;
