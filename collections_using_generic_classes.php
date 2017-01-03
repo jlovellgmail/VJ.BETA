@@ -30,9 +30,6 @@ include '/classes/Line.class.php';
                         <div class="imageContainer">
                             <div class="contentContainer">
                                 <div class="preorderText">
-                                    <div class="headline">
-                                        Early Access
-                                    </div>
                                     <div class="titleContainer">
                                         <div class="title">
                                             <div class="part1">Cityline</div><div class="part2">Collections</div>

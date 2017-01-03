@@ -928,7 +928,13 @@ body {
   bottom: 94px;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer {
-  background-image: url("/img/2016-12-08%2013.04.20_rt2_50_q9.jpg");
+  background-image: url("/img/170103 collections bg_q9.jpg");
+  background-position-x: 180%;
+  background-position-y: 10%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-color: #bab9c1;
+  background-size: cover;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer {
   position: absolute;
@@ -956,18 +962,12 @@ body {
   vertical-align: middle;
   color: white;
 }
-.collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .headline {
-  font-size: 32px;
-  text-transform: capitalize;
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.6);
-}
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer {
   text-align: center;
   margin: 9px 0 9px 0;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title {
-  color: black;
+  color: white;
   font-size: 43px;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
@@ -1000,13 +1000,13 @@ body {
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes {
   text-align: center;
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid white;
   margin-top: 30px;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .vline {
   width: 1px;
   height: 100px;
-  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
   display: inline-block;
   vertical-align: middle;
 }
@@ -1016,13 +1016,12 @@ body {
   vertical-align: middle;
   width: 212px;
   text-transform: uppercase;
-  color: black;
+  color: white;
   display: inline-block;
   transition: .3s;
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: .7px;
-  text-rendering: geometricPrecision;
+  letter-spacing: 1.7px;
   text-decoration: none;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .box .title {
