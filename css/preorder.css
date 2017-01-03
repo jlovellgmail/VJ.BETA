@@ -1389,10 +1389,24 @@ body {
     opacity: 1;
   }
 }
+.landingPage.v2 .belowHeader .contentContainer .carouselContainer .carouselBackgroundContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: visible;
+}
+.landingPage.v2 .belowHeader .contentContainer .carouselContainer .carouselBackgroundContainer img {
+  transform: translateX(-50%);
+  top: 52%;
+  position: absolute;
+}
 .landingPage .landingFrame {
   text-align: center;
   height: 100vh;
   padding-top: 96px;
+  overflow: hidden;
 }
 .landingPage .belowHeader {
   position: relative;
