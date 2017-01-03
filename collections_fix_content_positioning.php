@@ -22,7 +22,7 @@ include '/classes/Line.class.php';
 
 
 
-    <div class="collectionsPage-using-generic-classes landingScreenMargins">
+    <div class="collectionsPage-using-generic-classes-fix-content-positioning landingScreenMargins">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 noPadding">
