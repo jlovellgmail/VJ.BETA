@@ -1045,6 +1045,7 @@ body {
 			padding-bottom: 70px;
 			.downArrow {
 				bottom: 94px;
+				display: none;
 			}
 
 
@@ -1054,15 +1055,12 @@ body {
 				//background-image: url("/img/2016-12-08%2013.04.20_rt2_50_q9.jpg");
 				background-image: url("/img/170103 collections bg_q9.jpg");
 				background-position-x: 180%;
-				
-				// background-position-y: 70%;
 				background-position-y: 10%;
-
 				background-size: 110%;
 				background-repeat: no-repeat;
 				background-color: #bab9c1;
 
-				background-size: cover;
+				//background-size: cover;
 
 
 
@@ -1186,6 +1184,32 @@ body {
 
 
 
+		}
+	}
+}
+@media all and (min-width: 1900px){
+	.collectionsPage-using-generic-classes {
+		&.landingScreenMargins {
+			.landingFrame {
+				.imageContainer {
+					.contentContainer {
+						.preorderText {
+							.titleContainer {
+								.title {
+									font-size: 70px;
+									line-height: 65px;
+									.part1 {
+										display: block;
+									}
+									.part2 {
+										display: block;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

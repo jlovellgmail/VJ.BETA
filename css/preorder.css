@@ -926,6 +926,7 @@ body {
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .downArrow {
   bottom: 94px;
+  display: none;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer {
   background-image: url("/img/170103 collections bg_q9.jpg");
@@ -934,7 +935,6 @@ body {
   background-size: 110%;
   background-repeat: no-repeat;
   background-color: #bab9c1;
-  background-size: cover;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer {
   position: absolute;
@@ -1044,6 +1044,18 @@ body {
 .collectionsPage-using-generic-classes.landingScreenMargins .belowLandingFrame .widthWrapper {
   width: 1170px;
   text-align: left;
+}
+@media all and (min-width: 1900px) {
+  .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title {
+    font-size: 70px;
+    line-height: 65px;
+  }
+  .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title .part1 {
+    display: block;
+  }
+  .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title .part2 {
+    display: block;
+  }
 }
 .aboutPage {
   display: block;
