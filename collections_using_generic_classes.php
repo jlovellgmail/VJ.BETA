@@ -22,19 +22,12 @@ include '/classes/Line.class.php';
 
 
 
-
-    <!-- 160103 imported from journal page / lifestyle.php -->
     <div class="collectionsPage-using-generic-classes landingScreenMargins">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 noPadding">
-
-                
                     <div class="landingFrame">
                         <div class="imageContainer">
-
-
-                            <!-- 160103 imported from .net/index.php -->
                             <div class="contentContainer">
                                 <div class="preorderText">
                                     <div class="headline">
@@ -70,9 +63,6 @@ include '/classes/Line.class.php';
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                         <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
                         <div class='scroll-down-to'></div>
@@ -85,42 +75,13 @@ include '/classes/Line.class.php';
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="widthWrapper">
-
-
+                            <!-- nothing here -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    <!-- original -->
-    <!--
-    <div class="bgWrapperLeaf" style='height: calc(100vh - 56px);'>
-        <div class="landingLeafWrapper collectionsLeafWrapper">
-            <div class="collectionWrapperLeft xs-twelve">
-                <div class="collectionPanel classicPanel">
-                    <div class="tableWrapper h100p" style='padding-top: 30px;'>
-                        <div class="cellWrapper">
-                            <div class='collection-title-span-wrapper rel block'><span class="heroText caps size4 fw-600 spaceLetters">Cityline </span><span class="heroText caps size4 fw-300 spaceLetters">Collections</span></div>
-                            <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=city&col=reykjavik">Reykjavik</a></div>
-                            <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=city&col=santa-fe">Santa Fe</a></div>
-                            <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=city&col=buenos-aires">Buenos Aires</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-
-
 
 
     <?php include '/incs/footer.php'; ?>

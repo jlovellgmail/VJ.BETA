@@ -954,6 +954,7 @@ body {
   transform: none;
   display: table;
   vertical-align: middle;
+  color: white;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .headline {
   font-size: 32px;
@@ -1038,6 +1039,7 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .belowLandingFrame {
+  display: none;
   margin-top: 60px;
 }
 .collectionsPage-using-generic-classes.landingScreenMargins .belowLandingFrame .widthWrapper {
