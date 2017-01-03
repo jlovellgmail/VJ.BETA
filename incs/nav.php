@@ -22,6 +22,7 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
             <div class="rightItemsContainer">
                 <div class="textLinksContainer">
                     <a href="/shop.php">Shop</a>
+                    <a href="/collections.php">Collections</a>
                     <a href="/about.php">About</a>
                     <a href="/lifestyle.php">Journal</a>
                 </div>
@@ -43,6 +44,7 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
             <div class="dropdownLinksContainer">
                 <div class="textLinksContainer">
                     <a href="/shop.php">Shop</a>
+                    <a href="/collections.php">Collections</a>
                     <a href="/about.php">About</a>
                     <a href="/lifestyle.php">Journal</a>
                 </div>
