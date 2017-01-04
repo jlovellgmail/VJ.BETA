@@ -770,59 +770,6 @@ body {
 .landingScreenMargins .belowLandingFrame .container .row:nth-of-type(1) {
   margin-top: 70px;
 }
-.aboutPage-fill-screen-with-margins .image {
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 400px;
-  width: 100%;
-  display: inline-block;
-  vertical-align: top;
-  background-size: cover;
-  background-position-y: center;
-}
-.aboutPage-fill-screen-with-margins .image#designPrinciples {
-  background-image: url("/img/techpacks_q6.jpg");
-}
-.aboutPage-fill-screen-with-margins .image#whatMakesUsUnique {
-  background-image: url("/img/IMG_5383_RT.jpg");
-}
-.aboutPage-fill-screen-with-margins .image#productCollections {
-  background-image: url("/img/2016-12-08 13.04.20_rt2_50_q9.jpg");
-}
-.aboutPage-fill-screen-with-margins .image#makingTheBest {
-  background-image: url("/img/label_with_edition_number_IMG_5437_RT.jpg");
-}
-.aboutPage-fill-screen-with-margins .image#qualityMaterials {
-  background-image: url("/img/drawstring top edge_q7.jpg");
-  background-position-y: 25%;
-  background-position-x: 30%;
-}
-.aboutPage-fill-screen-with-margins .image#theTeam {
-  background-image: url("/img/2016-12-08 11.59.52_rt1_50_q9.jpg");
-  background-size: 140%;
-  background-position-x: 39%;
-  background-position-y: 49%;
-}
-.aboutPage-fill-screen-with-margins .image#buyingFromVirgilJames {
-  background-image: url("/img/2016-12-08 12.27.10_rt1_50_q9.jpg");
-}
-.aboutPage-fill-screen-with-margins .textContainer {
-  text-align: left;
-}
-.aboutPage-fill-screen-with-margins .textContainer .sectionHeading {
-  text-transform: uppercase;
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: .5px;
-  line-height: initial;
-  margin-bottom: 8px;
-  margin-top: 20px;
-  margin-bottom: 18px;
-}
-.aboutPage-fill-screen-with-margins .textContainer .copy {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 31px;
-}
 .shopPage-using-generic-classes.landingScreenMargins .landingFrame {
   height: 100vh;
   padding-bottom: 70px;
