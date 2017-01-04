@@ -1057,6 +1057,10 @@ body {
     display: block;
   }
 }
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
 .landingScreen .landingHeight {
   text-align: center;
   height: 100vh;
@@ -1092,6 +1096,9 @@ body {
   position: relative;
   vertical-align: middle;
   text-align: center;
+  display: block;
+  height: auto;
+  text-align: right;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   max-width: 680px;
@@ -1101,6 +1108,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-left: initial;
+  margin-right: initial;
+  display: inline-block;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
   text-align: center;

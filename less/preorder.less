@@ -1222,6 +1222,10 @@ body {
 // page using NEW GENERIC CLASS in order to:
 // fix content positioning
 
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
 // new generic class
 .landingScreen {
     .landingHeight {
@@ -1256,6 +1260,14 @@ body {
     	    	    position: relative;
     	    	    vertical-align: middle;
     	    	    text-align: center;
+
+
+    	    	    // allow text to be shifted
+    	    	    display: block;
+    	    	    height: auto;
+    	    	    text-align: right;
+
+
 		    		.textBlockMain {
 		    			max-width: 680px;
 		    		    position: relative;
@@ -1264,6 +1276,14 @@ body {
 		    		    display: block;
 		    		    margin-left: auto;
 		    		    margin-right: auto;
+
+
+		    		    // allow text to be shifted
+		    		    margin-left: initial;
+		    		    margin-right: initial;
+		    		    display: inline-block;
+
+		    		    
 		    			.titleContainer {
 		    				text-align: center;
 		    				margin: 9px 0 9px 0;

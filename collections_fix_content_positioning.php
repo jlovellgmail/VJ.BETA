@@ -31,11 +31,14 @@ include '/classes/Line.class.php';
                         <div class="landingWidth">
                             <div class="imageFrame">
 
-                
+
+
+                                <div class="table-cell">
+
+
+
                                 <div class="contentContainer">
                                     <div class="textBlockMain">
-
-
                                         <div class="titleContainer">
                                             <div class="title">
                                                 <div class="part1">Cityline</div><div class="part2">Collections</div>
@@ -64,10 +67,13 @@ include '/classes/Line.class.php';
                                                 </div>
                                             </a>
                                         </div>
-
-
                                     </div>
                                 </div>
+
+
+
+                                </div>
+
 
 
                             <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
