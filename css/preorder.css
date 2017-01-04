@@ -934,6 +934,7 @@ body {
   padding: 0 60px;
   width: 100%;
   height: 100%;
+  display: table;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   position: relative;
@@ -952,7 +953,7 @@ body {
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   max-width: 1340px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   width: 100%;
   position: relative;
   vertical-align: middle;
@@ -972,18 +973,19 @@ body {
   margin: 9px 0 9px 0;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
-  font-size: 43px;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
+  font-size: 70px;
+  line-height: 65px;
+  transition: 0.1s ease-out;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
   font-weight: 600;
-  display: inline-block;
+  display: block;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
   font-weight: 100;
-  display: inline-block;
-  margin-left: 5px;
+  display: block;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
   max-width: 540px;
@@ -1032,7 +1034,7 @@ body {
 }
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   text-align: right;
-  max-width: 1060px;
+  max-width: 1100px;
 }
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: white;
@@ -1097,17 +1099,10 @@ body {
   width: 1170px;
   text-align: left;
 }
-@media all and (min-width: 1900px) {
+@media all and (max-width: 1400px) {
   .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
-    font-size: 70px;
-    line-height: 65px;
-  }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
-    display: block;
-  }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
-    display: block;
-    margin: 0;
+    font-size: 57px;
+    line-height: 53px;
   }
 }
 .aboutPage {
