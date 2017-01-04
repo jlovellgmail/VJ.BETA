@@ -21,80 +21,51 @@ $seo_variable = "lifestyle";
 
     </head>
     <body>
-
         <?php include '/incs/nav.php'; ?>
 
 
-
-        <!-- <div class="journalPage"> -->
-        <div class="journalPage-using-generic-classes landingScreenMargins">
-
-
-
+        <div class="journalPage-using-new-generic-170103 landingScreen-generic-170103">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
-
-
-                        
-                        <div class="landingFrame">
-                            <div class="imageContainer">
-                                <div class="contentContainer">
-                                    <div class="textBlockMain">
-                                        <div class="textContainer">
-                                            <div class="headline">
-                                                Lifestyle
-                                            </div>
-                                            <div class="copy">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                        <div class="landingHeight">
+                            <div class="landingWidth">
+                                <div class="imageFrame">
+                                    <div class="table-cell">
+                                        <div class="contentContainer">
+                                            <div class="textBlockMain">
+                                                <div class="titleContainer">
+                                                    <div class="title">
+                                                        <div class="part1">Lifestyle</div>
+                                                        <div class="part2">Journal</div>
+                                                    </div>
+                                                </div>
+                                                <div class="copy">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
+                                </div> 
                             </div>
-                            <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
                             <div class='scroll-down-to'></div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-
-
-
             <div class="belowLandingFrame">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-
-
-
                             <div class="widthWrapper">
                                 <?php include '/incs/lifestyle.php'; ?>
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
 
 
         <?php include '/incs/footer.php'; ?>
@@ -126,14 +97,15 @@ $seo_variable = "lifestyle";
             });
         </script>
         <script>
-            $('.scroll-arrow-indicator').click(function () {
+            $('.downArrow').click(function () {
+                console.log("yes");
                 $('html, body').animate({
                     scrollTop: ($('.scroll-down-to').offset().top)
                 },750);
             })
         </script>
         <script>
-            var target = $('.scroll-arrow-indicator');
+            var target = $('.downArrow');
             var targetHeight = $(window).height();
 
             $(document).scroll(function(e){
@@ -155,7 +127,23 @@ $seo_variable = "lifestyle";
                 }
             });
         </script>
-
-
+        <!-- handle window aspect ratio for bg image -->
+        <script>
+            function getScreenAspect(){
+                return $(window).width() / $(window).height();
+            }
+            function handleAspect(){
+                var screenAspect = getScreenAspect();
+                //console.log("yes: " + screenAspect);
+                if(screenAspect < 1.4905193734542457){
+                    $(".imageFrame").addClass("tallAspect");
+                }
+                else {
+                    $(".imageFrame").removeClass("tallAspect");
+                }
+            }
+            $(document).ready(handleAspect);
+            $(window).resize(handleAspect);
+        </script>
     </body>
 </html>
