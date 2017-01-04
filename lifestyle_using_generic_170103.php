@@ -133,14 +133,15 @@ $seo_variable = "lifestyle";
             });
         </script>
         <script>
-            $('.scroll-arrow-indicator').click(function () {
+            $('.downArrow').click(function () {
+                console.log("yes");
                 $('html, body').animate({
                     scrollTop: ($('.scroll-down-to').offset().top)
                 },750);
             })
         </script>
         <script>
-            var target = $('.scroll-arrow-indicator');
+            var target = $('.downArrow');
             var targetHeight = $(window).height();
 
             $(document).scroll(function(e){
