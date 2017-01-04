@@ -162,6 +162,28 @@ $seo_variable = "lifestyle";
                 }
             });
         </script>
+        
+        
+        <!-- handle window aspect ratio for bg image -->
+        <script>
+            function getScreenAspect(){
+                return $(window).width() / $(window).height();
+            }
+            function handleAspect(){
+                var screenAspect = getScreenAspect();
+                //console.log("yes: " + screenAspect);
+                if(screenAspect < 1.4905193734542457){
+                    $(".imageFrame").addClass("tallAspect");
+                }
+                else {
+                    $(".imageFrame").removeClass("tallAspect");
+                }
+            }
+            $(document).ready(handleAspect);
+            $(window).resize(handleAspect);
+        </script>
+
+
 
 
     </body>
