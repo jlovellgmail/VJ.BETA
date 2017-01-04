@@ -1226,13 +1226,9 @@ body {
 .landingScreen {
     .landingHeight {
 	    text-align: center;
-    	padding-top: 96px;
-    	height: calc(~"100vh - 70px");
-
-    	// brought in from override in page class
     	height: 100vh;
+    	padding-top: 96px;
     	padding-bottom: 70px;
-
     	.landingWidth {
     		padding: 0 60px;
     		width: 100%;
@@ -1250,11 +1246,6 @@ body {
 	    	    height: 100%;
 	    	    top: initial;
 	    	    width: auto;
-
-
-	    	    //margin: auto 60px;
-
-
 	    	    .contentContainer {
 	    	    	height: 100%;
 	    	    	display: table;
@@ -1307,14 +1298,10 @@ body {
 		    		left: 50%;
 		    		transform: translate(-50%, 0);
 		    		cursor: pointer;
-		    		bottom: 25px;
 		    		width: 25px;
 		    		opacity: .45;
 		    		filter: invert(1);
-
-		    		// brought in from override in page class
 		    		bottom: 20px;
-
 		    	}
 	    	}
     	}
@@ -1337,25 +1324,7 @@ body {
 }
 .collectionsPage-using-generic-classes-fix-content-positioning {
 	&.landingScreen {
-
-
 		.landingHeight {
-
-
-
-			// temp override the generic
-			// to stop content below landing screen showing right below image, make it go below the fold
-			/*
-			height: 100vh;
-			padding-bottom: 70px;
-			.downArrow {
-				bottom: 94px;
-				display: none;
-			}
-			*/
-
-
-
 			.landingWidth {
 				.imageFrame {
 					background-image: url("/img/170103 collections bg_q9.jpg");
@@ -1394,8 +1363,6 @@ body {
 
 
 			    		
-
-			    		//.preorderText {
 			    		.textBlockMain {
 
 
@@ -1506,9 +1473,6 @@ body {
 			}
 		}
 		.belowLandingFrame {
-
-			// turn off 
-			// until we want something on the base collections page
 			display: none;
 
 			// temp override generic
@@ -1518,29 +1482,27 @@ body {
 				width: 1170px;
 				text-align: left;
 			}
-
-
-
-
 		}
 	}
 }
 @media all and (min-width: 1900px){
 	.collectionsPage-using-generic-classes-fix-content-positioning {
-		&.landingScreenMargins {
-			.landingFrame {
-				.imageContainer {
-					.contentContainer {
-						.preorderText {
-							.titleContainer {
-								.title {
-									font-size: 70px;
-									line-height: 65px;
-									.part1 {
-										display: block;
-									}
-									.part2 {
-										display: block;
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.preorderText {
+								.titleContainer {
+									.title {
+										font-size: 70px;
+										line-height: 65px;
+										.part1 {
+											display: block;
+										}
+										.part2 {
+											display: block;
+										}
 									}
 								}
 							}
