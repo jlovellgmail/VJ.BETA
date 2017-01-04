@@ -1116,15 +1116,6 @@ body {
   }
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
-  /*
-					background-image: url("/img/170103 collections bg_q9.jpg");
-					background-image: url("/img/170103 collections bg_q9.jpg");
-					background-position-x: 180%;
-					background-position-y: 10%;
-					background-size: 110%;
-					background-repeat: no-repeat;
-					background-color: #bab9c1;
-					*/
   background-color: #c2c2c2;
   background-image: url("/img/170104a - lifestyle journal page bg_q9.jpg");
   background-position: right 260px center;
@@ -1138,18 +1129,10 @@ body {
   transition: background-position 0.2s ease-in-out;
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
-  /*
-    	    	    	text-align: right;
-    	    	    	max-width: 1100px;
-    	    	    	*/
   text-align: left;
   max-width: 1300px;
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
-  /*
-		    		        color: white;
-		    		        padding-bottom: 85px;
-		    		        */
   color: black;
   padding-bottom: 180px;
 }
