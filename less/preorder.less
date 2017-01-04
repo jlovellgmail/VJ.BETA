@@ -1039,9 +1039,8 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// Collections
 // 170103
-// with new generic class
+// new generic class
 
 .table-cell {
 	display: table-cell;
@@ -1155,7 +1154,9 @@ body {
     	}
     }
 }
-// page-specific class: Collections page
+//-----------------------------------------------
+// Collections page
+// with 170103 generic class
 .collectionsPage-using-new-generic-170103 {
 	&.landingScreen-generic-170103 {
 		.landingHeight {
@@ -1285,9 +1286,138 @@ body {
 		}
 	}
 }
-@media all and (max-width: 1300px){
+//-----------------------------------------------
+// Journal page
+// with 170103 generic class
+.journalPage-using-new-generic-170103 {
+	&.landingScreen-generic-170103 {
+		.landingHeight {
+			.landingWidth {
+				.imageFrame {
+					
 
+					/*
+					background-image: url("/img/170103 collections bg_q9.jpg");
+					background-image: url("/img/170103 collections bg_q9.jpg");
+					background-position-x: 180%;
+					background-position-y: 10%;
+					background-size: 110%;
+					background-repeat: no-repeat;
+					background-color: #bab9c1;
+					*/
+					background-color: #c2c2c2;
+					background-image: url("/img/170104a - lifestyle journal page bg_q9.jpg");
+					background-position: right 260px center;
+					background-size: 100%;
+					background-position-y: 50%;
+
+
+
+					&.tallAspect {
+						background-size: cover;
+						background-position: right 100px center;
+						transition: background-size .2s ease-in-out;
+						transition: background-position .2s ease-in-out;
+					}
+					.contentContainer {
+    	    	    	
+
+						/*
+    	    	    	text-align: right;
+    	    	    	max-width: 1100px;
+    	    	    	*/
+    	    	    	text-align: left;
+    	    	    	max-width: 1300px;
+
+
+			    		.textBlockMain {
+		    		        
+
+		    		        /*
+		    		        color: white;
+		    		        padding-bottom: 85px;
+		    		        */
+		    		        color: black;
+		    		        padding-bottom: 180px;
+
+
+							.titleContainer {
+						    	.title {
+						    		.part1 {
+						    		}
+						    		.part2 {
+						    		}
+						    	}
+						    }
+			    		    .copy {
+			    		    }
+				    		.hline {
+				    			border-bottom: 1px solid rgba(0,0,0, .2);
+				    			height: 1px;
+				    			max-width: 550px;
+				    			margin-left: auto;
+				    			margin-right: auto;
+				    			margin-top: 30px;
+				    			margin-bottom: 30px;
+				    		}
+					    	.boxes {
+					    		text-align: center;
+					    		display: inline-block;
+					    		border: 1px solid white;
+					    		margin-top: 30px;
+					    		.vline {
+					    			width: 1px;
+					    			height: 100px;
+					    			border-left: 1px solid rgba(255,255,255, .16);
+					    			display: inline-block;
+					    			vertical-align: middle;
+					    		}
+					    		.box {
+					    			cursor: pointer;
+								    padding: 50px 0;
+								    vertical-align: middle;
+								    width: 212px;
+								    text-transform: uppercase;
+					    			color: white;
+					    			display: inline-block;
+								    transition: .3s;
+								    font-size: 22px;
+								    font-weight: 800;
+								    letter-spacing: 1.7px;
+								    text-decoration: none;
+								    .title {
+								    	display: inline-block;
+								    }
+								    .subtitle {
+								    	font-size: 12px;
+								    	text-transform: uppercase;
+								    	font-weight: 500;
+								    	letter-spacing: .8px;
+								    	margin-top: -4px;
+								    }
+								    &:hover {
+							    	    background-color: rgba(255, 255, 255, 0.2);
+								    }
+					    		}
+					    	}
+			    		}
+					}
+					.downArrow {
+						display: none;
+					}
+				}
+			}
+		}
+		.belowLandingFrame {
+			.widthWrapper {
+				width: 1170px;
+				text-align: left;
+			}
+		}
+	}
 }
+//-----------------------------------------------
+
 
 
 //-----------------------------------------------

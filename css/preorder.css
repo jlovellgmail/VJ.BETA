@@ -1115,6 +1115,100 @@ body {
     line-height: 53px;
   }
 }
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
+  /*
+					background-image: url("/img/170103 collections bg_q9.jpg");
+					background-image: url("/img/170103 collections bg_q9.jpg");
+					background-position-x: 180%;
+					background-position-y: 10%;
+					background-size: 110%;
+					background-repeat: no-repeat;
+					background-color: #bab9c1;
+					*/
+  background-color: #c2c2c2;
+  background-image: url("/img/170104a - lifestyle journal page bg_q9.jpg");
+  background-position: right 260px center;
+  background-size: 100%;
+  background-position-y: 50%;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame.tallAspect {
+  background-size: cover;
+  background-position: right 100px center;
+  transition: background-size 0.2s ease-in-out;
+  transition: background-position 0.2s ease-in-out;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  /*
+    	    	    	text-align: right;
+    	    	    	max-width: 1100px;
+    	    	    	*/
+  text-align: left;
+  max-width: 1300px;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  /*
+		    		        color: white;
+		    		        padding-bottom: 85px;
+		    		        */
+  color: black;
+  padding-bottom: 180px;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 1px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid white;
+  margin-top: 30px;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
+  width: 1px;
+  height: 100px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  display: inline-block;
+  vertical-align: middle;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
+  cursor: pointer;
+  padding: 50px 0;
+  vertical-align: middle;
+  width: 212px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  text-decoration: none;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .title {
+  display: inline-block;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .8px;
+  margin-top: -4px;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .downArrow {
+  display: none;
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+  width: 1170px;
+  text-align: left;
+}
 .aboutPage {
   display: block;
   text-align: left;
