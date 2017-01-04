@@ -1136,55 +1136,6 @@ body {
   color: black;
   padding-bottom: 180px;
 }
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  height: 1px;
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
-  text-align: center;
-  display: inline-block;
-  border: 1px solid white;
-  margin-top: 30px;
-}
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
-  width: 1px;
-  height: 100px;
-  border-left: 1px solid rgba(255, 255, 255, 0.16);
-  display: inline-block;
-  vertical-align: middle;
-}
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
-  cursor: pointer;
-  padding: 50px 0;
-  vertical-align: middle;
-  width: 212px;
-  text-transform: uppercase;
-  color: white;
-  display: inline-block;
-  transition: .3s;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 1.7px;
-  text-decoration: none;
-}
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .title {
-  display: inline-block;
-}
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .subtitle {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: .8px;
-  margin-top: -4px;
-}
-.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .downArrow {
   display: none;
 }
