@@ -1055,7 +1055,7 @@ body {
 
     		// this stops this div from getting smaller than the contained div
     		display: table;
-    		
+
 	    	.imageFrame {
 	    		position: relative;
 	    		background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
@@ -1161,6 +1161,16 @@ body {
 					background-size: 110%;
 					background-repeat: no-repeat;
 					background-color: #bab9c1;
+
+
+					&.tallAspect {
+						background-size: cover;
+						background-position: right 100px center;
+						transition: background-size .2s ease-in-out;
+						transition: background-position .2s ease-in-out;
+					}
+
+
 					.contentContainer {
     	    	    	text-align: right;
     	    	    	max-width: 1100px;

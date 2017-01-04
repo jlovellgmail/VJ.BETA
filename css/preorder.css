@@ -1032,6 +1032,12 @@ body {
   background-repeat: no-repeat;
   background-color: #bab9c1;
 }
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame.tallAspect {
+  background-size: cover;
+  background-position: right 100px center;
+  transition: background-size 0.2s ease-in-out;
+  transition: background-position 0.2s ease-in-out;
+}
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   text-align: right;
   max-width: 1100px;

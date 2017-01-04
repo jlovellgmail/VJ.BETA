@@ -88,11 +88,32 @@ include '/classes/Line.class.php';
             </div>
         </div>
 
-        
+
     </div>
 
 
     <?php include '/incs/footer.php'; ?>
     <?php include '/incs/footer-links.php'; ?>
+    
+    
+    <!-- handle window aspect ratio for bg image -->
+    <script>
+        function getScreenAspect(){
+            return $(window).width() / $(window).height();
+        }
+        function handleAspect(){
+            var screenAspect = getScreenAspect();
+            if(screenAspect < 1.298045602605863){
+                $(".imageFrame").addClass("tallAspect");
+            }
+            else {
+                $(".imageFrame").removeClass("tallAspect");
+            }
+        }
+        $(document).ready(handleAspect);
+        $(window).resize(handleAspect);
+    </script>
+
+
 </body>
 </html>
