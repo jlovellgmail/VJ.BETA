@@ -1169,9 +1169,11 @@ body {
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
   text-align: right;
+  max-width: 1060px;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: white;
+  padding-bottom: 85px;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -1221,6 +1223,9 @@ body {
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
+  display: none;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame {
   display: none;
