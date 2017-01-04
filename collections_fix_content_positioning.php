@@ -39,43 +39,43 @@ include '/classes/Line.class.php';
 
                 
 
-                            <div class="contentContainer">
-                                
-                                
-                                <!-- <div class="preorderText"> -->
-                                <div class="textBlockMain">
+                                <div class="contentContainer">
+                                    
+                                    
+                                    <!-- <div class="preorderText"> -->
+                                    <div class="textBlockMain">
 
 
-                                    <div class="titleContainer">
-                                        <div class="title">
-                                            <div class="part1">Cityline</div><div class="part2">Collections</div>
-                                        </div>
-                                    </div>
-                                    <div class="copy">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
-                                    </div>
-                                    <div class="boxes">
-                                        <a class="box" href="collection/index.php?line=city&col=reykjavik">
+                                        <div class="titleContainer">
                                             <div class="title">
-                                                Reykjavik
+                                                <div class="part1">Cityline</div><div class="part2">Collections</div>
                                             </div>
-                                            <div class="subtitle">
-                                                Collection
-                                            </div>
-                                        </a>
-                                        <div class="vline">
                                         </div>
-                                        <a class="box" href="collection/index.php?line=city&col=santa-fe">
-                                            <div class="title">
-                                                Santa Fe
+                                        <div class="copy">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                        </div>
+                                        <div class="boxes">
+                                            <a class="box" href="collection/index.php?line=city&col=reykjavik">
+                                                <div class="title">
+                                                    Reykjavik
+                                                </div>
+                                                <div class="subtitle">
+                                                    Collection
+                                                </div>
+                                            </a>
+                                            <div class="vline">
                                             </div>
-                                            <div class="subtitle">
-                                                Collection
-                                            </div>
-                                        </a>
+                                            <a class="box" href="collection/index.php?line=city&col=santa-fe">
+                                                <div class="title">
+                                                    Santa Fe
+                                                </div>
+                                                <div class="subtitle">
+                                                    Collection
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
 
 
