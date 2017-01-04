@@ -1123,12 +1123,6 @@ body {
   background-position-y: 50%;
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame.tallAspect {
-  /*
-						background-size: cover;
-						background-position: right 100px center;
-						transition: background-size .2s ease-in-out;
-						transition: background-position .2s ease-in-out;
-						*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right -380px center;
