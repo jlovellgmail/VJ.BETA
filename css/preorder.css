@@ -1143,7 +1143,7 @@ body {
   bottom: 20px;
 }
 .landingScreen .belowLandingFrame {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 .landingScreen .belowLandingFrame .container .row {
@@ -1248,7 +1248,6 @@ body {
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame {
   display: none;
-  margin-top: 60px;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame .widthWrapper {
   width: 1170px;
