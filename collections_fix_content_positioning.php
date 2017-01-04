@@ -22,14 +22,30 @@ include '/classes/Line.class.php';
 
 
 
-    <div class="collectionsPage-using-generic-classes-fix-content-positioning landingScreenMargins">
+    <div class="collectionsPage-using-generic-classes-fix-content-positioning landingScreen">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 noPadding">
+
+
+
+                    <!--
                     <div class="landingFrame">
                         <div class="imageContainer">
+                    -->
+                    <div class="landingHeight">
+                        <div class="landingWidth">
+                            <div class="imageFrame">
+
+                
+
                             <div class="contentContainer">
-                                <div class="preorderText">
+                                
+                                
+                                <!-- <div class="preorderText"> -->
+                                <div class="textBlockMain">
+
+
                                     <div class="titleContainer">
                                         <div class="title">
                                             <div class="part1">Cityline</div><div class="part2">Collections</div>
@@ -60,10 +76,18 @@ include '/classes/Line.class.php';
                                     </div>
                                 </div>
                             </div>
+
+
+
+                            <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
+                            </div> 
+
+
                         </div>
-                        <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
                         <div class='scroll-down-to'></div>
                     </div>
+
+
                 </div>
             </div>
         </div>

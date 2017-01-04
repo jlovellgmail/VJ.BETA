@@ -1057,33 +1057,145 @@ body {
     display: block;
   }
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame {
+.landingScreen .landingHeight {
+  text-align: center;
+  padding-top: 96px;
+  height: calc(100vh - 70px);
   height: 100vh;
   padding-bottom: 70px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .downArrow {
-  bottom: 94px;
-  display: none;
+.landingScreen .landingHeight .landingWidth {
+  padding: 0 60px;
+  width: 100%;
+  height: 100%;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer {
+.landingScreen .landingHeight .landingWidth .imageFrame {
+  position: relative;
+  background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
+  background-position-x: center;
+  background-position-y: 70%;
+  background-size: cover;
+  text-align: left;
+  overflow: hidden;
+  width: 1470px;
+  margin: auto;
+  height: 100%;
+  top: initial;
+  width: auto;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
+  height: 100%;
+  display: table;
+  max-width: 1340px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  color: white;
+  max-width: 680px;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .textContainer {
+  padding-left: 10%;
+  padding-bottom: 2%;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .textContainer .headline {
+  text-transform: uppercase;
+  font-weight: 100;
+  position: relative;
+  font-size: 40px;
+  line-height: 49px;
+  margin-bottom: 11px;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .textContainer .copy {
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 530px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: white;
+  position: relative;
+  display: inline-block;
+  line-height: 29px;
+  font-weight: 200;
+  font-size: 20px;
+  max-width: 520px;
+  font-weight: 300;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .blackGlow {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 34%;
+  top: 51%;
+  opacity: .3;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  bottom: 25px;
+  width: 25px;
+  opacity: .45;
+  filter: invert(1);
+  bottom: 20px;
+}
+.landingScreen .belowLandingFrame {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.landingScreen .belowLandingFrame .container .row {
+  margin-top: 130px;
+}
+.landingScreen .belowLandingFrame .container .row .textContainer {
+  padding-left: 60px;
+}
+.landingScreen .belowLandingFrame .container .row:nth-of-type(1) {
+  margin-top: 70px;
+}
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight {
+  /*
+			height: 100vh;
+			padding-bottom: 70px;
+			.downArrow {
+				bottom: 94px;
+				display: none;
+			}
+			*/
+}
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame {
   background-image: url("/img/170103 collections bg_q9.jpg");
   background-position-x: 180%;
   background-position-y: 10%;
   background-size: 110%;
   background-repeat: no-repeat;
   background-color: #bab9c1;
+  display: table;
+  width: 100%;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
   position: absolute;
   width: 50%;
-  height: 100%;
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
   max-height: 550px;
   padding-top: 20px;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  top: initial;
+  transform: initial;
+  position: relative;
+  right: initial;
+  vertical-align: middle;
+  text-align: center;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: black;
   position: absolute;
   text-align: center;
@@ -1098,34 +1210,39 @@ body {
   display: table;
   vertical-align: middle;
   color: white;
+  position: relative;
+  left: initial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
   text-align: center;
   margin: 9px 0 9px 0;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
   color: white;
   font-size: 43px;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title .part1 {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
   font-weight: 600;
   display: inline-block;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .titleContainer .title .part2 {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
   font-weight: 100;
   display: inline-block;
   margin-left: 5px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .copy {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
   max-width: 540px;
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
   display: inline-block;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .hline {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 1px;
   max-width: 550px;
@@ -1134,20 +1251,20 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
   text-align: center;
   display: inline-block;
   border: 1px solid white;
   margin-top: 30px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .vline {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
   width: 1px;
   height: 100px;
   border-left: 1px solid rgba(255, 255, 255, 0.16);
   display: inline-block;
   vertical-align: middle;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .box {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
   cursor: pointer;
   padding: 50px 0;
   vertical-align: middle;
@@ -1161,24 +1278,24 @@ body {
   letter-spacing: 1.7px;
   text-decoration: none;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .box .title {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .title {
   display: inline-block;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .box .subtitle {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .subtitle {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: .8px;
   margin-top: -4px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .landingFrame .imageContainer .contentContainer .preorderText .boxes .box:hover {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .belowLandingFrame {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame {
   display: none;
   margin-top: 60px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreenMargins .belowLandingFrame .widthWrapper {
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame .widthWrapper {
   width: 1170px;
   text-align: left;
 }
