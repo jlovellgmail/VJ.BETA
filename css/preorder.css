@@ -1090,26 +1090,18 @@ body {
   max-width: 1340px;
   margin: 0 auto;
   padding: 20px;
-  display: table-cell;
   width: 100%;
-  height: 100%;
   position: relative;
   vertical-align: middle;
   text-align: center;
   display: block;
   height: auto;
-  text-align: right;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   max-width: 680px;
   position: relative;
   text-align: center;
   width: 510px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: initial;
-  margin-right: initial;
   display: inline-block;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
@@ -1174,6 +1166,9 @@ body {
   background-size: 110%;
   background-repeat: no-repeat;
   background-color: #bab9c1;
+}
+.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
+  text-align: right;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: white;
