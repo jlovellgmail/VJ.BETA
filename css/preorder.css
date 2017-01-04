@@ -1076,19 +1076,23 @@ body {
   background-size: cover;
   text-align: left;
   overflow: hidden;
-  width: 1470px;
   margin: auto;
   height: 100%;
   top: initial;
   width: auto;
+  display: table;
+  width: 100%;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
-  height: 100%;
-  display: table;
   max-width: 1340px;
   margin: 0 auto;
-  width: 100%;
   padding: 20px;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: white;
@@ -1162,26 +1166,23 @@ body {
   background-size: 110%;
   background-repeat: no-repeat;
   background-color: #bab9c1;
-  display: table;
-  width: 100%;
+  /*
+					display: table;
+					width: 100%;
+					*/
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
-  position: absolute;
-  width: 50%;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  max-height: 550px;
-  padding-top: 20px;
-  display: table-cell;
-  width: 100%;
-  height: 100%;
-  top: initial;
-  transform: initial;
-  position: relative;
-  right: initial;
-  vertical-align: middle;
-  text-align: center;
+  /*
+    	    	    	display: table-cell;
+        	    	    width: 100%;
+        	    	    height: 100%;
+        	    	    top: initial;
+        	    	    transform: initial;
+        	    	    position: relative;
+        	    	    right: initial;
+        	    	    vertical-align: middle;
+        	    	    text-align: center;
+        	    	    */
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: black;
@@ -1288,14 +1289,14 @@ body {
   text-align: left;
 }
 @media all and (min-width: 1900px) {
-  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .preorderText .titleContainer .title {
+  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 70px;
     line-height: 65px;
   }
-  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .preorderText .titleContainer .title .part1 {
+  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
     display: block;
   }
-  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .preorderText .titleContainer .title .part2 {
+  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
     display: block;
   }
 }
