@@ -1259,30 +1259,35 @@ body {
 		    		.textBlockMain {
 		    			max-width: 680px;
 		    		    position: relative;
-		    		    .textContainer {
-	    	    		    padding-left: 10%;
-	    	    		    padding-bottom: 2%;
-	    	    		    .headline {
-	    		    	    	text-transform: uppercase;
-	    		    	    	font-weight: 100;
-	    		    	        position: relative;
-	    		    	        font-size: 40px;
-	    		    	        line-height: 49px;
-	    		    	        margin-bottom: 11px;
-	    	    		    }
-	    	    		    .copy {
-	    	    		    	.bodyCopy;
-	    	    		    	color: white;
-	    	    		    	position: relative;
-	    	    		    	display: inline-block;
-	    	    		    	line-height: 29px;
-	    	    		    	font-weight: 200;
-	    	    		    	font-size: 20px;
-	    	    		    	max-width: 520px;
-	    	    		    	// stronger text option:
-	    	    		    	font-weight: 300;
-	    	    		    	text-shadow: 0 0 2px rgba(0,0,0, .5);
-	    	    		    }
+		    		    text-align: center;
+		    		    width: 510px;
+		    		    display: block;
+		    		    margin-left: auto;
+		    		    margin-right: auto;
+		    			.titleContainer {
+		    				text-align: center;
+		    				margin: 9px 0 9px 0;
+		    		    	.title {
+		        		        font-size: 43px;
+		    		    		text-transform: uppercase;
+		    		    		text-rendering: geometricPrecision;
+		    		    		.part1 {
+		    		    			font-weight: 600;
+		    		    			display: inline-block;
+		    		    		}
+		    		    		.part2 {
+		    		    			font-weight: 100;
+		    		    			display: inline-block;
+		    		    			margin-left: 5px;
+		    		    		}
+		    		    	}
+		    		    }
+		    		    .copy {
+		    		    	max-width: 540px;
+		    		    	font-size: 18px;
+		    		    	font-weight: 300;
+		    		    	line-height: 27px;
+		    		    	display: inline-block;
 		    		    }
 		    		}
 	    	    }
@@ -1336,37 +1341,16 @@ body {
 					background-color: #bab9c1;
 					.contentContainer {
 			    		.textBlockMain {
-			    		    text-align: center;
-			    		    width: 510px;
 		    		        color: white;
-		    		        display: block;
-		    		        margin-left: auto;
-		    		        margin-right: auto;
 							.titleContainer {
-								text-align: center;
-								margin: 9px 0 9px 0;
 						    	.title {
-						    		color: white;
-				    		        font-size: 43px;
-						    		text-transform: uppercase;
-						    		text-rendering: geometricPrecision;
 						    		.part1 {
-						    			font-weight: 600;
-						    			display: inline-block;
 						    		}
 						    		.part2 {
-						    			font-weight: 100;
-						    			display: inline-block;
-						    			margin-left: 5px;
 						    		}
 						    	}
 						    }
 			    		    .copy {
-			    		    	max-width: 540px;
-			    		    	font-size: 18px;
-			    		    	font-weight: 300;
-			    		    	line-height: 27px;
-			    		    	display: inline-block;
 			    		    }
 				    		.hline {
 				    			border-bottom: 1px solid rgba(0,0,0, .2);
@@ -1448,6 +1432,7 @@ body {
 										}
 										.part2 {
 											display: block;
+											margin: 0;
 										}
 									}
 								}

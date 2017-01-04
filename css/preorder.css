@@ -1096,34 +1096,36 @@ body {
 .landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   max-width: 680px;
   position: relative;
+  text-align: center;
+  width: 510px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .textContainer {
-  padding-left: 10%;
-  padding-bottom: 2%;
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
+  text-align: center;
+  margin: 9px 0 9px 0;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .textContainer .headline {
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  font-size: 43px;
   text-transform: uppercase;
-  font-weight: 100;
-  position: relative;
-  font-size: 40px;
-  line-height: 49px;
-  margin-bottom: 11px;
+  text-rendering: geometricPrecision;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .textContainer .copy {
-  color: rgba(0, 0, 0, 0.9);
-  max-width: 530px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  color: white;
-  position: relative;
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+  font-weight: 600;
   display: inline-block;
-  line-height: 29px;
-  font-weight: 200;
-  font-size: 20px;
-  max-width: 520px;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 5px;
+}
+.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
+  max-width: 540px;
+  font-size: 18px;
   font-weight: 300;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  line-height: 27px;
+  display: inline-block;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .blackGlow {
   position: absolute;
@@ -1164,38 +1166,7 @@ body {
   background-color: #bab9c1;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
-  text-align: center;
-  width: 510px;
   color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
-  text-align: center;
-  margin: 9px 0 9px 0;
-}
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
-  color: white;
-  font-size: 43px;
-  text-transform: uppercase;
-  text-rendering: geometricPrecision;
-}
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
-  font-weight: 600;
-  display: inline-block;
-}
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
-  font-weight: 100;
-  display: inline-block;
-  margin-left: 5px;
-}
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
-  max-width: 540px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 27px;
-  display: inline-block;
 }
 .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -1263,6 +1234,7 @@ body {
   }
   .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
     display: block;
+    margin: 0;
   }
 }
 .aboutPage {
