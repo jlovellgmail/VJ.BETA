@@ -21,23 +21,13 @@ $seo_variable = "lifestyle";
 
     </head>
     <body>
-
         <?php include '/incs/nav.php'; ?>
 
 
-
         <div class="journalPage-using-new-generic-170103 landingScreen-generic-170103">
-
-
-
-
-
-
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
-
-
                         <div class="landingHeight">
                             <div class="landingWidth">
                                 <div class="imageFrame">
@@ -61,47 +51,21 @@ $seo_variable = "lifestyle";
                             </div>
                             <div class='scroll-down-to'></div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-
-
-
-
-
             <div class="belowLandingFrame">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-
-
-
                             <div class="widthWrapper">
                                 <?php include '/incs/lifestyle.php'; ?>
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
 
 
         <?php include '/incs/footer.php'; ?>
@@ -163,8 +127,6 @@ $seo_variable = "lifestyle";
                 }
             });
         </script>
-        
-        
         <!-- handle window aspect ratio for bg image -->
         <script>
             function getScreenAspect(){
@@ -183,9 +145,5 @@ $seo_variable = "lifestyle";
             $(document).ready(handleAspect);
             $(window).resize(handleAspect);
         </script>
-
-
-
-
     </body>
 </html>
