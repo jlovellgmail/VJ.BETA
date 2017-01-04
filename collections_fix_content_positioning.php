@@ -21,7 +21,7 @@ include '/classes/Line.class.php';
     <?php include '/incs/nav.php'; ?>
 
 
-    <div class="collectionsPage-using-generic-classes-fix-content-positioning landingScreen">
+    <div class="collectionsPage-using-new-generic-170103 landingScreen-generic-170103">
         
 
         <div class="container-fluid">

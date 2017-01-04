@@ -1061,18 +1061,18 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
-.landingScreen .landingHeight {
+.landingScreen-generic-170103 .landingHeight {
   text-align: center;
   height: 100vh;
   padding-top: 96px;
   padding-bottom: 70px;
 }
-.landingScreen .landingHeight .landingWidth {
+.landingScreen-generic-170103 .landingHeight .landingWidth {
   padding: 0 60px;
   width: 100%;
   height: 100%;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   position: relative;
   background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
   background-position-x: center;
@@ -1086,7 +1086,7 @@ body {
   display: table;
   width: 100%;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   max-width: 1340px;
   margin: 0 auto;
   padding: 20px;
@@ -1097,46 +1097,46 @@ body {
   display: block;
   height: auto;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   max-width: 680px;
   position: relative;
   text-align: center;
   width: 510px;
   display: inline-block;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
   text-align: center;
   margin: 9px 0 9px 0;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
   font-size: 43px;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
   font-weight: 600;
   display: inline-block;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
   font-weight: 100;
   display: inline-block;
   margin-left: 5px;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
   max-width: 540px;
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
   display: inline-block;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .blackGlow {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .blackGlow {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 34%;
   top: 51%;
   opacity: .3;
 }
-.landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
+.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .downArrow {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -1146,20 +1146,20 @@ body {
   filter: invert(1);
   bottom: 20px;
 }
-.landingScreen .belowLandingFrame {
+.landingScreen-generic-170103 .belowLandingFrame {
   margin-top: 60px;
   margin-bottom: 100px;
 }
-.landingScreen .belowLandingFrame .container .row {
+.landingScreen-generic-170103 .belowLandingFrame .container .row {
   margin-top: 130px;
 }
-.landingScreen .belowLandingFrame .container .row .textContainer {
+.landingScreen-generic-170103 .belowLandingFrame .container .row .textContainer {
   padding-left: 60px;
 }
-.landingScreen .belowLandingFrame .container .row:nth-of-type(1) {
+.landingScreen-generic-170103 .belowLandingFrame .container .row:nth-of-type(1) {
   margin-top: 70px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   background-image: url("/img/170103 collections bg_q9.jpg");
   background-position-x: 180%;
   background-position-y: 10%;
@@ -1167,15 +1167,15 @@ body {
   background-repeat: no-repeat;
   background-color: #bab9c1;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   text-align: right;
   max-width: 1060px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: white;
   padding-bottom: 85px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 1px;
   max-width: 550px;
@@ -1184,20 +1184,20 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
   text-align: center;
   display: inline-block;
   border: 1px solid white;
   margin-top: 30px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
   width: 1px;
   height: 100px;
   border-left: 1px solid rgba(255, 255, 255, 0.16);
   display: inline-block;
   vertical-align: middle;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
   cursor: pointer;
   padding: 50px 0;
   vertical-align: middle;
@@ -1211,38 +1211,38 @@ body {
   letter-spacing: 1.7px;
   text-decoration: none;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .title {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .title {
   display: inline-block;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .subtitle {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box .subtitle {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: .8px;
   margin-top: -4px;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .downArrow {
   display: none;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame {
   display: none;
 }
-.collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .belowLandingFrame .widthWrapper {
+.collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
   width: 1170px;
   text-align: left;
 }
 @media all and (min-width: 1900px) {
-  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 70px;
     line-height: 65px;
   }
-  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
     display: block;
   }
-  .collectionsPage-using-generic-classes-fix-content-positioning.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
+  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
     display: block;
     margin: 0;
   }
