@@ -115,32 +115,36 @@ switch ($type) {
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">
-                                                        <div class="part1">Cityline</div><div class="part2">Collections</div>
+                                                        <div class="part1">Shop</div><div class="part2">Collections</div>
                                                     </div>
                                                 </div>
                                                 <div class="copy">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
                                                 </div>
                                                 <div class="boxes">
-                                                    <a class="box" href="collection/index.php?line=city&col=reykjavik">
+                                                    <a class="box <?php if ($type == "men") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/men/">
                                                         <div class="title">
-                                                            Reykjavik
+                                                            Men
                                                         </div>
                                                         <div class="subtitle">
-                                                            Collection
+                                                            Shop Now
                                                         </div>
                                                     </a>
                                                     <div class="vline">
                                                     </div>
-                                                    <a class="box" href="collection/index.php?line=city&col=santa-fe">
+                                                    <a class="box <?php if ($type == "women") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/women/">
                                                         <div class="title">
-                                                            Santa Fe
+                                                            Women
                                                         </div>
                                                         <div class="subtitle">
-                                                            Collection
+                                                            Shop Now
                                                         </div>
                                                     </a>
                                                 </div>
+
+
+
+                                                <!--
                                                 <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
                                                     if ($type == "all") {
                                                         echo "itemBtnActive";
@@ -162,6 +166,9 @@ switch ($type) {
                                                         echo "itemBtnInactive";
                                                     }
                                                     ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                                -->
+
+
                                             </div>
                                         </div>
                                     </div>

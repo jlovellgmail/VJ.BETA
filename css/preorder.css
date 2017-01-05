@@ -1126,12 +1126,18 @@ body {
   line-height: 31px;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
-  background-image: url("/img/170103 collections bg_q9.jpg");
-  background-position-x: 180%;
-  background-position-y: 10%;
-  background-size: 110%;
-  background-repeat: no-repeat;
-  background-color: #bab9c1;
+  /*
+					background-image: url("/img/170103 collections bg_q9.jpg");
+					background-position-x: 180%;
+					background-position-y: 10%;
+					background-size: 110%;
+					background-repeat: no-repeat;
+					background-color: #bab9c1;
+					*/
+  background-image: url("/img/grays_q9.jpg");
+  background-position-x: center;
+  background-position-y: 70%;
+  background-size: cover;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame.tallAspect {
   background-size: cover;
@@ -1140,11 +1146,11 @@ body {
   transition: background-position 0.2s ease-in-out;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
-  text-align: right;
+  text-align: left;
   max-width: 1100px;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
-  color: white;
+  color: black;
   padding-bottom: 85px;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
@@ -1159,13 +1165,13 @@ body {
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
   text-align: center;
   display: inline-block;
-  border: 1px solid white;
+  border: 1px solid black;
   margin-top: 30px;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
   width: 1px;
   height: 100px;
-  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
   display: inline-block;
   vertical-align: middle;
 }
@@ -1175,7 +1181,7 @@ body {
   vertical-align: middle;
   width: 212px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   display: inline-block;
   transition: .3s;
   font-size: 22px;
@@ -1194,7 +1200,7 @@ body {
   margin-top: -4px;
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .downArrow {
   display: none;
