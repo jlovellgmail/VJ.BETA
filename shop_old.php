@@ -82,7 +82,7 @@ switch ($type) {
         else {
             // echo "all";
         }
-        ?>
+?>
 
         <?php include '/incs/head-links.php'; ?>
 
@@ -98,85 +98,101 @@ switch ($type) {
 
 
 
-        <!-- new imported from collections -->
-        <div class="shopPage-using-new-generic-170103 landingScreen-generic-170103">
-            
+
+        <!-- <div class="aboutPage shopPage"> -->
+        <div class="shopPage-using-generic-classes landingScreenMargins">
+        
+
 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
 
 
-                        <div class="landingHeight">
-                            <div class="landingWidth">
-                                <div class="imageFrame">
-                                    <div class="table-cell">
-                                        <div class="contentContainer">
-                                            <div class="textBlockMain">
-                                                <div class="titleContainer">
-                                                    <div class="title">
-                                                        <div class="part1">Shop</div><div class="part2">Collections</div>
-                                                    </div>
-                                                </div>
-                                                <div class="copy">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
-                                                </div>
-                                                <div class="boxes">
-                                                    <a class="box <?php if ($type == "men") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/men/">
-                                                        <div class="title">
-                                                            Men
-                                                        </div>
-                                                        <div class="subtitle">
-                                                            Shop Now
-                                                        </div>
-                                                    </a>
-                                                    <div class="vline">
-                                                    </div>
-                                                    <a class="box <?php if ($type == "women") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/women/">
-                                                        <div class="title">
-                                                            Women
-                                                        </div>
-                                                        <div class="subtitle">
-                                                            Shop Now
-                                                        </div>
-                                                    </a>
-                                                </div>
+                        
+                        <div class="landingFrame">
+                            <div class="imageContainer">
+                                <div class="contentContainer">
+
+
+                                    
+                                    <div class="textBlockMain">
+
+                                        <div class="textContainer">
+                                            <div class="headline">
+                                                Collections
                                             </div>
+                                            <div class="copy">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                            </div>
+                                            <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
+                                                if ($type == "all") {
+                                                    echo "itemBtnActive";
+                                                } else {
+                                                    echo "itemBtnInactive";
+                                                }
+                                                ?>" href="<?php echo $AllUrlStr; ?>" href="/shop/men/">All<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                            <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-1 <?php
+                                                if ($type == "men") {
+                                                    echo "itemBtnActive";
+                                                } else {
+                                                    echo "itemBtnInactive";
+                                                }
+                                                ?>" href="<?php echo $MenUrlStr; ?>" href="/shop/men/">Men<i class="icon-down-dir shop-active-arrow"></i></a></div>
+                                            <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-2 <?php
+                                                if ($type == "women") {
+                                                    echo "itemBtnActive";
+                                                } else {
+                                                    echo "itemBtnInactive";
+                                                }
+                                                ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
                                         </div>
+
                                     </div>
-                                <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
-                                </div> 
+
+
+
+
+                                </div>
                             </div>
+                            <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
                             <div class='scroll-down-to'></div>
                         </div>
 
 
+
                     </div>
                 </div>
             </div>
+
+
+
             <div class="belowLandingFrame">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                                
 
 
-                                <div class="sdWrapper">
-                                    <div class="sdContent">
-                                            
 
-                                        <div id="prodListDiv" >
-                                            <?php
-                                            if ($type == "") {
-                                                include '/incs/feature-products.php';
-                                            } else {
-                                                include '/incs/shop.php';
-                                            }
-                                            ?>
+                            <div class="sdWrapper">
+                                <div class="sdContent">
+                                        
 
-                                        </div>
+                                    <div id="prodListDiv" >
+                                        <?php
+                                        if ($type == "") {
+                                            include '/incs/feature-products.php';
+                                        } else {
+                                            include '/incs/shop.php';
+                                        }
+                                        ?>
+
                                     </div>
                                 </div>
+                                <!-- Footer -->
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer-links.php'; ?>
+                            </div>
 
 
 
@@ -184,6 +200,7 @@ switch ($type) {
                     </div>
                 </div>
             </div>
+
 
 
         </div>
@@ -196,8 +213,7 @@ switch ($type) {
 
 
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer.php'; ?>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/incs/footer-links.php'; ?>
+
         <script>
             $('#scrollDownArrow').click(function () {
                 $('html, body').animate({
@@ -264,7 +280,6 @@ switch ($type) {
                 $(".bg-fixer, .flip-card-blur-bg").css("background-attachment","fixed");
             };
         </script>
-        <!-- hide header bottom border until scroll -->
         <script>
             // hide header bottom border until scroll
             var border = $('.bottomBorder');
@@ -277,5 +292,7 @@ switch ($type) {
                 }
             });
         </script>
+
+
     </body>
 </html>
