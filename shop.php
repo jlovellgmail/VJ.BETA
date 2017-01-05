@@ -130,8 +130,8 @@ switch ($type) {
                                                             Shop Now
                                                         </div>
                                                     </a>
-                                                    <div class="vline">
-                                                    </div>
+                                                    <div class="vline"></div>
+                                                    <div class="hline"></div>
                                                     <a class="box <?php if ($type == "women") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/women/">
                                                         <div class="title">
                                                             Women

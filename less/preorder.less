@@ -514,9 +514,9 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// Landing page / Index page - new 161227a
+// 161227a
+// Landing page / Index page
 // rebuild from the one built into About page below
-
 //-----------------------------------------------
 // create generic class for fixed aspect postcard landing screen
 .postcardLandingScreen {
@@ -555,7 +555,6 @@ body {
     	}
 	}
 }
-
 //-----------------------------------------------
 // specific to Index page
 .landingPage-framed-aspect {
@@ -733,10 +732,10 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
-// About page - 161228a
+// 161228a
+// About page
 // with landing screen extracted into generic
 // - adding version of shopping page that uses generic
-
 //-----------------------------------------------
 // these will be generic for all pages with full-screen landing image
 .landingScreenMargins {
@@ -833,7 +832,6 @@ body {
     	}
     }
 }
-
 //-----------------------------------------------
 // Shop page 
 // using generic class
@@ -931,11 +929,16 @@ body {
     	    	    display: block;
     	    	    height: auto;
 		    		.textBlockMain {
-		    			max-width: 680px;
+		    			// max-width: 680px;
 		    		    position: relative;
 		    		    text-align: center;
-		    		    width: 510px;
+		    		    // width: 510px;
 		    		    display: inline-block;
+
+
+		    		    max-width: 510px;
+
+
 		    			.titleContainer {
 		    				text-align: center;
 		    				margin: 9px 0 9px 0;
@@ -999,6 +1002,28 @@ body {
     		}
     	}
     }
+}
+@media all and (max-width: 768px){
+	.landingScreen-generic-170103 {
+		.landingHeight {
+			padding-bottom: 30px;
+			.landingWidth {
+				padding: 0 14px;
+				.imageFrame {
+					background-position-x: left;
+					.contentContainer {
+						.textBlockMain {
+							.titleContainer {
+								.title {
+									font-size: 57px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 //-----------------------------------------------
 // Collections page
@@ -1379,6 +1404,14 @@ body {
 					    			display: inline-block;
 					    			vertical-align: middle;
 					    		}
+					    		.hline {
+					    			// display: block;
+					    			display: none;
+					    			height: 1px;
+					    			border-bottom: 1px solid rgba(0,0,0, .16);
+					    			width: auto;
+					    			margin: 0 20px;
+					    		}
 					    		.box {
 					    			cursor: pointer;
 								    padding: 50px 0;
@@ -1426,6 +1459,44 @@ body {
 		}
 	}
 }
+@media all and (max-width: 768px){
+	.shopPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						background-position-x: left;
+						.contentContainer {
+							text-align: center;
+							.textBlockMain {
+								.titleContainer {
+									.title {}
+								}
+								.copy {}
+								.boxes {
+									display: block;
+									max-width: 290px;
+									margin-left: auto;
+									margin-right: auto;
+									.vline {
+										display: none;
+									}
+									.hline {
+										display: block;
+									}
+									.box {
+										width: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 //-----------------------------------------------
 
 

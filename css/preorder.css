@@ -838,11 +838,10 @@ body {
   height: auto;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
-  max-width: 680px;
   position: relative;
   text-align: center;
-  width: 510px;
   display: inline-block;
+  max-width: 510px;
 }
 .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
   text-align: center;
@@ -899,6 +898,20 @@ body {
 }
 .landingScreen-generic-170103 .belowLandingFrame .container .row:nth-of-type(1) {
   margin-top: 70px;
+}
+@media all and (max-width: 768px) {
+  .landingScreen-generic-170103 .landingHeight {
+    padding-bottom: 30px;
+  }
+  .landingScreen-generic-170103 .landingHeight .landingWidth {
+    padding: 0 14px;
+  }
+  .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
+    background-position-x: left;
+  }
+  .landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+    font-size: 57px;
+  }
 }
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   background-image: url("/img/170103 collections bg_q9.jpg");
@@ -1175,6 +1188,13 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .hline {
+  display: none;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  width: auto;
+  margin: 0 20px;
+}
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
   cursor: pointer;
   padding: 50px 0;
@@ -1210,6 +1230,29 @@ body {
 }
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .shopItem img {
   max-width: 450px;
+}
+@media all and (max-width: 768px) {
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
+    background-position-x: left;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    text-align: center;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
+    display: block;
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
+    display: none;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .hline {
+    display: block;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
+    width: 100%;
+  }
 }
 .aboutPage {
   display: block;
