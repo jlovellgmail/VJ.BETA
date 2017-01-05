@@ -1019,7 +1019,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(196, 196, 196, 0.8);
+  background-color: rgba(216, 216, 216, 0.85);
   transition: .3s;
   opacity: 0;
 }
