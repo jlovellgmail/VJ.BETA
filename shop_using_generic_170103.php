@@ -82,7 +82,7 @@ switch ($type) {
         else {
             // echo "all";
         }
-?>
+        ?>
 
         <?php include '/incs/head-links.php'; ?>
 
