@@ -130,6 +130,7 @@ $seo_variable = "lifestyle";
         </script>
         <!-- handle window aspect ratio for bg image -->
         <script>
+            /*
             function getScreenAspect(){
                 return $(window).width() / $(window).height();
             }
@@ -145,6 +146,7 @@ $seo_variable = "lifestyle";
             }
             $(document).ready(handleAspect);
             $(window).resize(handleAspect);
+            */
         </script>
     </body>
 </html>

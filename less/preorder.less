@@ -1156,16 +1156,22 @@ body {
 			.landingWidth {
 				.imageFrame {
 					background-color: #c2c2c2;
-					background-image: url("/img/170104a - lifestyle journal page bg_q9.jpg");
-					background-size: 100%;
-					background-position-y: 50%;
-					background-position-x: 220px;
+					background-image: url("/img/170105a - lifestyle journal page bg - aligned to center_q9.jpg");
+					background-size: cover;
+				    background-position-x: center;
+				    background-position-y: center;
+
+
+					// this script that applies this is turned off
 					&.tallAspect {
 						background-size: cover;
 						background-repeat: no-repeat;
 						background-position-y: center;
 					    background-position-x: calc(~"50% + 240px");
 					}
+
+
+
 					.overlay {
 						position: absolute;
 						top: 0;
