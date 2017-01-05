@@ -1163,7 +1163,22 @@ body {
 					&.tallAspect {
 						background-size: cover;
 						background-repeat: no-repeat;
-						background-position: right -380px center;
+						
+						//background-position: right -380px center;
+						background-position-y: center;
+					    background-position-x: calc(~"50% + 240px");
+
+					}
+					.overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						background-color: rgba(196,196,196, .8);
+						//display: none;
+						transition: .3s;
+						opacity: 0;
 					}
 					.contentContainer {
     	    	    	text-align: left;
@@ -1239,6 +1254,41 @@ body {
 			    .lifestyle-post-block {
 			    	width: 100%;
 			    }
+			}
+		}
+	}
+}
+@media all and (max-width: 1230px){
+	.journalPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.overlay {
+							//display: initial;
+							opacity: 1;
+						}
+						.contentContainer {
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1500px){
+	.journalPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							padding-left: 60px;
+							padding-right: 60px;
+						}
+					}
+				}
 			}
 		}
 	}

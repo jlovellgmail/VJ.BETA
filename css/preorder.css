@@ -1010,7 +1010,18 @@ body {
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame.tallAspect {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right -380px center;
+  background-position-y: center;
+  background-position-x: calc(50% + 240px);
+}
+.journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(196, 196, 196, 0.8);
+  transition: .3s;
+  opacity: 0;
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   text-align: left;
@@ -1070,6 +1081,20 @@ body {
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
   width: 100%;
+}
+@media all and (max-width: 1230px) {
+  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+    opacity: 1;
+  }
+  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    text-align: center;
+  }
+}
+@media all and (max-width: 1500px) {
+  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 .aboutPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");

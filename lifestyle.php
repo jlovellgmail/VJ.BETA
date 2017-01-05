@@ -31,6 +31,7 @@ $seo_variable = "lifestyle";
                         <div class="landingHeight">
                             <div class="landingWidth">
                                 <div class="imageFrame">
+                                    <div class="overlay"></div>
                                     <div class="table-cell">
                                         <div class="contentContainer">
                                             <div class="textBlockMain">
