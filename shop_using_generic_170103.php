@@ -141,34 +141,6 @@ switch ($type) {
                                                         </div>
                                                     </a>
                                                 </div>
-
-
-
-                                                <!--
-                                                <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-0 <?php
-                                                    if ($type == "all") {
-                                                        echo "itemBtnActive";
-                                                    } else {
-                                                        echo "itemBtnInactive";
-                                                    }
-                                                    ?>" href="<?php echo $AllUrlStr; ?>" href="/shop/men/">All<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                                <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-1 <?php
-                                                    if ($type == "men") {
-                                                        echo "itemBtnActive";
-                                                    } else {
-                                                        echo "itemBtnInactive";
-                                                    }
-                                                    ?>" href="<?php echo $MenUrlStr; ?>" href="/shop/men/">Men<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                                <div class="rel block"><a style='padding-left: 15px; padding-right: 15px; margin: 10px 0' class="borderBtn borderBtnGrey caps itemBtn-2 <?php
-                                                    if ($type == "women") {
-                                                        echo "itemBtnActive";
-                                                    } else {
-                                                        echo "itemBtnInactive";
-                                                    }
-                                                    ?>" href="<?php echo $WomenUrlStr; ?>" href="/shop/women/">Women<i class="icon-down-dir shop-active-arrow"></i></a></div>
-                                                -->
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -186,7 +158,6 @@ switch ($type) {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <!-- <div class="widthWrapper"> -->
                                 
 
 
@@ -209,7 +180,6 @@ switch ($type) {
 
 
 
-                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
