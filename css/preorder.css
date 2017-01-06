@@ -1601,6 +1601,12 @@ body {
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     max-width: 480px;
   }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem {
+    display: block;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem.lg-six {
+    width: 100%;
+  }
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
     display: block;
     width: 100%;
@@ -1639,6 +1645,9 @@ body {
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 50px;
     line-height: 48px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+    width: auto;
   }
 }
 @media all and (max-height: 1000px) {
