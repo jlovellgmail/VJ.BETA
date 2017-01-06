@@ -227,7 +227,7 @@ body {
   }
   .headerContainer .navWidthWrapper .headerHeightWrapper .logoContainer .logoLink .navLogo {
     width: 195px;
-    padding-top: 19px;
+    padding-top: 5px;
   }
   .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer {
     top: 23px;
@@ -1034,8 +1034,9 @@ body {
   transition: padding-bottom 0.2s ease-in-out;
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
-  width: 1170px;
   text-align: left;
+  width: auto;
+  max-width: 1170px;
 }
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
   width: 49%;
@@ -1110,6 +1111,9 @@ body {
   }
 }
 @media all and (max-width: 768px) {
+  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight {
+    padding-top: 76px;
+  }
   .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     max-width: 480px;
   }
