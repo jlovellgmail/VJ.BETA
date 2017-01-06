@@ -1593,26 +1593,6 @@ body {
 		}
 	}
 }
-@media all and (max-width: 1230px){
-	.journalPage-using-new-generic-170103 {
-		&.landingScreen-generic-170103 {
-			.landingHeight {
-				.landingWidth {
-					.imageFrame {
-						.overlay {
-							opacity: 1;
-						}
-						.contentContainer {
-							text-align: center;
-							padding-left: 30px;
-							padding-right: 30px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
 @media all and (max-width: 1500px){
 	.journalPage-using-new-generic-170103 {
 		&.landingScreen-generic-170103 {
@@ -1632,6 +1612,26 @@ body {
 									}
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1230px){
+	.journalPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.overlay {
+							opacity: 1;
+						}
+						.contentContainer {
+							text-align: center;
+							padding-left: 30px;
+							padding-right: 30px;
 						}
 					}
 				}
@@ -1847,8 +1847,10 @@ body {
 							.titleContainer {
 						    	.title {
 						    		.part1 {
+						    			font-weight: 100;
 						    		}
 						    		.part2 {
+							    		font-weight: 100;
 						    		}
 						    	}
 						    }
@@ -1930,18 +1932,70 @@ body {
 		}
 	}
 }
+@media all and (max-width: 1500px){
+	.shopPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						
+						//background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+						background: 
+							linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) ), 
+							url("/img/landing_page_postcard_bg_q9.jpg");
+
+						.contentContainer {
+							text-align: center;
+							padding-left: 30px;
+							padding-right: 30px;
+							.textBlockMain {
+								.titleContainer {
+									.title {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1230px){
+	.shopPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.overlay {
+							opacity: 1;
+						}
+						.contentContainer {
+						}
+					}
+				}
+			}
+		}
+	}
+}
 @media all and (max-width: 768px){
 	.shopPage-using-new-generic-170103 {
 		&.landingScreen-generic-170103 {
 			.landingHeight {
 				.landingWidth {
 					.imageFrame {
-						background-position-x: left;
+						.overlay {
+						}
 						.contentContainer {
-							text-align: center;
+							padding-left: 60px;
+							padding-right: 60px;
+							max-width: 900px;
 							.textBlockMain {
 								.titleContainer {
-									.title {}
+									.title {
+										font-size: 54px;
+										line-height: 51px;
+									}
 								}
 								.copy {}
 								.boxes {
@@ -1964,9 +2018,88 @@ body {
 					}
 				}
 			}
+			.belowLandingFrame {
+				.widthWrapper {
+					max-width: 480px;
+				}
+				.lifestyle-post-block {
+					display: block;
+				    width: 100%;
+					.imageContainer {
+						height: 260px;
+						overflow: hidden;
+						.image {
+							height: 260px;
+						}
+					}
+					.textContainer {
+						display: block;
+						padding-left: 0;
+						padding-top: 4px;
+					}
+				}
+				.jscroll-added {
+					display: block;
+					width: 100%;
+				    .lifestyle-post-block {
+				    	width: 100%;
+				    }
+				}
+			}
 		}
 	}
 }
+@media all and (max-width: 500px){
+	.shopPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							padding-left: 30px;
+							padding-right: 30px;
+							.textBlockMain {
+								padding-bottom: 20px;
+								.titleContainer {
+									margin-bottom: 20px;
+									.title {
+										font-size: 50px;
+										line-height: 48px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-height: 1000px){
+	.shopPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.textBlockMain {
+								padding-bottom: 50px;
+								.titleContainer {
+									.title {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
 
 //-----------------------------------------------
 

@@ -1327,16 +1327,6 @@ body {
 .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
   width: 100%;
 }
-@media all and (max-width: 1230px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
-    opacity: 1;
-  }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
 @media all and (max-width: 1500px) {
   .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 60px;
@@ -1349,6 +1339,16 @@ body {
   .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 54px;
     line-height: 51px;
+  }
+}
+@media all and (max-width: 1230px) {
+  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+    opacity: 1;
+  }
+  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media all and (max-width: 768px) {
@@ -1487,6 +1487,12 @@ body {
   color: black;
   padding-bottom: 85px;
 }
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+  font-weight: 100;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
+  font-weight: 100;
+}
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 1px;
@@ -1552,12 +1558,30 @@ body {
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .shopItem img {
   max-width: 450px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1500px) {
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
-    background-position-x: left;
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("/img/landing_page_postcard_bg_q9.jpg");
   }
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media all and (max-width: 1230px) {
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+    opacity: 1;
+  }
+}
+@media all and (max-width: 768px) {
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 900px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+    font-size: 54px;
+    line-height: 51px;
   }
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
     display: block;
@@ -1573,6 +1597,53 @@ body {
   }
   .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
     width: 100%;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+    max-width: 480px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
+    display: block;
+    width: 100%;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
+    height: 260px;
+    overflow: hidden;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
+    height: 260px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
+    display: block;
+    padding-left: 0;
+    padding-top: 4px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
+    display: block;
+    width: 100%;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
+    width: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+    padding-bottom: 20px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
+    margin-bottom: 20px;
+  }
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+    font-size: 50px;
+    line-height: 48px;
+  }
+}
+@media all and (max-height: 1000px) {
+  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+    padding-bottom: 50px;
   }
 }
 .aboutPage {

@@ -115,7 +115,8 @@ switch ($type) {
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">
-                                                        <div class="part1">Shop</div><div class="part2">Collections</div>
+                                                        <div class="part1">The Test</div>
+                                                        <div class="part2">Of Time</div>
                                                     </div>
                                                 </div>
                                                 <div class="copy">
@@ -127,7 +128,6 @@ switch ($type) {
                                                             Men
                                                         </div>
                                                         <div class="subtitle">
-                                                            Shop Now
                                                         </div>
                                                     </a>
                                                     <div class="vline"></div>
@@ -137,7 +137,6 @@ switch ($type) {
                                                             Women
                                                         </div>
                                                         <div class="subtitle">
-                                                            Shop Now
                                                         </div>
                                                     </a>
                                                 </div>
