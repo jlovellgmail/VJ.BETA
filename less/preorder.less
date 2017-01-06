@@ -1010,6 +1010,7 @@ body {
 							.titleContainer {
 								.title {
 									font-size: 57px;
+									line-height: 53px;
 								}
 							}
 						}
@@ -1191,6 +1192,7 @@ body {
 			    		.textBlockMain {
 		    		        color: black;
 		    		        padding-bottom: 180px;
+		    		        transition: padding-bottom .2s ease-in-out;
 							.titleContainer {
 						    	.title {
 						    		.part1 {
@@ -1232,6 +1234,7 @@ body {
 				.textContainer {
 					display: inline-block;
 					padding-top: 10px;
+					padding-left: 0;
 					.title {
 						font-size: 24px;
 						font-weight: 700;
@@ -1274,6 +1277,8 @@ body {
 						}
 						.contentContainer {
 							text-align: center;
+							padding-left: 30px;
+							padding-right: 30px;
 						}
 					}
 				}
@@ -1290,6 +1295,97 @@ body {
 						.contentContainer {
 							padding-left: 60px;
 							padding-right: 60px;
+							max-width: 900px;
+							.textBlockMain {
+								max-width: 260px;
+								.titleContainer {
+									.title {
+										font-size: 54px;
+										line-height: 51px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.journalPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.belowLandingFrame {
+				.widthWrapper {
+					max-width: 480px;
+				}
+				.lifestyle-post-block {
+					display: block;
+				    width: 100%;
+					.imageContainer {
+						height: 260px;
+						overflow: hidden;
+						.image {
+							height: 260px;
+						}
+					}
+					.textContainer {
+						display: block;
+						padding-left: 0;
+						padding-top: 4px;
+					}
+				}
+				.jscroll-added {
+					display: block;
+					width: 100%;
+				    .lifestyle-post-block {
+				    	width: 100%;
+				    }
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 500px){
+	.journalPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							padding-left: 30px;
+							padding-right: 30px;
+							.textBlockMain {
+								padding-bottom: 20px;
+								.titleContainer {
+									margin-bottom: 20px;
+									.title {
+										font-size: 50px;
+										line-height: 48px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-height: 1000px){
+	.journalPage-using-new-generic-170103 {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.textBlockMain {
+								padding-bottom: 50px;
+								.titleContainer {
+									.title {
+									}
+								}
+							}
 						}
 					}
 				}
