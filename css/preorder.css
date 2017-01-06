@@ -1065,11 +1065,11 @@ body {
   text-rendering: geometricPrecision;
 }
 .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline .part1 {
-  display: inline-block;
+  display: block;
   transition: 0.2s ease-out;
 }
 .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline .part2 {
-  display: inline-block;
+  display: block;
   margin-left: 3px;
   transition: 0.2s ease-out;
 }
@@ -1149,14 +1149,6 @@ body {
     max-width: 400px;
     width: auto;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
-    font-size: 54px;
-    line-height: 51px;
-    font-size: 44px;
-    line-height: 42px;
-  }
-}
-@media all and (max-width: 1400px) {
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
     font-size: 44px;
     line-height: 42px;
