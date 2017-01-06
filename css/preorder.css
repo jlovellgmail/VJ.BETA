@@ -932,6 +932,7 @@ body {
 }
 @media all and (max-width: 768px) {
   .landingScreen-generic-170103 .landingHeight {
+    padding-top: 76px;
     padding-bottom: 30px;
   }
   .landingScreen-generic-170103 .landingHeight .landingWidth {
@@ -1154,11 +1155,6 @@ body {
     line-height: 42px;
   }
 }
-@media all and (max-width: 768px) {
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight {
-    padding-top: 76px;
-  }
-}
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   background-image: url("/img/170103 collections bg_q9.jpg");
   background-position-x: 180%;
@@ -1356,9 +1352,6 @@ body {
   }
 }
 @media all and (max-width: 768px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight {
-    padding-top: 76px;
-  }
   .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     max-width: 480px;
   }
