@@ -52,8 +52,8 @@ include '/classes/Line.class.php';
                                                         Collection
                                                     </div>
                                                 </a>
-                                                <div class="vline">
-                                                </div>
+                                                <div class="vline"></div>
+                                                <div class="hline"></div>
                                                 <a class="box" href="collection/index.php?line=city&col=santa-fe">
                                                     <div class="title">
                                                         Santa Fe
