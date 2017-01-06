@@ -1135,13 +1135,15 @@ body {
 }
 @media all and (max-width: 1500px) {
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
     bottom: 8px;
   }
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer {
     padding-top: 0;
+    margin-right: initial;
   }
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText {
     max-width: 400px;
@@ -1150,6 +1152,14 @@ body {
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
     font-size: 54px;
     line-height: 51px;
+    font-size: 44px;
+    line-height: 42px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
+    font-size: 44px;
+    line-height: 42px;
   }
 }
 @media all and (max-width: 768px) {
