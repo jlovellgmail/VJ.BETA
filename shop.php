@@ -115,8 +115,8 @@ switch ($type) {
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">
-                                                        <div class="part1">The Test</div>
-                                                        <div class="part2">Of Time</div>
+                                                        <div class="part1">Timeless</div>
+                                                        <div class="part2">Style</div>
                                                     </div>
                                                 </div>
                                                 <div class="copy">
