@@ -98,7 +98,12 @@ body {
 		height: 100%;
 		margin: 0 auto;
 		text-align: left;
-		width: calc(~"100% - 60px");
+		
+		
+		//width: calc(~"100% - 60px");
+		width: calc(~"100% - 120px");
+
+
 		max-width: 1340px;
 		.headerHeightWrapper {
 			padding-top: 9px;
@@ -227,7 +232,10 @@ body {
 @media all and (min-width: 1200px) {
 	.headerContainer {
 		.navWidthWrapper {
-			width: calc(~"100% - 35px - 35px");
+			
+			//width: calc(~"100% - 35px - 35px");
+			width: calc(~"100% - 120px");
+
 			.logoContainer {
 				margin-left: auto;
 			}
@@ -237,16 +245,43 @@ body {
 		}
 	}
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 880px){
 	.headerContainer {
 		.navWidthWrapper {
 			.headerHeightWrapper {
-				height: @headerHeightSmall;
 				.logoContainer {
 					.logoLink {
 						.navLogo {
+						}
+					}
+				}
+				.rightItemsContainer {
+				    .textLinksContainer {
+				    	display: none;
+				    }
+				    .iconsContainer {
+				    	margin-right: 50px;
+				    	margin-top: 4px;
+				    }
+					.burgerContainer {
+						display: initial;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.headerContainer {
+		.navWidthWrapper {
+			width: calc(~"100% - 30px");
+			.headerHeightWrapper {
+				height: @headerHeightSmall;
+				.logoContainer {
+					padding-left: 17px;
+					.logoLink {
+						.navLogo {
 							width: 195px;
-							//padding-top: 19px;
 							padding-top: 5px;
 						}
 					}
@@ -262,6 +297,31 @@ body {
 				    }
 					.burgerContainer {
 						display: initial;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 475px){
+	.headerContainer {
+		.navWidthWrapper {
+			width: calc(~"100% - 30px");
+			.headerHeightWrapper {
+				.logoContainer {
+					padding-left: 14px;
+					.logoLink {
+						.navLogo {
+						}
+					}
+				}
+				.rightItemsContainer {
+				    .textLinksContainer {
+				    }
+				    .iconsContainer {
+				    	display: none;
+				    }
+					.burgerContainer {
 					}
 				}
 			}
@@ -1213,7 +1273,6 @@ body {
 		}
 		.belowLandingFrame {
 			.widthWrapper {
-				// width: 1170px;
 				text-align: left;
 				width: auto;
 				max-width: 1170px;

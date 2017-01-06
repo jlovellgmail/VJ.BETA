@@ -80,7 +80,7 @@ body {
   height: 100%;
   margin: 0 auto;
   text-align: left;
-  width: calc(100% - 60px);
+  width: calc(100% - 120px);
   max-width: 1340px;
 }
 .headerContainer .navWidthWrapper .headerHeightWrapper {
@@ -212,7 +212,7 @@ body {
 }
 @media all and (min-width: 1200px) {
   .headerContainer .navWidthWrapper {
-    width: calc(100% - 35px - 35px);
+    width: calc(100% - 120px);
   }
   .headerContainer .navWidthWrapper .logoContainer {
     margin-left: auto;
@@ -221,9 +221,27 @@ body {
     margin-right: auto;
   }
 }
+@media all and (max-width: 880px) {
+  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .textLinksContainer {
+    display: none;
+  }
+  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .iconsContainer {
+    margin-right: 50px;
+    margin-top: 4px;
+  }
+  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .burgerContainer {
+    display: initial;
+  }
+}
 @media all and (max-width: 768px) {
+  .headerContainer .navWidthWrapper {
+    width: calc(100% - 30px);
+  }
   .headerContainer .navWidthWrapper .headerHeightWrapper {
     height: 76px;
+  }
+  .headerContainer .navWidthWrapper .headerHeightWrapper .logoContainer {
+    padding-left: 17px;
   }
   .headerContainer .navWidthWrapper .headerHeightWrapper .logoContainer .logoLink .navLogo {
     width: 195px;
@@ -241,6 +259,17 @@ body {
   }
   .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .burgerContainer {
     display: initial;
+  }
+}
+@media all and (max-width: 475px) {
+  .headerContainer .navWidthWrapper {
+    width: calc(100% - 30px);
+  }
+  .headerContainer .navWidthWrapper .headerHeightWrapper .logoContainer {
+    padding-left: 14px;
+  }
+  .headerContainer .navWidthWrapper .headerHeightWrapper .rightItemsContainer .iconsContainer {
+    display: none;
   }
 }
 .navDropdownOutside {
