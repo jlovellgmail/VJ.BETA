@@ -951,7 +951,7 @@ body {
 }
 .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
   text-align: center;
-  max-width: 1300px;
+  max-width: initial;
   padding-top: 70px;
 }
 .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
@@ -1153,6 +1153,11 @@ body {
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
     font-size: 44px;
     line-height: 42px;
+  }
+}
+@media (min-width: 1800px) and (min-height: 1200px) {
+  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    width: 720px;
   }
 }
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
