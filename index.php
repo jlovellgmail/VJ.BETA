@@ -57,7 +57,8 @@ $seo_variable = "home";
                                                         </div>
                                                     </div>
                                                     <div class="copy">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus. -->
+                                                        Our products reflect an exceptional standard of quality, authenticity, and everyday functionality. Classic design, the best materials, and uncompromising craftsmanship provide a one-of-a-kind experience. Celebrate excellence with Virgil James!
                                                     </div>
 
                                                     <a class="box" href="/shop/">
@@ -70,7 +71,7 @@ $seo_variable = "home";
                                             </div>
 
 
-                                            
+
                                         </div>
                                     </div>
                                 <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
