@@ -1119,7 +1119,7 @@ body {
 .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-@media all and (max-height: 900px) {
+@media all and (max-height: 960px) {
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 450px;
   }
@@ -1147,17 +1147,31 @@ body {
     margin-right: initial;
   }
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText {
-    max-width: 400px;
+    max-width: 420px;
     width: auto;
   }
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
     font-size: 44px;
     line-height: 42px;
   }
+  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .copy {
+    width: initial;
+    max-width: 420px;
+  }
 }
 @media (min-width: 1800px) and (min-height: 1200px) {
   .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 720px;
+  }
+}
+@media all and (max-height: 960px) and (min-width: 600px) {
+  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    width: 480px;
+  }
+}
+@media all and (max-height: 800px) and (min-width: 600px) {
+  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    width: 380px;
   }
 }
 .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
