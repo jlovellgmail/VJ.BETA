@@ -18,7 +18,7 @@
     <?php include '/incs/nav.php'; ?>
 
 
-    <div class="aboutPage landingScreen-generic-170103">
+    <div class="aboutPage landingScreen">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 noPadding">

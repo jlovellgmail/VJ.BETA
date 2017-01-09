@@ -21,7 +21,7 @@ include '/classes/Line.class.php';
     <?php include '/incs/nav.php'; ?>
 
 
-    <div class="collectionsPage landingScreen-generic-170103">
+    <div class="collectionsPage landingScreen">
         
 
         <div class="container-fluid">
