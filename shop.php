@@ -122,7 +122,7 @@ switch ($type) {
                                                 <div class="copy">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
                                                 </div>
-                                                <div class="boxes">
+                                                <div class="boxes-v3">
                                                     <a class="box <?php if ($type == "men") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/men/">
                                                         <div class="title">
                                                             Men
@@ -139,17 +139,17 @@ switch ($type) {
                                                         <div class="subtitle">
                                                         </div>
                                                     </a>
-                                                    <!--
+                                                    
                                                     <div class="vline"></div>
                                                     <div class="hline"></div>
                                                     <a class="box <?php if ($type == "all") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/">
                                                         <div class="title">
                                                             All
                                                         </div>
-                                                        <div class="subtitle">
-                                                        </div>
+                                                        <div class="subtitle"></div>
+                                                        <img src="/img/arrow_down.svg" />
                                                     </a>
-                                                    -->
+                                                    
                                                 </div>
                                             </div>
                                         </div>
