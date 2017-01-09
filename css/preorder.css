@@ -1193,6 +1193,9 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .journalPage.landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
+    filter: none;
+  }
 }
 @media all and (max-width: 768px) {
   .journalPage.landingScreen .belowLandingFrame .widthWrapper {
