@@ -1867,13 +1867,30 @@ body {
 					    		text-align: center;
 					    		display: inline-block;
 					    		border: 1px solid black;
-					    		margin-top: 30px;
+
+
+					    		// from v3
+					    		width: 320px;
+					    		margin: 0 auto;
+
+
+					    		border: none;
+					    		margin-top: 20px;
+
+
+
 					    		.vline {
 					    			width: 1px;
 					    			height: 100px;
 					    			border-left: 1px solid rgba(0,0,0, .16);
 					    			display: inline-block;
 					    			vertical-align: middle;
+
+
+					    			// from v3
+					    			display: none;
+
+
 					    		}
 					    		.hline {
 					    			// display: block;
@@ -1882,6 +1899,16 @@ body {
 					    			border-bottom: 1px solid rgba(0,0,0, .16);
 					    			width: auto;
 					    			margin: 0 20px;
+
+					    			
+					    			// from v3
+					    			display: block;
+					    			height: 1px;
+					    			border-bottom: 1px solid rgba(0,0,0, .16);
+					    			width: auto;
+					    			margin: 0 20px;
+
+
 					    		}
 					    		.box {
 					    			cursor: pointer;
@@ -1893,9 +1920,24 @@ body {
 					    			display: inline-block;
 								    transition: .3s;
 								    font-size: 22px;
-								    font-weight: 800;
+								    font-weight: 300;
 								    letter-spacing: 1.7px;
 								    text-decoration: none;
+
+
+								    // from v3
+			        			    padding: 24px 0;
+			    				    text-transform: uppercase;
+			    	    			color: black;
+			    	    			display: inline-block;
+			    				    transition: .3s;
+			    				    font-size: 22px;
+			    				    letter-spacing: 1.7px;
+			    				    text-decoration: none;
+			    				    cursor: pointer;
+			    				    width: 100%;
+
+
 								    .title {
 								    	display: inline-block;
 								    }
@@ -1907,119 +1949,14 @@ body {
 								    	margin-top: -4px;
 								    }
 								    &:hover {
-							    	    background-color: rgba(0, 0, 0, 0.07);
+							    	    background-color: rgba(0, 0, 0, 0.04);
 								    }
 					    		}
 					    	}
-
-
-
-					    	// shop_buttons.php
-					    	.belowBoxes {
-	    		    			cursor: pointer;
-	    					    padding: 50px 0;
-	    					    padding-top: 16px;
-	    					    vertical-align: middle;
-	    					    width: 212px;
-	    					    text-transform: uppercase;
-	    		    			color: black;
-	    		    			display: inline-block;
-	    					    transition: .3s;
-	    					    font-size: 22px;
-	    					    font-weight: 800;
-	    					    letter-spacing: 1.7px;
-	    					    text-decoration: none;
-	    					    img {
-	    					    	width: 23px;
-	    					    	display: block;
-	    					    	margin: 0 auto;
-	    					    	margin-top: 12px;
-	    					    }
-					    	}
-					    	// shop_buttons_v2.php
-					    	.boxes-v2 {
-					    		.boxes;
-					    		border: none;
-					    		position: relative;
-					    		.leftBorder {
-					    			position: absolute;
-					    			width: 40%;
-					    			height: 100%;
-					    			border: 1px solid black;
-					    			border-right: none;
-					    			top: 0;
-					    		}
-					    		.rightBorder {
-					    			.leftBorder;
-					    			border: 1px solid black;
-					    			border-left: none;
-					    			right: 0;
-					    		}
-					    		.centerBorder {
-					    			position: absolute;
-					    			width: 22%;
-					    			height: 1px;
-					    			border-top: 1px solid black;
-					    			top: 0;
-					    			margin-left: 40%;
-					    		}
-					    		.vline {
-					    			
-					    			//margin-bottom: 10px;
-					    			//height: 70px;
-					    			margin-bottom: 20px;
-				    			    height: 80px;
-					    		}
-					    	}
-					    	.belowBoxes-v2 {
-					    		.belowBoxes;
-					    		position: relative;
-				    		    top: -36px;
-					    	}
-		    		    	// shop_buttons_v3.php
-		    		    	.boxes-v3 {
-		    		    		width: 320px;
-		    		    		margin: 0 auto;
-		    		    		.vline {
-		    		    			display: none;
-		    		    		}
-		    		    		.hline {
-		    		    			display: block;
-		    		    			height: 1px;
-		    		    			border-bottom: 1px solid rgba(0,0,0, .16);
-		    		    			width: auto;
-		    		    			margin: 0 20px;
-		    		    		}
-		    		    		.box {
-	    		    			    padding: 24px 0;
-	    						    text-transform: uppercase;
-	    			    			color: black;
-	    			    			display: inline-block;
-	    						    transition: .3s;
-	    						    font-size: 22px;
-	    						    font-weight: 800;
-	    						    letter-spacing: 1.7px;
-	    						    text-decoration: none;
-	    						    cursor: pointer;
-	    						    width: 100%;
-	    						    #shadow {
-	    						    	opacity: 0;
-	    						    }
-						    	    &:hover {
-						        	    //background-color: rgba(0, 0, 0, 0.07);
-						    	    }
-	    						    img {
-	    						    	width: 17px;
-	    						    }
-		    		    		}
-		    		    	}
-
-
-
 			    		}
 					}
 					.downArrow {
-						display: none;
+						filter: none;
 					}
 				}
 			}

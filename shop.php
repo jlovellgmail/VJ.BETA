@@ -122,7 +122,7 @@ switch ($type) {
                                                 <div class="copy">
                                                     Our luxury is to create art, in the form of great products that stand the test of time and become recognized for their quality, engineered design, and classic style.  We define luxury not by price, but by the lasting experience our products provide.
                                                 </div>
-                                                <div class="boxes-v3">
+                                                <div class="boxes">
                                                     <a class="box <?php if ($type == "men") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/men/">
                                                         <div class="title">
                                                             Men
@@ -147,7 +147,6 @@ switch ($type) {
                                                             All
                                                         </div>
                                                         <div class="subtitle"></div>
-                                                        <img src="/img/arrow_down.svg" />
                                                     </a>
                                                     
                                                 </div>
