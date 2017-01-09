@@ -829,6 +829,9 @@ body {
 .landingPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .box:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.landingPage.landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
+  display: none;
+}
 @media all and (max-height: 960px) {
   .landingPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 450px;
