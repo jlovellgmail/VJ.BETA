@@ -802,57 +802,57 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 @media all and (max-height: 960px) {
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 450px;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
     bottom: 8px;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer {
     padding-top: 0;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
     font-size: 54px;
     line-height: 51px;
   }
 }
 @media all and (max-width: 1500px) {
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 100%;
     max-width: 450px;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
     bottom: 8px;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer {
     padding-top: 0;
     margin-right: initial;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText {
     max-width: 420px;
     width: auto;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .headlineContainer .headline {
     font-size: 44px;
     line-height: 42px;
   }
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .copy {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textContainer .preorderText .copy {
     width: initial;
     max-width: 420px;
   }
 }
 @media (min-width: 1800px) and (min-height: 1200px) {
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 720px;
   }
 }
 @media all and (max-height: 960px) and (min-width: 600px) {
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 480px;
   }
 }
 @media all and (max-height: 800px) and (min-width: 600px) {
-  .landingPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+  .landingPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 380px;
   }
 }
@@ -973,109 +973,109 @@ body {
   text-align: left;
 }
 @media all and (max-width: 1400px) {
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 57px;
     line-height: 53px;
   }
 }
 @media all and (max-width: 1500px) {
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
     /*
 						background: 
 							linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) ), 
 							url("/img/landing_page_postcard_bg_q9.jpg");
 						*/
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media all and (max-width: 1230px) {
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
     opacity: 1;
   }
 }
 @media all and (max-width: 768px) {
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 60px;
     padding-right: 60px;
     max-width: 900px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 54px;
     line-height: 51px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
     display: block;
     max-width: 290px;
     margin-left: auto;
     margin-right: auto;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
     display: none;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .hline {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .hline {
     display: block;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
     width: 100%;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     max-width: 480px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem {
     display: block;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem.lg-six {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem.lg-six {
     width: 100%;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
     display: block;
     width: 100%;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
     height: 260px;
     overflow: hidden;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
     height: 260px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
     display: block;
     padding-left: 0;
     padding-top: 4px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
     display: block;
     width: 100%;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
     width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 20px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
     margin-bottom: 20px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 44px;
     line-height: 44px;
   }
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+  .collectionsPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     width: auto;
   }
 }
 @media all and (max-height: 1000px) {
-  .collectionsPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 50px;
   }
 }
@@ -1171,75 +1171,75 @@ body {
   width: 100%;
 }
 @media all and (max-width: 1500px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 60px;
     padding-right: 60px;
     max-width: 900px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     max-width: 260px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 54px;
     line-height: 51px;
   }
 }
 @media all and (max-width: 1230px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
     opacity: 1;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media all and (max-width: 768px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     max-width: 480px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
     display: block;
     width: 100%;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
     height: 260px;
     overflow: hidden;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
     height: 260px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
     display: block;
     padding-left: 0;
     padding-top: 4px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
     display: block;
     width: 100%;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
+  .journalPage.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
     width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 20px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
     margin-bottom: 20px;
   }
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 50px;
     line-height: 48px;
   }
 }
 @media all and (max-height: 1000px) {
-  .journalPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .journalPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 50px;
   }
 }
@@ -1561,99 +1561,99 @@ body {
   max-width: 450px;
 }
 @media all and (max-width: 1500px) {
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
     background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("/img/landing_page_postcard_bg_q9.jpg");
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media all and (max-width: 1230px) {
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .overlay {
     opacity: 1;
   }
 }
 @media all and (max-width: 768px) {
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 60px;
     padding-right: 60px;
     max-width: 900px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 54px;
     line-height: 51px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
     display: block;
     max-width: 290px;
     margin-left: auto;
     margin-right: auto;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .vline {
     display: none;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .hline {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .hline {
     display: block;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box {
     width: 100%;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     max-width: 480px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem {
     display: block;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem.lg-six {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper .shopItem.lg-six {
     width: 100%;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block {
     display: block;
     width: 100%;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer {
     height: 260px;
     overflow: hidden;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .imageContainer .image {
     height: 260px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .lifestyle-post-block .textContainer {
     display: block;
     padding-left: 0;
     padding-top: 4px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .jscroll-added {
     display: block;
     width: 100%;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .jscroll-added .lifestyle-post-block {
     width: 100%;
   }
 }
 @media all and (max-width: 500px) {
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 20px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer {
     margin-bottom: 20px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 50px;
     line-height: 48px;
   }
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
+  .shopPage.landingScreen-generic-170103 .belowLandingFrame .widthWrapper {
     width: auto;
   }
 }
 @media all and (max-height: 1000px) {
-  .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 50px;
   }
 }
