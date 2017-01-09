@@ -107,6 +107,61 @@ $seo_variable = "home";
                 }
             });
         </script>
+        <!-- for carousel: preload images -->
+        <div style="position:fixed; left:4000px; top:4000px; opacity: 0; ">
+            <img src="/img/IMG_6948 - tote hero - transparent for postcard bg.png">
+            <img src="/img/carousel image - Drawstring - transparent.png">
+            <img src="/img/carousel image - Clutch - transparent.png">
+
+        </div>
+        <!-- for carousel: change images -->
+        <script>
+            var images = [
+                "/img/IMG_6948 - tote hero - transparent for postcard bg.png"
+                ,"/img/carousel image - Drawstring - transparent.png"
+                ,"/img/carousel image - Clutch - transparent.png"
+            ];
+            var i=0;
+            var initialTimeout = 8000;
+            var timeout = 8000;
+            var delay = 600;
+            function change(){
+                if($("#carouselImage").hasClass("active")){
+                    current = $("#carouselImage");
+                    next = $("#carouselImage2");
+                }
+                else {
+                    current = $("#carouselImage2");
+                    next = $("#carouselImage");
+                }
+                i = ++i % images.length;
+                function animate(){
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    current.addClass("fadeout").one(animationEnd, function() {
+                        $(this).removeClass("fadeout");
+                        $(this).css("opacity", 0);
+                    });
+                    setTimeout(showNext, delay);
+                    function showNext(){
+                        current.removeClass("active");
+                        next.addClass("active");
+                        next.attr("src", images[i]);
+                        next.addClass("fadein").one(animationEnd, function() {
+                            $(this).removeClass("fadein");
+                            $(this).css("opacity", 1);
+                        });
+                        $(".dot").removeClass("active");
+                        $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
+                    }
+                }
+                animate();
+                setTimeout(change, timeout);
+            }
+            $(window).load(function(){
+                setTimeout(change, initialTimeout);
+            });
+        </script>
+
 
 
     </body>
