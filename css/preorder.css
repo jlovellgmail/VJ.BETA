@@ -1174,10 +1174,10 @@ body {
   .journalPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
     padding-left: 60px;
     padding-right: 60px;
-    max-width: 900px;
+    max-width: 1040px;
   }
   .journalPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
-    max-width: 260px;
+    max-width: 390px;
   }
   .journalPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 54px;
