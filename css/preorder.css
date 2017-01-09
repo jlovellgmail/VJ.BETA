@@ -1694,6 +1694,162 @@ body {
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes .box:hover {
   background-color: rgba(0, 0, 0, 0.07);
 }
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .belowBoxes {
+  cursor: pointer;
+  padding: 50px 0;
+  padding-top: 16px;
+  vertical-align: middle;
+  width: 212px;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  text-decoration: none;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .belowBoxes img {
+  width: 23px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 30px;
+  border: none;
+  position: relative;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .vline {
+  width: 1px;
+  height: 100px;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  display: inline-block;
+  vertical-align: middle;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .hline {
+  display: none;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  width: auto;
+  margin: 0 20px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .box {
+  cursor: pointer;
+  padding: 50px 0;
+  vertical-align: middle;
+  width: 212px;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  text-decoration: none;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .box .title {
+  display: inline-block;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .box .subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .8px;
+  margin-top: -4px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .box:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .leftBorder {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  border: 1px solid black;
+  border-right: none;
+  top: 0;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .rightBorder {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  border-right: none;
+  top: 0;
+  border: 1px solid black;
+  border-left: none;
+  right: 0;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .centerBorder {
+  position: absolute;
+  width: 22%;
+  height: 1px;
+  border-top: 1px solid black;
+  top: 0;
+  margin-left: 40%;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v2 .vline {
+  margin-bottom: 20px;
+  height: 80px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .belowBoxes-v2 {
+  cursor: pointer;
+  padding: 50px 0;
+  padding-top: 16px;
+  vertical-align: middle;
+  width: 212px;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  text-decoration: none;
+  position: relative;
+  top: -36px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .belowBoxes-v2 img {
+  width: 23px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v3 {
+  width: 320px;
+  margin: 0 auto;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v3 .vline {
+  display: none;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v3 .hline {
+  display: block;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  width: auto;
+  margin: 0 20px;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v3 .box {
+  padding: 24px 0;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v3 .box #shadow {
+  opacity: 0;
+}
+.shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes-v3 .box img {
+  width: 17px;
+}
 .shopPage-using-new-generic-170103.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .downArrow {
   display: none;
 }

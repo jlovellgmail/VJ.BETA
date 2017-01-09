@@ -122,7 +122,7 @@ switch ($type) {
                                                 <div class="copy">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
                                                 </div>
-                                                <div class="boxes">
+                                                <div class="boxes-v2">
                                                     <a class="box <?php if ($type == "men") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/men/">
                                                         <div class="title">
                                                             Men
@@ -150,10 +150,13 @@ switch ($type) {
                                                         </div>
                                                     </a>
                                                     -->
+                                                    <div class="leftBorder"></div>
+                                                    <div class="rightBorder"></div>
+                                                    <div class="centerBorder"></div>
                                                 </div>
 
 
-                                                <div class="belowBoxes">
+                                                <div class="belowBoxes-v2">
                                                     All
                                                     <img src="/img/arrow_down.svg" />
                                                 </div>
