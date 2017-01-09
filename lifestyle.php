@@ -37,8 +37,8 @@ $seo_variable = "lifestyle";
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">
-                                                        <div class="part1">Lifestyle</div>
-                                                        <div class="part2">Journal</div>
+                                                        <div class="part1">Inspired</div>
+                                                        <div class="part2">Living</div>
                                                     </div>
                                                 </div>
                                                 <div class="copy">
