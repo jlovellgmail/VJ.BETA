@@ -21,7 +21,7 @@ $seo_variable = "home";
 
 
 
-        <div class="landingPage-using-new-generic-170103 landingScreen-generic-170103">
+        <div class="landingPage landingScreen-generic-170103">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">

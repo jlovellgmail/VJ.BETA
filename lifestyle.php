@@ -24,7 +24,7 @@ $seo_variable = "lifestyle";
         <?php include '/incs/nav.php'; ?>
 
 
-        <div class="journalPage-using-new-generic-170103 landingScreen-generic-170103">
+        <div class="journalPage landingScreen-generic-170103">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">

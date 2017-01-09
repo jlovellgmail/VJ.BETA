@@ -99,7 +99,7 @@ switch ($type) {
 
 
         <!-- new imported from collections -->
-        <div class="shopPage-using-new-generic-170103 landingScreen-generic-170103">
+        <div class="shopPage landingScreen-generic-170103">
             
 
             <div class="container-fluid">
