@@ -1313,6 +1313,27 @@ body {
   font-weight: 300;
   line-height: 31px;
 }
+@media all and (max-width: 1000px) {
+  .aboutPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer {
+    text-align: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .aboutPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+    font-size: 32px;
+  }
+  .aboutPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
+    max-width: 400px;
+  }
+}
+@media all and (max-width: 500px) {
+  .aboutPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+    line-height: 26px;
+  }
+  .aboutPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part2 {
+    font-size: 47px;
+  }
+}
 .shopPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   background-image: url("/img/grays_q9.jpg");
   background-position-x: center;

@@ -66,7 +66,6 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 // header / nav
-
 .headerText {
 	color: black;
 	text-transform: uppercase;
@@ -330,12 +329,10 @@ body {
 .navDropdownOutside {
 	border: 1px solid black;
 }
-
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
 // footer
-
 @footerHeight: 86px;
 .footerText {
 	.headerText;
@@ -1718,6 +1715,83 @@ body {
 			}
 
 
+		}
+	}
+}
+@media all and (max-width: 1000px){
+	.aboutPage {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							text-align: center;
+							.textBlockMain {
+								.titleContainer {
+									.title {
+										.part1 {
+										}
+									}
+								}
+								.copy {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.aboutPage {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.textBlockMain {
+								.titleContainer {
+									.title {
+										.part1 {
+											font-size: 32px;
+										}
+									}
+								}
+								.copy {
+									max-width: 400px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 500px){
+	.aboutPage {
+		&.landingScreen-generic-170103 {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.textBlockMain {
+								.titleContainer {
+									.title {
+										.part1 {
+											line-height: 26px;
+										}
+										.part2 {
+											font-size: 47px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
