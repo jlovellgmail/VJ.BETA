@@ -30,12 +30,12 @@
                                         <div class="textBlockMain">
                                             <div class="titleContainer">
                                                 <div class="title">
-                                                    <div class="part1">Getting</div>
-                                                    <div class="part2">Started</div>
+                                                    <div class="part1">The Pursuit of</div>
+                                                    <div class="part2">Excellence</div>
                                                 </div>
                                             </div>
                                             <div class="copy">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                                Virgil James is driven to design and build extraordinary objects that express what’s important to us – quality without compromise; authentic timeless style; and utility for a lifetime of everyday use.  Our passion is your reward.
                                             </div>
                                         </div>
                                     </div>

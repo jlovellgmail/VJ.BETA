@@ -42,7 +42,7 @@ $seo_variable = "lifestyle";
                                                     </div>
                                                 </div>
                                                 <div class="copy">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                                    Virgil James embodies a spirit of discovery – a pursuit of understanding, awareness, and new experiences.  We value the commitment and pride to do things well, make things work, and express creativity.  Our Journal celebrates all of this as we share examples of exceptional quality, authenticity, and the pure pleasure that comes from inspired living.
                                                 </div>
                                             </div>
                                         </div>

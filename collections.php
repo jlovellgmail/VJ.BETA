@@ -37,11 +37,11 @@ include '/classes/Line.class.php';
                                         <div class="textBlockMain">
                                             <div class="titleContainer">
                                                 <div class="title">
-                                                    <div class="part1">Cityline</div><div class="part2">Collections</div>
+                                                    <div class="part1">Lasting</div><div class="part2">Collections</div>
                                                 </div>
                                             </div>
                                             <div class="copy">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                                Products inspired by the embrace of travel, culture, and creativity.  The limited-edition CITYLINE collections celebrate cities with lasting influence, incorporating unique design elements and presentation for a strong, creative statement.
                                             </div>
                                             <div class="boxes">
                                                 <a class="box" href="collection/index.php?line=city&col=reykjavik">

@@ -120,7 +120,7 @@ switch ($type) {
                                                     </div>
                                                 </div>
                                                 <div class="copy">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                                                    Our luxury is to create art, in the form of great products that stand the test of time and become recognized for their quality, engineered design, and classic style.  We define luxury not by price, but by the lasting experience our products provide.
                                                 </div>
                                                 <div class="boxes-v3">
                                                     <a class="box <?php if ($type == "men") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/men/">
