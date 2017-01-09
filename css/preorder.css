@@ -856,6 +856,22 @@ body {
     width: 380px;
   }
 }
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .collectionsPage.landingScreen-generic-170103 .landingHeight .landingWidth .imageFrame {
   background-color: #797272;
   background-image: url("/img/170103 collections bg3_q9.jpg");
@@ -1641,22 +1657,6 @@ body {
     padding-bottom: 50px;
   }
 }
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .collectionPage {
   font-family: proxima-nova, sans-serif;
   min-height: 100%;
@@ -2119,41 +2119,33 @@ body {
 .termsPage .contentContainer .rightCol {
   width: 170px;
 }
-@media all and (max-width: 870px) {
-  body .loginPage .mainFrame .contentContainer .leftColLogin {
-    display: block;
-  }
-  body .loginPage .mainFrame .contentContainer .middleColLogin {
-    display: none;
-  }
-  body .loginPage .mainFrame .contentContainer .rightColLogin {
-    display: block;
-  }
-}
-.loginPage .mainFrame {
-  margin: 0 96px;
-  top: 76px;
+.loginPage {
+  padding-top: 96px;
+  padding-bottom: 100px;
+  margin: 0 60px;
   min-height: calc(100vh - 86px);
   position: relative;
-  padding-top: 70px;
   text-align: center;
 }
-.loginPage .mainFrame .contentContainer {
-  display: inline-block;
+.loginPage .formsContainer {
+  padding-top: 60px;
 }
-.loginPage .mainFrame .contentContainer .leftColLogin {
+.loginPage .formsContainer .col {
   display: inline-block;
   vertical-align: top;
-  width: 280px;
+  max-width: 280px;
 }
-.loginPage .mainFrame .contentContainer .middleColLogin {
-  display: inline-block;
-  width: 50px;
+.loginPage .formsContainer .right {
+  margin-left: 50px;
 }
-.loginPage .mainFrame .contentContainer .rightColLogin {
-  display: inline-block;
-  vertical-align: top;
-  width: 280px;
+@media all and (max-width: 760px) {
+  body .loginPage .formsContainer .col {
+    margin: 0 auto;
+    display: block;
+  }
+  body .loginPage .formsContainer .rightCol {
+    margin-left: 0;
+  }
 }
 .loginForm .title {
   text-transform: uppercase;

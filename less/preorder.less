@@ -2,7 +2,6 @@
 //-----------------------------------------------
 //-----------------------------------------------
 // global
-
 @iconWidth: 90px;
 @headerHeight: 76px;
 @headerHeightSmall: 76px;
@@ -456,12 +455,10 @@ body {
 		}
 	}
 }
-
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
 // modals
-
 .modalOverlay {
 	background-color: rgba(255,255,255, .9);
 	z-index: 30;
@@ -558,12 +555,10 @@ body {
 		box-shadow: 0 0 5px 2px rgba(0,0,0, .15);
 	}
 }
-
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
 // cart
-
 .cartPage {
 	padding-top: 76px;
 	min-height: calc(~"100vh - 86px");
@@ -571,7 +566,6 @@ body {
 		max-width: 1200px;
 	}
 }
-
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
@@ -1051,6 +1045,14 @@ body {
 			}
 		}
 	}
+}
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 //-----------------------------------------------
 // Collections page
@@ -2122,26 +2124,6 @@ body {
 	}
 }
 //-----------------------------------------------
-
-
-
-// 1/9 are these still used?
-@keyframes fadeout {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-@keyframes fadein {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-
-
-
-
-
-
-//-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
 // Collection page
@@ -2294,7 +2276,6 @@ body {
 		}
 	}
 }
-
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
@@ -2641,53 +2622,42 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 // Login page and forms
-
-
-// 1/9 looks like this is not applied to the beta site yet but it may still work
-@media all and (max-width: 870px) {
-	body {
-		.loginPage {
-			.mainFrame {
-				.contentContainer {
-					.leftColLogin {
-						display: block;
-					}
-					.middleColLogin {
-						display: none;
-					}
-					.rightColLogin {
-						display: block;
-					}
-				}
-			}
+.loginPage {
+	padding-top: 96px;
+	padding-bottom: 100px;
+    margin: 0 60px;
+	min-height: calc(~"100vh - 86px");
+	position: relative;
+	text-align: center;
+	.formsContainer {
+		padding-top: 60px;
+		.col {
+			display: inline-block;
+			vertical-align: top;
+			max-width: 280px;
+		}
+		.left {
+		}
+		.right {
+			margin-left: 50px;
 		}
 	}
 }
-.loginPage {
-	.mainFrame {
-		margin: 0 96px;
-		top: 76px;
-		min-height: calc(~"100vh - 86px");
-		position: relative;
-		padding-top: 70px;
-		text-align: center;
-	    .contentContainer {
-	    	display: inline-block;
-	    	.leftColLogin {
-	    		display: inline-block;
-	    		vertical-align: top;
-	    		width: 280px;
-	    	}
-	    	.middleColLogin {
-	    		display: inline-block;
-	    		width: 50px;
-	    	}
-	    	.rightColLogin {
-	    		display: inline-block;
-	    		vertical-align: top;
-	    		width: 280px;
-	    	}
-	    }
+@media all and (max-width: 760px) {
+	body {
+		.loginPage {
+			.formsContainer {
+				.col {
+					margin: 0 auto;
+					display: block;
+				}
+				.leftCol {
+				}
+				.rightCol {
+					margin-left: 0;
+				}
+			}
+		}
 	}
 }
 .loginForm {
