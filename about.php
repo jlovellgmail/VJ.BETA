@@ -3,7 +3,12 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
     <title>About Virgil James | Bags, Luxury Handbags & Authentic Handbags</title>
     <meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags, Virgil James"/>
     <meta name="description" content="With headquarters in Los Angeles, California, Virgil James is the place to shop for luxury bags and accessories."/>
@@ -28,6 +33,13 @@
                                 <div class="table-cell">
                                     <div class="contentContainer">
                                         <div class="textBlockMain">
+
+
+                                            <div class="blackGlow">
+                                                <img src="/preorder/images/black_blur.png" />
+                                            </div>
+
+
                                             <div class="titleContainer">
                                                 <div class="title">
                                                     <div class="part1">The Pursuit of</div>
@@ -35,7 +47,7 @@
                                                 </div>
                                             </div>
                                             <div class="copy">
-                                                Virgil James is driven to design and build extraordinary objects that express what’s important to us – quality without compromise; authentic timeless style; and utility for a lifetime of everyday use.  Our passion is your reward.
+                                                Virgil James is driven to design and build extraordinary objects that express what’s important to us – quality without compromise, authentic timeless style, and utility for a lifetime of everyday use.  Our passion is your reward.
                                             </div>
                                         </div>
                                     </div>

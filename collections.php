@@ -8,7 +8,12 @@ include '/classes/Line.class.php';
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+
     <title>Virgil James Collections | Bags, Luxury Handbags & Authentic Handbags</title>
     <meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags, Leather bags, Canvas bags, Leather bags for men, Leather bags for women, Canvas bags for men, Canvas bags for women"/>
     <meta name="description" content="Discover our latest luxury bag collections in leather and canvas for men and women."/>
@@ -37,7 +42,7 @@ include '/classes/Line.class.php';
                                         <div class="textBlockMain">
                                             <div class="titleContainer">
                                                 <div class="title">
-                                                    <div class="part1">Lasting</div><div class="part2">Collections</div>
+                                                    <div class="part1">Extraordinary</div><div class="part2">Collections</div>
                                                 </div>
                                             </div>
                                             <div class="copy">
