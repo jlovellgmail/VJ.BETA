@@ -1295,6 +1295,9 @@ body {
     padding-bottom: 50px;
   }
 }
+.articlePage {
+  padding-top: 96px;
+}
 .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame {
   background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
   background-position-x: center;

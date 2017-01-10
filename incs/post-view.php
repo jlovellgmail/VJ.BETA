@@ -1,8 +1,14 @@
-<!-- Navgivation -->
+
+
+<!-- JL -->
+<!-- move to post-view.php in root dir -->
+<!--
 <?php 
-include '/incs/nav.php';
-include '/bitly/bitly.php';
+//include '/incs/nav.php';
+//include '/bitly/bitly.php';
  ?>
+ -->
+
 
 <?php
 if ($postExist) {

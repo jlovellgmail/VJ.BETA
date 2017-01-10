@@ -79,17 +79,22 @@ if ($from == "lifestyle") {
         <link rel="stylesheet" href="/js/owl/owl24b/assets/owl.theme.post.css">
 
     </head>
-
     <body>
-        <div class="sdWrapper">
-            <div class="sdContent">
 
+
+        <!-- JL -->
+        <!-- moved here from incs/post-view.php: -->
+        <?php 
+        include '/incs/nav.php';
+        include '/bitly/bitly.php';
+        ?>
+
+
+        <div class="articlePage">
                 <?php include '/incs/post-view.php'; ?>
-
-            </div>
-            <?php include '/incs/footer.php'; ?>
-            <?php include '/incs/footer-links.php'; ?>
         </div>
+        <?php include '/incs/footer.php'; ?>
+        <?php include '/incs/footer-links.php'; ?>
         <script type="text/javascript">
             //$(document).ready(function () {
             //var myText = $('.post-wrapper .post-paragraph:first-child > p:first-child').text();
@@ -106,5 +111,4 @@ if ($from == "lifestyle") {
 		<?php include('json-ld.php'); ?>
 		<script type="application/ld+json"><?php echo json_encode($payload); ?></script>
     </body>
-
 </html>
