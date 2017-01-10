@@ -616,6 +616,7 @@ body {
   left: 34%;
   top: 51%;
   opacity: .3;
+  display: none;
 }
 .landingScreen .landingHeight .landingWidth .imageFrame .downArrow {
   position: absolute;
@@ -937,6 +938,10 @@ body {
   color: white;
   padding-bottom: 85px;
 }
+.collectionsPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+  font-size: 42px;
+  line-height: 51px;
+}
 .collectionsPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .hline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   height: 1px;
@@ -1037,6 +1042,10 @@ body {
   .collectionsPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title {
     font-size: 54px;
     line-height: 51px;
+  }
+  .collectionsPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
+    font-size: 32px;
+    line-height: 47px;
   }
   .collectionsPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .boxes {
     display: block;
@@ -1292,7 +1301,8 @@ body {
   padding-bottom: 0;
 }
 .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
-  font-size: 54px;
+  font-size: 42px;
+  line-height: 51px;
 }
 .aboutPage.landingScreen .belowLandingFrame .image {
   background-color: rgba(0, 0, 0, 0.1);
@@ -1361,6 +1371,9 @@ body {
   }
 }
 @media all and (max-width: 500px) {
+  .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
+    padding: 32px;
+  }
   .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
     line-height: 26px;
   }
