@@ -147,13 +147,37 @@ switch ($type) {
                                                     
                                                     <div class="vline"></div>
                                                     <div class="hline"></div>
+
+
+                                                    <!--
                                                     <a class="box <?php if ($type == "all") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/">
                                                         <div class="title">
                                                             All
                                                         </div>
                                                         <div class="subtitle"></div>
                                                     </a>
-                                                    
+                                                    -->
+                                                    <div id="allButton" class="box <?php if ($type == "all") {echo "itemBtnActive";} else {echo "itemBtnInactive";}?>" href="/shop/">
+                                                        <div class="title">
+                                                            All
+                                                        </div>
+                                                        <div class="subtitle"></div>
+                                                    </div>
+                                                    <script>
+                                                        $("#allButton").click(function(){
+                                                            <?php
+                                                                if($type == "all"){
+                                                                    echo "scrollDownToContent();";
+                                                                }
+                                                                else {
+                                                                    echo "window.location.href = '/shop/'";
+                                                                }
+                                                            ?>
+                                                        });
+                                                    </script>
+
+
+
                                                 </div>
                                             </div>
                                         </div>
