@@ -1751,6 +1751,27 @@ body {
 		}
 	}
 }
+@media all and (max-width: 1200px){
+	.aboutPage {
+		&.landingScreen {
+			.belowLandingFrame {
+				.container {
+					max-width: 600px;
+					.row {
+						.image {
+							height: 0;
+							padding-bottom: 63%;
+							background-position-x: center;
+						}
+						.textContainer {
+							padding-left: 0;
+						}						
+					}
+				}
+			}
+		}
+	}
+}
 @media all and (max-width: 1000px){
 	.aboutPage {
 		&.landingScreen {
@@ -1823,6 +1844,14 @@ body {
 								}
 							}
 						}
+					}
+				}
+			}
+			.belowLandingFrame {
+				margin-top: 0;
+				.container {
+					.row {
+						margin-top: 90px;
 					}
 				}
 			}

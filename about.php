@@ -33,13 +33,9 @@
                                 <div class="table-cell">
                                     <div class="contentContainer">
                                         <div class="textBlockMain">
-
-
                                             <div class="blackGlow">
                                                 <img src="/preorder/images/black_blur.png" />
                                             </div>
-
-
                                             <div class="titleContainer">
                                                 <div class="title">
                                                     <div class="part1">The Pursuit of</div>
@@ -64,11 +60,11 @@
             <div class="container">
                 <!-- --------------------------------------------------- -->
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="image" id="designPrinciples">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xs-12 col-lg-6">
                         <div class="textContainer">
                             <div class="sectionHeading">
                                 Design Principles
