@@ -48,6 +48,22 @@ if (is_array($postList)) {
                    style='background-image: url(<?php echo $image; ?>);'></a>
             </div>
             <div class="textContainer">
+                
+                <a class="category">
+
+
+                    <!-- JL -->
+                    <!-- temp display fake category until that gets added to posts -->
+                    <?php
+                        $categories = array("On The Road", "Living Well", "Extraordinary Objects", "Style");
+                        $rand_key = array_rand($categories, 1);
+                        echo $categories[$rand_key];
+                    ?>
+
+
+                </a>
+
+
                 <a href="/post-view.php?from=lifestyle&PermLink=Virgil-James&Title=<?php echo $urlTitle; ?>&PID=<?php echo $PID; ?>">
                     <h4 class="title"><?php echo $Title; ?></h4>
                 </a>

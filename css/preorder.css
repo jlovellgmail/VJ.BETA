@@ -50,7 +50,7 @@ body {
   }
 }
 .navPlaceholder {
-  height: 76px;
+  height: 96px;
 }
 .headerText {
   color: black;
@@ -1183,6 +1183,14 @@ body {
   display: inline-block;
   padding-top: 10px;
   padding-left: 0;
+  margin-top: 7px;
+}
+.journalPage.landingScreen .belowLandingFrame .lifestyle-post-block .textContainer .category {
+  color: #c38533;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .journalPage.landingScreen .belowLandingFrame .lifestyle-post-block .textContainer .title {
   font-size: 24px;
@@ -1190,6 +1198,7 @@ body {
   line-height: initial;
   margin-top: 14px;
   margin-bottom: 6px;
+  margin-top: 6px;
 }
 .journalPage.landingScreen .belowLandingFrame .lifestyle-post-block .textContainer p {
   margin-bottom: 5px;
@@ -1357,6 +1366,19 @@ body {
   font-weight: 300;
   line-height: 31px;
 }
+@media all and (max-width: 1200px) {
+  .aboutPage.landingScreen .belowLandingFrame .container {
+    max-width: 600px;
+  }
+  .aboutPage.landingScreen .belowLandingFrame .container .row .image {
+    height: 0;
+    padding-bottom: 63%;
+    background-position-x: center;
+  }
+  .aboutPage.landingScreen .belowLandingFrame .container .row .textContainer {
+    padding-left: 0;
+  }
+}
 @media all and (max-width: 1000px) {
   .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
     text-align: center;
@@ -1368,6 +1390,12 @@ body {
   }
   .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .copy {
     max-width: 400px;
+  }
+  .aboutPage.landingScreen .belowLandingFrame {
+    margin-top: 0;
+  }
+  .aboutPage.landingScreen .belowLandingFrame .container .row {
+    margin-top: 90px;
   }
 }
 @media all and (max-width: 500px) {
