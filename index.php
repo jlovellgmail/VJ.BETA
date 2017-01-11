@@ -20,58 +20,32 @@ $seo_variable = "home";
 
 
 
-
-        <div class="landingPage-old landingScreen">
+        <div class="landingPage landingScreen">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
-
                         <div class="landingHeight">
                             <div class="landingWidth">
                                 <div class="imageFrame">
-
+                                    <div class="overlay"></div>
                                     <div class="table-cell">
                                         <div class="contentContainer">
-
-
-
-                                            <div class="carouselContainer">
-                                                <div class="carouselImageContainer">
-                                                    
-                                                    <img id="carouselImage" class="active" src="/img/IMG_6948 - tote hero - transparent for postcard bg.png" />
-                                                    <img id="carouselImage2" style="opacity: 0;" src="/img/carousel image - Drawstring - transparent.png" />
-
-                                                </div>
-                                                <div class="controls">
-                                                    <div class="dot active"></div>
-                                                    <div class="dot"></div>
-                                                    <div class="dot"></div>
-                                                </div>
-                                            </div>
-                                            <div class="textContainer">
-                                                <div class="preorderText">
-                                                    <div class="headlineContainer">
-                                                        <div class="headline">
-                                                            <div class="part1 light">Engineered</div>
-                                                            <div class="part2 heavy">Luxury</div>
-                                                        </div>
+                                            <div class="textBlockMain">
+                                                <div class="titleContainer">
+                                                    <div class="title">
+                                                        <div class="part1">Engineered</div>
+                                                        <div class="part2">Luxury</div>
                                                     </div>
-                                                    <div class="copy">
-                                                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus. -->
-                                                        Products that reflect an exceptional standard of quality, authenticity, and everyday functionality.  Classic design, the best materials, and uncompromising craftsmanship provide a one-of-a-kind experience. Celebrate excellence with Virgil James!
-                                                    </div>
-
-                                                    <a class="box" href="/shop/">
-                                                        <div class="title">
-                                                            Shop Now
-                                                        </div>
-                                                    </a>
-
                                                 </div>
+                                                <div class="copy">
+                                                    Products that reflect an exceptional standard of quality, authenticity, and everyday functionality.  Classic design, the best materials, and uncompromising craftsmanship provide a one-of-a-kind experience. Celebrate excellence with Virgil James!
+                                                </div>
+                                                <a class="box" href="/shop/">
+                                                    <div class="title">
+                                                        Shop Now
+                                                    </div>
+                                                </a>
                                             </div>
-
-
-
                                         </div>
                                     </div>
                                 <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
