@@ -1678,9 +1678,33 @@ body {
 	}
 }
 //-----------------------------------------------
-// Article page
 .articlePage {
-	padding-top: 96px;
+	&.landingScreen {
+		.landingHeight {
+			.landingWidth {
+				.imageFrame::before {
+					content: "";
+					display: block;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					background-color: rgba(0, 0, 0, .3);
+				}
+				.imageFrame {
+					.contentContainer {
+						.textBlockMain {
+							max-width: initial;
+							.title {
+								color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 //-----------------------------------------------
 // About page

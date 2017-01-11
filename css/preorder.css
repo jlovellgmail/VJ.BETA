@@ -1295,8 +1295,21 @@ body {
     padding-bottom: 50px;
   }
 }
-.articlePage {
-  padding-top: 96px;
+.articlePage.landingScreen .landingHeight .landingWidth .imageFrame::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.articlePage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+  max-width: initial;
+}
+.articlePage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .title {
+  color: white;
 }
 .aboutPage.landingScreen .landingHeight .landingWidth .imageFrame {
   background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");

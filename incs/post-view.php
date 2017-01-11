@@ -52,29 +52,74 @@ if ($postExist) {
 }
 ?>
 
-<!-- Landing Hero -->
-<div class='landing-hero-wrapper'>
-    <div class='block rel'>
-        <div class='aspect-dummy-hero'></div>
-        <div class='aspect-img aspect-img-hero' style="background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(<?php echo $PostHeroImg; ?>) no-repeat center; background-size: cover;">
-            <div class="backBtnWrapper">
-                <?php
-                if ($from == "lifestyle") {
-                    echo '<a href="/lifestyle/' . $PID . '" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;Lifestyle Journal</a>';
-                } else if ($from == "ambassador") {
-                    echo '<a href="' . $_SERVER['HTTP_REFERER'] . '" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>'.$FName.'&#39;s posts </a>';
-                }
-                ?>
 
-            </div>
-            <div class="hero-content-wrapper tableWrapper h100p">
-                <div class="cellWrapper">
-                    <div class="heroText ital size2"><?php echo $Title; ?></div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 noPadding">
+            <div class="landingHeight">
+                <div class="landingWidth">
+                    <div class="imageFrame" style="background-image: url(<?php echo $PostHeroImg; ?>);">
+                        <div class="backBtnWrapper">
+                            <?php
+                            if ($from == "lifestyle") {
+                                echo '<a href="/lifestyle/' . $PID . '" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>&nbsp;Lifestyle Journal</a>';
+                            } else if ($from == "ambassador") {
+                                echo '<a href="' . $_SERVER['HTTP_REFERER'] . '" class="aWhite caps size8" style="line-height: 28px;"><i class="icon-left-dir"></i>'.$FName.'&#39;s posts </a>';
+                            }
+                            ?>
+                        </div>
+                        <div class="table-cell">
+                            <div class="contentContainer">
+                                <div class="textBlockMain">
+                                    <div class="titleContainer">
+                                        <div class="title">
+                                            <div class="part1"><?php echo $Title; ?></div>
+                                            <div class="part2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="copy"></div>
+                                </div>
+                            </div>
+                        </div>
+                    <img class="downArrow" id="scrollDownArrow" src="/img/arrow_down.svg">
+                    </div> 
                 </div>
+                <div class='scroll-down-to'></div>
             </div>
         </div>
     </div>
 </div>
+<div class="belowLandingFrame">
+    <!--
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <div class="image" id="designPrinciples">
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="textContainer">
+                    <div class="sectionHeading">
+                        Design Principles
+                    </div>
+                    <div class="copy">
+                        Like the creation of art, we're driven to design and build extraordinary bags and accessories that express what's important to us. Our design approach is called Engineered Luxury. It starts by blending a classically elegant, timeless look with real-life modern usability. It ends by using the best materials and craftsmen to create something that's authentic and unique.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+</div>
+
+
+
+
+
+
 <?php
 if (count($postBlocks) > 0) {
     ?>

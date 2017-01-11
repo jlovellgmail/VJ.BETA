@@ -90,9 +90,13 @@ if ($from == "lifestyle") {
         ?>
 
 
-        <div class="articlePage">
+        <div class="articlePage landingScreen">
                 <?php include '/incs/post-view.php'; ?>
         </div>
+
+
+
+
         <?php include '/incs/footer.php'; ?>
         <?php include '/incs/footer-links.php'; ?>
         <script type="text/javascript">
