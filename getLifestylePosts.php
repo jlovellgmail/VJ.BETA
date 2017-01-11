@@ -55,7 +55,7 @@ if (is_array($postList)) {
                 <!-- temp display fake category until that gets added to posts -->
                 <a class="category">
                     <?php
-                        $categories = array("On The Road", "Living Well", "Extraordinary Objects", "Style");
+                        $categories = array("On The Road", "Living Well", "Extraordinary Objects", "Style Report");
                         $rand_key = array_rand($categories, 1);
                         echo $categories[$rand_key];
                     ?>
