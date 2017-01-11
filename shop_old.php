@@ -104,7 +104,7 @@ switch ($type) {
 
 
         <!-- new imported from collections -->
-        <div class="shopPage landingScreen">
+        <div class="shopPage-old landingScreen">
             
 
             <div class="container-fluid">
@@ -117,28 +117,6 @@ switch ($type) {
                                 <div class="imageFrame">
                                     <div class="table-cell">
                                         <div class="contentContainer">
-
-
-
-
-                                            <!-- from index_old.php -->
-                                            <div class="carouselContainer">
-                                                <div class="carouselImageContainer">
-                                                    
-                                                    <img id="carouselImage" class="active" src="/img/IMG_6948 - tote hero - transparent for postcard bg.png" />
-                                                    <img id="carouselImage2" style="opacity: 0;" src="/img/carousel image - Drawstring - transparent.png" />
-
-                                                </div>
-                                                <div class="controls">
-                                                    <div class="dot active"></div>
-                                                    <div class="dot"></div>
-                                                    <div class="dot"></div>
-                                                </div>
-                                            </div>
-
-
-
-
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">

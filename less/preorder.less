@@ -736,7 +736,7 @@ body {
 	}
 }
 //-----------------------------------------------
-// Landing page - - adapting to Journal
+// Landing page - - adapted to Journal layout
 .landingPage {
 	&.landingScreen {
 		.landingHeight {
@@ -1040,7 +1040,7 @@ body {
 	}
 }
 //-----------------------------------------------
-// Landing page
+// Landing page - - old version that includes the carousel
 .landingPage-old {
 	&.landingScreen {
 		.landingHeight {
@@ -2209,16 +2209,25 @@ body {
 	}
 }
 //-----------------------------------------------
-// Shop page
+// Shop page - - 170111 adapting to landing page content
 .shopPage {
 	&.landingScreen {
 		.landingHeight {
 			.landingWidth {
 				.imageFrame {
+					
+
+					// replace with from index-old
+					/*
 					background-image: url("/img/grays_q9.jpg");
 					background-position-x: center;
 					background-position-y: 49%;
 					background-size: cover;
+					*/
+					background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+
+
+
 					&.tallAspect {
 						background-size: cover;
 						background-position: right 100px center;
@@ -2226,8 +2235,95 @@ body {
 						transition: background-position .2s ease-in-out;
 					}
 					.contentContainer {
+
+
+						// replace with from index-old
+						/*
     	    	    	text-align: left;
     	    	    	max-width: 1100px;
+    	    	    	*/
+    	    	    	text-align: center;
+    	    	    	max-width: initial;
+    	    	    	padding-top: 70px;
+
+
+
+
+    	    	    	// add from index-old
+    	    	    	.carouselContainer {
+    	    	    		display: inline-block;
+    	    	    		margin: 0;
+    	    	    		min-height: 100px;
+    	    	    		position: relative;
+    	    	    		top: initial;
+    	    	    		transform: initial;
+    	    	    		vertical-align: bottom;
+    	    	    		max-width: initial;
+    	    	    		max-height: initial;
+    	    	    		height: auto;
+    	    	    		width: 610px;
+    	    	    		.carouselImageContainer {
+    	    	    			height: 0;
+    	    	    			padding-bottom: 110%;
+    	    	    			position: relative;
+    	    	    			img {
+    	    	    				animation-duration: 2s;
+    	    	    				-vendor-animation-duration: 2s;
+    	    	    				-vendor-animation-delay: 0s;
+    	    	    				-vendor-animation-iteration-count: infinite;
+    	    	    				position: absolute;
+    	    	    				right: 0;
+    	    	    				top: 0;
+    	    	    				width: 100%;
+    	    	    				height: auto;
+    	    	    				&.fadeout {
+    	    	    					animation-name: fadeout;
+    	    	    					animation-duration: 1s;
+    	    	    					animation-timing-function: ease; 
+    	    	    					animation-delay: 0;
+    	    	    					animation-iteration-count: 1;
+    	    	    					animation-fill-mode: none;
+    	    	    					animation-play-state: running;     								
+    	    	    				}
+    	    	    				&.fadein {
+    	    	    					animation-name: fadein;
+    	    	    					animation-duration: 1.5s; 
+    	    	    					animation-timing-function: ease; 
+    	    	    					animation-delay: 0;
+    	    	    					animation-iteration-count: 1;
+    	    	    					animation-fill-mode: none;
+    	    	    					animation-play-state: running; 
+    	    	    				}
+    	    	    			}
+    	    	    		}
+    	    	    		.controls {
+    	    	    			right: initial;
+    	    	    			margin-left: auto;
+    	    	    			margin-right: auto;
+    	    	    			display: inline-block;
+    	    	    			position: absolute;
+    	    	    			width: 100%;
+    	    	    			left: 0;
+    	    	    			opacity: .5;
+    	    	    			bottom: 32px;
+    	    	    			text-align: center;
+    	    	    			.dot {
+    	    	    				display: inline-block;
+    	    	    				width: 7px;
+    	    	    				height: 7px;
+    	    	    			    margin: 5px 5px;
+    	    	    				opacity: 0.3;
+    	    	    				border-radius: 20px;
+    	    	    				background: black;
+    	    	    				&.active {
+    	    	    					opacity: .7;
+    	    	    				}
+    	    	    			}
+    	    	    		}
+    	    	    	}
+
+
+
 			    		.textBlockMain {
 		    		        color: black;
 		    		        padding-bottom: 85px;
@@ -2320,6 +2416,180 @@ body {
 		}
 	}
 }
+
+
+
+
+// from old landing page
+@media all and (max-height: 960px){
+	.shopPage {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.carouselContainer {
+								width: 450px;
+								.controls {
+									bottom: 8px;
+								}
+							}
+
+
+							// this class is old, not in shop page
+							/*
+							.textContainer {
+								padding-top: 0;
+								.preorderText {
+									.headlineContainer {
+										.headline {
+											font-size: 54px;
+											line-height: 51px;
+										}
+									}
+								}
+							}
+							*/
+
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1500px){
+	.shopPage {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.carouselContainer {
+								width: 100%;
+							    max-width: 450px;
+								.controls {
+									bottom: 8px;
+								}
+							}
+
+
+							// this class is old, not in shop page
+							/*
+							.textContainer {
+								padding-top: 0;
+								margin-right: initial;
+								.preorderText {
+									
+									
+									//max-width: 400px;
+									max-width: 420px;
+
+
+									width: auto;
+									.headlineContainer {
+										.headline {
+											font-size: 44px;
+											line-height: 42px;
+										}
+									}
+									.copy {
+										
+										//width: 420px;
+										width: initial;
+										max-width: 420px;
+
+									}
+								}
+							}
+							*/
+
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1800px) and (min-height: 1200px) {
+	.shopPage {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+		    	    		.carouselContainer {
+		    	    			width: 720px;
+		    	    			.carouselImageContainer {
+		    	    			}
+		    	    			.controls {
+		    	    			}
+		    	    		}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-height: 960px) and (min-width: 600px) {
+	.shopPage {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+		    	    		.carouselContainer {
+		    	    			width: 480px;
+		    	    			.carouselImageContainer {
+		    	    			}
+		    	    			.controls {
+		    	    			}
+		    	    		}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-height: 800px) and (min-width: 600px) {
+	.shopPage {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+		    	    		.carouselContainer {
+		    	    			width: 380px;
+		    	    			.carouselImageContainer {
+		    	    			}
+		    	    			.controls {
+		    	    			}
+		    	    		}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+
+
 @media all and (max-width: 1500px){
 	.shopPage {
 		&.landingScreen {
@@ -2476,6 +2746,293 @@ body {
 }
 @media all and (max-height: 1000px){
 	.shopPage {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							.textBlockMain {
+								padding-bottom: 50px;
+								.titleContainer {
+									.title {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//-----------------------------------------------
+// Shop page - - old
+.shopPage-old {
+	&.landingScreen {
+		.landingHeight {
+			.landingWidth {
+				.imageFrame {
+					background-image: url("/img/grays_q9.jpg");
+					background-position-x: center;
+					background-position-y: 49%;
+					background-size: cover;
+					&.tallAspect {
+						background-size: cover;
+						background-position: right 100px center;
+						transition: background-size .2s ease-in-out;
+						transition: background-position .2s ease-in-out;
+					}
+					.contentContainer {
+    	    	    	text-align: left;
+    	    	    	max-width: 1100px;
+			    		.textBlockMain {
+		    		        color: black;
+		    		        padding-bottom: 85px;
+							.titleContainer {
+						    	.title {
+						    		.part1 {
+						    			font-weight: 100;
+						    		}
+						    		.part2 {
+							    		font-weight: 600;
+						    		}
+						    	}
+						    }
+			    		    .copy {
+			    		    }
+				    		.hline {
+				    			border-bottom: 1px solid rgba(0,0,0, .2);
+				    			height: 1px;
+				    			max-width: 550px;
+				    			margin-left: auto;
+				    			margin-right: auto;
+				    			margin-top: 30px;
+				    			margin-bottom: 30px;
+				    		}
+					    	.boxes {
+					    		text-align: center;
+					    		display: inline-block;
+					    		width: 320px;
+					    		border: none;
+					    		margin: 0 auto;
+					    		margin-top: 20px;
+					    		.vline {
+					    			width: 1px;
+					    			height: 100px;
+					    			border-left: 1px solid rgba(0,0,0, .16);
+					    			vertical-align: middle;
+					    			display: none;
+					    		}
+					    		.hline {
+					    			height: 1px;
+					    			border-bottom: 1px solid rgba(0,0,0, .16);
+					    			width: auto;
+					    			margin: 0 20px;
+					    			display: block;
+					    		}
+					    		.box {
+					    			cursor: pointer;
+								    vertical-align: middle;
+								    text-transform: uppercase;
+					    			color: black;
+					    			display: inline-block;
+								    transition: .3s;
+								    font-size: 22px;
+								    font-weight: 300;
+								    letter-spacing: 1.7px;
+								    text-decoration: none;
+			        			    padding: 24px 0;
+			    				    width: 100%;
+								    .title {
+								    	display: inline-block;
+								    }
+								    .subtitle {
+								    	font-size: 12px;
+								    	text-transform: uppercase;
+								    	font-weight: 500;
+								    	letter-spacing: .8px;
+								    	margin-top: -4px;
+								    }
+								    &:hover {
+							    	    background-color: rgba(0, 0, 0, 0.04);
+								    }
+					    		}
+					    	}
+			    		}
+					}
+					.downArrow {
+						filter: none;
+					}
+				}
+			}
+		}
+		.belowLandingFrame {
+			.widthWrapper {
+				width: 1000px;
+			}
+			.shopItem img {
+				max-width: 450px;
+			}
+
+		}
+	}
+}
+@media all and (max-width: 1500px){
+	.shopPage-old {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						
+						//background-image: url("/img/landing_page_postcard_bg_q9.jpg");
+						background: 
+							linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) ), 
+							url("/img/landing_page_postcard_bg_q9.jpg");
+
+						.contentContainer {
+							text-align: center;
+							padding-left: 30px;
+							padding-right: 30px;
+							.textBlockMain {
+								.titleContainer {
+									.title {
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1230px){
+	.shopPage-old {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.overlay {
+							opacity: 1;
+						}
+						.contentContainer {
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.shopPage-old {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.overlay {
+						}
+						.contentContainer {
+							padding-left: 60px;
+							padding-right: 60px;
+							max-width: 900px;
+							.textBlockMain {
+								.titleContainer {
+									.title {
+										font-size: 54px;
+										line-height: 51px;
+									}
+								}
+								.copy {}
+								.boxes {
+									display: block;
+									max-width: 290px;
+									margin-left: auto;
+									margin-right: auto;
+									.vline {
+										display: none;
+									}
+									.hline {
+										display: block;
+									}
+									.box {
+										width: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.belowLandingFrame {
+				.widthWrapper {
+					max-width: 480px;
+					.shopItem {
+						display: block;
+						&.lg-six {
+							width: 100%;
+						}
+					}
+				}
+				.lifestyle-post-block {
+					display: block;
+				    width: 100%;
+					.imageContainer {
+						height: 260px;
+						overflow: hidden;
+						.image {
+							height: 260px;
+						}
+					}
+					.textContainer {
+						display: block;
+						padding-left: 0;
+						padding-top: 4px;
+					}
+				}
+				.jscroll-added {
+					display: block;
+					width: 100%;
+				    .lifestyle-post-block {
+				    	width: 100%;
+				    }
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 500px){
+	.shopPage-old {
+		&.landingScreen {
+			.landingHeight {
+				.landingWidth {
+					.imageFrame {
+						.contentContainer {
+							padding-left: 30px;
+							padding-right: 30px;
+							.textBlockMain {
+								padding-bottom: 20px;
+								.titleContainer {
+									margin-bottom: 20px;
+									.title {
+										font-size: 50px;
+										line-height: 48px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.belowLandingFrame {
+				.widthWrapper {
+					width: auto;
+				}						
+			}
+		}
+	}
+}
+@media all and (max-height: 1000px){
+	.shopPage-old {
 		&.landingScreen {
 			.landingHeight {
 				.landingWidth {
