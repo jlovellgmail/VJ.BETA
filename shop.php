@@ -203,19 +203,19 @@ switch ($type) {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                                <div class="sdWrapper">
-                                    <div class="sdContent">
-                                        <div id="prodListDiv" >
-                                            <?php
-                                            if ($type == "") {
-                                                include '/incs/feature-products.php';
-                                            } else {
-                                                include '/incs/shop.php';
-                                            }
-                                            ?>
-                                        </div>
+                            <div class="sdWrapper">
+                                <div class="sdContent">
+                                    <div id="prodListDiv" >
+                                        <?php
+                                        if ($type == "") {
+                                            include '/incs/feature-products.php';
+                                        } else {
+                                            include '/incs/shop.php';
+                                        }
+                                        ?>
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>

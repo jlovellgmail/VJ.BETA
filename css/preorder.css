@@ -1643,12 +1643,6 @@ body {
   }
 }
 .shopPage.landingScreen .landingHeight .landingWidth .imageFrame {
-  /*
-					background-image: url("/img/grays_q9.jpg");
-					background-position-x: center;
-					background-position-y: 49%;
-					background-size: cover;
-					*/
   background-image: url("/img/landing_page_postcard_bg_q9.jpg");
 }
 .shopPage.landingScreen .landingHeight .landingWidth .imageFrame.tallAspect {
@@ -1658,10 +1652,6 @@ body {
   transition: background-position 0.2s ease-in-out;
 }
 .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
-  /*
-    	    	    	text-align: left;
-    	    	    	max-width: 1100px;
-    	    	    	*/
   text-align: center;
   max-width: initial;
   padding-top: 70px;
