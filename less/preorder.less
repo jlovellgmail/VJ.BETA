@@ -2422,8 +2422,6 @@ body {
 		}
 	}
 }
-//---------------
-// from old landing page, these affect carousel only
 @media all and (max-height: 960px){
 	.shopPage {
 		&.landingScreen {
@@ -2436,6 +2434,10 @@ body {
 								.controls {
 									bottom: 8px;
 								}
+							}
+							.textBlockMain {
+								padding-top: 0;
+								padding-bottom: 0;
 							}
 						}
 					}
@@ -2524,25 +2526,21 @@ body {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-//---------------
-// originals from Shop page
 @media all and (max-width: 1500px){
 	.shopPage {
 		&.landingScreen {
 			.landingHeight {
 				.landingWidth {
 					.imageFrame {
-						
-						//background-image: url("/img/landing_page_postcard_bg_q9.jpg");
 						background: 
 							linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) ), 
 							url("/img/landing_page_postcard_bg_q9.jpg");
-
 						.contentContainer {
 							text-align: center;
 							padding-left: 30px;
 							padding-right: 30px;
 							.textBlockMain {
+								padding-top: 0;
 								.titleContainer {
 									.title {
 									}

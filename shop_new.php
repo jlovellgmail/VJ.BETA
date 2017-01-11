@@ -105,23 +105,14 @@ switch ($type) {
 
         <!-- new imported from collections -->
         <div class="shopPage landingScreen">
-            
-
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
-
-
                         <div class="landingHeight">
                             <div class="landingWidth">
                                 <div class="imageFrame">
                                     <div class="table-cell">
                                         <div class="contentContainer">
-
-
-
-
-                                            <!-- from index_old.php -->
                                             <div class="carouselContainer">
                                                 <div class="carouselImageContainer">
                                                     
@@ -135,10 +126,6 @@ switch ($type) {
                                                     <div class="dot"></div>
                                                 </div>
                                             </div>
-
-
-
-
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">
@@ -209,8 +196,6 @@ switch ($type) {
                             </div>
                             <div class='scroll-down-to'></div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -218,13 +203,8 @@ switch ($type) {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                                
-
-
                                 <div class="sdWrapper">
                                     <div class="sdContent">
-                                            
-
                                         <div id="prodListDiv" >
                                             <?php
                                             if ($type == "") {
@@ -233,19 +213,13 @@ switch ($type) {
                                                 include '/incs/shop.php';
                                             }
                                             ?>
-
                                         </div>
                                     </div>
                                 </div>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
 

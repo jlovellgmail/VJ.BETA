@@ -1822,6 +1822,10 @@ body {
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
     bottom: 8px;
   }
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 @media all and (max-width: 1500px) {
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
@@ -1871,6 +1875,9 @@ body {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+    padding-top: 0;
   }
 }
 @media all and (max-width: 1230px) {
