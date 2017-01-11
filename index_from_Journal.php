@@ -21,7 +21,7 @@ $seo_variable = "home";
 
 
 
-        <div class="landingPage-from-Journal landingScreen">
+        <div class="landingPage landingScreen">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
