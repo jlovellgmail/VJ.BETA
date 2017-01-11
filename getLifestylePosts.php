@@ -50,10 +50,6 @@ if (is_array($postList)) {
             <div class="textContainer">
                 
                 <a class="category">
-
-
-                    <!-- JL -->
-                    <!-- temp display fake category until that gets added to posts -->
                     <?php
                         $categories = array("On The Road", "Living Well", "Extraordinary Objects", "Style");
                         $rand_key = array_rand($categories, 1);
