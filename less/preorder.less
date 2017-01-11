@@ -2326,7 +2326,13 @@ body {
 
 			    		.textBlockMain {
 		    		        color: black;
-		    		        padding-bottom: 85px;
+
+
+		    		        vertical-align: top;
+							padding-top: 60px;
+
+
+
 							.titleContainer {
 						    	.title {
 						    		.part1 {
@@ -2416,11 +2422,8 @@ body {
 		}
 	}
 }
-
-
-
-
-// from old landing page
+//---------------
+// from old landing page, these affect carousel only
 @media all and (max-height: 960px){
 	.shopPage {
 		&.landingScreen {
@@ -2434,24 +2437,6 @@ body {
 									bottom: 8px;
 								}
 							}
-
-
-							// this class is old, not in shop page
-							/*
-							.textContainer {
-								padding-top: 0;
-								.preorderText {
-									.headlineContainer {
-										.headline {
-											font-size: 54px;
-											line-height: 51px;
-										}
-									}
-								}
-							}
-							*/
-
-
 						}
 					}
 				}
@@ -2473,39 +2458,6 @@ body {
 									bottom: 8px;
 								}
 							}
-
-
-							// this class is old, not in shop page
-							/*
-							.textContainer {
-								padding-top: 0;
-								margin-right: initial;
-								.preorderText {
-									
-									
-									//max-width: 400px;
-									max-width: 420px;
-
-
-									width: auto;
-									.headlineContainer {
-										.headline {
-											font-size: 44px;
-											line-height: 42px;
-										}
-									}
-									.copy {
-										
-										//width: 420px;
-										width: initial;
-										max-width: 420px;
-
-									}
-								}
-							}
-							*/
-
-
 						}
 					}
 				}
@@ -2522,10 +2474,6 @@ body {
 						.contentContainer {
 		    	    		.carouselContainer {
 		    	    			width: 720px;
-		    	    			.carouselImageContainer {
-		    	    			}
-		    	    			.controls {
-		    	    			}
 		    	    		}
 						}
 					}
@@ -2543,10 +2491,6 @@ body {
 						.contentContainer {
 		    	    		.carouselContainer {
 		    	    			width: 480px;
-		    	    			.carouselImageContainer {
-		    	    			}
-		    	    			.controls {
-		    	    			}
 		    	    		}
 						}
 					}
@@ -2564,10 +2508,6 @@ body {
 						.contentContainer {
 		    	    		.carouselContainer {
 		    	    			width: 380px;
-		    	    			.carouselImageContainer {
-		    	    			}
-		    	    			.controls {
-		    	    			}
 		    	    		}
 						}
 					}
@@ -2584,12 +2524,8 @@ body {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-
-
-
-
-
+//---------------
+// originals from Shop page
 @media all and (max-width: 1500px){
 	.shopPage {
 		&.landingScreen {

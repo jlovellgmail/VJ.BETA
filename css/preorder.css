@@ -1739,7 +1739,8 @@ body {
 }
 .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
   color: black;
-  padding-bottom: 85px;
+  vertical-align: top;
+  padding-top: 60px;
 }
 .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain .titleContainer .title .part1 {
   font-weight: 100;
@@ -1815,21 +1816,6 @@ body {
   max-width: 450px;
 }
 @media all and (max-height: 960px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
-    /*
-							.textContainer {
-								padding-top: 0;
-								.preorderText {
-									.headlineContainer {
-										.headline {
-											font-size: 54px;
-											line-height: 51px;
-										}
-									}
-								}
-							}
-							*/
-  }
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 450px;
   }
@@ -1838,36 +1824,6 @@ body {
   }
 }
 @media all and (max-width: 1500px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer {
-    /*
-							.textContainer {
-								padding-top: 0;
-								margin-right: initial;
-								.preorderText {
-									
-									
-									//max-width: 400px;
-									max-width: 420px;
-
-
-									width: auto;
-									.headlineContainer {
-										.headline {
-											font-size: 44px;
-											line-height: 42px;
-										}
-									}
-									.copy {
-										
-										//width: 420px;
-										width: initial;
-										max-width: 420px;
-
-									}
-								}
-							}
-							*/
-  }
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
     width: 100%;
     max-width: 450px;
