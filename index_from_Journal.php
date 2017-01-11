@@ -30,6 +30,8 @@ $seo_variable = "home";
                             <div class="landingWidth">
                                 <div class="imageFrame">
 
+                                    <div class="overlay"></div>
+
                                     <div class="table-cell">
                                         <div class="contentContainer">
 
@@ -85,6 +87,11 @@ $seo_variable = "home";
                                                 <div class="copy">
                                                     Products that reflect an exceptional standard of quality, authenticity, and everyday functionality.  Classic design, the best materials, and uncompromising craftsmanship provide a one-of-a-kind experience. Celebrate excellence with Virgil James!
                                                 </div>
+                                                <a class="box" href="/shop/">
+                                                    <div class="title">
+                                                        Shop Now
+                                                    </div>
+                                                </a>
                                             </div>
 
 
