@@ -49,6 +49,10 @@ if (is_array($postList)) {
             </div>
             <div class="textContainer">
                 
+
+
+                <!-- JL -->
+                <!-- temp display fake category until that gets added to posts -->
                 <a class="category">
                     <?php
                         $categories = array("On The Road", "Living Well", "Extraordinary Objects", "Style");
