@@ -105,23 +105,14 @@ switch ($type) {
 
         <!-- new imported from collections -->
         <div class="shopPage landingScreen">
-            
-
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 noPadding">
-
-
                         <div class="landingHeight">
                             <div class="landingWidth">
                                 <div class="imageFrame">
                                     <div class="table-cell">
                                         <div class="contentContainer">
-
-
-
-
-                                            <!-- from index_old.php -->
                                             <div class="carouselContainer">
                                                 <div class="carouselImageContainer">
                                                     
@@ -135,10 +126,6 @@ switch ($type) {
                                                     <div class="dot"></div>
                                                 </div>
                                             </div>
-
-
-
-
                                             <div class="textBlockMain">
                                                 <div class="titleContainer">
                                                     <div class="title">
@@ -209,8 +196,6 @@ switch ($type) {
                             </div>
                             <div class='scroll-down-to'></div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -218,13 +203,8 @@ switch ($type) {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                                
-
-
                                 <div class="sdWrapper">
                                     <div class="sdContent">
-                                            
-
                                         <div id="prodListDiv" >
                                             <?php
                                             if ($type == "") {
@@ -233,19 +213,13 @@ switch ($type) {
                                                 include '/incs/shop.php';
                                             }
                                             ?>
-
                                         </div>
                                     </div>
                                 </div>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
 
@@ -337,7 +311,6 @@ switch ($type) {
         </script>
         <!-- hide header bottom border until scroll -->
         <script>
-            // hide header bottom border until scroll
             var border = $('.bottomBorder');
             var windowHeight = $(window).height();
             border.css("opacity", 0);
@@ -348,9 +321,65 @@ switch ($type) {
                 }
             });
         </script>
+        <!-- for carousel: preload images -->
+        <div style="position:fixed; left:4000px; top:4000px; opacity: 0; ">
+            <img src="/img/IMG_6948 - tote hero - transparent for postcard bg.png">
+            <img src="/img/carousel image - Drawstring - transparent.png">
+            <img src="/img/carousel image - Clutch - transparent.png">
+
+        </div>
+        <!-- for carousel: change images -->
+        <script>
+            var images = [
+                "/img/IMG_6948 - tote hero - transparent for postcard bg.png"
+                ,"/img/carousel image - Drawstring - transparent.png"
+                ,"/img/carousel image - Clutch - transparent.png"
+            ];
+            var i=0;
+            var initialTimeout = 8000;
+            var timeout = 8000;
+            var delay = 600;
+            function change(){
+                if($("#carouselImage").hasClass("active")){
+                    current = $("#carouselImage");
+                    next = $("#carouselImage2");
+                }
+                else {
+                    current = $("#carouselImage2");
+                    next = $("#carouselImage");
+                }
+                i = ++i % images.length;
+                function animate(){
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    current.addClass("fadeout").one(animationEnd, function() {
+                        $(this).removeClass("fadeout");
+                        $(this).css("opacity", 0);
+                    });
+                    setTimeout(showNext, delay);
+                    function showNext(){
+                        current.removeClass("active");
+                        next.addClass("active");
+                        next.attr("src", images[i]);
+                        next.addClass("fadein").one(animationEnd, function() {
+                            $(this).removeClass("fadein");
+                            $(this).css("opacity", 1);
+                        });
+                        $(".dot").removeClass("active");
+                        $(".dot:nth-of-type("+ (i+1) +")").addClass("active");
+                    }
+                }
+                animate();
+                setTimeout(change, timeout);
+            }
+            $(window).load(function(){
+                setTimeout(change, initialTimeout);
+            });
+        </script>
+
         
 
-        <!-- scroll down if we're on men or women page -->
+        <!-- JL -->
+        <!-- temp: scroll down if we're on men or women page -->
         <?php
             if ($type == "men" || $type == "women"){
                 echo "<script>console.log('type: $type');</script>";
