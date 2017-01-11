@@ -103,7 +103,6 @@ switch ($type) {
 
 
 
-        <!-- new imported from collections -->
         <div class="shopPage landingScreen">
             <div class="container-fluid">
                 <div class="row">
@@ -115,10 +114,8 @@ switch ($type) {
                                         <div class="contentContainer">
                                             <div class="carouselContainer">
                                                 <div class="carouselImageContainer">
-                                                    
                                                     <img id="carouselImage" class="active" src="/img/IMG_6948 - tote hero - transparent for postcard bg.png" />
                                                     <img id="carouselImage2" style="opacity: 0;" src="/img/carousel image - Drawstring - transparent.png" />
-
                                                 </div>
                                                 <div class="controls">
                                                     <div class="dot active"></div>
