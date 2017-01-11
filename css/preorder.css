@@ -1832,58 +1832,6 @@ body {
 .shopPage.landingScreen .belowLandingFrame .shopItem img {
   max-width: 450px;
 }
-@media all and (max-height: 960px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
-    width: 450px;
-  }
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
-    bottom: 8px;
-  }
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-@media all and (max-width: 1500px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
-    width: 100%;
-    max-width: 450px;
-  }
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
-    bottom: 8px;
-  }
-}
-@media (min-width: 1800px) and (min-height: 1200px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
-    width: 720px;
-  }
-}
-@media all and (max-height: 960px) and (min-width: 600px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
-    width: 480px;
-  }
-}
-@media all and (max-height: 800px) and (min-width: 600px) {
-  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
-    width: 380px;
-  }
-}
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media all and (max-width: 1500px) {
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame {
     background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("/img/landing_page_postcard_bg_q9.jpg");
@@ -1895,6 +1843,14 @@ body {
   }
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-top: 0;
+    max-width: 410px;
+  }
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    width: 100%;
+    max-width: 450px;
+  }
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
+    bottom: 8px;
   }
 }
 @media all and (max-width: 1230px) {
@@ -1982,6 +1938,44 @@ body {
 @media all and (max-height: 1000px) {
   .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
     padding-bottom: 50px;
+  }
+}
+@media all and (max-height: 960px) {
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    max-width: 450px;
+  }
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer .controls {
+    bottom: 8px;
+  }
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .textBlockMain {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media all and (min-width: 1800px) and (min-height: 1200px) {
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    width: 720px;
+  }
+}
+@media all and (max-height: 800px) and (min-width: 600px) {
+  .shopPage.landingScreen .landingHeight .landingWidth .imageFrame .contentContainer .carouselContainer {
+    width: 380px;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .shopPage-old.landingScreen .landingHeight .landingWidth .imageFrame {
